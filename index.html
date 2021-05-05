@@ -39,7 +39,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://superlifebuoy.github.io/" />
-<meta property="og:updated_time" content="2021-02-17T20:29:21+08:00" />
+<meta property="og:updated_time" content="2021-05-05T23:22:03+08:00" />
 <meta itemprop="name" content="My New Hugo Site">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -124,6 +124,37 @@
 
       <section class="w-100 mw8">
         
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="https://superlifebuoy.github.io/posts/deploy-hugo-by-github/" class="color-inherit dim link">
+            Deploy Hugo by Github
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          通过Github部署Hugo 详细步骤请参考这篇blog
+以下内容为纯执行步骤：
+第1步：在Github创建一个仓库 仓库名任意，只要不是.github.io即可(例如就叫做blog)。这个仓库可以是私有的。
+第2步：关联本地Hugo项目 cd &lt;YOUR HUGO PROJECT&gt; git remote add origin git@github.com:USERNAME/blog.git 第3步：在Github创建一个.github.io仓库 就是你的Github用户名。这个仓库用来存放最终发布的blog内容。
+第4步：关联Hugo的public文件夹 如果Hugo项目路径下已存在public文件夹，请直接删除。不用担心。
+git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public 第5步：生成并发布内容 hugo cd public git status git add . git commit -m &#34;first commit&#34; git push -u orgin master 注意：本地网站是关联的blog仓库，本地网站下的public文件夹是以子模块的形式关联的github.io仓库，他们是相对独立的。
+自动化部署脚本 将以上步骤整理成自动执行脚本deploy.sh。脚本commit信息会使用当前时间。将deploy.sh脚本放到Hugo项目路径下，写完blog后直接双击运行即可自动部署发布。
+#!/bin/bash  echo -e &#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34; # Build the project. hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;` # Go To Public folder cd public # Add changes to git.
+        </div>
+          <a href="https://superlifebuoy.github.io/posts/deploy-hugo-by-github/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
         
           <div class="relative w-100 mb4">
             
