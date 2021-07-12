@@ -6,7 +6,29 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 May 2021 23:22:03 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Jul 2021 20:32:31 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Small Things That Make Apis a Little Bit Better</title>
+      <link>https://superlifebuoy.github.io/posts/small-things-that-make-apis-a-little-bit-better/</link>
+      <pubDate>Mon, 12 Jul 2021 20:32:31 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/posts/small-things-that-make-apis-a-little-bit-better/</guid>
+      <description>原文链接
+让API更美好的一些小事 这些年来，我调用过大量的API。
+在此过程中，我整理了一系列能让我日子更好过的方法。这其中大部分都不是关于API设计或API架构的。它们大部分其实是关于你——API创建者可以做的小事情。这些小事情能让API调用不那么痛苦。
+准备一份可下载、可解析的表格 你当然可以为错误码、状态列表等信息，提供一份自动生成的、格式精美的文档。但除此之外，请为这些信息也提供一份可下载的、CSV/JSON格式(或其他你希望的格式)的表格。永远不要只提供一份PDF格式的文档。
+以上建议在返回值样例上也适用。
+添加一个ECHO/验证接口 有时候你仅仅只是想试一下API是否还在正常运行。这时你发现手边恰巧没有API文档，或者因为一些原因导致API的调用成本非常高，这种情况就非常难受了。提供一个可以用curl调用的、类似ECHO的方法，可以大大缓解这种痛苦。
+为最常用的场景提供样例 并不是所有API都会频繁调用到。大部分人只会使用集中的那么几个API，而且这些API的调用是有顺序性的。你最好在文档中为这些API的使用场景提供伪代码说明。
+对RT做明确的说明 我很少很少很少在API文档中看到返回时间的说明。当然，这不是要求你给出明确关于RT的SLA。但是为特定的API的返回时间给出明示——例如一般会比预想的时间更长，会非常有帮助。
+提供错误或状态描述 当一个人在调用API失败的时候，可能会去分析日志。这时为错误或状态提供一段文字描述信息是非常有帮助的，能使问题更快得到解决。
+隐藏你的错误，给足反馈信息 我看到过很多API都提供了错误码。但这些错误码都是给实现API的团队看的。
+例如“数据库错误”、“用户配置错误”、“锁超时”之类的信息，API调用者是不关注的。把对内信息和对外信息区分开。为这些错误添加注释，明确告诉API调用者去寻求帮助。
+为复杂的数据转换提供详细的步骤说明 不管出于什么样的原因。你可能需要API调用者实现针对数据的链接、哈希、加密等操作。也可能你为数据压缩提供了一种特殊方式的算法。请一定为这些数据的转换，提供样例数据及详细的步骤说明。并不是所有的编程语言都为你当前的数据转换场景提供了现成的工具包。提供详细、可复制的执行步骤，能为需要自行编码实现的API调用者，提供很大的帮助。
+列出常见问题 你在实现API时，遇到的最困难的部分是什么？人们对这些API最经常问的问题是什么？将这些内容添加到你的文档中， 或以其他合适的方式输出。
+让用户知道如何联系到你 大部分API文档都包含了非常详细的信息，除了遇到技术问题时如何联系到正确的人。幸运的话，当API调用者历尽千辛万苦后能在网站上找到联系表格或电子邮件地址，并最终联系到可以回答API相关问题的人员。所以如果条件允许，请明确列出能够回答API相关问题的人员的联系方式。</description>
+    </item>
+    
     <item>
       <title>Deploy Hugo by Github</title>
       <link>https://superlifebuoy.github.io/posts/deploy-hugo-by-github/</link>
