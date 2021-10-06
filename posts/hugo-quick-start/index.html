@@ -6,22 +6,8 @@
     
     <title>Hugo Quick Start | My New Hugo Site</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Hugo原文链接
-Quick Start 通过漂亮的Ananke主题来创建一个Hugo站点。
- 这篇Quick Start是在macOS上操作的。在其他操作系统上安装Hugo的方法，请参见此链接。
-  运行此Quick Start中的代码时，最好电脑上已安装了Git。
-  通过其他方法学习Hugo，例如书籍或视频教程等，请参见此链接。
- 第1步：安装Hugo  Homebrew和MacPorts是macOS的两个软件包管理器，可以通过brew.sh和macports.org来安装。如果你使用的是Windows等其他操作系统，请参见此链接。
- brew install hugo # or port install hugo 要验证Hugo是否已经正确安装，请输入如下命令：
-hugo version 第2步：创建一个新站点 hugo new site quickstart 上面的命令会创建一个名叫quickstart的文件夹，并将新站点生成在这个文件夹内。
-第3步：添加一个主题 链接themes.gohugo.io是Hugo可用主题的列表地址。这篇Quick Start使用的主题是Ananke主题。
-首先，从GitHub下载主题并添加到themes文件夹内：
-cd quickstart git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 如果你没有GitHub账号的话：
- 如果你没有安装git，可以直接从https://github.com/budparr/gohugo-theme-ananke/archive/master.zip下载最新版本的主题压缩包。 然后解压缩.zip文件，生成一个“gohugo-theme-ananke-master”文件夹。 重命名该文件夹为“ananke”，并拷贝到&quot;themes&quot;文件夹内。  最后，将这个主题的名字写入站点配置文件中：
-echo &#39;theme = &#34;ananke&#34;&#39; &gt;&gt; config.toml 第4步：添加一些内容 你可以手动创建一些内容文件(例如content/&lt;类别&gt;/&lt;文件名&gt;.&lt;后缀&gt;)并在文件开头增加一些元信息。但更好的方法是你通过new命令来自动完成上面的内容(例如增加标题与生成日期等)：
-hugo new posts/my-first-post.md 如果需要的话，你可以编辑这个新生成的内容文件。它的开头内容类似下面：
---- title: &quot;My First Post&quot; date: 2019-03-26T08:47:11&#43;01:00 draft: true ---  Draft指明当前文件是否草稿状态。如果是true，则该文件是草稿状态，不会被部署到站点进行展示。一旦你完成了该文件的最终编辑，则可以设置draft: false。更多信息参见此链接。">
-    <meta name="generator" content="Hugo 0.79.1" />
+    <meta name="description" content="This is summary.">
+    <meta name="generator" content="Hugo 0.87.0" />
     
     
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -45,65 +31,19 @@ hugo new posts/my-first-post.md 如果需要的话，你可以编辑这个新生
     
     
     <meta property="og:title" content="Hugo Quick Start" />
-<meta property="og:description" content="Hugo原文链接
-Quick Start 通过漂亮的Ananke主题来创建一个Hugo站点。
- 这篇Quick Start是在macOS上操作的。在其他操作系统上安装Hugo的方法，请参见此链接。
-  运行此Quick Start中的代码时，最好电脑上已安装了Git。
-  通过其他方法学习Hugo，例如书籍或视频教程等，请参见此链接。
- 第1步：安装Hugo  Homebrew和MacPorts是macOS的两个软件包管理器，可以通过brew.sh和macports.org来安装。如果你使用的是Windows等其他操作系统，请参见此链接。
- brew install hugo # or port install hugo 要验证Hugo是否已经正确安装，请输入如下命令：
-hugo version 第2步：创建一个新站点 hugo new site quickstart 上面的命令会创建一个名叫quickstart的文件夹，并将新站点生成在这个文件夹内。
-第3步：添加一个主题 链接themes.gohugo.io是Hugo可用主题的列表地址。这篇Quick Start使用的主题是Ananke主题。
-首先，从GitHub下载主题并添加到themes文件夹内：
-cd quickstart git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 如果你没有GitHub账号的话：
- 如果你没有安装git，可以直接从https://github.com/budparr/gohugo-theme-ananke/archive/master.zip下载最新版本的主题压缩包。 然后解压缩.zip文件，生成一个“gohugo-theme-ananke-master”文件夹。 重命名该文件夹为“ananke”，并拷贝到&quot;themes&quot;文件夹内。  最后，将这个主题的名字写入站点配置文件中：
-echo &#39;theme = &#34;ananke&#34;&#39; &gt;&gt; config.toml 第4步：添加一些内容 你可以手动创建一些内容文件(例如content/&lt;类别&gt;/&lt;文件名&gt;.&lt;后缀&gt;)并在文件开头增加一些元信息。但更好的方法是你通过new命令来自动完成上面的内容(例如增加标题与生成日期等)：
-hugo new posts/my-first-post.md 如果需要的话，你可以编辑这个新生成的内容文件。它的开头内容类似下面：
---- title: &quot;My First Post&quot; date: 2019-03-26T08:47:11&#43;01:00 draft: true ---  Draft指明当前文件是否草稿状态。如果是true，则该文件是草稿状态，不会被部署到站点进行展示。一旦你完成了该文件的最终编辑，则可以设置draft: false。更多信息参见此链接。" />
+<meta property="og:description" content="This is summary." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://superlifebuoy.github.io/posts/hugo-quick-start/" />
+<meta property="og:url" content="https://superlifebuoy.github.io/posts/hugo-quick-start/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-02-17T20:29:21+08:00" />
 <meta property="article:modified_time" content="2021-02-17T20:29:21+08:00" />
+
 <meta itemprop="name" content="Hugo Quick Start">
-<meta itemprop="description" content="Hugo原文链接
-Quick Start 通过漂亮的Ananke主题来创建一个Hugo站点。
- 这篇Quick Start是在macOS上操作的。在其他操作系统上安装Hugo的方法，请参见此链接。
-  运行此Quick Start中的代码时，最好电脑上已安装了Git。
-  通过其他方法学习Hugo，例如书籍或视频教程等，请参见此链接。
- 第1步：安装Hugo  Homebrew和MacPorts是macOS的两个软件包管理器，可以通过brew.sh和macports.org来安装。如果你使用的是Windows等其他操作系统，请参见此链接。
- brew install hugo # or port install hugo 要验证Hugo是否已经正确安装，请输入如下命令：
-hugo version 第2步：创建一个新站点 hugo new site quickstart 上面的命令会创建一个名叫quickstart的文件夹，并将新站点生成在这个文件夹内。
-第3步：添加一个主题 链接themes.gohugo.io是Hugo可用主题的列表地址。这篇Quick Start使用的主题是Ananke主题。
-首先，从GitHub下载主题并添加到themes文件夹内：
-cd quickstart git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 如果你没有GitHub账号的话：
- 如果你没有安装git，可以直接从https://github.com/budparr/gohugo-theme-ananke/archive/master.zip下载最新版本的主题压缩包。 然后解压缩.zip文件，生成一个“gohugo-theme-ananke-master”文件夹。 重命名该文件夹为“ananke”，并拷贝到&quot;themes&quot;文件夹内。  最后，将这个主题的名字写入站点配置文件中：
-echo &#39;theme = &#34;ananke&#34;&#39; &gt;&gt; config.toml 第4步：添加一些内容 你可以手动创建一些内容文件(例如content/&lt;类别&gt;/&lt;文件名&gt;.&lt;后缀&gt;)并在文件开头增加一些元信息。但更好的方法是你通过new命令来自动完成上面的内容(例如增加标题与生成日期等)：
-hugo new posts/my-first-post.md 如果需要的话，你可以编辑这个新生成的内容文件。它的开头内容类似下面：
---- title: &quot;My First Post&quot; date: 2019-03-26T08:47:11&#43;01:00 draft: true ---  Draft指明当前文件是否草稿状态。如果是true，则该文件是草稿状态，不会被部署到站点进行展示。一旦你完成了该文件的最终编辑，则可以设置draft: false。更多信息参见此链接。">
-<meta itemprop="datePublished" content="2021-02-17T20:29:21+08:00" />
+<meta itemprop="description" content="This is summary."><meta itemprop="datePublished" content="2021-02-17T20:29:21+08:00" />
 <meta itemprop="dateModified" content="2021-02-17T20:29:21+08:00" />
 <meta itemprop="wordCount" content="186">
-
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Hugo Quick Start"/>
-<meta name="twitter:description" content="Hugo原文链接
-Quick Start 通过漂亮的Ananke主题来创建一个Hugo站点。
- 这篇Quick Start是在macOS上操作的。在其他操作系统上安装Hugo的方法，请参见此链接。
-  运行此Quick Start中的代码时，最好电脑上已安装了Git。
-  通过其他方法学习Hugo，例如书籍或视频教程等，请参见此链接。
- 第1步：安装Hugo  Homebrew和MacPorts是macOS的两个软件包管理器，可以通过brew.sh和macports.org来安装。如果你使用的是Windows等其他操作系统，请参见此链接。
- brew install hugo # or port install hugo 要验证Hugo是否已经正确安装，请输入如下命令：
-hugo version 第2步：创建一个新站点 hugo new site quickstart 上面的命令会创建一个名叫quickstart的文件夹，并将新站点生成在这个文件夹内。
-第3步：添加一个主题 链接themes.gohugo.io是Hugo可用主题的列表地址。这篇Quick Start使用的主题是Ananke主题。
-首先，从GitHub下载主题并添加到themes文件夹内：
-cd quickstart git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 如果你没有GitHub账号的话：
- 如果你没有安装git，可以直接从https://github.com/budparr/gohugo-theme-ananke/archive/master.zip下载最新版本的主题压缩包。 然后解压缩.zip文件，生成一个“gohugo-theme-ananke-master”文件夹。 重命名该文件夹为“ananke”，并拷贝到&quot;themes&quot;文件夹内。  最后，将这个主题的名字写入站点配置文件中：
-echo &#39;theme = &#34;ananke&#34;&#39; &gt;&gt; config.toml 第4步：添加一些内容 你可以手动创建一些内容文件(例如content/&lt;类别&gt;/&lt;文件名&gt;.&lt;后缀&gt;)并在文件开头增加一些元信息。但更好的方法是你通过new命令来自动完成上面的内容(例如增加标题与生成日期等)：
-hugo new posts/my-first-post.md 如果需要的话，你可以编辑这个新生成的内容文件。它的开头内容类似下面：
---- title: &quot;My First Post&quot; date: 2019-03-26T08:47:11&#43;01:00 draft: true ---  Draft指明当前文件是否草稿状态。如果是true，则该文件是草稿状态，不会被部署到站点进行展示。一旦你完成了该文件的最终编辑，则可以设置draft: false。更多信息参见此链接。"/>
+<meta name="twitter:description" content="This is summary."/>
 
 	
   </head>
@@ -215,18 +155,18 @@ hugo new posts/my-first-post.md 如果需要的话，你可以编辑这个新生
 <blockquote>
 <p>Homebrew和MacPorts是macOS的两个软件包管理器，可以通过<a href="https://brew.sh/">brew.sh</a>和<a href="https://www.macports.org/">macports.org</a>来安装。如果你使用的是Windows等其他操作系统，请参见此<a href="https://gohugo.io/getting-started/installing">链接</a>。</p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">brew install hugo
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">brew install hugo
 <span style="color:#75715e"># or</span>
 port install hugo
 </code></pre></div><p>要验证Hugo是否已经正确安装，请输入如下命令：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo version
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo version
 </code></pre></div><h3 id="第2步创建一个新站点">第2步：创建一个新站点</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo new site quickstart
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo new site quickstart
 </code></pre></div><p>上面的命令会创建一个名叫quickstart的文件夹，并将新站点生成在这个文件夹内。</p>
 <h3 id="第3步添加一个主题">第3步：添加一个主题</h3>
 <p>链接<a href="https://themes.gohugo.io/">themes.gohugo.io</a>是Hugo可用主题的列表地址。这篇Quick Start使用的主题是<a href="https://themes.gohugo.io/gohugo-theme-ananke/">Ananke主题</a>。</p>
 <p>首先，从GitHub下载主题并添加到themes文件夹内：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd quickstart
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd quickstart
 git init
 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
 </code></pre></div><p>如果你没有GitHub账号的话：</p>
@@ -236,10 +176,10 @@ git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/anan
 <li>重命名该文件夹为“ananke”，并拷贝到&quot;themes&quot;文件夹内。</li>
 </ul>
 <p>最后，将这个主题的名字写入站点配置文件中：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">echo <span style="color:#e6db74">&#39;theme = &#34;ananke&#34;&#39;</span> &gt;&gt; config.toml
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">echo <span style="color:#e6db74">&#39;theme = &#34;ananke&#34;&#39;</span> &gt;&gt; config.toml
 </code></pre></div><h3 id="第4步添加一些内容">第4步：添加一些内容</h3>
 <p>你可以手动创建一些内容文件(例如content/&lt;类别&gt;/&lt;文件名&gt;.&lt;后缀&gt;)并在文件开头增加一些元信息。但更好的方法是你通过new命令来自动完成上面的内容(例如增加标题与生成日期等)：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo new posts/my-first-post.md
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo new posts/my-first-post.md
 </code></pre></div><p>如果需要的话，你可以编辑这个新生成的内容文件。它的开头内容类似下面：</p>
 <pre><code>---
 title: &quot;My First Post&quot;
@@ -251,7 +191,7 @@ draft: true
 </blockquote>
 <h3 id="第5步启动hugo服务器">第5步：启动Hugo服务器</h3>
 <p>现在，启动Hugo服务器，并指定草稿状态的文件也可部署展示：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo server -D
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo server -D
 </code></pre></div><p>你会看到类似如下输出：</p>
 <pre><code>                   | EN
 +------------------+----+
@@ -290,7 +230,7 @@ theme = &quot;ananke&quot;
 <p><strong>更加深入的主题定制化，请参看此<a href="https://gohugo.io/hugo-modules/theme-components/">链接</a></strong></p>
 <h3 id="第7步构建静态页面">第7步：构建静态页面</h3>
 <p>很简单，只需输入：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo -D
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo -D
 </code></pre></div><p>默认情况下，静态页面会生成在./public/文件夹内(执行命令时可以通过-d/&ndash;destination参数来临时改变生成路径，或者直接在站点配置文件中通过publishdir属性来修改)。</p>
 <ul class="pa0">
   

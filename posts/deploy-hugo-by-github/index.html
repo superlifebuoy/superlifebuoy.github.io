@@ -14,7 +14,7 @@
 git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public 第5步：生成并发布内容 hugo cd public git status git add . git commit -m &#34;first commit&#34; git push -u orgin master 注意：本地网站是关联的blog仓库，本地网站下的public文件夹是以子模块的形式关联的github.io仓库，他们是相对独立的。
 自动化部署脚本 将以上步骤整理成自动执行脚本deploy.sh。脚本commit信息会使用当前时间。将deploy.sh脚本放到Hugo项目路径下，写完blog后直接双击运行即可自动部署发布。
 #!/bin/bash  echo -e &#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34; # Build the project. hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;` # Go To Public folder cd public # Add changes to git.">
-    <meta name="generator" content="Hugo 0.79.1" />
+    <meta name="generator" content="Hugo 0.87.0" />
     
     
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -47,9 +47,10 @@ git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.git
 自动化部署脚本 将以上步骤整理成自动执行脚本deploy.sh。脚本commit信息会使用当前时间。将deploy.sh脚本放到Hugo项目路径下，写完blog后直接双击运行即可自动部署发布。
 #!/bin/bash  echo -e &#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34; # Build the project. hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;` # Go To Public folder cd public # Add changes to git." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://superlifebuoy.github.io/posts/deploy-hugo-by-github/" />
+<meta property="og:url" content="https://superlifebuoy.github.io/posts/deploy-hugo-by-github/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-05-05T23:22:03+08:00" />
 <meta property="article:modified_time" content="2021-05-05T23:22:03+08:00" />
+
 <meta itemprop="name" content="Deploy Hugo by Github">
 <meta itemprop="description" content="通过Github部署Hugo 详细步骤请参考这篇blog
 以下内容为纯执行步骤：
@@ -58,15 +59,10 @@ git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.git
 第4步：关联Hugo的public文件夹 如果Hugo项目路径下已存在public文件夹，请直接删除。不用担心。
 git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public 第5步：生成并发布内容 hugo cd public git status git add . git commit -m &#34;first commit&#34; git push -u orgin master 注意：本地网站是关联的blog仓库，本地网站下的public文件夹是以子模块的形式关联的github.io仓库，他们是相对独立的。
 自动化部署脚本 将以上步骤整理成自动执行脚本deploy.sh。脚本commit信息会使用当前时间。将deploy.sh脚本放到Hugo项目路径下，写完blog后直接双击运行即可自动部署发布。
-#!/bin/bash  echo -e &#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34; # Build the project. hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;` # Go To Public folder cd public # Add changes to git.">
-<meta itemprop="datePublished" content="2021-05-05T23:22:03+08:00" />
+#!/bin/bash  echo -e &#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34; # Build the project. hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;` # Go To Public folder cd public # Add changes to git."><meta itemprop="datePublished" content="2021-05-05T23:22:03+08:00" />
 <meta itemprop="dateModified" content="2021-05-05T23:22:03+08:00" />
 <meta itemprop="wordCount" content="128">
-
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Deploy Hugo by Github"/>
 <meta name="twitter:description" content="通过Github部署Hugo 详细步骤请参考这篇blog
 以下内容为纯执行步骤：
@@ -177,15 +173,15 @@ git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.git
 <h3 id="第1步在github创建一个仓库">第1步：在Github创建一个仓库</h3>
 <p>仓库名任意，只要不是<!-- raw HTML omitted -->.github.io即可(例如就叫做blog)。这个仓库可以是私有的。</p>
 <h3 id="第2步关联本地hugo项目">第2步：关联本地Hugo项目</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd &lt;YOUR HUGO PROJECT&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd &lt;YOUR HUGO PROJECT&gt;
 git remote add origin git@github.com:USERNAME/blog.git
 </code></pre></div><h3 id="第3步在github创建一个usernamegithubio仓库">第3步：在Github创建一个<!-- raw HTML omitted -->.github.io仓库</h3>
 <p><!-- raw HTML omitted -->就是你的Github用户名。这个仓库用来存放最终发布的blog内容。</p>
 <h3 id="第4步关联hugo的public文件夹">第4步：关联Hugo的public文件夹</h3>
 <p>如果Hugo项目路径下已存在public文件夹，请直接删除。不用担心。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public
 </code></pre></div><h3 id="第5步生成并发布内容">第5步：生成并发布内容</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo
 cd public
 git status
 git add .
@@ -194,7 +190,7 @@ git push -u orgin master
 </code></pre></div><p><strong>注意：本地网站是关联的blog仓库，本地网站下的public文件夹是以子模块的形式关联的github.io仓库，他们是相对独立的。</strong></p>
 <h3 id="自动化部署脚本">自动化部署脚本</h3>
 <p>将以上步骤整理成自动执行脚本deploy.sh。脚本commit信息会使用当前时间。将deploy.sh脚本放到Hugo项目路径下，写完blog后直接双击运行即可自动部署发布。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>
 echo -e <span style="color:#e6db74">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
 

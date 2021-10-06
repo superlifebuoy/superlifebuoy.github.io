@@ -51,21 +51,7 @@ git submodule add -b master git@github.com:&amp;lt;USERNAME&amp;gt;/&amp;lt;USER
       <pubDate>Wed, 17 Feb 2021 20:29:21 +0800</pubDate>
       
       <guid>https://superlifebuoy.github.io/posts/hugo-quick-start/</guid>
-      <description>Hugo原文链接
-Quick Start 通过漂亮的Ananke主题来创建一个Hugo站点。
- 这篇Quick Start是在macOS上操作的。在其他操作系统上安装Hugo的方法，请参见此链接。
-  运行此Quick Start中的代码时，最好电脑上已安装了Git。
-  通过其他方法学习Hugo，例如书籍或视频教程等，请参见此链接。
- 第1步：安装Hugo  Homebrew和MacPorts是macOS的两个软件包管理器，可以通过brew.sh和macports.org来安装。如果你使用的是Windows等其他操作系统，请参见此链接。
- brew install hugo # or port install hugo 要验证Hugo是否已经正确安装，请输入如下命令：
-hugo version 第2步：创建一个新站点 hugo new site quickstart 上面的命令会创建一个名叫quickstart的文件夹，并将新站点生成在这个文件夹内。
-第3步：添加一个主题 链接themes.gohugo.io是Hugo可用主题的列表地址。这篇Quick Start使用的主题是Ananke主题。
-首先，从GitHub下载主题并添加到themes文件夹内：
-cd quickstart git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 如果你没有GitHub账号的话：
- 如果你没有安装git，可以直接从https://github.com/budparr/gohugo-theme-ananke/archive/master.zip下载最新版本的主题压缩包。 然后解压缩.zip文件，生成一个“gohugo-theme-ananke-master”文件夹。 重命名该文件夹为“ananke”，并拷贝到&amp;quot;themes&amp;quot;文件夹内。  最后，将这个主题的名字写入站点配置文件中：
-echo &amp;#39;theme = &amp;#34;ananke&amp;#34;&amp;#39; &amp;gt;&amp;gt; config.toml 第4步：添加一些内容 你可以手动创建一些内容文件(例如content/&amp;lt;类别&amp;gt;/&amp;lt;文件名&amp;gt;.&amp;lt;后缀&amp;gt;)并在文件开头增加一些元信息。但更好的方法是你通过new命令来自动完成上面的内容(例如增加标题与生成日期等)：
-hugo new posts/my-first-post.md 如果需要的话，你可以编辑这个新生成的内容文件。它的开头内容类似下面：
---- title: &amp;quot;My First Post&amp;quot; date: 2019-03-26T08:47:11+01:00 draft: true ---  Draft指明当前文件是否草稿状态。如果是true，则该文件是草稿状态，不会被部署到站点进行展示。一旦你完成了该文件的最终编辑，则可以设置draft: false。更多信息参见此链接。</description>
+      <description>This is summary.</description>
     </item>
     
   </channel>
