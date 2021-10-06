@@ -51,7 +51,7 @@ git submodule add -b master git@github.com:&amp;lt;USERNAME&amp;gt;/&amp;lt;USER
       <pubDate>Wed, 17 Feb 2021 20:29:21 +0800</pubDate>
       
       <guid>https://superlifebuoy.github.io/posts/hugo-quick-start/</guid>
-      <description>This is summary.</description>
+      <description>Hugo官方Quick Start的翻译。</description>
     </item>
     
   </channel>
