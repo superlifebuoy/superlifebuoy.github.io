@@ -6,14 +6,7 @@
     
     <title>Deploy Hugo by Github | My New Hugo Site</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="通过Github部署Hugo 详细步骤请参考这篇blog
-以下内容为纯执行步骤：
-第1步：在Github创建一个仓库 仓库名任意，只要不是.github.io即可(例如就叫做blog)。这个仓库可以是私有的。
-第2步：关联本地Hugo项目 cd &lt;YOUR HUGO PROJECT&gt; git remote add origin git@github.com:USERNAME/blog.git 第3步：在Github创建一个.github.io仓库 就是你的Github用户名。这个仓库用来存放最终发布的blog内容。
-第4步：关联Hugo的public文件夹 如果Hugo项目路径下已存在public文件夹，请直接删除。不用担心。
-git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public 第5步：生成并发布内容 hugo cd public git status git add . git commit -m &#34;first commit&#34; git push -u orgin master 注意：本地网站是关联的blog仓库，本地网站下的public文件夹是以子模块的形式关联的github.io仓库，他们是相对独立的。
-自动化部署脚本 将以上步骤整理成自动执行脚本deploy.sh。脚本commit信息会使用当前时间。将deploy.sh脚本放到Hugo项目路径下，写完blog后直接双击运行即可自动部署发布。
-#!/bin/bash  echo -e &#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34; # Build the project. hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;` # Go To Public folder cd public # Add changes to git.">
+    <meta name="description" content="讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。">
     <meta name="generator" content="Hugo 0.87.0" />
     
     
@@ -38,40 +31,19 @@ git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.git
     
     
     <meta property="og:title" content="Deploy Hugo by Github" />
-<meta property="og:description" content="通过Github部署Hugo 详细步骤请参考这篇blog
-以下内容为纯执行步骤：
-第1步：在Github创建一个仓库 仓库名任意，只要不是.github.io即可(例如就叫做blog)。这个仓库可以是私有的。
-第2步：关联本地Hugo项目 cd &lt;YOUR HUGO PROJECT&gt; git remote add origin git@github.com:USERNAME/blog.git 第3步：在Github创建一个.github.io仓库 就是你的Github用户名。这个仓库用来存放最终发布的blog内容。
-第4步：关联Hugo的public文件夹 如果Hugo项目路径下已存在public文件夹，请直接删除。不用担心。
-git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public 第5步：生成并发布内容 hugo cd public git status git add . git commit -m &#34;first commit&#34; git push -u orgin master 注意：本地网站是关联的blog仓库，本地网站下的public文件夹是以子模块的形式关联的github.io仓库，他们是相对独立的。
-自动化部署脚本 将以上步骤整理成自动执行脚本deploy.sh。脚本commit信息会使用当前时间。将deploy.sh脚本放到Hugo项目路径下，写完blog后直接双击运行即可自动部署发布。
-#!/bin/bash  echo -e &#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34; # Build the project. hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;` # Go To Public folder cd public # Add changes to git." />
+<meta property="og:description" content="讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://superlifebuoy.github.io/posts/deploy-hugo-by-github/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-05-05T23:22:03+08:00" />
 <meta property="article:modified_time" content="2021-05-05T23:22:03+08:00" />
 
 <meta itemprop="name" content="Deploy Hugo by Github">
-<meta itemprop="description" content="通过Github部署Hugo 详细步骤请参考这篇blog
-以下内容为纯执行步骤：
-第1步：在Github创建一个仓库 仓库名任意，只要不是.github.io即可(例如就叫做blog)。这个仓库可以是私有的。
-第2步：关联本地Hugo项目 cd &lt;YOUR HUGO PROJECT&gt; git remote add origin git@github.com:USERNAME/blog.git 第3步：在Github创建一个.github.io仓库 就是你的Github用户名。这个仓库用来存放最终发布的blog内容。
-第4步：关联Hugo的public文件夹 如果Hugo项目路径下已存在public文件夹，请直接删除。不用担心。
-git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public 第5步：生成并发布内容 hugo cd public git status git add . git commit -m &#34;first commit&#34; git push -u orgin master 注意：本地网站是关联的blog仓库，本地网站下的public文件夹是以子模块的形式关联的github.io仓库，他们是相对独立的。
-自动化部署脚本 将以上步骤整理成自动执行脚本deploy.sh。脚本commit信息会使用当前时间。将deploy.sh脚本放到Hugo项目路径下，写完blog后直接双击运行即可自动部署发布。
-#!/bin/bash  echo -e &#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34; # Build the project. hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;` # Go To Public folder cd public # Add changes to git."><meta itemprop="datePublished" content="2021-05-05T23:22:03+08:00" />
+<meta itemprop="description" content="讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。"><meta itemprop="datePublished" content="2021-05-05T23:22:03+08:00" />
 <meta itemprop="dateModified" content="2021-05-05T23:22:03+08:00" />
 <meta itemprop="wordCount" content="128">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Deploy Hugo by Github"/>
-<meta name="twitter:description" content="通过Github部署Hugo 详细步骤请参考这篇blog
-以下内容为纯执行步骤：
-第1步：在Github创建一个仓库 仓库名任意，只要不是.github.io即可(例如就叫做blog)。这个仓库可以是私有的。
-第2步：关联本地Hugo项目 cd &lt;YOUR HUGO PROJECT&gt; git remote add origin git@github.com:USERNAME/blog.git 第3步：在Github创建一个.github.io仓库 就是你的Github用户名。这个仓库用来存放最终发布的blog内容。
-第4步：关联Hugo的public文件夹 如果Hugo项目路径下已存在public文件夹，请直接删除。不用担心。
-git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public 第5步：生成并发布内容 hugo cd public git status git add . git commit -m &#34;first commit&#34; git push -u orgin master 注意：本地网站是关联的blog仓库，本地网站下的public文件夹是以子模块的形式关联的github.io仓库，他们是相对独立的。
-自动化部署脚本 将以上步骤整理成自动执行脚本deploy.sh。脚本commit信息会使用当前时间。将deploy.sh脚本放到Hugo项目路径下，写完blog后直接双击运行即可自动部署发布。
-#!/bin/bash  echo -e &#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34; # Build the project. hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;` # Go To Public folder cd public # Add changes to git."/>
+<meta name="twitter:description" content="讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。"/>
 
 	
   </head>
