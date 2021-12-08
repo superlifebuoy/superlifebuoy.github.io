@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>How to Use cloc | My New Hugo Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="关于cloc的简介——一个开源、易用的代码行统计工具。">
+    <meta name="generator" content="Hugo 0.87.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+
+  
+  
+    <link rel="stylesheet" href="/ananke/dist/main.css_5c99d70a7725bacd4c701e995b969fea.css" >
+  
+
+
+
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="How to Use cloc" />
+<meta property="og:description" content="关于cloc的简介——一个开源、易用的代码行统计工具。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://superlifebuoy.github.io/posts/how_to_use_cloc/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-12-08T11:44:28+08:00" />
+<meta property="article:modified_time" content="2021-12-08T11:44:28+08:00" />
+
+<meta itemprop="name" content="How to Use cloc">
+<meta itemprop="description" content="关于cloc的简介——一个开源、易用的代码行统计工具。"><meta itemprop="datePublished" content="2021-12-08T11:44:28+08:00" />
+<meta itemprop="dateModified" content="2021-12-08T11:44:28+08:00" />
+<meta itemprop="wordCount" content="648">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to Use cloc"/>
+<meta name="twitter:description" content="关于cloc的简介——一个开源、易用的代码行统计工具。"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        My New Hugo Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://superlifebuoy.github.io/posts/how_to_use_cloc/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://superlifebuoy.github.io/posts/how_to_use_cloc/&amp;text=How%20to%20Use%20cloc" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://superlifebuoy.github.io/posts/how_to_use_cloc/&amp;title=How%20to%20Use%20cloc" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">How to Use cloc</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2021-12-08T11:44:28+08:00">December 8, 2021</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id="cloc是什么">cloc是什么</h2>
+<p>cloc是Count Lines of Code的缩写，根据名字可以看出是一个统计代码量的开源工具。<a href="https://github.com/AlDanial/cloc">地址点这里</a></p>
+<p>在我们第一次接触一个项目的时候，Cloc能帮助我们回答两个问题：</p>
+<ul>
+<li>这个项目有多大？</li>
+<li>这个项目用什么写的？</li>
+</ul>
+<h3 id="overview">Overview</h3>
+<p>cloc完全使用Perl语言实现，并且没有任何外部依赖(一些需要使用的外部模块，已经被cloc包含进去了)。因此，cloc的可移植性非常好，只要有Perl v5.6及以上的执行环境即可运行。目前已知cloc可以运行在多种Linux发行版、FreeBSD、NetBSD、OpenBSD、macOS、AIX、HP-UX、Solaris、IRIX、z/OS以及Windows上。</p>
+<p>cloc已经可以识别很多种编程语言的源代码行、注释行、空白行。给定两个版本的代码库源码，cloc还能计算出源码行、注释行、空白行的差异。</p>
+<h3 id="quick-start">Quick Start</h3>
+<h4 id="install-cloc">Install cloc</h4>
+<p>这里仅以macOS下使用Homebrew安装为例。执行如下命令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">brew install cloc
+</code></pre></div><p>即可完成安装过程，非常方便。感谢Homebrew。</p>
+<p>终端执行cloc -v可以查看cloc用法的简要说明：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">➜  ~ cloc -v
+
+                       cloc -- Count Lines of Code
+
+Usage:
+    cloc <span style="color:#f92672">[</span>options<span style="color:#f92672">]</span> &lt;file<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>/dir<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>/git hash<span style="color:#f92672">(</span>es<span style="color:#f92672">)</span>&gt;
+        Count physical lines of source code and comments in the given files
+        <span style="color:#f92672">(</span>may be archives such as compressed tarballs or zip files<span style="color:#f92672">)</span> and/or
+        recursively below the given directories or git commit hashes.
+        Example:    cloc src/ include/ main.c
+
+    cloc <span style="color:#f92672">[</span>options<span style="color:#f92672">]</span> --diff &lt;set1&gt;  &lt;set2&gt;
+        Compute differences of physical lines of source code and comments
+        between any pairwise combination of directory names, archive
+        files or git commit hashes.
+        Example:    cloc --diff Python-3.5.tar.xz python-3.6/
+
+cloc --help  shows full documentation on the options.
+https://github.com/AlDanial/cloc has numerous examples and more information.
+➜  ~
+</code></pre></div><h4 id="run-cloc">Run cloc</h4>
+<p>我们就以cloc项目本身为例，使用cloc来统计代码信息。</p>
+<p>首先git clone源码工程：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">➜  ~ git clone https://github.com/cloudevents/spec.git
+</code></pre></div><p>然后执行cloc命令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">➜  ~ cloc spec/
+      <span style="color:#ae81ff">51</span> text files.
+      <span style="color:#ae81ff">51</span> unique files.
+       <span style="color:#ae81ff">4</span> files ignored.
+
+github.com/AlDanial/cloc v 1.90  T<span style="color:#f92672">=</span>0.05 s <span style="color:#f92672">(</span>965.0 files/s, 163426.5 lines/s<span style="color:#f92672">)</span>
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Markdown                        <span style="color:#ae81ff">39</span>           <span style="color:#ae81ff">1566</span>              <span style="color:#ae81ff">0</span>           <span style="color:#ae81ff">5483</span>
+Bourne Shell                     <span style="color:#ae81ff">3</span>            <span style="color:#ae81ff">100</span>            <span style="color:#ae81ff">158</span>            <span style="color:#ae81ff">449</span>
+JSON                             <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>            <span style="color:#ae81ff">191</span>
+YAML                             <span style="color:#ae81ff">2</span>             <span style="color:#ae81ff">14</span>             <span style="color:#ae81ff">19</span>             <span style="color:#ae81ff">67</span>
+Protocol Buffers                 <span style="color:#ae81ff">1</span>             <span style="color:#ae81ff">12</span>             <span style="color:#ae81ff">15</span>             <span style="color:#ae81ff">32</span>
+make                             <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>             <span style="color:#ae81ff">21</span>
+-------------------------------------------------------------------------------
+SUM:                            <span style="color:#ae81ff">48</span>           <span style="color:#ae81ff">1694</span>            <span style="color:#ae81ff">192</span>           <span style="color:#ae81ff">6243</span>
+-------------------------------------------------------------------------------
+➜  ~
+</code></pre></div><p>可以看到cloc先输出了各类文件数量，然后分析了各类文件的空白行、注释行、代码行数量，最后还给出了汇总值，非常清晰明了。</p>
+<h3 id="why-use-cloc">Why Use cloc</h3>
+<p>cloc拥有众多优秀的特性，使得它易用、纯粹、可扩展以及可移植：</p>
+<ol>
+<li>只有一个自包含的文件，几乎没有安装过程：下载并执行即可(需要有Perl执行环境)。</li>
+<li>可以从源文件中读取语言注释定义，所以理论上cloc可以和尚不存在的计算机语言一起工作。</li>
+<li>可以按语言或项目分多次运行，并将结果合并输出。</li>
+<li>可以输出各种格式的结果：纯文本、SQL、JSON、XML、YAML、逗号分隔的值列表等。</li>
+<li>可以从压缩文件中统计代码信息(目前支持tar、zip、ear类型)。</li>
+<li>拥用众多的问题排查参数。</li>
+<li>支持文件或目录名中空格与异常字符的处理。</li>
+<li>除了标准Perl之外，没有任何外部依赖。</li>
+<li>可以运行在Linux、FreeBSD、NetBSD、OpenBSD、macOS、AIX、HP-UX、Solaris、IRIX和z/OS等具有Perl 5.6或以上版本的系统上。源码版本可以在Windows上使用ActiveState Perl、Strawberry Perl、Cygwin或MobaXTerm+Perl插件运行。另外，在Windows上还可以运行没有依赖性的Windows二进制文件。</li>
+</ol>
+<h3 id="how-it-works">How it Works</h3>
+<p>简单来说，cloc的执行方式类似SLOCCount：首先创建一个要扫描的文件列表，然后尝试确认文件中是否包含已知的计算机语言源码，最后对完成确认的文件执行对应语言的例程来计算相关行数量。</p>
+<p>如果想要了解细节版本，请继续向下看：</p>
+<ol>
+<li>如果输入文件是一个压缩文件(例如.tar.gz或.zip)，cloc会创建一个临时目录然后使用系统工具(例如tar、bzip2、unzip等)将压缩文件的内容解压到这个目录中，最后将这个临时目录作为一个扫描的输入源。(该过程在类Unix系统中比在Windows系统中更稳定)</li>
+<li>使用File::Find递归查找输入目录，并组成待扫描的文件列表。这个过程会忽略二进制文件和空文件。</li>
+<li>确保待扫描文件的内容都是不同的(首先通过文件大小比较，然后对相似大小的文件用Digest::MD5做MD5比较)。相同内容的文件按字符顺序排序，只保留第一个文件做扫描，其余相似文件会排除在待扫描文件列表与最终输出结果之外。(使用&ndash;skip-uniqueness参数可以关闭文件内容检测，并强制将所有文件都包括在输出结果中。)</li>
+<li>cloc根据待扫描文件的扩展名做分类，并匹配到相关的计算机语言(cloc支持的计算机语言与扩展，可以通过&ndash;show-lang和&ndash;show-ext参数查看)。为匹配到的文件会被排除在待扫描文件列表之外。对于没有扩展名的文件，cloc会读取文件第一行判断是否shell脚本(以#!开头)。如果是shell脚本，该文件就被归入脚本语言。如果待扫描文件即没有扩展名也不是脚本语言，也会被排除在待扫描文件列表之外。</li>
+<li>到此，待扫描文件列表中都是可识别源码的文件了。对每个文件，cloc会执行如下操作：
+<ul>
+<li>把整个文件内容读到内存中。</li>
+<li>统计所有行数(= L_original)。</li>
+<li>移除所有空行，再统计一遍(= L_non_blank)。</li>
+<li>查找对应计算机语言的注释过滤器(例如C++有两个注释过滤器：一个处理//开头的注释；另一个处理/*和*/包含的注释)。然后依次使用过滤器来删除注释行，得到剩余的源代码行数(= L_code)。</li>
+<li>最后统计该文件的相关信息：空白行数 = L_original - L_non_blank；注释行数 = L_non_blank - L_code；源代码行数 = L_code。</li>
+</ul>
+</li>
+</ol>
+<h3 id="recognized-languages">Recognized Languages</h3>
+<p>使用&ndash;show-lang参数，可以查看cloc目前已支持的计算机语言。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">prompt&gt; cloc --show-lang
+
+ABAP                       <span style="color:#f92672">(</span>abap<span style="color:#f92672">)</span>
+ActionScript               <span style="color:#f92672">(</span>as<span style="color:#f92672">)</span>
+Ada                        <span style="color:#f92672">(</span>ada, adb, ads, pad<span style="color:#f92672">)</span>
+ADSO/IDSM                  <span style="color:#f92672">(</span>adso<span style="color:#f92672">)</span>
+Agda                       <span style="color:#f92672">(</span>agda, lagda<span style="color:#f92672">)</span>
+AMPLE                      <span style="color:#f92672">(</span>ample, dofile, startup<span style="color:#f92672">)</span>
+Ant                        <span style="color:#f92672">(</span>build.xml, build.xml<span style="color:#f92672">)</span>
+ANTLR Grammar              <span style="color:#f92672">(</span>g, g4<span style="color:#f92672">)</span>
+Apex Class                 <span style="color:#f92672">(</span>cls<span style="color:#f92672">)</span>
+Apex Trigger               <span style="color:#f92672">(</span>trigger<span style="color:#f92672">)</span>
+APL                        <span style="color:#f92672">(</span>apl, apla, aplc, aplf, apli, apln, aplo, dyalog, dyapp, mipage<span style="color:#f92672">)</span>
+Arduino Sketch             <span style="color:#f92672">(</span>ino, pde<span style="color:#f92672">)</span>
+AsciiDoc                   <span style="color:#f92672">(</span>adoc, asciidoc<span style="color:#f92672">)</span>
+ASP                        <span style="color:#f92672">(</span>asa, ashx, asp, axd<span style="color:#f92672">)</span>
+ASP.NET                    <span style="color:#f92672">(</span>asax, ascx, asmx, aspx, master, sitemap, webinfo<span style="color:#f92672">)</span>
+AspectJ                    <span style="color:#f92672">(</span>aj<span style="color:#f92672">)</span>
+Assembly                   <span style="color:#f92672">(</span>a51, asm, nasm, S, s<span style="color:#f92672">)</span>
+AutoHotkey                 <span style="color:#f92672">(</span>ahk, ahkl<span style="color:#f92672">)</span>
+awk                        <span style="color:#f92672">(</span>auk, awk, gawk, mawk, nawk<span style="color:#f92672">)</span>
+Bazel                      <span style="color:#f92672">(</span>BUILD<span style="color:#f92672">)</span>
+BizTalk Orchestration      <span style="color:#f92672">(</span>odx<span style="color:#f92672">)</span>
+BizTalk Pipeline           <span style="color:#f92672">(</span>btp<span style="color:#f92672">)</span>
+Blade                      <span style="color:#f92672">(</span>blade, blade.php<span style="color:#f92672">)</span>
+Bourne Again Shell         <span style="color:#f92672">(</span>bash<span style="color:#f92672">)</span>
+Bourne Shell               <span style="color:#f92672">(</span>sh<span style="color:#f92672">)</span>
+BrightScript               <span style="color:#f92672">(</span>brs<span style="color:#f92672">)</span>
+builder                    <span style="color:#f92672">(</span>xml.builder<span style="color:#f92672">)</span>
+C                          <span style="color:#f92672">(</span>c, cats, ec, idc, pgc<span style="color:#f92672">)</span>
+C Shell                    <span style="color:#f92672">(</span>csh, tcsh<span style="color:#f92672">)</span>
+C#                         <span style="color:#f92672">(</span>cs<span style="color:#f92672">)</span>
+C# Designer                <span style="color:#f92672">(</span>designer.cs<span style="color:#f92672">)</span>
+C++                        <span style="color:#f92672">(</span>C, c++, cc, CPP, cpp, cxx, h++, inl, ipp, pcc, tcc, tpp<span style="color:#f92672">)</span>
+...
+</code></pre></div><h3 id="an-example">An Example</h3>
+<p>cloc不仅功能强大，而且非常易用。和shell脚本结合后，可以大大提升我们的效率。下面举一个网络上找到的例子——如何快速分析一个GitHub上的项目：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#!/usr/bin/env bash
+</span><span style="color:#75715e"></span>git clone --depth <span style="color:#ae81ff">1</span> <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> temp-linecount-repo <span style="color:#f92672">&amp;&amp;</span>
+  printf <span style="color:#e6db74">&#34;(&#39;temp-linecount-repo&#39; will be deleted automatically)\n\n\n&#34;</span> <span style="color:#f92672">&amp;&amp;</span>
+  cloc temp-linecount-repo <span style="color:#f92672">&amp;&amp;</span>
+  rm -rf temp-linecount-repo
+</code></pre></div><p>将以上内容保存，并命名为github_cloc.sh。执行该脚本并分析cloc项目：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">➜  Utils ./github_cloc.sh https://github.com/AlDanial/cloc.git
+Cloning into <span style="color:#e6db74">&#39;temp-linecount-repo&#39;</span>...
+remote: Enumerating objects: 821, <span style="color:#66d9ef">done</span>.
+remote: Counting objects: 100% <span style="color:#f92672">(</span>821/821<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+remote: Compressing objects: 100% <span style="color:#f92672">(</span>555/555<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+remote: Total <span style="color:#ae81ff">821</span> <span style="color:#f92672">(</span>delta 165<span style="color:#f92672">)</span>, reused <span style="color:#ae81ff">729</span> <span style="color:#f92672">(</span>delta 140<span style="color:#f92672">)</span>, pack-reused <span style="color:#ae81ff">0</span>
+Receiving objects: 100% <span style="color:#f92672">(</span>821/821<span style="color:#f92672">)</span>, 556.48 KiB | 548.00 KiB/s, <span style="color:#66d9ef">done</span>.
+Resolving deltas: 100% <span style="color:#f92672">(</span>165/165<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;temp-linecount-repo&#39;</span> will be deleted automatically<span style="color:#f92672">)</span>
+
+
+     <span style="color:#ae81ff">686</span> text files.
+     <span style="color:#ae81ff">627</span> unique files.
+      <span style="color:#ae81ff">96</span> files ignored.
+
+github.com/AlDanial/cloc v 1.90  T<span style="color:#f92672">=</span>0.65 s <span style="color:#f92672">(</span>915.6 files/s, 97633.0 lines/s<span style="color:#f92672">)</span>
+----------------------------------------------------------------------------------------
+Language                              files          blank        comment           code
+----------------------------------------------------------------------------------------
+Perl                                      <span style="color:#ae81ff">8</span>           <span style="color:#ae81ff">2300</span>           <span style="color:#ae81ff">5037</span>          <span style="color:#ae81ff">25719</span>
+YAML                                    <span style="color:#ae81ff">315</span>             <span style="color:#ae81ff">12</span>            <span style="color:#ae81ff">317</span>           <span style="color:#ae81ff">7564</span>
+Markdown                                  <span style="color:#ae81ff">3</span>            <span style="color:#ae81ff">297</span>             <span style="color:#ae81ff">32</span>           <span style="color:#ae81ff">2806</span>
+ANTLR Grammar                             <span style="color:#ae81ff">2</span>            <span style="color:#ae81ff">200</span>             <span style="color:#ae81ff">59</span>           <span style="color:#ae81ff">1012</span>
+R                                         <span style="color:#ae81ff">3</span>             <span style="color:#ae81ff">95</span>            <span style="color:#ae81ff">312</span>            <span style="color:#ae81ff">698</span>
+C/C++ Header                              <span style="color:#ae81ff">1</span>            <span style="color:#ae81ff">191</span>            <span style="color:#ae81ff">780</span>            <span style="color:#ae81ff">617</span>
+C++                                      <span style="color:#ae81ff">11</span>            <span style="color:#ae81ff">132</span>            <span style="color:#ae81ff">183</span>            <span style="color:#ae81ff">603</span>
+Forth                                     <span style="color:#ae81ff">2</span>             <span style="color:#ae81ff">17</span>             <span style="color:#ae81ff">84</span>            <span style="color:#ae81ff">529</span>
+TypeScript                                <span style="color:#ae81ff">4</span>             <span style="color:#ae81ff">53</span>             <span style="color:#ae81ff">39</span>            <span style="color:#ae81ff">416</span>
+Logtalk                                   <span style="color:#ae81ff">1</span>             <span style="color:#ae81ff">59</span>             <span style="color:#ae81ff">57</span>            <span style="color:#ae81ff">368</span>
+C                                         <span style="color:#ae81ff">7</span>            <span style="color:#ae81ff">110</span>             <span style="color:#ae81ff">72</span>            <span style="color:#ae81ff">354</span>
+Windows Message File                      <span style="color:#ae81ff">2</span>             <span style="color:#ae81ff">89</span>              <span style="color:#ae81ff">9</span>            <span style="color:#ae81ff">348</span>
+TeX                                       <span style="color:#ae81ff">2</span>             <span style="color:#ae81ff">36</span>             <span style="color:#ae81ff">64</span>            <span style="color:#ae81ff">265</span>
+Racket                                    <span style="color:#ae81ff">1</span>             <span style="color:#ae81ff">32</span>            <span style="color:#ae81ff">159</span>            <span style="color:#ae81ff">247</span>
+make                                      <span style="color:#ae81ff">4</span>             <span style="color:#ae81ff">85</span>            <span style="color:#ae81ff">159</span>            <span style="color:#ae81ff">247</span>
+SVG                                       <span style="color:#ae81ff">1</span>             <span style="color:#ae81ff">19</span>              <span style="color:#ae81ff">4</span>            <span style="color:#ae81ff">242</span>
+...
+...
+...
+Literate Idris                            <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">3</span>
+NAnt script                               <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>              <span style="color:#ae81ff">3</span>
+ProGuard                                  <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">7</span>             <span style="color:#ae81ff">14</span>              <span style="color:#ae81ff">3</span>
+Tcl/Tk                                    <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">3</span>
+dhall                                     <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">6</span>             <span style="color:#ae81ff">17</span>              <span style="color:#ae81ff">3</span>
+ColdFusion                                <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">2</span>
+DOS Batch                                 <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">2</span>
+Focus                                     <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">1</span>
+MUMPS                                     <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">1</span>
+XQuery                                    <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>
+xBase                                     <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>              <span style="color:#ae81ff">9</span>              <span style="color:#ae81ff">1</span>
+----------------------------------------------------------------------------------------
+SUM:                                    <span style="color:#ae81ff">593</span>           <span style="color:#ae81ff">5089</span>           <span style="color:#ae81ff">9803</span>          <span style="color:#ae81ff">48342</span>
+----------------------------------------------------------------------------------------
+➜  Utils
+</code></pre></div><p>非常方便。</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://superlifebuoy.github.io/" >
+    &copy;  My New Hugo Site 2021 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
