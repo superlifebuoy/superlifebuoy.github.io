@@ -6,11 +6,65 @@
     <description>Recent content in Tags on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Feb 2021 20:29:21 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Dec 2021 11:44:28 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>hugo</title>
+      <title>cloc</title>
+      <link>https://superlifebuoy.github.io/tags/cloc/</link>
+      <pubDate>Wed, 08 Dec 2021 11:44:28 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/tags/cloc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tool</title>
+      <link>https://superlifebuoy.github.io/tags/tool/</link>
+      <pubDate>Wed, 08 Dec 2021 11:44:28 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/tags/tool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Product</title>
+      <link>https://superlifebuoy.github.io/tags/product/</link>
+      <pubDate>Thu, 07 Oct 2021 10:27:08 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/tags/product/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Roadmap</title>
+      <link>https://superlifebuoy.github.io/tags/roadmap/</link>
+      <pubDate>Thu, 07 Oct 2021 10:27:08 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/tags/roadmap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>API</title>
+      <link>https://superlifebuoy.github.io/tags/api/</link>
+      <pubDate>Mon, 12 Jul 2021 20:32:31 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://superlifebuoy.github.io/tags/blog/</link>
+      <pubDate>Wed, 05 May 2021 23:22:03 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
       <link>https://superlifebuoy.github.io/tags/hugo/</link>
-      <pubDate>Wed, 17 Feb 2021 20:29:21 +0800</pubDate>
+      <pubDate>Wed, 05 May 2021 23:22:03 +0800</pubDate>
       
       <guid>https://superlifebuoy.github.io/tags/hugo/</guid>
       <description></description>
