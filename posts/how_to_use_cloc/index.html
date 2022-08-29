@@ -7,7 +7,7 @@
     <title>How to Use cloc | My New Hugo Site</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="关于cloc的简介——一个开源、易用的代码行统计工具。">
-    <meta name="generator" content="Hugo 0.87.0" />
+    <meta name="generator" content="Hugo 0.96.0" />
     
     
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -152,54 +152,54 @@
 <h3 id="quick-start">Quick Start</h3>
 <h4 id="install-cloc">Install cloc</h4>
 <p>这里仅以macOS下使用Homebrew安装为例。执行如下命令：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">brew install cloc
-</code></pre></div><p>即可完成安装过程，非常方便。感谢Homebrew。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>brew install cloc
+</span></span></code></pre></div><p>即可完成安装过程，非常方便。感谢Homebrew。</p>
 <p>终端执行cloc -v可以查看cloc用法的简要说明：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">➜  ~ cloc -v
-
-                       cloc -- Count Lines of Code
-
-Usage:
-    cloc <span style="color:#f92672">[</span>options<span style="color:#f92672">]</span> &lt;file<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>/dir<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>/git hash<span style="color:#f92672">(</span>es<span style="color:#f92672">)</span>&gt;
-        Count physical lines of source code and comments in the given files
-        <span style="color:#f92672">(</span>may be archives such as compressed tarballs or zip files<span style="color:#f92672">)</span> and/or
-        recursively below the given directories or git commit hashes.
-        Example:    cloc src/ include/ main.c
-
-    cloc <span style="color:#f92672">[</span>options<span style="color:#f92672">]</span> --diff &lt;set1&gt;  &lt;set2&gt;
-        Compute differences of physical lines of source code and comments
-        between any pairwise combination of directory names, archive
-        files or git commit hashes.
-        Example:    cloc --diff Python-3.5.tar.xz python-3.6/
-
-cloc --help  shows full documentation on the options.
-https://github.com/AlDanial/cloc has numerous examples and more information.
-➜  ~
-</code></pre></div><h4 id="run-cloc">Run cloc</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>➜  ~ cloc -v
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                       cloc -- Count Lines of Code
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Usage:
+</span></span><span style="display:flex;"><span>    cloc <span style="color:#f92672">[</span>options<span style="color:#f92672">]</span> &lt;file<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>/dir<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>/git hash<span style="color:#f92672">(</span>es<span style="color:#f92672">)</span>&gt;
+</span></span><span style="display:flex;"><span>        Count physical lines of source code and comments in the given files
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">(</span>may be archives such as compressed tarballs or zip files<span style="color:#f92672">)</span> and/or
+</span></span><span style="display:flex;"><span>        recursively below the given directories or git commit hashes.
+</span></span><span style="display:flex;"><span>        Example:    cloc src/ include/ main.c
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    cloc <span style="color:#f92672">[</span>options<span style="color:#f92672">]</span> --diff &lt;set1&gt;  &lt;set2&gt;
+</span></span><span style="display:flex;"><span>        Compute differences of physical lines of source code and comments
+</span></span><span style="display:flex;"><span>        between any pairwise combination of directory names, archive
+</span></span><span style="display:flex;"><span>        files or git commit hashes.
+</span></span><span style="display:flex;"><span>        Example:    cloc --diff Python-3.5.tar.xz python-3.6/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cloc --help  shows full documentation on the options.
+</span></span><span style="display:flex;"><span>https://github.com/AlDanial/cloc has numerous examples and more information.
+</span></span><span style="display:flex;"><span>➜  ~
+</span></span></code></pre></div><h4 id="run-cloc">Run cloc</h4>
 <p>我们就以cloc项目本身为例，使用cloc来统计代码信息。</p>
 <p>首先git clone源码工程：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">➜  ~ git clone https://github.com/cloudevents/spec.git
-</code></pre></div><p>然后执行cloc命令：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">➜  ~ cloc spec/
-      <span style="color:#ae81ff">51</span> text files.
-      <span style="color:#ae81ff">51</span> unique files.
-       <span style="color:#ae81ff">4</span> files ignored.
-
-github.com/AlDanial/cloc v 1.90  T<span style="color:#f92672">=</span>0.05 s <span style="color:#f92672">(</span>965.0 files/s, 163426.5 lines/s<span style="color:#f92672">)</span>
--------------------------------------------------------------------------------
-Language                     files          blank        comment           code
--------------------------------------------------------------------------------
-Markdown                        <span style="color:#ae81ff">39</span>           <span style="color:#ae81ff">1566</span>              <span style="color:#ae81ff">0</span>           <span style="color:#ae81ff">5483</span>
-Bourne Shell                     <span style="color:#ae81ff">3</span>            <span style="color:#ae81ff">100</span>            <span style="color:#ae81ff">158</span>            <span style="color:#ae81ff">449</span>
-JSON                             <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>            <span style="color:#ae81ff">191</span>
-YAML                             <span style="color:#ae81ff">2</span>             <span style="color:#ae81ff">14</span>             <span style="color:#ae81ff">19</span>             <span style="color:#ae81ff">67</span>
-Protocol Buffers                 <span style="color:#ae81ff">1</span>             <span style="color:#ae81ff">12</span>             <span style="color:#ae81ff">15</span>             <span style="color:#ae81ff">32</span>
-make                             <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>             <span style="color:#ae81ff">21</span>
--------------------------------------------------------------------------------
-SUM:                            <span style="color:#ae81ff">48</span>           <span style="color:#ae81ff">1694</span>            <span style="color:#ae81ff">192</span>           <span style="color:#ae81ff">6243</span>
--------------------------------------------------------------------------------
-➜  ~
-</code></pre></div><p>可以看到cloc先输出了各类文件数量，然后分析了各类文件的空白行、注释行、代码行数量，最后还给出了汇总值，非常清晰明了。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>➜  ~ git clone https://github.com/cloudevents/spec.git
+</span></span></code></pre></div><p>然后执行cloc命令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>➜  ~ cloc spec/
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">51</span> text files.
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">51</span> unique files.
+</span></span><span style="display:flex;"><span>       <span style="color:#ae81ff">4</span> files ignored.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>github.com/AlDanial/cloc v 1.90  T<span style="color:#f92672">=</span>0.05 s <span style="color:#f92672">(</span>965.0 files/s, 163426.5 lines/s<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>-------------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>Language                     files          blank        comment           code
+</span></span><span style="display:flex;"><span>-------------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>Markdown                        <span style="color:#ae81ff">39</span>           <span style="color:#ae81ff">1566</span>              <span style="color:#ae81ff">0</span>           <span style="color:#ae81ff">5483</span>
+</span></span><span style="display:flex;"><span>Bourne Shell                     <span style="color:#ae81ff">3</span>            <span style="color:#ae81ff">100</span>            <span style="color:#ae81ff">158</span>            <span style="color:#ae81ff">449</span>
+</span></span><span style="display:flex;"><span>JSON                             <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>            <span style="color:#ae81ff">191</span>
+</span></span><span style="display:flex;"><span>YAML                             <span style="color:#ae81ff">2</span>             <span style="color:#ae81ff">14</span>             <span style="color:#ae81ff">19</span>             <span style="color:#ae81ff">67</span>
+</span></span><span style="display:flex;"><span>Protocol Buffers                 <span style="color:#ae81ff">1</span>             <span style="color:#ae81ff">12</span>             <span style="color:#ae81ff">15</span>             <span style="color:#ae81ff">32</span>
+</span></span><span style="display:flex;"><span>make                             <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>             <span style="color:#ae81ff">21</span>
+</span></span><span style="display:flex;"><span>-------------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>SUM:                            <span style="color:#ae81ff">48</span>           <span style="color:#ae81ff">1694</span>            <span style="color:#ae81ff">192</span>           <span style="color:#ae81ff">6243</span>
+</span></span><span style="display:flex;"><span>-------------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>➜  ~
+</span></span></code></pre></div><p>可以看到cloc先输出了各类文件数量，然后分析了各类文件的空白行、注释行、代码行数量，最后还给出了汇总值，非常清晰明了。</p>
 <h3 id="why-use-cloc">Why Use cloc</h3>
 <p>cloc拥有众多优秀的特性，使得它易用、纯粹、可扩展以及可移植：</p>
 <ol>
@@ -233,103 +233,103 @@ SUM:                            <span style="color:#ae81ff">48</span>           
 </ol>
 <h3 id="recognized-languages">Recognized Languages</h3>
 <p>使用&ndash;show-lang参数，可以查看cloc目前已支持的计算机语言。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">prompt&gt; cloc --show-lang
-
-ABAP                       <span style="color:#f92672">(</span>abap<span style="color:#f92672">)</span>
-ActionScript               <span style="color:#f92672">(</span>as<span style="color:#f92672">)</span>
-Ada                        <span style="color:#f92672">(</span>ada, adb, ads, pad<span style="color:#f92672">)</span>
-ADSO/IDSM                  <span style="color:#f92672">(</span>adso<span style="color:#f92672">)</span>
-Agda                       <span style="color:#f92672">(</span>agda, lagda<span style="color:#f92672">)</span>
-AMPLE                      <span style="color:#f92672">(</span>ample, dofile, startup<span style="color:#f92672">)</span>
-Ant                        <span style="color:#f92672">(</span>build.xml, build.xml<span style="color:#f92672">)</span>
-ANTLR Grammar              <span style="color:#f92672">(</span>g, g4<span style="color:#f92672">)</span>
-Apex Class                 <span style="color:#f92672">(</span>cls<span style="color:#f92672">)</span>
-Apex Trigger               <span style="color:#f92672">(</span>trigger<span style="color:#f92672">)</span>
-APL                        <span style="color:#f92672">(</span>apl, apla, aplc, aplf, apli, apln, aplo, dyalog, dyapp, mipage<span style="color:#f92672">)</span>
-Arduino Sketch             <span style="color:#f92672">(</span>ino, pde<span style="color:#f92672">)</span>
-AsciiDoc                   <span style="color:#f92672">(</span>adoc, asciidoc<span style="color:#f92672">)</span>
-ASP                        <span style="color:#f92672">(</span>asa, ashx, asp, axd<span style="color:#f92672">)</span>
-ASP.NET                    <span style="color:#f92672">(</span>asax, ascx, asmx, aspx, master, sitemap, webinfo<span style="color:#f92672">)</span>
-AspectJ                    <span style="color:#f92672">(</span>aj<span style="color:#f92672">)</span>
-Assembly                   <span style="color:#f92672">(</span>a51, asm, nasm, S, s<span style="color:#f92672">)</span>
-AutoHotkey                 <span style="color:#f92672">(</span>ahk, ahkl<span style="color:#f92672">)</span>
-awk                        <span style="color:#f92672">(</span>auk, awk, gawk, mawk, nawk<span style="color:#f92672">)</span>
-Bazel                      <span style="color:#f92672">(</span>BUILD<span style="color:#f92672">)</span>
-BizTalk Orchestration      <span style="color:#f92672">(</span>odx<span style="color:#f92672">)</span>
-BizTalk Pipeline           <span style="color:#f92672">(</span>btp<span style="color:#f92672">)</span>
-Blade                      <span style="color:#f92672">(</span>blade, blade.php<span style="color:#f92672">)</span>
-Bourne Again Shell         <span style="color:#f92672">(</span>bash<span style="color:#f92672">)</span>
-Bourne Shell               <span style="color:#f92672">(</span>sh<span style="color:#f92672">)</span>
-BrightScript               <span style="color:#f92672">(</span>brs<span style="color:#f92672">)</span>
-builder                    <span style="color:#f92672">(</span>xml.builder<span style="color:#f92672">)</span>
-C                          <span style="color:#f92672">(</span>c, cats, ec, idc, pgc<span style="color:#f92672">)</span>
-C Shell                    <span style="color:#f92672">(</span>csh, tcsh<span style="color:#f92672">)</span>
-C#                         <span style="color:#f92672">(</span>cs<span style="color:#f92672">)</span>
-C# Designer                <span style="color:#f92672">(</span>designer.cs<span style="color:#f92672">)</span>
-C++                        <span style="color:#f92672">(</span>C, c++, cc, CPP, cpp, cxx, h++, inl, ipp, pcc, tcc, tpp<span style="color:#f92672">)</span>
-...
-</code></pre></div><h3 id="an-example">An Example</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>prompt&gt; cloc --show-lang
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ABAP                       <span style="color:#f92672">(</span>abap<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>ActionScript               <span style="color:#f92672">(</span>as<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Ada                        <span style="color:#f92672">(</span>ada, adb, ads, pad<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>ADSO/IDSM                  <span style="color:#f92672">(</span>adso<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Agda                       <span style="color:#f92672">(</span>agda, lagda<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>AMPLE                      <span style="color:#f92672">(</span>ample, dofile, startup<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Ant                        <span style="color:#f92672">(</span>build.xml, build.xml<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>ANTLR Grammar              <span style="color:#f92672">(</span>g, g4<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Apex Class                 <span style="color:#f92672">(</span>cls<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Apex Trigger               <span style="color:#f92672">(</span>trigger<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>APL                        <span style="color:#f92672">(</span>apl, apla, aplc, aplf, apli, apln, aplo, dyalog, dyapp, mipage<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Arduino Sketch             <span style="color:#f92672">(</span>ino, pde<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>AsciiDoc                   <span style="color:#f92672">(</span>adoc, asciidoc<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>ASP                        <span style="color:#f92672">(</span>asa, ashx, asp, axd<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>ASP.NET                    <span style="color:#f92672">(</span>asax, ascx, asmx, aspx, master, sitemap, webinfo<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>AspectJ                    <span style="color:#f92672">(</span>aj<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Assembly                   <span style="color:#f92672">(</span>a51, asm, nasm, S, s<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>AutoHotkey                 <span style="color:#f92672">(</span>ahk, ahkl<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>awk                        <span style="color:#f92672">(</span>auk, awk, gawk, mawk, nawk<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Bazel                      <span style="color:#f92672">(</span>BUILD<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>BizTalk Orchestration      <span style="color:#f92672">(</span>odx<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>BizTalk Pipeline           <span style="color:#f92672">(</span>btp<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Blade                      <span style="color:#f92672">(</span>blade, blade.php<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Bourne Again Shell         <span style="color:#f92672">(</span>bash<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Bourne Shell               <span style="color:#f92672">(</span>sh<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>BrightScript               <span style="color:#f92672">(</span>brs<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>builder                    <span style="color:#f92672">(</span>xml.builder<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>C                          <span style="color:#f92672">(</span>c, cats, ec, idc, pgc<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>C Shell                    <span style="color:#f92672">(</span>csh, tcsh<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>C#                         <span style="color:#f92672">(</span>cs<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>C# Designer                <span style="color:#f92672">(</span>designer.cs<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>C++                        <span style="color:#f92672">(</span>C, c++, cc, CPP, cpp, cxx, h++, inl, ipp, pcc, tcc, tpp<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><h3 id="an-example">An Example</h3>
 <p>cloc不仅功能强大，而且非常易用。和shell脚本结合后，可以大大提升我们的效率。下面举一个网络上找到的例子——如何快速分析一个GitHub上的项目：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#!/usr/bin/env bash
-</span><span style="color:#75715e"></span>git clone --depth <span style="color:#ae81ff">1</span> <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> temp-linecount-repo <span style="color:#f92672">&amp;&amp;</span>
-  printf <span style="color:#e6db74">&#34;(&#39;temp-linecount-repo&#39; will be deleted automatically)\n\n\n&#34;</span> <span style="color:#f92672">&amp;&amp;</span>
-  cloc temp-linecount-repo <span style="color:#f92672">&amp;&amp;</span>
-  rm -rf temp-linecount-repo
-</code></pre></div><p>将以上内容保存，并命名为github_cloc.sh。执行该脚本并分析cloc项目：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">➜  Utils ./github_cloc.sh https://github.com/AlDanial/cloc.git
-Cloning into <span style="color:#e6db74">&#39;temp-linecount-repo&#39;</span>...
-remote: Enumerating objects: 821, <span style="color:#66d9ef">done</span>.
-remote: Counting objects: 100% <span style="color:#f92672">(</span>821/821<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
-remote: Compressing objects: 100% <span style="color:#f92672">(</span>555/555<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
-remote: Total <span style="color:#ae81ff">821</span> <span style="color:#f92672">(</span>delta 165<span style="color:#f92672">)</span>, reused <span style="color:#ae81ff">729</span> <span style="color:#f92672">(</span>delta 140<span style="color:#f92672">)</span>, pack-reused <span style="color:#ae81ff">0</span>
-Receiving objects: 100% <span style="color:#f92672">(</span>821/821<span style="color:#f92672">)</span>, 556.48 KiB | 548.00 KiB/s, <span style="color:#66d9ef">done</span>.
-Resolving deltas: 100% <span style="color:#f92672">(</span>165/165<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
-<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;temp-linecount-repo&#39;</span> will be deleted automatically<span style="color:#f92672">)</span>
-
-
-     <span style="color:#ae81ff">686</span> text files.
-     <span style="color:#ae81ff">627</span> unique files.
-      <span style="color:#ae81ff">96</span> files ignored.
-
-github.com/AlDanial/cloc v 1.90  T<span style="color:#f92672">=</span>0.65 s <span style="color:#f92672">(</span>915.6 files/s, 97633.0 lines/s<span style="color:#f92672">)</span>
-----------------------------------------------------------------------------------------
-Language                              files          blank        comment           code
-----------------------------------------------------------------------------------------
-Perl                                      <span style="color:#ae81ff">8</span>           <span style="color:#ae81ff">2300</span>           <span style="color:#ae81ff">5037</span>          <span style="color:#ae81ff">25719</span>
-YAML                                    <span style="color:#ae81ff">315</span>             <span style="color:#ae81ff">12</span>            <span style="color:#ae81ff">317</span>           <span style="color:#ae81ff">7564</span>
-Markdown                                  <span style="color:#ae81ff">3</span>            <span style="color:#ae81ff">297</span>             <span style="color:#ae81ff">32</span>           <span style="color:#ae81ff">2806</span>
-ANTLR Grammar                             <span style="color:#ae81ff">2</span>            <span style="color:#ae81ff">200</span>             <span style="color:#ae81ff">59</span>           <span style="color:#ae81ff">1012</span>
-R                                         <span style="color:#ae81ff">3</span>             <span style="color:#ae81ff">95</span>            <span style="color:#ae81ff">312</span>            <span style="color:#ae81ff">698</span>
-C/C++ Header                              <span style="color:#ae81ff">1</span>            <span style="color:#ae81ff">191</span>            <span style="color:#ae81ff">780</span>            <span style="color:#ae81ff">617</span>
-C++                                      <span style="color:#ae81ff">11</span>            <span style="color:#ae81ff">132</span>            <span style="color:#ae81ff">183</span>            <span style="color:#ae81ff">603</span>
-Forth                                     <span style="color:#ae81ff">2</span>             <span style="color:#ae81ff">17</span>             <span style="color:#ae81ff">84</span>            <span style="color:#ae81ff">529</span>
-TypeScript                                <span style="color:#ae81ff">4</span>             <span style="color:#ae81ff">53</span>             <span style="color:#ae81ff">39</span>            <span style="color:#ae81ff">416</span>
-Logtalk                                   <span style="color:#ae81ff">1</span>             <span style="color:#ae81ff">59</span>             <span style="color:#ae81ff">57</span>            <span style="color:#ae81ff">368</span>
-C                                         <span style="color:#ae81ff">7</span>            <span style="color:#ae81ff">110</span>             <span style="color:#ae81ff">72</span>            <span style="color:#ae81ff">354</span>
-Windows Message File                      <span style="color:#ae81ff">2</span>             <span style="color:#ae81ff">89</span>              <span style="color:#ae81ff">9</span>            <span style="color:#ae81ff">348</span>
-TeX                                       <span style="color:#ae81ff">2</span>             <span style="color:#ae81ff">36</span>             <span style="color:#ae81ff">64</span>            <span style="color:#ae81ff">265</span>
-Racket                                    <span style="color:#ae81ff">1</span>             <span style="color:#ae81ff">32</span>            <span style="color:#ae81ff">159</span>            <span style="color:#ae81ff">247</span>
-make                                      <span style="color:#ae81ff">4</span>             <span style="color:#ae81ff">85</span>            <span style="color:#ae81ff">159</span>            <span style="color:#ae81ff">247</span>
-SVG                                       <span style="color:#ae81ff">1</span>             <span style="color:#ae81ff">19</span>              <span style="color:#ae81ff">4</span>            <span style="color:#ae81ff">242</span>
-...
-...
-...
-Literate Idris                            <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">3</span>
-NAnt script                               <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>              <span style="color:#ae81ff">3</span>
-ProGuard                                  <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">7</span>             <span style="color:#ae81ff">14</span>              <span style="color:#ae81ff">3</span>
-Tcl/Tk                                    <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">3</span>
-dhall                                     <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">6</span>             <span style="color:#ae81ff">17</span>              <span style="color:#ae81ff">3</span>
-ColdFusion                                <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">2</span>
-DOS Batch                                 <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">2</span>
-Focus                                     <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">1</span>
-MUMPS                                     <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">1</span>
-XQuery                                    <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>
-xBase                                     <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>              <span style="color:#ae81ff">9</span>              <span style="color:#ae81ff">1</span>
-----------------------------------------------------------------------------------------
-SUM:                                    <span style="color:#ae81ff">593</span>           <span style="color:#ae81ff">5089</span>           <span style="color:#ae81ff">9803</span>          <span style="color:#ae81ff">48342</span>
-----------------------------------------------------------------------------------------
-➜  Utils
-</code></pre></div><p>非常方便。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>git clone --depth <span style="color:#ae81ff">1</span> <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> temp-linecount-repo <span style="color:#f92672">&amp;&amp;</span>
+</span></span><span style="display:flex;"><span>  printf <span style="color:#e6db74">&#34;(&#39;temp-linecount-repo&#39; will be deleted automatically)\n\n\n&#34;</span> <span style="color:#f92672">&amp;&amp;</span>
+</span></span><span style="display:flex;"><span>  cloc temp-linecount-repo <span style="color:#f92672">&amp;&amp;</span>
+</span></span><span style="display:flex;"><span>  rm -rf temp-linecount-repo
+</span></span></code></pre></div><p>将以上内容保存，并命名为github_cloc.sh。执行该脚本并分析cloc项目：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>➜  Utils ./github_cloc.sh https://github.com/AlDanial/cloc.git
+</span></span><span style="display:flex;"><span>Cloning into <span style="color:#e6db74">&#39;temp-linecount-repo&#39;</span>...
+</span></span><span style="display:flex;"><span>remote: Enumerating objects: 821, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>remote: Counting objects: 100% <span style="color:#f92672">(</span>821/821<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>remote: Compressing objects: 100% <span style="color:#f92672">(</span>555/555<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>remote: Total <span style="color:#ae81ff">821</span> <span style="color:#f92672">(</span>delta 165<span style="color:#f92672">)</span>, reused <span style="color:#ae81ff">729</span> <span style="color:#f92672">(</span>delta 140<span style="color:#f92672">)</span>, pack-reused <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>Receiving objects: 100% <span style="color:#f92672">(</span>821/821<span style="color:#f92672">)</span>, 556.48 KiB | 548.00 KiB/s, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Resolving deltas: 100% <span style="color:#f92672">(</span>165/165<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span><span style="color:#e6db74">&#39;temp-linecount-repo&#39;</span> will be deleted automatically<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">686</span> text files.
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">627</span> unique files.
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">96</span> files ignored.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>github.com/AlDanial/cloc v 1.90  T<span style="color:#f92672">=</span>0.65 s <span style="color:#f92672">(</span>915.6 files/s, 97633.0 lines/s<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>----------------------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>Language                              files          blank        comment           code
+</span></span><span style="display:flex;"><span>----------------------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>Perl                                      <span style="color:#ae81ff">8</span>           <span style="color:#ae81ff">2300</span>           <span style="color:#ae81ff">5037</span>          <span style="color:#ae81ff">25719</span>
+</span></span><span style="display:flex;"><span>YAML                                    <span style="color:#ae81ff">315</span>             <span style="color:#ae81ff">12</span>            <span style="color:#ae81ff">317</span>           <span style="color:#ae81ff">7564</span>
+</span></span><span style="display:flex;"><span>Markdown                                  <span style="color:#ae81ff">3</span>            <span style="color:#ae81ff">297</span>             <span style="color:#ae81ff">32</span>           <span style="color:#ae81ff">2806</span>
+</span></span><span style="display:flex;"><span>ANTLR Grammar                             <span style="color:#ae81ff">2</span>            <span style="color:#ae81ff">200</span>             <span style="color:#ae81ff">59</span>           <span style="color:#ae81ff">1012</span>
+</span></span><span style="display:flex;"><span>R                                         <span style="color:#ae81ff">3</span>             <span style="color:#ae81ff">95</span>            <span style="color:#ae81ff">312</span>            <span style="color:#ae81ff">698</span>
+</span></span><span style="display:flex;"><span>C/C++ Header                              <span style="color:#ae81ff">1</span>            <span style="color:#ae81ff">191</span>            <span style="color:#ae81ff">780</span>            <span style="color:#ae81ff">617</span>
+</span></span><span style="display:flex;"><span>C++                                      <span style="color:#ae81ff">11</span>            <span style="color:#ae81ff">132</span>            <span style="color:#ae81ff">183</span>            <span style="color:#ae81ff">603</span>
+</span></span><span style="display:flex;"><span>Forth                                     <span style="color:#ae81ff">2</span>             <span style="color:#ae81ff">17</span>             <span style="color:#ae81ff">84</span>            <span style="color:#ae81ff">529</span>
+</span></span><span style="display:flex;"><span>TypeScript                                <span style="color:#ae81ff">4</span>             <span style="color:#ae81ff">53</span>             <span style="color:#ae81ff">39</span>            <span style="color:#ae81ff">416</span>
+</span></span><span style="display:flex;"><span>Logtalk                                   <span style="color:#ae81ff">1</span>             <span style="color:#ae81ff">59</span>             <span style="color:#ae81ff">57</span>            <span style="color:#ae81ff">368</span>
+</span></span><span style="display:flex;"><span>C                                         <span style="color:#ae81ff">7</span>            <span style="color:#ae81ff">110</span>             <span style="color:#ae81ff">72</span>            <span style="color:#ae81ff">354</span>
+</span></span><span style="display:flex;"><span>Windows Message File                      <span style="color:#ae81ff">2</span>             <span style="color:#ae81ff">89</span>              <span style="color:#ae81ff">9</span>            <span style="color:#ae81ff">348</span>
+</span></span><span style="display:flex;"><span>TeX                                       <span style="color:#ae81ff">2</span>             <span style="color:#ae81ff">36</span>             <span style="color:#ae81ff">64</span>            <span style="color:#ae81ff">265</span>
+</span></span><span style="display:flex;"><span>Racket                                    <span style="color:#ae81ff">1</span>             <span style="color:#ae81ff">32</span>            <span style="color:#ae81ff">159</span>            <span style="color:#ae81ff">247</span>
+</span></span><span style="display:flex;"><span>make                                      <span style="color:#ae81ff">4</span>             <span style="color:#ae81ff">85</span>            <span style="color:#ae81ff">159</span>            <span style="color:#ae81ff">247</span>
+</span></span><span style="display:flex;"><span>SVG                                       <span style="color:#ae81ff">1</span>             <span style="color:#ae81ff">19</span>              <span style="color:#ae81ff">4</span>            <span style="color:#ae81ff">242</span>
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>Literate Idris                            <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>NAnt script                               <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>              <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>ProGuard                                  <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">7</span>             <span style="color:#ae81ff">14</span>              <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>Tcl/Tk                                    <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>dhall                                     <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">6</span>             <span style="color:#ae81ff">17</span>              <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>ColdFusion                                <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>DOS Batch                                 <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>Focus                                     <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>MUMPS                                     <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>XQuery                                    <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>xBase                                     <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>              <span style="color:#ae81ff">9</span>              <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>----------------------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>SUM:                                    <span style="color:#ae81ff">593</span>           <span style="color:#ae81ff">5089</span>           <span style="color:#ae81ff">9803</span>          <span style="color:#ae81ff">48342</span>
+</span></span><span style="display:flex;"><span>----------------------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>➜  Utils
+</span></span></code></pre></div><p>非常方便。</p>
 <ul class="pa0">
   
    <li class="list">

@@ -7,7 +7,7 @@
     <title>Deploy Hugo by Github | My New Hugo Site</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。">
-    <meta name="generator" content="Hugo 0.87.0" />
+    <meta name="generator" content="Hugo 0.96.0" />
     
     
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -145,48 +145,48 @@
 <h3 id="第1步在github创建一个仓库">第1步：在Github创建一个仓库</h3>
 <p>仓库名任意，只要不是<!-- raw HTML omitted -->.github.io即可(例如就叫做blog)。这个仓库可以是私有的。</p>
 <h3 id="第2步关联本地hugo项目">第2步：关联本地Hugo项目</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd &lt;YOUR HUGO PROJECT&gt;
-git remote add origin git@github.com:USERNAME/blog.git
-</code></pre></div><h3 id="第3步在github创建一个usernamegithubio仓库">第3步：在Github创建一个<!-- raw HTML omitted -->.github.io仓库</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd &lt;YOUR HUGO PROJECT&gt;
+</span></span><span style="display:flex;"><span>git remote add origin git@github.com:USERNAME/blog.git
+</span></span></code></pre></div><h3 id="第3步在github创建一个usernamegithubio仓库">第3步：在Github创建一个<!-- raw HTML omitted -->.github.io仓库</h3>
 <p><!-- raw HTML omitted -->就是你的Github用户名。这个仓库用来存放最终发布的blog内容。</p>
 <h3 id="第4步关联hugo的public文件夹">第4步：关联Hugo的public文件夹</h3>
 <p>如果Hugo项目路径下已存在public文件夹，请直接删除。不用担心。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public
-</code></pre></div><h3 id="第5步生成并发布内容">第5步：生成并发布内容</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo
-cd public
-git status
-git add .
-git commit -m <span style="color:#e6db74">&#34;first commit&#34;</span>
-git push -u orgin master
-</code></pre></div><p><strong>注意：本地网站是关联的blog仓库，本地网站下的public文件夹是以子模块的形式关联的github.io仓库，他们是相对独立的。</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public
+</span></span></code></pre></div><h3 id="第5步生成并发布内容">第5步：生成并发布内容</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo
+</span></span><span style="display:flex;"><span>cd public
+</span></span><span style="display:flex;"><span>git status
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;first commit&#34;</span>
+</span></span><span style="display:flex;"><span>git push -u orgin master
+</span></span></code></pre></div><p><strong>注意：本地网站是关联的blog仓库，本地网站下的public文件夹是以子模块的形式关联的github.io仓库，他们是相对独立的。</strong></p>
 <h3 id="自动化部署脚本">自动化部署脚本</h3>
 <p>将以上步骤整理成自动执行脚本deploy.sh。脚本commit信息会使用当前时间。将deploy.sh脚本放到Hugo项目路径下，写完blog后直接双击运行即可自动部署发布。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
-</span><span style="color:#75715e"></span>
-echo -e <span style="color:#e6db74">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
-
-<span style="color:#75715e"># Build the project.</span>
-hugo <span style="color:#75715e"># if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`</span>
-
-<span style="color:#75715e"># Go To Public folder</span>
-cd public
-<span style="color:#75715e"># Add changes to git.</span>
-git add .
-
-<span style="color:#75715e"># Commit changes.</span>
-msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rebuilding site `date`&#34;</span>
-<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $# -eq <span style="color:#ae81ff">1</span> <span style="color:#f92672">]</span>
-  <span style="color:#66d9ef">then</span> msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
-<span style="color:#66d9ef">fi</span>
-git commit -m <span style="color:#e6db74">&#34;</span>$msg<span style="color:#e6db74">&#34;</span>
-
-<span style="color:#75715e"># Push source and build repos.</span>
-git push origin master
-
-<span style="color:#75715e"># Come Back up to the Project Root</span>
-cd ..
-</code></pre></div><h3 id="给网站添加评论未验证">给网站添加评论(未验证)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Build the project.</span>
+</span></span><span style="display:flex;"><span>hugo <span style="color:#75715e"># if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Go To Public folder</span>
+</span></span><span style="display:flex;"><span>cd public
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Add changes to git.</span>
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Commit changes.</span>
+</span></span><span style="display:flex;"><span>msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rebuilding site `date`&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $# -eq <span style="color:#ae81ff">1</span> <span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">then</span> msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;</span>$msg<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Push source and build repos.</span>
+</span></span><span style="display:flex;"><span>git push origin master
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Come Back up to the Project Root</span>
+</span></span><span style="display:flex;"><span>cd ..
+</span></span></code></pre></div><h3 id="给网站添加评论未验证">给网站添加评论(未验证)</h3>
 <p>Hugo支持Disqus评论，只需要在配置文件config.toml中设置disqusShortname = &ldquo;disqusShortname&quot;即可。如果没有disqusShortname，需要到Disqus官网注册一个账号。注册后添加一个网站，添加时会让填一个shortname，Disqus会生成一个shortname.disqus.com的网址。另外还需要把config.toml中的baseURL地址，也就是公网访问地址添加到Diqus的信任网址中，类似于互相添加信任。</p>
 <ul class="pa0">
   

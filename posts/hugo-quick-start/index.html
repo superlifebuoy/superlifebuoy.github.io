@@ -7,7 +7,7 @@
     <title>Hugo Quick Start | My New Hugo Site</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Hugo官方Quick Start的翻译。">
-    <meta name="generator" content="Hugo 0.87.0" />
+    <meta name="generator" content="Hugo 0.96.0" />
     
     
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -155,34 +155,34 @@
 <blockquote>
 <p>Homebrew和MacPorts是macOS的两个软件包管理器，可以通过<a href="https://brew.sh/">brew.sh</a>和<a href="https://www.macports.org/">macports.org</a>来安装。如果你使用的是Windows等其他操作系统，请参见此<a href="https://gohugo.io/getting-started/installing">链接</a>。</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">brew install hugo
-<span style="color:#75715e"># or</span>
-port install hugo
-</code></pre></div><p>要验证Hugo是否已经正确安装，请输入如下命令：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo version
-</code></pre></div><h3 id="第2步创建一个新站点">第2步：创建一个新站点</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo new site quickstart
-</code></pre></div><p>上面的命令会创建一个名叫quickstart的文件夹，并将新站点生成在这个文件夹内。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>brew install hugo
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># or</span>
+</span></span><span style="display:flex;"><span>port install hugo
+</span></span></code></pre></div><p>要验证Hugo是否已经正确安装，请输入如下命令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo version
+</span></span></code></pre></div><h3 id="第2步创建一个新站点">第2步：创建一个新站点</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new site quickstart
+</span></span></code></pre></div><p>上面的命令会创建一个名叫quickstart的文件夹，并将新站点生成在这个文件夹内。</p>
 <h3 id="第3步添加一个主题">第3步：添加一个主题</h3>
 <p>链接<a href="https://themes.gohugo.io/">themes.gohugo.io</a>是Hugo可用主题的列表地址。这篇Quick Start使用的主题是<a href="https://themes.gohugo.io/gohugo-theme-ananke/">Ananke主题</a>。</p>
 <p>首先，从GitHub下载主题并添加到themes文件夹内：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd quickstart
-git init
-git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
-</code></pre></div><p>如果你没有GitHub账号的话：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd quickstart
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+</span></span></code></pre></div><p>如果你没有GitHub账号的话：</p>
 <ul>
 <li>如果你没有安装git，可以直接从<a href="https://github.com/budparr/gohugo-theme-ananke/archive/master.zip">https://github.com/budparr/gohugo-theme-ananke/archive/master.zip</a>下载最新版本的主题压缩包。</li>
 <li>然后解压缩.zip文件，生成一个“gohugo-theme-ananke-master”文件夹。</li>
 <li>重命名该文件夹为“ananke”，并拷贝到&quot;themes&quot;文件夹内。</li>
 </ul>
 <p>最后，将这个主题的名字写入站点配置文件中：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">echo <span style="color:#e6db74">&#39;theme = &#34;ananke&#34;&#39;</span> &gt;&gt; config.toml
-</code></pre></div><h3 id="第4步添加一些内容">第4步：添加一些内容</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;theme = &#34;ananke&#34;&#39;</span> &gt;&gt; config.toml
+</span></span></code></pre></div><h3 id="第4步添加一些内容">第4步：添加一些内容</h3>
 <p>你可以手动创建一些内容文件(例如content/&lt;类别&gt;/&lt;文件名&gt;.&lt;后缀&gt;)并在文件开头增加一些元信息。但更好的方法是你通过new命令来自动完成上面的内容(例如增加标题与生成日期等)：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo new posts/my-first-post.md
-</code></pre></div><p>如果需要的话，你可以编辑这个新生成的内容文件。它的开头内容类似下面：</p>
-<pre><code>---
-title: &quot;My First Post&quot;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new posts/my-first-post.md
+</span></span></code></pre></div><p>如果需要的话，你可以编辑这个新生成的内容文件。它的开头内容类似下面：</p>
+<pre tabindex="0"><code>---
+title: &#34;My First Post&#34;
 date: 2019-03-26T08:47:11+01:00
 draft: true
 ---
@@ -191,9 +191,9 @@ draft: true
 </blockquote>
 <h3 id="第5步启动hugo服务器">第5步：启动Hugo服务器</h3>
 <p>现在，启动Hugo服务器，并指定草稿状态的文件也可部署展示：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo server -D
-</code></pre></div><p>你会看到类似如下输出：</p>
-<pre><code>                   | EN
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo server -D
+</span></span></code></pre></div><p>你会看到类似如下输出：</p>
+<pre tabindex="0"><code>                   | EN
 +------------------+----+
   Pages            | 10
   Paginator pages  |  0
@@ -207,7 +207,7 @@ draft: true
 Total in 11 ms
 Watching for changes in /Users/bep/quickstart/{content,data,layouts,static,themes}
 Watching for config changes in /Users/bep/quickstart/config.toml
-Environment: &quot;development&quot;
+Environment: &#34;development&#34;
 Serving pages from memory
 Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
@@ -218,10 +218,10 @@ Press Ctrl+C to stop
 <p>你的新站点已经看起来很不错了，但是你可能想在把它推给公众前再做一些小小的修改。</p>
 <h4 id="站点配置">站点配置</h4>
 <p>使用一个文本编辑器打开config.toml文件：</p>
-<pre><code>baseURL = &quot;https://example.org/&quot;
-languageCode = &quot;en-us&quot;
-title = &quot;My New Hugo Site&quot;
-theme = &quot;ananke&quot;
+<pre tabindex="0"><code>baseURL = &#34;https://example.org/&#34;
+languageCode = &#34;en-us&#34;
+title = &#34;My New Hugo Site&#34;
+theme = &#34;ananke&#34;
 </code></pre><p>试着将上面的title信息换得更个性化一些吧。另外，如果你已经有一个域名了，可以将域名设置到baseURL属性这里。注意，通过hugo server -D在本地以开发模式启动Hugo时，不需要设置这个值。</p>
 <blockquote>
 <p>**小贴士：**Hugo运行时，站点配置文件的修改或者内容文件的修改，都可以立刻在浏览器展示出来。你唯一需要做的就是刷新浏览器，有时还需要<a href="https://kb.iu.edu/d/ahic">清理一下缓存</a>。</p>
@@ -230,8 +230,8 @@ theme = &quot;ananke&quot;
 <p><strong>更加深入的主题定制化，请参看此<a href="https://gohugo.io/hugo-modules/theme-components/">链接</a></strong></p>
 <h3 id="第7步构建静态页面">第7步：构建静态页面</h3>
 <p>很简单，只需输入：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo -D
-</code></pre></div><p>默认情况下，静态页面会生成在./public/文件夹内(执行命令时可以通过-d/&ndash;destination参数来临时改变生成路径，或者直接在站点配置文件中通过publishdir属性来修改)。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo -D
+</span></span></code></pre></div><p>默认情况下，静态页面会生成在./public/文件夹内(执行命令时可以通过-d/&ndash;destination参数来临时改变生成路径，或者直接在站点配置文件中通过publishdir属性来修改)。</p>
 <ul class="pa0">
   
    <li class="list">
