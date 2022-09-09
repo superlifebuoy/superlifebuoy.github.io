@@ -2,30 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://superlifebuoy.github.io/tags/container/</loc>
-    <lastmod>2022-09-09T19:39:12+08:00</lastmod>
-  </url><url>
-    <loc>https://superlifebuoy.github.io/tags/docker/</loc>
-    <lastmod>2022-09-09T19:39:12+08:00</lastmod>
-  </url><url>
-    <loc>https://superlifebuoy.github.io/tags/kubernetes/</loc>
-    <lastmod>2022-09-09T19:39:12+08:00</lastmod>
-  </url><url>
-    <loc>https://superlifebuoy.github.io/</loc>
-    <lastmod>2022-09-09T19:39:12+08:00</lastmod>
-  </url><url>
-    <loc>https://superlifebuoy.github.io/posts/</loc>
-    <lastmod>2022-09-09T19:39:12+08:00</lastmod>
-  </url><url>
-    <loc>https://superlifebuoy.github.io/tags/</loc>
-    <lastmod>2022-09-09T19:39:12+08:00</lastmod>
-  </url><url>
-    <loc>https://superlifebuoy.github.io/tags/virtualization/</loc>
-    <lastmod>2022-09-09T19:39:12+08:00</lastmod>
-  </url><url>
-    <loc>https://superlifebuoy.github.io/posts/a-brief-history-of-containers-from-1970s/</loc>
-    <lastmod>2022-09-09T19:39:12+08:00</lastmod>
-  </url><url>
     <loc>https://superlifebuoy.github.io/tags/blog/</loc>
     <lastmod>2022-08-17T22:28:08+08:00</lastmod>
   </url><url>
@@ -35,7 +11,16 @@
     <loc>https://superlifebuoy.github.io/posts/my-image-post/</loc>
     <lastmod>2022-08-17T22:28:08+08:00</lastmod>
   </url><url>
+    <loc>https://superlifebuoy.github.io/</loc>
+    <lastmod>2022-08-17T22:28:08+08:00</lastmod>
+  </url><url>
     <loc>https://superlifebuoy.github.io/tags/picture/</loc>
+    <lastmod>2022-08-17T22:28:08+08:00</lastmod>
+  </url><url>
+    <loc>https://superlifebuoy.github.io/posts/</loc>
+    <lastmod>2022-08-17T22:28:08+08:00</lastmod>
+  </url><url>
+    <loc>https://superlifebuoy.github.io/tags/</loc>
     <lastmod>2022-08-17T22:28:08+08:00</lastmod>
   </url><url>
     <loc>https://superlifebuoy.github.io/tags/cloc/</loc>

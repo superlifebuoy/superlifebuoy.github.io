@@ -6,7 +6,43 @@
     <description>Recent content in Tags on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Aug 2022 22:28:08 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Sep 2022 19:39:12 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Container</title>
+      <link>https://superlifebuoy.github.io/tags/container/</link>
+      <pubDate>Fri, 09 Sep 2022 19:39:12 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/tags/container/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://superlifebuoy.github.io/tags/docker/</link>
+      <pubDate>Fri, 09 Sep 2022 19:39:12 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://superlifebuoy.github.io/tags/kubernetes/</link>
+      <pubDate>Fri, 09 Sep 2022 19:39:12 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtualization</title>
+      <link>https://superlifebuoy.github.io/tags/virtualization/</link>
+      <pubDate>Fri, 09 Sep 2022 19:39:12 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/tags/virtualization/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Blog</title>
       <link>https://superlifebuoy.github.io/tags/blog/</link>

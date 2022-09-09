@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>容器简史[翻译] | My New Hugo Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="讲述容器技术与虚拟化的发展简史。">
+    <meta name="generator" content="Hugo 0.96.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+
+  
+  
+    <link rel="stylesheet" href="/ananke/dist/main.css_5c99d70a7725bacd4c701e995b969fea.css" >
+  
+
+
+
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="容器简史[翻译]" />
+<meta property="og:description" content="讲述容器技术与虚拟化的发展简史。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://superlifebuoy.github.io/posts/a-brief-history-of-containers-from-1970s/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-09-09T19:39:12+08:00" />
+<meta property="article:modified_time" content="2022-09-09T19:39:12+08:00" />
+
+<meta itemprop="name" content="容器简史[翻译]">
+<meta itemprop="description" content="讲述容器技术与虚拟化的发展简史。"><meta itemprop="datePublished" content="2022-09-09T19:39:12+08:00" />
+<meta itemprop="dateModified" content="2022-09-09T19:39:12+08:00" />
+<meta itemprop="wordCount" content="129">
+<meta itemprop="keywords" content="Container,Virtualization,Docker,Kubernetes," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="容器简史[翻译]"/>
+<meta name="twitter:description" content="讲述容器技术与虚拟化的发展简史。"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        My New Hugo Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://superlifebuoy.github.io/posts/a-brief-history-of-containers-from-1970s/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://superlifebuoy.github.io/posts/a-brief-history-of-containers-from-1970s/&amp;text=%e5%ae%b9%e5%99%a8%e7%ae%80%e5%8f%b2[%e7%bf%bb%e8%af%91]" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://superlifebuoy.github.io/posts/a-brief-history-of-containers-from-1970s/&amp;title=%e5%ae%b9%e5%99%a8%e7%ae%80%e5%8f%b2[%e7%bf%bb%e8%af%91]" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">容器简史[翻译]</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2022-09-09T19:39:12+08:00">September 9, 2022</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>翻译自这里：<a href="https://blog.aquasec.com/a-brief-history-of-containers-from-1970s-chroot-to-docker-2016">https://blog.aquasec.com/a-brief-history-of-containers-from-1970s-chroot-to-docker-2016</a></p>
+<h4 id="从1970年代至今">从1970年代至今</h4>
+<p>2017年我们第一次公布这篇博客时，容器技术的面貌和今天有很大的不同。过去2年，我们看到显著的变化在持续影响着容器技术的采用。因为进入了新的十年，所以我们想要重新简述一下我们观察到的容器变化历程并提供我们认为容器在2020年的发展方向。</p>
+<p>要开始这次旅程，首先要进入我的DeLorean时光机。让我们回到1979年，容器概念第一次出现的时刻。</p>
+<h2 id="1979-unix-v7">1979: Unix V7</h2>
+<p>读者请注意。是的，我当时还不到10岁。当1979年，Unix V7还在开发的过程中，chroot系统调用出现了。它可以改变一个进程的根目录及其子目录到文件系统中的一个新地点。这是进程隔离的起点：为不同进程隔离文件访问。1982年，BSD也加上了chroot。</p>
+<h2 id="2000-freebsd-jails">2000: FreeBSD Jails</h2>
+<p>快进20年来到2000年，一个小型共享环境服务商因为安全与易于管理的原因提出了FreeBSD jails，以实现其服务与客户服务的清晰分隔。FreeBSD Jails允许管理员把一个FreeBSD系统划分成多个独立的、更小的系统——叫做“jails”——并为每个系统和配置分配IP地址。</p>
+<h2 id="2001-linux-vserver">2001: Linux VServer</h2>
+<p>类似FreeBSD Jails，Linux VServer也是通过jail机制来实现一个计算机系统的资源(文件系统、网络、地址、内容)隔离。2001年，这项操作系统虚拟化技术是通过Linux内核补丁的形式实现的。现在这个实验性的补丁仍然可用，但最后一个稳定版本是在2006年发布的。</p>
+<h2 id="2004-solaris-containers">2004: Solaris Containers</h2>
+<p>2004年，Solaris Containers的第一个公共beta版本发布了。该版本通过Zone提供了系统资源控制与边界分隔。这些功能是利用了ZFS的快照与克隆能力实现的。</p>
+<h2 id="2005-open-vz-open-virtuzzo">2005: Open VZ (Open Virtuzzo)</h2>
+<p>这是一个操作系统级别的虚拟化技术。它通过Linux内核补丁的方式来实现虚拟化、隔离、资源管理以及检查点。这个补丁的代码没有作为官方Linux内部的一部分来发布。</p>
+<h2 id="2006-process-containers">2006: Process Containers</h2>
+<p>Process Containers(由Google在2006年发起)是为限制、核算、隔离一批进程的资源使用(CPU、内存、磁盘I/O、网络)而设计的。一年后它被重命名为“Control Groups (cgroups)”，并最终被合并入Linux内核的2.6.24版本。</p>
+<h2 id="2008-lxc">2008: LXC</h2>
+<p>LXC (Linux Containers)是第一个、最完整的Linux容器管理器实现。它是在2008年实现的，使用了cgroups与Linux命名空间。LXC可以在单独的Linux内核上运行，不再需要其他补丁支持。</p>
+<h2 id="2011-warden">2011: Warden</h2>
+<p>CloudFoundry在2011年启动了Warden项目，并在早期阶段使用了LXC，不过之后切换成了自己的实现。Warden可以在任何操作系统上以守护进程的形式运行、实现环境隔离、提供容器管理API。它开发了client-server模式来实现跨服务器的容器集合管理。另外Warden还包含cgroups、命名空间、进程生命周期的管理服务。</p>
+<h2 id="2013-lmctfy">2013: LMCTFY</h2>
+<p>Let Me Contain That For You (LMCTFY)在2013年以Google容器栈的开源版本形式出现，它提供了Linux应用容器。应用程序可以做成“容器感知”的，来实现创建、管理他们自己的子容器。2015年，Google开始把LMCTFY核心概念贡献给libcontainer后，LMCTFY停止发展了。Libcontainer是现在Open Container Foundation的一部分。</p>
+<h2 id="2013-docker">2013: Docker</h2>
+<p>当2013年Docker出现的时候，容器开始了大流行。Docker与容器使用的同步增长并不是一个巧合。</p>
+<p>就像Warden一样，Docker在初试阶段也是使用LXC的。之后Docket就把容器管理替换成了它自己的类库，libcontainer。但毫无疑问，Docker通过提供容器管理的完整生态，使自己脱颖而出。</p>
+<h2 id="2016-the-importance-of-container-security-is-revealed">2016: The Importance of Container Security Is Revealed</h2>
+<p>随着基于容积技术的应用被广泛使用，系统变得复杂度增加、风险性增加。这种情况奠定了容器安全需求的基础。类似dirty COW这样的漏洞加强了这种认知。这导致安全开始伴随着整个软件开发的生命周期，使其成为容器化应用每个开发阶段的重要组成部分，即DevSecOps。其目标是在不缩短上市时间的情况下，从头开始构建安全的容器。</p>
+<h2 id="2017-container-tools-become-mature">2017: Container Tools Become Mature</h2>
+<p>数百种工具被开发出来，使得容器管理更加容易。虽然这些工具已经出现了若干年，但直到2017年它们中的大部分才赢得了自己的地位。仅以Kubernetes为例，自2016年它被CNCF(Cloud Native Computing Foundation)接受后，VMWare、Azure、AWS、甚至Docker都宣布在他们的基础设施之上支持它。</p>
+<p>随着市场的增长，一些工具已经开始为容器社区定义一些功能规范。Ceph和REX-Ray设定了容器存储的标准，同时Flannel在数据中心之间链接了数百万计的容器。另外在CI/CD领域，Jenkins完全改变了我们构建、部署应用的方式。</p>
+<h2 id="adoption-of-rkt-and-containerd-by-cncf">Adoption of rkt and Containerd by CNCF</h2>
+<p>容器生态系统是独一无二的，因为它是由广泛的社区努力和对开源项目的承诺来支持的。2017年Docker向CNCF捐赠Containerd项目就是一个标志性事件，同一时间段里CNCF也采用了rkt(发音同rocket)作为容器运行时。这种情况下出现了不同项目间更好的协作，用户拥有更多的选择，以及一个以改进容器生态为中心的社区。</p>
+<h2 id="kubernetes-grows-up">Kubernetes Grows Up</h2>
+<p>2017年，这个开源项目在朝向更成熟的技术方面，展现了非常大的进步。Kubernetes支持了不断增加复杂度的应用类型——使得企业可以同时向混合云与微服务方向迁移。在哥本哈根的DockerCon会议上，Docker宣布他们会支持Kubernetes的容器编排。Azure和AWS也紧跟着站队，提供了AKS(Azure Kubernetes Service)与EKS(一个与ECS相对的Kubernetes服务)。它还是CNCF第一个采用的项目，并且支持的第三方系统集成服务商在不断增加。</p>
+<h2 id="2018-the-gold-standard">2018: The Gold Standard</h2>
+<p>2018年我们可以看到容器化已经变成现代软件基础设施的基础，同时Kubernetes也被绝大多数的企业容器项目所使用。在2018年，Kubernetes项目在GitHub上有超过1500名贡献者，拥有一个非常显著的开源社区，以及超过27000个星星。大量采用Kubernetes的情况推动了例如AWS、Google(GKE, Google Kubernetes Engine)、Azure以及Oracle(Container Engine for Kubernetes)这样的云服务商提供Kubernetes管理服务。此外，软件服务商的领导者，例如VMWare、RedHat以及Rancher也开始提供基于Kubernetes的管理平台。</p>
+<p>基础设施提供商VMWare在2018年底宣布收购帮助企业部署、管理Kubernetes的咨询公司Heptio，然后开始采用Kubernetes。</p>
+<p>我们也见证了结合类VM隔离与容器速度的混合技术的出现。Kata containers，gVisor以及Nabla这些开源项目尝试提供安全容器运行时与轻量化虚拟机。它们运行方式与普通容器相同，但是提供更强的工作负载隔离。</p>
+<h2 id="2019-a-shifting-landscape">2019: A Shifting Landscape</h2>
+<p>容器领域在这一年发生了显著的变化。新的运行时引擎开始取代Docker运行时引擎，最引人注目的是containerd（一个开源的容器运行时引擎）与CRI-O（一个Kubernetes使用的轻量级运行时引擎）</p>
+<p>在2019年，我们看到容器领域发生了结构性的变化：Docker企业业务被收购并拆分，这导致Docker Swarn进入2年时长的终结期。同时，我们也见证了rkt容器引擎流行度的下降，虽然官方层面仍然是CNCF的一部分。</p>
+<p>伴随着对Kubernetes的承诺，VMware加倍努力，先后收购了Heptio与Pivotal Software(包括PAS与PKS)。此举的目的是在企业的内部环境中，利用云原生部署来提供类云能力。</p>
+<p>去年我们还看到了Serverless技术在落地场景上的进步。例如Knative(一个基于Kubernetes的serverless工作负载管理平台)就在企业中获得了成功。</p>
+<p>2019年业界还推出了基于Kubernetes的混合云解决方案，例如IBM Cloud Paks，Google Anthos，Aws Outposts以及Azue Arc等。这些解决方案模糊了云与企业内部环境之间的传统界限，因为你现在可以统一管理内部环境与云供应商环境了。</p>
+<p>我们认为这些浮现的新能力指明了Kubernetes进化的下一步方向。新的云能力(例如Anthos、Arc以及Outposts)指向了高度抽象的未来，即计算资源与管理层相分离。这很像现在Kubernetes的工作方式，也是把工作负载与它的管理模块分隔开。</p>
+<p>今日的Kubernetes，master节点与worker节点还工作在同一个物理集群中。伴随着高度抽象的发展，工作负载管理平面更够管理的工作负载节点可以分布在多个计算基础设施之上，而用户也不再知晓或关注它们实际的物理位置。</p>
+<p>从KubeCon圣地亚哥会议上创纪录的12000多名与会者来看，今后我们相信Kubernetes将成为容器、虚拟机和其他云原生工作负载的标准管理平台。</p>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/container" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Container</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/virtualization" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Virtualization</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/docker" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Docker</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/kubernetes" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Kubernetes</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://superlifebuoy.github.io/" >
+    &copy;  My New Hugo Site 2022 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
