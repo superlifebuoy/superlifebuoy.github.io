@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Deploy Hugo by Github | My New Hugo Site</title>
+    <title>通过Github部署Hugo | My New Hugo Site</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。">
     <meta name="generator" content="Hugo 0.96.0" />
@@ -30,19 +30,19 @@
 
     
     
-    <meta property="og:title" content="Deploy Hugo by Github" />
+    <meta property="og:title" content="通过Github部署Hugo" />
 <meta property="og:description" content="讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://superlifebuoy.github.io/posts/deploy-hugo-by-github/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-05-05T23:22:03+08:00" />
-<meta property="article:modified_time" content="2021-05-05T23:22:03+08:00" />
+<meta property="article:published_time" content="2022-09-15T20:04:36+08:00" />
+<meta property="article:modified_time" content="2022-09-15T20:04:36+08:00" />
 
-<meta itemprop="name" content="Deploy Hugo by Github">
-<meta itemprop="description" content="讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。"><meta itemprop="datePublished" content="2021-05-05T23:22:03+08:00" />
-<meta itemprop="dateModified" content="2021-05-05T23:22:03+08:00" />
-<meta itemprop="wordCount" content="128">
-<meta itemprop="keywords" content="Blog,Hugo," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Deploy Hugo by Github"/>
+<meta itemprop="name" content="通过Github部署Hugo">
+<meta itemprop="description" content="讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。"><meta itemprop="datePublished" content="2022-09-15T20:04:36+08:00" />
+<meta itemprop="dateModified" content="2022-09-15T20:04:36+08:00" />
+<meta itemprop="wordCount" content="127">
+<meta itemprop="keywords" content="Hugo,Github," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="通过Github部署Hugo"/>
 <meta name="twitter:description" content="讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。"/>
 
 	
@@ -116,13 +116,13 @@
 
     
     
-    <a href="https://twitter.com/share?url=https://superlifebuoy.github.io/posts/deploy-hugo-by-github/&amp;text=Deploy%20Hugo%20by%20Github" class="twitter no-underline" aria-label="share on Twitter">
+    <a href="https://twitter.com/share?url=https://superlifebuoy.github.io/posts/deploy-hugo-by-github/&amp;text=%e9%80%9a%e8%bf%87Github%e9%83%a8%e7%bd%b2Hugo" class="twitter no-underline" aria-label="share on Twitter">
       <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
 
     </a>
 
     
-    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://superlifebuoy.github.io/posts/deploy-hugo-by-github/&amp;title=Deploy%20Hugo%20by%20Github" class="linkedin no-underline" aria-label="share on LinkedIn">
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://superlifebuoy.github.io/posts/deploy-hugo-by-github/&amp;title=%e9%80%9a%e8%bf%87Github%e9%83%a8%e7%bd%b2Hugo" class="linkedin no-underline" aria-label="share on LinkedIn">
       <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
 </svg>
@@ -131,38 +131,37 @@
   </div>
 
 
-      <h1 class="f1 athelas mt3 mb1">Deploy Hugo by Github</h1>
+      <h1 class="f1 athelas mt3 mb1">通过Github部署Hugo</h1>
       
       
-      <time class="f6 mv4 dib tracked" datetime="2021-05-05T23:22:03+08:00">May 5, 2021</time>
+      <time class="f6 mv4 dib tracked" datetime="2022-09-15T20:04:36+08:00">September 15, 2022</time>
 
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id="通过github部署hugo">通过Github部署Hugo</h2>
-<p>详细步骤请参考这篇<a href="https://jeshs.github.io/2019/01/hugo%E9%83%A8%E7%BD%B2%E5%88%B0github/">blog</a></p>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>详细步骤请参考这篇<a href="https://jeshs.github.io/2019/01/hugo%E9%83%A8%E7%BD%B2%E5%88%B0github/">blog</a></p>
 <p>以下内容为纯执行步骤：</p>
 <h3 id="第1步在github创建一个仓库">第1步：在Github创建一个仓库</h3>
-<p>仓库名任意，只要不是<!-- raw HTML omitted -->.github.io即可(例如就叫做blog)。这个仓库可以是私有的。</p>
+<p>仓库名任意，只要不是.github.io即可(例如就叫做blog)。这个仓库可以是私有的。</p>
 <h3 id="第2步关联本地hugo项目">第2步：关联本地Hugo项目</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd &lt;YOUR HUGO PROJECT&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cd &lt;YOUR HUGO PROJECT&gt;
 </span></span><span style="display:flex;"><span>git remote add origin git@github.com:USERNAME/blog.git
-</span></span></code></pre></div><h3 id="第3步在github创建一个usernamegithubio仓库">第3步：在Github创建一个<!-- raw HTML omitted -->.github.io仓库</h3>
-<p><!-- raw HTML omitted -->就是你的Github用户名。这个仓库用来存放最终发布的blog内容。</p>
+</span></span></code></pre></div><h3 id="第3步在github创建一个githubio仓库">第3步：在Github创建一个.github.io仓库</h3>
+<p>就是你的Github用户名。这个仓库用来存放最终发布的blog内容。</p>
 <h3 id="第4步关联hugo的public文件夹">第4步：关联Hugo的public文件夹</h3>
 <p>如果Hugo项目路径下已存在public文件夹，请直接删除。不用担心。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public
 </span></span></code></pre></div><h3 id="第5步生成并发布内容">第5步：生成并发布内容</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>hugo
 </span></span><span style="display:flex;"><span>cd public
 </span></span><span style="display:flex;"><span>git status
 </span></span><span style="display:flex;"><span>git add .
 </span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;first commit&#34;</span>
 </span></span><span style="display:flex;"><span>git push -u orgin master
-</span></span></code></pre></div><p><strong>注意：本地网站是关联的blog仓库，本地网站下的public文件夹是以子模块的形式关联的github.io仓库，他们是相对独立的。</strong></p>
+</span></span></code></pre></div><p>注意：本地网站是关联的blog仓库，本地网站下的public文件夹是以子模块的形式关联的github.io仓库，他们是相对独立的。</p>
 <h3 id="自动化部署脚本">自动化部署脚本</h3>
 <p>将以上步骤整理成自动执行脚本deploy.sh。脚本commit信息会使用当前时间。将deploy.sh脚本放到Hugo项目路径下，写完blog后直接双击运行即可自动部署发布。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
 </span></span><span style="display:flex;"><span>
@@ -187,15 +186,15 @@
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Come Back up to the Project Root</span>
 </span></span><span style="display:flex;"><span>cd ..
 </span></span></code></pre></div><h3 id="给网站添加评论未验证">给网站添加评论(未验证)</h3>
-<p>Hugo支持Disqus评论，只需要在配置文件config.toml中设置disqusShortname = &ldquo;disqusShortname&quot;即可。如果没有disqusShortname，需要到Disqus官网注册一个账号。注册后添加一个网站，添加时会让填一个shortname，Disqus会生成一个shortname.disqus.com的网址。另外还需要把config.toml中的baseURL地址，也就是公网访问地址添加到Diqus的信任网址中，类似于互相添加信任。</p>
+<p>Hugo支持Disqus评论，只需要在配置文件config.toml中设置disqusShortname = “disqusShortname&quot;即可。如果没有disqusShortname，需要到Disqus官网注册一个账号。注册后添加一个网站，添加时会让填一个shortname，Disqus会生成一个shortname.disqus.com的网址。另外还需要把config.toml中的baseURL地址，也就是公网访问地址添加到Diqus的信任网址中，类似于互相添加信任。</p>
 <ul class="pa0">
   
    <li class="list">
-     <a href="/tags/blog" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Blog</a>
+     <a href="/tags/hugo" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Hugo</a>
    </li>
   
    <li class="list">
-     <a href="/tags/hugo" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Hugo</a>
+     <a href="/tags/github" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Github</a>
    </li>
   
 </ul>
@@ -214,6 +213,10 @@
     <p class="f5 b mb3">Related</p>
     <ul class="pa0 list">
 	   
+	     <li  class="mb2">
+          <a href="/posts/my-image-post/">My Image Post</a>
+        </li>
+	    
 	     <li  class="mb2">
           <a href="/posts/hugo-quick-start/">Hugo Quick Start</a>
         </li>

@@ -17,15 +17,6 @@
     </item>
     
     <item>
-      <title>Deploy Hugo by Github</title>
-      <link>https://superlifebuoy.github.io/posts/deploy-hugo-by-github/</link>
-      <pubDate>Wed, 05 May 2021 23:22:03 +0800</pubDate>
-      
-      <guid>https://superlifebuoy.github.io/posts/deploy-hugo-by-github/</guid>
-      <description>讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。</description>
-    </item>
-    
-    <item>
       <title>Hugo Quick Start</title>
       <link>https://superlifebuoy.github.io/posts/hugo-quick-start/</link>
       <pubDate>Wed, 17 Feb 2021 20:29:21 +0800</pubDate>

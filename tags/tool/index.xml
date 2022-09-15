@@ -6,7 +6,16 @@
     <description>Recent content in Tool on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Dec 2021 11:44:28 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/tags/tool/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Sep 2022 19:36:09 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/tags/tool/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>命令行工具简介</title>
+      <link>https://superlifebuoy.github.io/posts/util-commands/</link>
+      <pubDate>Thu, 15 Sep 2022 19:36:09 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/posts/util-commands/</guid>
+      <description>关于常用的命令行工具介绍，包括但不限于maven、curl、wget等。</description>
+    </item>
+    
     <item>
       <title>How to Use cloc</title>
       <link>https://superlifebuoy.github.io/posts/how_to_use_cloc/</link>

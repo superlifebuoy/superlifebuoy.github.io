@@ -6,14 +6,14 @@
     <description>Recent content in Container on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Sep 2022 19:39:12 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/tags/container/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Sep 2022 19:56:51 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/tags/container/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>容器简史[翻译]</title>
       <link>https://superlifebuoy.github.io/posts/a-brief-history-of-containers-from-1970s/</link>
-      <pubDate>Fri, 09 Sep 2022 19:39:12 +0800</pubDate>
+      <pubDate>Thu, 15 Sep 2022 19:56:51 +0800</pubDate>
       
       <guid>https://superlifebuoy.github.io/posts/a-brief-history-of-containers-from-1970s/</guid>
-      <description>讲述容器技术与虚拟化的发展简史。</description>
+      <description>简单介绍容器技术自1970年代以来的发展历史。</description>
     </item>
     
   </channel>
