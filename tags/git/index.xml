@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on My New Hugo Site</title>
+    <link>https://superlifebuoy.github.io/tags/git/</link>
+    <description>Recent content in Git on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Mar 2023 11:34:26 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git SSH Key</title>
+      <link>https://superlifebuoy.github.io/posts/git-ssh-key/</link>
+      <pubDate>Sun, 12 Mar 2023 11:34:26 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/posts/git-ssh-key/</guid>
+      <description>初始化Git SSH keys。</description>
+    </item>
+    
+  </channel>
+</rss>
