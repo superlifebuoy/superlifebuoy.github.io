@@ -6,7 +6,16 @@
     <description>Recent content in Docker on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Mar 2023 22:27:10 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Mar 2023 19:52:44 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>更新与分发Docker镜像（2）</title>
+      <link>https://superlifebuoy.github.io/posts/update-share-app/</link>
+      <pubDate>Mon, 20 Mar 2023 19:52:44 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/posts/update-share-app/</guid>
+      <description>如何更新Docker镜像？如果推送Docker镜像到镜像仓库？</description>
+    </item>
+    
     <item>
       <title>Docker入门（1）</title>
       <link>https://superlifebuoy.github.io/posts/docker-get-started/</link>
