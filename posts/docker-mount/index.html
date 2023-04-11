@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Docker容器持久化存储（3） | My New Hugo Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Docker容器如何使用持久化存储？">
+    <meta name="generator" content="Hugo 0.111.3">
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+
+  
+  
+    <link rel="stylesheet" href="/ananke/dist/main.css_5c99d70a7725bacd4c701e995b969fea.css" >
+  
+
+
+
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Docker容器持久化存储（3）" />
+<meta property="og:description" content="Docker容器如何使用持久化存储？" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://superlifebuoy.github.io/posts/docker-mount/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-03-30T14:55:05+08:00" />
+<meta property="article:modified_time" content="2023-03-30T14:55:05+08:00" />
+<meta itemprop="name" content="Docker容器持久化存储（3）">
+<meta itemprop="description" content="Docker容器如何使用持久化存储？"><meta itemprop="datePublished" content="2023-03-30T14:55:05+08:00" />
+<meta itemprop="dateModified" content="2023-03-30T14:55:05+08:00" />
+<meta itemprop="wordCount" content="382">
+<meta itemprop="keywords" content="Docker,Container,mount,持久化存储," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Docker容器持久化存储（3）"/>
+<meta name="twitter:description" content="Docker容器如何使用持久化存储？"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        My New Hugo Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://superlifebuoy.github.io/posts/docker-mount/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://superlifebuoy.github.io/posts/docker-mount/&amp;text=Docker%e5%ae%b9%e5%99%a8%e6%8c%81%e4%b9%85%e5%8c%96%e5%ad%98%e5%82%a8%ef%bc%883%ef%bc%89" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://superlifebuoy.github.io/posts/docker-mount/&amp;title=Docker%e5%ae%b9%e5%99%a8%e6%8c%81%e4%b9%85%e5%8c%96%e5%ad%98%e5%82%a8%ef%bc%883%ef%bc%89" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Docker容器持久化存储（3）</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2023-03-30T14:55:05+08:00">March 30, 2023</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>之前我们使用getting-started演示项目时，存在一个问题：每次重新启动Docker容器后，上次运行时新增/修改的todo事项都会被清理掉。为什么会这样呢？</p>
+<h1 id="容器的文件系统">容器的文件系统</h1>
+<p>在Docker容器运行时，它会有自己的运行时空间（scratch space）。容器内文件的增删改查都在该空间内发生，其它容器是无法感知到的。即使这些容器使用相同的镜像生成也不行。所以每次重新启动Docker容器时，都是使用自己新的运行时空间，看不到之前Docker容器运行时空间内的文件。</p>
+<h2 id="验证一下">验证一下</h2>
+<p>我们来启动两个容器，并在第一个容器中创建一个文件。你会发现第一个容器中的文件并不能在第二个容器中看到。</p>
+<p><strong>1</strong> 使用ubuntu镜像启动一个容器，并生成/data.txt文件。该文件包含一个1到10000的随机数。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -d ubuntu bash -c <span style="color:#e6db74">&#34;shuf -i 1-10000 -n 1 -o /data.txt &amp;&amp; tail -f /dev/null&#34;</span>
+</span></span></code></pre></div><p>上面这个命令在启动ubuntu容器后，会执行两条bash命令：第一个bash命令是生成一个随机数并写入/data.txt文件；第二个bash命令是通过tail -f来保持容器持续运行。</p>
+<p><strong>2</strong> 在Docker Desktop选择Containers菜单，然后找到ubuntu镜像启动的容器，选择Actions中的“Open in terminal”。</p>
+<p><img src="/docker-mount/docker-desktop1.png" alt="docker-desktop1"></p>
+<p>在出现的命令行终端里执行如下命令，就可以看到/data.txt文件的内容了：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat /data.txt
+</span></span></code></pre></div><p><img src="/docker-mount/docker-desktop2.png" alt="docker-desktop2"></p>
+<p>如果你喜欢使用docker命令，使用docker exec命令也可以查看/data.txt文件的内容（先使用docker ps命令查看容器id）。具体命令如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker exec &lt;container-id&gt; cat /data.txt
+</span></span></code></pre></div><p><img src="/docker-mount/docker-cl.png" alt="docker-cl"></p>
+<p><strong>3</strong> 现在我们启动另一个ubuntu容器（相同的镜像），就会发现新容器里没有/data.txt文件。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -it ubuntu ls /
+</span></span></code></pre></div><p>在这个例子中，ls命令会显示/目录下所有的文件。可以看到并没有/data.txt文件存在，这是因为该文件只存在第一个容器的运行时空间（scratch space）里。</p>
+<p><strong>4</strong> 运行“docker rm -f &lt;container-id&gt;”命令，删除第一个容器。</p>
+<h1 id="创建容器volume">创建容器volume</h1>
+<p>如何解决getting-started演示项目多次启动时todo事项被清理掉的问题呢？可以使用docker volume。</p>
+<p>通过volume可以建立起容器中指定文件路径与宿主机目录的“链接”。一旦容器中一个文件路径“链接”到宿主机目录上，那么这个文件路径中的所有文件其实是保存到宿主机目录里的。如果容器每次启动时都“链接”到宿主机相同的目录上，那么就可以看到以前的文件了。</p>
+<p>我们还可以把volume想象成一个不透明的数据桶。使用该数据桶的不同Docker容器都可以修改/查看桶里的数据。Docker全权负责管理这个数据桶，例如存在于磁盘上的位置等等。</p>
+<h2 id="持久化存储todo事项">持久化存储todo事项</h2>
+<p>回到getting-started演示项目，todo事项是存储在SQLite数据库（容器运行时空间/etc/todos/todo.db文件）中的。如果我们通过volume把SQLite数据库文件“链接”到宿主机目录上，那么todo事项的变化都会持久化存储在宿主机目录里。下次容器再启动时，因为SQLite数据库是“链接”到相同的宿主机目录上，所以可以看到之前容器的所有变更。</p>
+<p>具体的操作流程如下所示：</p>
+<p><strong>1</strong> 使用“docker volume create”命令来创建一个volume。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker volume create todo-db
+</span></span></code></pre></div><p>volume名称是todo-db。</p>
+<p><strong>2</strong> 在Docker Desktop中停止、删除运行中的getting-started演示项目（如果存在的话）；也可以通过“docker rm -f <!-- raw HTML omitted -->”来停止、删除运行中的getting-started演示项目。</p>
+<p><strong>3</strong> 重新启动getting-started演示项目，并在docker run命令中增加&ndash;mount参数来指定volume以及容器路径/etc/todos。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -dp 3000:3000 --mount type<span style="color:#f92672">=</span>volume,src<span style="color:#f92672">=</span>todo-db,target<span style="color:#f92672">=</span>/etc/todos getting-started
+</span></span></code></pre></div><p><strong>4</strong> 一旦容器启动，打开页面并增加几个todo事项。</p>
+<p><img src="/docker-mount/persit-todos.png" alt="persit-todos"></p>
+<p><strong>5</strong> 停止、删除当前容器。</p>
+<p><strong>6</strong> 使用<strong>3</strong>的命令重新启动容器。</p>
+<p><strong>7</strong> 打开页面，你会看到<strong>4</strong>增加的几个todo事项仍然存在。</p>
+<p><img src="/docker-mount/persit-todos.png" alt="persit-todos"></p>
+<h2 id="volume存在哪里">volume存在哪里？</h2>
+<p>那么volume到底存在于宿主机的哪里呢？我们可以通过“docker volume inspect”命令来查看：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ docker volume inspect todo-db
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;CreatedAt&#34;</span>: <span style="color:#e6db74">&#34;2019-09-26T02:18:36Z&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Driver&#34;</span>: <span style="color:#e6db74">&#34;local&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Labels&#34;</span>: <span style="color:#f92672">{}</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Mountpoint&#34;</span>: <span style="color:#e6db74">&#34;/var/lib/docker/volumes/todo-db/_data&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Name&#34;</span>: <span style="color:#e6db74">&#34;todo-db&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Options&#34;</span>: <span style="color:#f92672">{}</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Scope&#34;</span>: <span style="color:#e6db74">&#34;local&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">]</span>
+</span></span></code></pre></div><p>Mountpoint就是volume在宿主机真实的存储位置。</p>
+<h1 id="通过bind持久化">通过bind持久化</h1>
+<p>容器的持久化存储有两种形式，一种是上面介绍的volume，另一种是接下来要介绍的bind。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Named volumes</th>
+<th>Bind mounts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Host location</td>
+<td>Docker chooses</td>
+<td>You decide</td>
+</tr>
+<tr>
+<td>Mount example (using &ndash;mount)</td>
+<td>type=volume,src=my-volume,target=/usr/local/data</td>
+<td>type=bind,src=/path/to/data,target=/usr/local/data</td>
+</tr>
+<tr>
+<td>Populates new volume with container contents</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Supports Volume Drivers</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>通过bind持久化，可以把宿主机的指定目录“共享”给Docker容器。举一个场景说明，假设你正在开发一个应用，你可以把宿主机保存源码的目录通过bind“共享”给Docker容器。这样只要你更新并保存源码，Docker容器可以立刻看到。如果你在容器里运行一个监测进程，就可以根据源码变更做一些后续的动作了。</p>
+<h2 id="尝试bind">尝试bind</h2>
+<p>在实践bind相关的场景前，我们可以先快速体验一下：</p>
+<p>1 打开命令行终端并进入getting-started/app目录。</p>
+<p>2 运行如下命令，启动一个使用bind持久化的Ubuntu容器并进入bash。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -it --mount type<span style="color:#f92672">=</span>bind,src<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>pwd<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>,target<span style="color:#f92672">=</span>/src ubuntu bash
+</span></span></code></pre></div><p>参数&ndash;mount告诉Docker创建bind类型的持久化，其中src代表宿主机的目录(也就是getting-started/app)，target指定容器里的目录(也就是/src)。</p>
+<p>3 当容器启动完成后，Docker会进入bash命令行，位置定位在容器文件系统的根目录下。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@ac1237fad8db:/# pwd
+</span></span><span style="display:flex;"><span>/
+</span></span><span style="display:flex;"><span>root@ac1237fad8db:/# ls
+</span></span><span style="display:flex;"><span>bin   dev  home  media  opt   root  sbin  srv  tmp  var
+</span></span><span style="display:flex;"><span>boot  etc  lib   mnt    proc  run   src   sys  usr
+</span></span></code></pre></div><p>4 现在进入src目录。这个目录就是第2步启动容器bind的目录。通过ls命令可以看到该目录下的文件内容就是getting-started/app目录下的文件内容。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@ac1237fad8db:/# cd src
+</span></span><span style="display:flex;"><span>root@ac1237fad8db:/src# ls
+</span></span><span style="display:flex;"><span>Dockerfile  node_modules  package.json  spec  src  yarn.lock
+</span></span></code></pre></div><p>5 创建一个新文件并命名为myfile.txt。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@ac1237fad8db:/src# touch myfile.txt
+</span></span><span style="display:flex;"><span>root@ac1237fad8db:/src# ls
+</span></span><span style="display:flex;"><span>Dockerfile  myfile.txt  node_modules  package.json  spec  src  yarn.lock
+</span></span></code></pre></div><p>6 现在如果打开宿主机的getting-started/app目录，你就会看到myfile.txt文件也在里面。</p>
+<p><img src="/docker-mount/bind-mount-newfile.png" alt="bind-mount-newfile"></p>
+<p>7 在宿主机的getting-started/app目录内，删除掉myfile.txt文件。</p>
+<p>8 回到容器的bash命令行重新执行ls命令，就会发现myfile.txt文件也不见了。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@ac1237fad8db:/src# ls
+</span></span><span style="display:flex;"><span>Dockerfile  node_modules  package.json  spec  src  yarn.lock
+</span></span></code></pre></div><p>9 最后在容器bash命令行中使用Ctrl + D来结束这个快速体验过程。</p>
+<p>以上过程证明了文件如何在宿主机与Docker容器间共享，以及文件的更新/删除如何立刻在两边反应出来。接下来，我们实践一个通过bind持久化来加速软件开发的场景。</p>
+<h2 id="在docker容器中进行软件开发">在Docker容器中进行软件开发</h2>
+<p>下面，我们通过3个步骤来描述如何通过bind持久化来加速getting-started应用的开发过程：</p>
+<ul>
+<li>通过bind将源代码目录与Docker容器映射；</li>
+<li>安装getting-started应用的npm依赖；</li>
+<li>启动nodemon监听源代码所在目录的变化。</li>
+</ul>
+<p>让我们开始吧。</p>
+<p>1 把之前运行的getting-started应用容器都关闭。</p>
+<p>2 在getting-started/app目录，运行如下命令。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -dp 3000:3000 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -w /app --mount type<span style="color:#f92672">=</span>bind,src<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>pwd<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>,target<span style="color:#f92672">=</span>/app <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    node:18-alpine <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    sh -c <span style="color:#e6db74">&#34;yarn install &amp;&amp; yarn run dev&#34;</span>
+</span></span></code></pre></div><ul>
+<li><strong>-dp 3000:3000</strong> 以后台形式运行容器，并创建3000端口的映射。</li>
+<li><strong>-w /app</strong> 设置后续命令运行的当前目录或“工作目录”</li>
+<li><strong>&ndash;mount type=bind,src=&quot;$(pwd)&quot;,target=/app</strong> 通过bind将-w设置的当前目录(工作目录)映射到容器中的/app目录</li>
+<li><strong>node:18-alpine</strong> 使用的镜像文件。这也是Dockerfile中的基础镜像。</li>
+<li><strong>sh -c &ldquo;yarn install &amp;&amp; yarn run dev&rdquo;</strong> 容器启动sh命令行，运行yarn install命令来安装相关依赖，运行yarn run dev来启动开发服务器。如果查看/app目录里的package.json文件，就会发现dev脚本会启动nodemon</li>
+</ul>
+<p>3 容器启动过程中，可以通过docker logs <!-- raw HTML omitted -->来查看启动过程。如果看到类似如下输出内容，就代表容器启动完成：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker logs -f &lt;container-id&gt;
+</span></span><span style="display:flex;"><span>nodemon src/index.js
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>nodemon<span style="color:#f92672">]</span> 2.0.20
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>nodemon<span style="color:#f92672">]</span> to restart at any time, enter <span style="color:#e6db74">`</span>rs<span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>nodemon<span style="color:#f92672">]</span> watching dir<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>: *.*
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>nodemon<span style="color:#f92672">]</span> starting <span style="color:#e6db74">`</span>node src/index.js<span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>Using sqlite database at /etc/todos/todo.db
+</span></span><span style="display:flex;"><span>Listening on port <span style="color:#ae81ff">3000</span>
+</span></span></code></pre></div><p>输入Ctrl + C可以关闭Docker日志查看过程。在浏览器中打开<a href="http://127.0.0.1:3000">http://127.0.0.1:3000</a>。</p>
+<p>4 现在，我们修改宿主机getting-started/app目录里的src/static/js/app.js文件。将109行的“Add Item”按钮文案简化为“Add”：</p>
+<pre tabindex="0"><code class="language-git" data-lang="git">- {submitting ? &#39;Adding...&#39; : &#39;Add Item&#39;}
++ {submitting ? &#39;Adding...&#39; : &#39;Add&#39;}
+</code></pre><p>5 刷新<a href="http://127.0.0.1:3000">http://127.0.0.1:3000</a>的页面，你应该就可以看到刚刚的修改生效了。这个更新可能会有几秒钟的延迟，因为Node服务器需要重启。所以如果你看到页面错误，尝试重新刷新页面即可。</p>
+<p>![updated-add-button](/docker-mount/updated-add-button.png</p>
+<p>6 你可以再尝试修改其它内容。每次你修改并保存文件后，nodemon进程都会监听到并在容器中重启getting-started应用。当你不想再尝试(完成应用开发)后，停止容器并重新构建镜像文件即可：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker build -t getting-started .
+</span></span></code></pre></div><p>在本地开发过程中，使用bind持久化是一个很常见的操作。它的优势是开发机器不再需要安装各种构建工具、环境设定、源代码依赖等。一个简单的docker run命令就可以把所有工具、环境、依赖准备好。</p>
+<h1 id="学到的docker命令">学到的Docker命令</h1>
+<p>一共三个</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>docker exec</td>
+<td>在容器里执行命令</td>
+</tr>
+<tr>
+<td>docker volume</td>
+<td>创建容器volume</td>
+</tr>
+<tr>
+<td>docker log</td>
+<td>查看容器日志</td>
+</tr>
+</tbody>
+</table>
+<h1 id="翻译来源">翻译来源</h1>
+<ul>
+<li><a href="https://docs.docker.com/get-started/05_persisting_data/">https://docs.docker.com/get-started/05_persisting_data/</a></li>
+<li><a href="https://docs.docker.com/get-started/06_bind_mounts/">https://docs.docker.com/get-started/06_bind_mounts/</a></li>
+</ul>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/docker" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Docker</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/container" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Container</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/mount" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">mount</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/%E6%8C%81%E4%B9%85%E5%8C%96%E5%AD%98%E5%82%A8" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">持久化存储</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/posts/update-share-app/">更新与分发Docker镜像（2）</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/docker-get-started/">Docker入门（1）</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/a-brief-history-of-containers-from-1970s/">容器简史[翻译]</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://superlifebuoy.github.io/" >
+    &copy;  My New Hugo Site 2023 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

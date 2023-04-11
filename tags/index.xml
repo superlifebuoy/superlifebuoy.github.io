@@ -6,11 +6,11 @@
     <description>Recent content in Tags on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Mar 2023 19:52:44 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Mar 2023 14:55:05 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Container</title>
       <link>https://superlifebuoy.github.io/tags/container/</link>
-      <pubDate>Mon, 20 Mar 2023 19:52:44 +0800</pubDate>
+      <pubDate>Thu, 30 Mar 2023 14:55:05 +0800</pubDate>
       
       <guid>https://superlifebuoy.github.io/tags/container/</guid>
       <description></description>
@@ -19,9 +19,27 @@
     <item>
       <title>Docker</title>
       <link>https://superlifebuoy.github.io/tags/docker/</link>
-      <pubDate>Mon, 20 Mar 2023 19:52:44 +0800</pubDate>
+      <pubDate>Thu, 30 Mar 2023 14:55:05 +0800</pubDate>
       
       <guid>https://superlifebuoy.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mount</title>
+      <link>https://superlifebuoy.github.io/tags/mount/</link>
+      <pubDate>Thu, 30 Mar 2023 14:55:05 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/tags/mount/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>持久化存储</title>
+      <link>https://superlifebuoy.github.io/tags/%E6%8C%81%E4%B9%85%E5%8C%96%E5%AD%98%E5%82%A8/</link>
+      <pubDate>Thu, 30 Mar 2023 14:55:05 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/tags/%E6%8C%81%E4%B9%85%E5%8C%96%E5%AD%98%E5%82%A8/</guid>
       <description></description>
     </item>
     

@@ -6,7 +6,16 @@
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Mar 2023 19:52:44 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Mar 2023 14:55:05 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker容器持久化存储（3）</title>
+      <link>https://superlifebuoy.github.io/posts/docker-mount/</link>
+      <pubDate>Thu, 30 Mar 2023 14:55:05 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/posts/docker-mount/</guid>
+      <description>Docker容器如何使用持久化存储？</description>
+    </item>
+    
     <item>
       <title>更新与分发Docker镜像（2）</title>
       <link>https://superlifebuoy.github.io/posts/update-share-app/</link>
