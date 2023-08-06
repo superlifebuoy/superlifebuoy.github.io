@@ -131,6 +131,37 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="https://superlifebuoy.github.io/posts/maven-wrapper/" class="color-inherit dim link">
+            Maven Wrapper
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Maven Wrapper是什么？ Maven Wrapper是一个插件，它使Maven项目的管理更加方便。
+它要解决什么问题？ 我们接手别人的Maven项目(例如从GitHub下载)时，默认会使用自己本地安装的Maven对项目进行编译、打包等操作。别人接手我们的项目时，默认也会使用他们本地安装的Maven对项目进行编译、打包等操作。
+如果我们彼此使用的Maven版本不一致且不兼容怎么办？ 如果特定的项目需要使用特定版本的Maven怎么办？ 如果我们之前没有使用过Maven怎么办？ Maven Wrapper就是解决这个问题的。通过向Maven项目添加Wrapper，可以为Maven项目指定使用的Maven版本等相关信息。这样同一个Maven项目，无论在什么环境下都可以使用正确版本的Maven了。
+如何在项目中使用Wrapper？ 要使用Maven Wrapper，首先要在项目中添加Wrapper。
+如何添加Wrapper 在项目中添加Wrpper非常简单。因为Maven Wrapper插件提供了wrapper目标，所以只需在Maven工程目录执行如下命令即可：
+mvn wrapper:wrapper 执行完成后，这个Maven项目就设置好Maven Wrapper啦。
+Maven Wrapper的组成与工作原理 添加Wrapper之后，Maven项目的结构如下：
+maven-project |---.mvn | |---wrapper | |--- maven-wrapper.jar | |--- maven-wrapper.properties |---mvnw |---mvnw.cmd |---src | |---main | |---test |---pom.xml 小结 
+        </div>
+          <a href="https://superlifebuoy.github.io/posts/maven-wrapper/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="https://superlifebuoy.github.io/posts/docker-mount/" class="color-inherit dim link">
             Docker容器持久化存储（3）
             </a>
@@ -171,36 +202,18 @@
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="https://superlifebuoy.github.io/posts/docker-get-started/" class="color-inherit dim link">
-            Docker入门（1）
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Docker是什么？如何使用它？
-        </div>
-          <a href="https://superlifebuoy.github.io/posts/docker-get-started/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="https://superlifebuoy.github.io/posts/docker-get-started/" class="link black dim">
+              Docker入门（1）
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://superlifebuoy.github.io/posts/git-ssh-key/" class="link black dim">
@@ -217,12 +230,6 @@
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://superlifebuoy.github.io/posts/deploy-hugo-by-github/" class="link black dim">
               通过Github部署Hugo
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="https://superlifebuoy.github.io/posts/a-brief-history-of-containers-from-1970s/" class="link black dim">
-              容器简史[翻译]
             </a>
           </h2>
         

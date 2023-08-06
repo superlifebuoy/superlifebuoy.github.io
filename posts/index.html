@@ -104,6 +104,28 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
+      <a href="https://superlifebuoy.github.io/posts/maven-wrapper/" class="link black dim">
+        Maven Wrapper
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Maven Wrapper是什么？ Maven Wrapper是一个插件，它使Maven项目的管理更加方便。
+它要解决什么问题？ 我们接手别人的Maven项目(例如从GitHub下载)时，默认会使用自己本地安装的Maven对项目进行编译、打包等操作。别人接手我们的项目时，默认也会使用他们本地安装的Maven对项目进行编译、打包等操作。
+如果我们彼此使用的Maven版本不一致且不兼容怎么办？ 如果特定的项目需要使用特定版本的Maven怎么办？ 如果我们之前没有使用过Maven怎么办？ Maven Wrapper就是解决这个问题的。通过向Maven项目添加Wrapper，可以为Maven项目指定使用的Maven版本等相关信息。这样同一个Maven项目，无论在什么环境下都可以使用正确版本的Maven了。
+如何在项目中使用Wrapper？ 要使用Maven Wrapper，首先要在项目中添加Wrapper。
+如何添加Wrapper 在项目中添加Wrpper非常简单。因为Maven Wrapper插件提供了wrapper目标，所以只需在Maven工程目录执行如下命令即可：
+mvn wrapper:wrapper 执行完成后，这个Maven项目就设置好Maven Wrapper啦。
+Maven Wrapper的组成与工作原理 添加Wrapper之后，Maven项目的结构如下：
+maven-project |---.mvn | |---wrapper | |--- maven-wrapper.jar | |--- maven-wrapper.properties |---mvnw |---mvnw.cmd |---src | |---main | |---test |---pom.xml 小结 
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
       <a href="https://superlifebuoy.github.io/posts/docker-mount/" class="link black dim">
         Docker容器持久化存储（3）
       </a>
@@ -230,21 +252,6 @@
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="https://superlifebuoy.github.io/posts/how_to_use_cloc/" class="link black dim">
-        How to Use cloc
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      关于cloc的简介——一个开源、易用的代码行统计工具。
     </div>
   </div>
 </div>

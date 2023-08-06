@@ -39,7 +39,7 @@
 <meta itemprop="name" content="命令行工具简介">
 <meta itemprop="description" content="关于常用的命令行工具介绍，包括但不限于maven、curl、wget等。"><meta itemprop="datePublished" content="2022-09-15T19:36:09+08:00" />
 <meta itemprop="dateModified" content="2022-09-15T19:36:09+08:00" />
-<meta itemprop="wordCount" content="28">
+<meta itemprop="wordCount" content="39">
 <meta itemprop="keywords" content="Tool,Maven,curl,wget," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="命令行工具简介"/>
 <meta name="twitter:description" content="关于常用的命令行工具介绍，包括但不限于maven、curl、wget等。"/>
@@ -139,7 +139,13 @@
       
     </header>
     <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id="maven">Maven</h2>
-<h2 id="curl">curl</h2>
+<h3 id="新建工程">新建工程</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>mvn archetype:generate <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>-DgroupId<span style="color:#f92672">=</span>cf.common.utils <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>-DartifactId<span style="color:#f92672">=</span>hotspot <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>-Dversion<span style="color:#f92672">=</span>1.0-SNAPSHOT <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>-Dpackage<span style="color:#f92672">=</span>cf.common.utils
+</span></span></code></pre></div><h2 id="curl">curl</h2>
 <h3 id="忽略https证书校验">忽略https证书校验</h3>
 <p>增加参数-k或者&ndash;insecure</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>curl -k https://domain/path
