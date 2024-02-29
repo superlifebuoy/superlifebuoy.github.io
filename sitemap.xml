@@ -2,13 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://superlifebuoy.github.io/posts/maven-wrapper/</loc>
-    <lastmod>2023-04-23T16:13:43+08:00</lastmod>
+    <loc>https://superlifebuoy.github.io/tags/application/</loc>
+    <lastmod>2024-02-29T23:00:34+08:00</lastmod>
+  </url><url>
+    <loc>https://superlifebuoy.github.io/tags/entry-point/</loc>
+    <lastmod>2024-02-29T23:00:34+08:00</lastmod>
+  </url><url>
+    <loc>https://superlifebuoy.github.io/tags/jar/</loc>
+    <lastmod>2024-02-29T23:00:34+08:00</lastmod>
+  </url><url>
+    <loc>https://superlifebuoy.github.io/tags/java/</loc>
+    <lastmod>2024-02-29T23:00:34+08:00</lastmod>
+  </url><url>
+    <loc>https://superlifebuoy.github.io/posts/java-jar/</loc>
+    <lastmod>2024-02-29T23:00:34+08:00</lastmod>
+  </url><url>
+    <loc>https://superlifebuoy.github.io/tags/main-class/</loc>
+    <lastmod>2024-02-29T23:00:34+08:00</lastmod>
+  </url><url>
+    <loc>https://superlifebuoy.github.io/tags/maven/</loc>
+    <lastmod>2024-02-29T23:00:34+08:00</lastmod>
+  </url><url>
+    <loc>https://superlifebuoy.github.io/tags/mvn/</loc>
+    <lastmod>2024-02-29T23:00:34+08:00</lastmod>
   </url><url>
     <loc>https://superlifebuoy.github.io/</loc>
-    <lastmod>2023-04-23T16:13:43+08:00</lastmod>
+    <lastmod>2024-02-29T23:00:34+08:00</lastmod>
   </url><url>
     <loc>https://superlifebuoy.github.io/posts/</loc>
+    <lastmod>2024-02-29T23:00:34+08:00</lastmod>
+  </url><url>
+    <loc>https://superlifebuoy.github.io/tags/</loc>
+    <lastmod>2024-02-29T23:00:34+08:00</lastmod>
+  </url><url>
+    <loc>https://superlifebuoy.github.io/posts/maven-wrapper/</loc>
     <lastmod>2023-04-23T16:13:43+08:00</lastmod>
   </url><url>
     <loc>https://superlifebuoy.github.io/tags/container/</loc>
@@ -21,9 +48,6 @@
     <lastmod>2023-03-30T14:55:05+08:00</lastmod>
   </url><url>
     <loc>https://superlifebuoy.github.io/tags/mount/</loc>
-    <lastmod>2023-03-30T14:55:05+08:00</lastmod>
-  </url><url>
-    <loc>https://superlifebuoy.github.io/tags/</loc>
     <lastmod>2023-03-30T14:55:05+08:00</lastmod>
   </url><url>
     <loc>https://superlifebuoy.github.io/tags/%E6%8C%81%E4%B9%85%E5%8C%96%E5%AD%98%E5%82%A8/</loc>
@@ -78,9 +102,6 @@
     <lastmod>2022-09-15T19:56:51+08:00</lastmod>
   </url><url>
     <loc>https://superlifebuoy.github.io/tags/curl/</loc>
-    <lastmod>2022-09-15T19:36:09+08:00</lastmod>
-  </url><url>
-    <loc>https://superlifebuoy.github.io/tags/maven/</loc>
     <lastmod>2022-09-15T19:36:09+08:00</lastmod>
   </url><url>
     <loc>https://superlifebuoy.github.io/tags/tool/</loc>

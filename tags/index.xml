@@ -6,7 +6,70 @@
     <description>Recent content in Tags on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Mar 2023 14:55:05 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Feb 2024 23:00:34 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Application</title>
+      <link>https://superlifebuoy.github.io/tags/application/</link>
+      <pubDate>Thu, 29 Feb 2024 23:00:34 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/tags/application/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Entry Point</title>
+      <link>https://superlifebuoy.github.io/tags/entry-point/</link>
+      <pubDate>Thu, 29 Feb 2024 23:00:34 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/tags/entry-point/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jar</title>
+      <link>https://superlifebuoy.github.io/tags/jar/</link>
+      <pubDate>Thu, 29 Feb 2024 23:00:34 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/tags/jar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://superlifebuoy.github.io/tags/java/</link>
+      <pubDate>Thu, 29 Feb 2024 23:00:34 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Main Class</title>
+      <link>https://superlifebuoy.github.io/tags/main-class/</link>
+      <pubDate>Thu, 29 Feb 2024 23:00:34 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/tags/main-class/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maven</title>
+      <link>https://superlifebuoy.github.io/tags/maven/</link>
+      <pubDate>Thu, 29 Feb 2024 23:00:34 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/tags/maven/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mvn</title>
+      <link>https://superlifebuoy.github.io/tags/mvn/</link>
+      <pubDate>Thu, 29 Feb 2024 23:00:34 +0800</pubDate>
+      
+      <guid>https://superlifebuoy.github.io/tags/mvn/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Container</title>
       <link>https://superlifebuoy.github.io/tags/container/</link>
@@ -139,15 +202,6 @@
       <pubDate>Thu, 15 Sep 2022 19:36:09 +0800</pubDate>
       
       <guid>https://superlifebuoy.github.io/tags/curl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Maven</title>
-      <link>https://superlifebuoy.github.io/tags/maven/</link>
-      <pubDate>Thu, 15 Sep 2022 19:36:09 +0800</pubDate>
-      
-      <guid>https://superlifebuoy.github.io/tags/maven/</guid>
       <description></description>
     </item>
     
