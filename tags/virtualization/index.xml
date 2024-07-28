@@ -4,17 +4,16 @@
     <title>Virtualization on My New Hugo Site</title>
     <link>https://superlifebuoy.github.io/tags/virtualization/</link>
     <description>Recent content in Virtualization on My New Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Sep 2022 19:56:51 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/tags/virtualization/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Sep 2022 19:56:51 +0800</lastBuildDate>
+    <atom:link href="https://superlifebuoy.github.io/tags/virtualization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>容器简史[翻译]</title>
       <link>https://superlifebuoy.github.io/posts/a-brief-history-of-containers-from-1970s/</link>
       <pubDate>Thu, 15 Sep 2022 19:56:51 +0800</pubDate>
-      
       <guid>https://superlifebuoy.github.io/posts/a-brief-history-of-containers-from-1970s/</guid>
       <description>简单介绍容器技术自1970年代以来的发展历史。</description>
     </item>
-    
   </channel>
 </rss>

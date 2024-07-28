@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cloc on My New Hugo Site</title>
+    <title>Cloc on My New Hugo Site</title>
     <link>https://superlifebuoy.github.io/tags/cloc/</link>
-    <description>Recent content in cloc on My New Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Cloc on My New Hugo Site</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Dec 2021 11:44:28 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/tags/cloc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Dec 2021 11:44:28 +0800</lastBuildDate>
+    <atom:link href="https://superlifebuoy.github.io/tags/cloc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Use cloc</title>
       <link>https://superlifebuoy.github.io/posts/how_to_use_cloc/</link>
       <pubDate>Wed, 08 Dec 2021 11:44:28 +0800</pubDate>
-      
       <guid>https://superlifebuoy.github.io/posts/how_to_use_cloc/</guid>
       <description>关于cloc的简介——一个开源、易用的代码行统计工具。</description>
     </item>
-    
   </channel>
 </rss>

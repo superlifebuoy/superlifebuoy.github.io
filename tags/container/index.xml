@@ -4,44 +4,16 @@
     <title>Container on My New Hugo Site</title>
     <link>https://superlifebuoy.github.io/tags/container/</link>
     <description>Recent content in Container on My New Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Mar 2023 14:55:05 +0800</lastBuildDate><atom:link href="https://superlifebuoy.github.io/tags/container/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Docker容器持久化存储（3）</title>
-      <link>https://superlifebuoy.github.io/posts/docker-mount/</link>
-      <pubDate>Thu, 30 Mar 2023 14:55:05 +0800</pubDate>
-      
-      <guid>https://superlifebuoy.github.io/posts/docker-mount/</guid>
-      <description>Docker容器如何使用持久化存储？</description>
-    </item>
-    
-    <item>
-      <title>更新与分发Docker镜像（2）</title>
-      <link>https://superlifebuoy.github.io/posts/update-share-app/</link>
-      <pubDate>Mon, 20 Mar 2023 19:52:44 +0800</pubDate>
-      
-      <guid>https://superlifebuoy.github.io/posts/update-share-app/</guid>
-      <description>如何更新Docker镜像？如果推送Docker镜像到镜像仓库？</description>
-    </item>
-    
-    <item>
-      <title>Docker入门（1）</title>
-      <link>https://superlifebuoy.github.io/posts/docker-get-started/</link>
-      <pubDate>Tue, 14 Mar 2023 22:27:10 +0800</pubDate>
-      
-      <guid>https://superlifebuoy.github.io/posts/docker-get-started/</guid>
-      <description>Docker是什么？如何使用它？</description>
-    </item>
-    
+    <lastBuildDate>Thu, 15 Sep 2022 19:56:51 +0800</lastBuildDate>
+    <atom:link href="https://superlifebuoy.github.io/tags/container/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>容器简史[翻译]</title>
       <link>https://superlifebuoy.github.io/posts/a-brief-history-of-containers-from-1970s/</link>
       <pubDate>Thu, 15 Sep 2022 19:56:51 +0800</pubDate>
-      
       <guid>https://superlifebuoy.github.io/posts/a-brief-history-of-containers-from-1970s/</guid>
       <description>简单介绍容器技术自1970年代以来的发展历史。</description>
     </item>
-    
   </channel>
 </rss>
