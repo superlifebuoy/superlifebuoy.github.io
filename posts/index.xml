@@ -30,6 +30,13 @@
       <description>初始化Git SSH keys。</description>
     </item>
     <item>
+      <title>API设计的最佳实践[翻译]</title>
+      <link>https://superlifebuoy.github.io/posts/best-practices-in-api-design/</link>
+      <pubDate>Tue, 27 Sep 2022 20:47:46 +0800</pubDate>
+      <guid>https://superlifebuoy.github.io/posts/best-practices-in-api-design/</guid>
+      <description>Swagger关于API设计的最佳实践。</description>
+    </item>
+    <item>
       <title>通过Github部署Hugo</title>
       <link>https://superlifebuoy.github.io/posts/deploy-hugo-by-github/</link>
       <pubDate>Thu, 15 Sep 2022 20:04:36 +0800</pubDate>
