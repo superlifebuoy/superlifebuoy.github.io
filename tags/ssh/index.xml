@@ -6,8 +6,15 @@
     <description>Recent content in SSH on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Mar 2023 11:34:26 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 05 Mar 2025 18:56:53 -0800</lastBuildDate>
     <atom:link href="https://superlifebuoy.github.io/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ssh Intro</title>
+      <link>https://superlifebuoy.github.io/posts/ssh-intro/</link>
+      <pubDate>Wed, 05 Mar 2025 18:56:53 -0800</pubDate>
+      <guid>https://superlifebuoy.github.io/posts/ssh-intro/</guid>
+      <description>简单介绍SSH与使用场景。</description>
+    </item>
     <item>
       <title>Git SSH Key</title>
       <link>https://superlifebuoy.github.io/posts/git-ssh-key/</link>
