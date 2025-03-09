@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Product on My New Hugo Site</title>
-    <link>https://superlifebuoy.github.io/tags/product/</link>
-    <description>Recent content in Product on My New Hugo Site</description>
+    <title>Product on </title>
+    <link>/tags/product/</link>
+    <description>Recent content in Product on </description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Thu, 07 Oct 2021 10:27:08 +0800</lastBuildDate>
-    <atom:link href="https://superlifebuoy.github.io/tags/product/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/product/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why We Make Our Product Roadmaps Public [翻译]</title>
-      <link>https://superlifebuoy.github.io/posts/why-we-make-our-product-roadmaps-public/</link>
+      <link>/posts/why-we-make-our-product-roadmaps-public/</link>
       <pubDate>Thu, 07 Oct 2021 10:27:08 +0800</pubDate>
-      <guid>https://superlifebuoy.github.io/posts/why-we-make-our-product-roadmaps-public/</guid>
+      <guid>/posts/why-we-make-our-product-roadmaps-public/</guid>
       <description>WSO2在这篇文章中讲述了他们为什么要把产品路线图开放出来。</description>
     </item>
   </channel>

@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on My New Hugo Site</title>
-    <link>https://superlifebuoy.github.io/tags/blog/</link>
-    <description>Recent content in Blog on My New Hugo Site</description>
+    <title>Blog on </title>
+    <link>/tags/blog/</link>
+    <description>Recent content in Blog on </description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Wed, 17 Aug 2022 22:28:08 +0800</lastBuildDate>
-    <atom:link href="https://superlifebuoy.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Image Post</title>
-      <link>https://superlifebuoy.github.io/posts/my-image-post/</link>
+      <link>/posts/my-image-post/</link>
       <pubDate>Wed, 17 Aug 2022 22:28:08 +0800</pubDate>
-      <guid>https://superlifebuoy.github.io/posts/my-image-post/</guid>
+      <guid>/posts/my-image-post/</guid>
       <description>讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。</description>
     </item>
     <item>
       <title>Hugo Quick Start</title>
-      <link>https://superlifebuoy.github.io/posts/hugo-quick-start/</link>
+      <link>/posts/hugo-quick-start/</link>
       <pubDate>Wed, 17 Feb 2021 20:29:21 +0800</pubDate>
-      <guid>https://superlifebuoy.github.io/posts/hugo-quick-start/</guid>
+      <guid>/posts/hugo-quick-start/</guid>
       <description>Hugo官方Quick Start的翻译。</description>
     </item>
   </channel>

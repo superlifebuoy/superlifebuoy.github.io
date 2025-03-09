@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Picture on My New Hugo Site</title>
-    <link>https://superlifebuoy.github.io/tags/picture/</link>
-    <description>Recent content in Picture on My New Hugo Site</description>
+    <title>Picture on </title>
+    <link>/tags/picture/</link>
+    <description>Recent content in Picture on </description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Wed, 17 Aug 2022 22:28:08 +0800</lastBuildDate>
-    <atom:link href="https://superlifebuoy.github.io/tags/picture/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/picture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Image Post</title>
-      <link>https://superlifebuoy.github.io/posts/my-image-post/</link>
+      <link>/posts/my-image-post/</link>
       <pubDate>Wed, 17 Aug 2022 22:28:08 +0800</pubDate>
-      <guid>https://superlifebuoy.github.io/posts/my-image-post/</guid>
+      <guid>/posts/my-image-post/</guid>
       <description>讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。</description>
     </item>
   </channel>

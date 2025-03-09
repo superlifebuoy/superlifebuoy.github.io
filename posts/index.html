@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>My New Hugo Site</title>
+    <title></title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="">
-    <meta name="generator" content="Hugo 0.111.3">
+    <meta name="generator" content="Hugo 0.145.0">
     
     
-      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+      <meta name="robots" content="index, follow">
+    
     
 
     
-
-  
-  
-    <link rel="stylesheet" href="/ananke/dist/main.css_5c99d70a7725bacd4c701e995b969fea.css" >
-  
+<link rel="stylesheet" href="/ananke/css/main.min.d05fb5f317fcf33b3a52936399bdf6f47dc776516e1692e412ec7d76f4a5faa2.css" >
 
 
 
+
+    
 
     
       
@@ -30,24 +30,30 @@
 
     
     
-      <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
-      <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="My New Hugo Site" />
+      <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="" />
+      <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="" />
       
     
-    
-    <meta property="og:title" content="Posts" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://superlifebuoy.github.io/posts/" />
-<meta itemprop="name" content="Posts">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content=""/>
 
+    
+      <link rel="canonical" href="/posts/">
+    
+
+    <meta property="og:url" content="/posts/">
+  <meta property="og:title" content="Posts">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Posts">
+  <meta itemprop="datePublished" content="2025-03-05T18:56:53-08:00">
+  <meta itemprop="dateModified" content="2025-03-05T18:56:53-08:00">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Posts">
+
+      
+    
 	
-  </head>
-
-  <body class="ma0 avenir bg-near-white">
+  </head><body class="ma0 avenir bg-near-white production">
 
     
 
@@ -57,28 +63,14 @@
   <div class="flex-l justify-between items-center center">
     <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
       
-        My New Hugo Site
+        
       
     </a>
     <div class="flex-l items-center">
       
 
       
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <div class="ananke-socials"></div>
 
     </div>
   </div>
@@ -96,166 +88,231 @@
 
     <main class="pb7" role="main">
       
-  <article class="pa3 pa4-ns nested-copy-line-height nested-img">
+  <article class="pa3 pa4-ns nested-copy-line-height">
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
     <section class="flex-ns flex-wrap justify-around mt5">
       
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
-      <a href="https://superlifebuoy.github.io/posts/java-jar/" class="link black dim">
-        Java Jar启动简介
+      <a href="/posts/ssh-intro/" class="link black dim">
+        Ssh Intro
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      介绍Java如何在Jar包中找到程序入口。以及我们在开发程序时，如何设定Jar包的入口(jar命令实现与Maven插件实现)。
+      <h1 id="ssh配置与使用">SSH配置与使用</h1>
+<h2 id="1-ssh是什么">1 SSH是什么</h2>
+<p>SSH(Secure Shell Protocol)是一种加密的网络传输协议。</p>
+<h2 id="2-基本用法">2 基本用法</h2>
+<h3 id="2x-config配置">2.x config配置</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">配置项</th>
+          <th style="text-align: left">说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">Host</td>
+          <td style="text-align: left">对其他的声明项做分组。</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">HostName</td>
+          <td style="text-align: left">指明登录的服务器真实域名。</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">User</td>
+          <td style="text-align: left">指明登录HostName使用的用户名。</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">IdentityFile</td>
+          <td style="text-align: left">指明User登录HostName时，使用的密钥位置。</td>
+      </tr>
+  </tbody>
+</table>
+<p>如下是一个示例：</p>
+<pre tabindex="0"><code>Host github.com
+	HostName github.com
+	User user1
+	IdentityFile ~/.ssh/id_rsa
+
+Host anotherHost
+	HostName github.com
+	User user2
+	IdentityFile ~/.ssh/id_rsa_user2
+</code></pre><h2 id="3-原理">3 原理</h2>
+<h2 id="4-github使用场景">4 Github使用场景</h2>
     </div>
+    <a href="/posts/ssh-intro/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
   </div>
 </div>
-</div>
+
+        </div>
       
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
-      <a href="https://superlifebuoy.github.io/posts/maven-wrapper/" class="link black dim">
-        Maven Wrapper
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Maven Wrapper是什么？ Maven Wrapper是一个插件，它使Maven项目的管理更加方便。
-它要解决什么问题？ 我们接手别人的Maven项目(例如从GitHub下载)时，默认会使用自己本地安装的Maven对项目进行编译、打包等操作。别人接手我们的项目时，默认也会使用他们本地安装的Maven对项目进行编译、打包等操作。
-如果我们彼此使用的Maven版本不一致且不兼容怎么办？ 如果特定的项目需要使用特定版本的Maven怎么办？ 如果我们之前没有使用过Maven怎么办？ Maven Wrapper就是解决这个问题的。通过向Maven项目添加Wrapper，可以为Maven项目指定使用的Maven版本等相关信息。这样同一个Maven项目，无论在什么环境下都可以使用正确版本的Maven了。
-如何在项目中使用Wrapper？ 要使用Maven Wrapper，首先要在项目中添加Wrapper。
-如何添加Wrapper 在项目中添加Wrpper非常简单。因为Maven Wrapper插件提供了wrapper目标，所以只需在Maven工程目录执行如下命令即可：
-mvn wrapper:wrapper 执行完成后，这个Maven项目就设置好Maven Wrapper啦。
-Maven Wrapper的组成与工作原理 添加Wrapper之后，Maven项目的结构如下：
-maven-project |---.mvn | |---wrapper | |--- maven-wrapper.jar | |--- maven-wrapper.properties |---mvnw |---mvnw.cmd |---src | |---main | |---test |---pom.xml 小结 
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="https://superlifebuoy.github.io/posts/docker-mount/" class="link black dim">
-        Docker容器持久化存储（3）
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Docker容器如何使用持久化存储？
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="https://superlifebuoy.github.io/posts/update-share-app/" class="link black dim">
+      <a href="/posts/update-share-app/" class="link black dim">
         更新与分发Docker镜像（2）
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       如何更新Docker镜像？如果推送Docker镜像到镜像仓库？
     </div>
+    <a href="/posts/update-share-app/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
   </div>
 </div>
-</div>
+
+        </div>
       
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
-      <a href="https://superlifebuoy.github.io/posts/docker-get-started/" class="link black dim">
+      <a href="/posts/docker-get-started/" class="link black dim">
         Docker入门（1）
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       Docker是什么？如何使用它？
     </div>
+    <a href="/posts/docker-get-started/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
   </div>
 </div>
-</div>
+
+        </div>
       
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
-      <a href="https://superlifebuoy.github.io/posts/git-ssh-key/" class="link black dim">
+      <a href="/posts/git-ssh-key/" class="link black dim">
         Git SSH Key
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       初始化Git SSH keys。
     </div>
+    <a href="/posts/git-ssh-key/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
   </div>
 </div>
-</div>
+
+        </div>
       
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
-      <a href="https://superlifebuoy.github.io/posts/best-practices-in-api-design/" class="link black dim">
+      <a href="/posts/best-practices-in-api-design/" class="link black dim">
         API设计的最佳实践[翻译]
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       Swagger关于API设计的最佳实践。
     </div>
+    <a href="/posts/best-practices-in-api-design/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
   </div>
 </div>
-</div>
+
+        </div>
       
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
-      <a href="https://superlifebuoy.github.io/posts/deploy-hugo-by-github/" class="link black dim">
+      <a href="/posts/deploy-hugo-by-github/" class="link black dim">
         通过Github部署Hugo
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。
     </div>
+    <a href="/posts/deploy-hugo-by-github/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
   </div>
 </div>
-</div>
+
+        </div>
       
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
-      <a href="https://superlifebuoy.github.io/posts/a-brief-history-of-containers-from-1970s/" class="link black dim">
+      <a href="/posts/a-brief-history-of-containers-from-1970s/" class="link black dim">
         容器简史[翻译]
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       简单介绍容器技术自1970年代以来的发展历史。
     </div>
+    <a href="/posts/a-brief-history-of-containers-from-1970s/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
   </div>
 </div>
-</div>
+
+        </div>
       
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
-      <a href="https://superlifebuoy.github.io/posts/util-commands/" class="link black dim">
+      <a href="/posts/util-commands/" class="link black dim">
         命令行工具简介
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       关于常用的命令行工具介绍，包括但不限于maven、curl、wget等。
     </div>
+    <a href="/posts/util-commands/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
   </div>
 </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/my-image-post/" class="link black dim">
+        My Image Post
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。
+    </div>
+    <a href="/posts/my-image-post/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
 </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/how_to_use_cloc/" class="link black dim">
+        How to Use cloc
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      关于cloc的简介——一个开源、易用的代码行统计工具。
+    </div>
+    <a href="/posts/how_to_use_cloc/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
       
     </section>
     <ul class="pagination pagination-default">
@@ -282,24 +339,10 @@ maven-project |---.mvn | |---wrapper | |--- maven-wrapper.jar | |--- maven-wrapp
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://superlifebuoy.github.io/" >
-    &copy;  My New Hugo Site 2024 
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="/" >
+    &copy; 
   </a>
-    <div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div><div class="ananke-socials"></div>
 </div>
   </div>
 </footer>

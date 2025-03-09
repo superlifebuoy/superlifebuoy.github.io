@@ -1,102 +1,102 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>https://superlifebuoy.github.io/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title></title>
+    <link>/</link>
+    <description>Recent content on </description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Wed, 05 Mar 2025 18:56:53 -0800</lastBuildDate>
-    <atom:link href="https://superlifebuoy.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ssh Intro</title>
-      <link>https://superlifebuoy.github.io/posts/ssh-intro/</link>
+      <link>/posts/ssh-intro/</link>
       <pubDate>Wed, 05 Mar 2025 18:56:53 -0800</pubDate>
-      <guid>https://superlifebuoy.github.io/posts/ssh-intro/</guid>
-      <description>简单介绍SSH与使用场景。</description>
+      <guid>/posts/ssh-intro/</guid>
+      <description>&lt;h1 id=&#34;ssh配置与使用&#34;&gt;SSH配置与使用&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-ssh是什么&#34;&gt;1 SSH是什么&lt;/h2&gt;&#xA;&lt;p&gt;SSH(Secure Shell Protocol)是一种加密的网络传输协议。&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-基本用法&#34;&gt;2 基本用法&lt;/h2&gt;&#xA;&lt;h3 id=&#34;2x-config配置&#34;&gt;2.x config配置&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;配置项&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;说明&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;Host&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;对其他的声明项做分组。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;HostName&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;指明登录的服务器真实域名。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;User&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;指明登录HostName使用的用户名。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;IdentityFile&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;指明User登录HostName时，使用的密钥位置。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;如下是一个示例：&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Host github.com&#xA;&#x9;HostName github.com&#xA;&#x9;User user1&#xA;&#x9;IdentityFile ~/.ssh/id_rsa&#xA;&#xA;Host anotherHost&#xA;&#x9;HostName github.com&#xA;&#x9;User user2&#xA;&#x9;IdentityFile ~/.ssh/id_rsa_user2&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;3-原理&#34;&gt;3 原理&lt;/h2&gt;&#xA;&lt;h2 id=&#34;4-github使用场景&#34;&gt;4 Github使用场景&lt;/h2&gt;</description>
     </item>
     <item>
       <title>更新与分发Docker镜像（2）</title>
-      <link>https://superlifebuoy.github.io/posts/update-share-app/</link>
+      <link>/posts/update-share-app/</link>
       <pubDate>Mon, 20 Mar 2023 19:52:44 +0800</pubDate>
-      <guid>https://superlifebuoy.github.io/posts/update-share-app/</guid>
+      <guid>/posts/update-share-app/</guid>
       <description>如何更新Docker镜像？如果推送Docker镜像到镜像仓库？</description>
     </item>
     <item>
       <title>Docker入门（1）</title>
-      <link>https://superlifebuoy.github.io/posts/docker-get-started/</link>
+      <link>/posts/docker-get-started/</link>
       <pubDate>Tue, 14 Mar 2023 22:27:10 +0800</pubDate>
-      <guid>https://superlifebuoy.github.io/posts/docker-get-started/</guid>
+      <guid>/posts/docker-get-started/</guid>
       <description>Docker是什么？如何使用它？</description>
     </item>
     <item>
       <title>Git SSH Key</title>
-      <link>https://superlifebuoy.github.io/posts/git-ssh-key/</link>
+      <link>/posts/git-ssh-key/</link>
       <pubDate>Sun, 12 Mar 2023 11:34:26 +0800</pubDate>
-      <guid>https://superlifebuoy.github.io/posts/git-ssh-key/</guid>
+      <guid>/posts/git-ssh-key/</guid>
       <description>初始化Git SSH keys。</description>
     </item>
     <item>
       <title>API设计的最佳实践[翻译]</title>
-      <link>https://superlifebuoy.github.io/posts/best-practices-in-api-design/</link>
+      <link>/posts/best-practices-in-api-design/</link>
       <pubDate>Tue, 27 Sep 2022 20:47:46 +0800</pubDate>
-      <guid>https://superlifebuoy.github.io/posts/best-practices-in-api-design/</guid>
+      <guid>/posts/best-practices-in-api-design/</guid>
       <description>Swagger关于API设计的最佳实践。</description>
     </item>
     <item>
       <title>通过Github部署Hugo</title>
-      <link>https://superlifebuoy.github.io/posts/deploy-hugo-by-github/</link>
+      <link>/posts/deploy-hugo-by-github/</link>
       <pubDate>Thu, 15 Sep 2022 20:04:36 +0800</pubDate>
-      <guid>https://superlifebuoy.github.io/posts/deploy-hugo-by-github/</guid>
+      <guid>/posts/deploy-hugo-by-github/</guid>
       <description>讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。</description>
     </item>
     <item>
       <title>容器简史[翻译]</title>
-      <link>https://superlifebuoy.github.io/posts/a-brief-history-of-containers-from-1970s/</link>
+      <link>/posts/a-brief-history-of-containers-from-1970s/</link>
       <pubDate>Thu, 15 Sep 2022 19:56:51 +0800</pubDate>
-      <guid>https://superlifebuoy.github.io/posts/a-brief-history-of-containers-from-1970s/</guid>
+      <guid>/posts/a-brief-history-of-containers-from-1970s/</guid>
       <description>简单介绍容器技术自1970年代以来的发展历史。</description>
     </item>
     <item>
       <title>命令行工具简介</title>
-      <link>https://superlifebuoy.github.io/posts/util-commands/</link>
+      <link>/posts/util-commands/</link>
       <pubDate>Thu, 15 Sep 2022 19:36:09 +0800</pubDate>
-      <guid>https://superlifebuoy.github.io/posts/util-commands/</guid>
+      <guid>/posts/util-commands/</guid>
       <description>关于常用的命令行工具介绍，包括但不限于maven、curl、wget等。</description>
     </item>
     <item>
       <title>My Image Post</title>
-      <link>https://superlifebuoy.github.io/posts/my-image-post/</link>
+      <link>/posts/my-image-post/</link>
       <pubDate>Wed, 17 Aug 2022 22:28:08 +0800</pubDate>
-      <guid>https://superlifebuoy.github.io/posts/my-image-post/</guid>
+      <guid>/posts/my-image-post/</guid>
       <description>讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。</description>
     </item>
     <item>
       <title>How to Use cloc</title>
-      <link>https://superlifebuoy.github.io/posts/how_to_use_cloc/</link>
+      <link>/posts/how_to_use_cloc/</link>
       <pubDate>Wed, 08 Dec 2021 11:44:28 +0800</pubDate>
-      <guid>https://superlifebuoy.github.io/posts/how_to_use_cloc/</guid>
+      <guid>/posts/how_to_use_cloc/</guid>
       <description>关于cloc的简介——一个开源、易用的代码行统计工具。</description>
     </item>
     <item>
       <title>Why We Make Our Product Roadmaps Public [翻译]</title>
-      <link>https://superlifebuoy.github.io/posts/why-we-make-our-product-roadmaps-public/</link>
+      <link>/posts/why-we-make-our-product-roadmaps-public/</link>
       <pubDate>Thu, 07 Oct 2021 10:27:08 +0800</pubDate>
-      <guid>https://superlifebuoy.github.io/posts/why-we-make-our-product-roadmaps-public/</guid>
+      <guid>/posts/why-we-make-our-product-roadmaps-public/</guid>
       <description>WSO2在这篇文章中讲述了他们为什么要把产品路线图开放出来。</description>
     </item>
     <item>
       <title>Small Things That Make Apis a Little Bit Better [翻译]</title>
-      <link>https://superlifebuoy.github.io/posts/small-things-that-make-apis-a-little-bit-better/</link>
+      <link>/posts/small-things-that-make-apis-a-little-bit-better/</link>
       <pubDate>Mon, 12 Jul 2021 20:32:31 +0800</pubDate>
-      <guid>https://superlifebuoy.github.io/posts/small-things-that-make-apis-a-little-bit-better/</guid>
+      <guid>/posts/small-things-that-make-apis-a-little-bit-better/</guid>
       <description>讲述如何让API更好的一些实践方法。</description>
     </item>
     <item>
       <title>Hugo Quick Start</title>
-      <link>https://superlifebuoy.github.io/posts/hugo-quick-start/</link>
+      <link>/posts/hugo-quick-start/</link>
       <pubDate>Wed, 17 Feb 2021 20:29:21 +0800</pubDate>
-      <guid>https://superlifebuoy.github.io/posts/hugo-quick-start/</guid>
+      <guid>/posts/hugo-quick-start/</guid>
       <description>Hugo官方Quick Start的翻译。</description>
     </item>
   </channel>

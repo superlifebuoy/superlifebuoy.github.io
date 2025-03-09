@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SSH on My New Hugo Site</title>
-    <link>https://superlifebuoy.github.io/tags/ssh/</link>
-    <description>Recent content in SSH on My New Hugo Site</description>
+    <title>SSH on </title>
+    <link>/tags/ssh/</link>
+    <description>Recent content in SSH on </description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 05 Mar 2025 18:56:53 -0800</lastBuildDate>
-    <atom:link href="https://superlifebuoy.github.io/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Ssh Intro</title>
-      <link>https://superlifebuoy.github.io/posts/ssh-intro/</link>
-      <pubDate>Wed, 05 Mar 2025 18:56:53 -0800</pubDate>
-      <guid>https://superlifebuoy.github.io/posts/ssh-intro/</guid>
-      <description>简单介绍SSH与使用场景。</description>
-    </item>
+    <language>en</language>
+    <lastBuildDate>Sun, 12 Mar 2023 11:34:26 +0800</lastBuildDate>
+    <atom:link href="/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git SSH Key</title>
-      <link>https://superlifebuoy.github.io/posts/git-ssh-key/</link>
+      <link>/posts/git-ssh-key/</link>
       <pubDate>Sun, 12 Mar 2023 11:34:26 +0800</pubDate>
-      <guid>https://superlifebuoy.github.io/posts/git-ssh-key/</guid>
+      <guid>/posts/git-ssh-key/</guid>
       <description>初始化Git SSH keys。</description>
     </item>
   </channel>

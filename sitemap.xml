@@ -2,109 +2,111 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://superlifebuoy.github.io/tags/github/</loc>
+    <loc>/</loc>
     <lastmod>2025-03-05T18:56:53-08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/</loc>
+    <loc>/posts/</loc>
     <lastmod>2025-03-05T18:56:53-08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/posts/</loc>
+    <loc>/posts/ssh-intro/</loc>
     <lastmod>2025-03-05T18:56:53-08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/tags/ssh/</loc>
-    <lastmod>2025-03-05T18:56:53-08:00</lastmod>
-  </url><url>
-    <loc>https://superlifebuoy.github.io/posts/ssh-intro/</loc>
-    <lastmod>2025-03-05T18:56:53-08:00</lastmod>
-  </url><url>
-    <loc>https://superlifebuoy.github.io/tags/</loc>
-    <lastmod>2025-03-05T18:56:53-08:00</lastmod>
-  </url><url>
-    <loc>https://superlifebuoy.github.io/tags/docker/</loc>
+    <loc>/tags/docker/</loc>
     <lastmod>2023-03-20T19:52:44+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/posts/update-share-app/</loc>
+    <loc>/tags/</loc>
     <lastmod>2023-03-20T19:52:44+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/posts/docker-get-started/</loc>
+    <loc>/posts/update-share-app/</loc>
+    <lastmod>2023-03-20T19:52:44+08:00</lastmod>
+  </url><url>
+    <loc>/posts/docker-get-started/</loc>
     <lastmod>2023-03-14T22:27:10+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/tags/git/</loc>
+    <loc>/tags/git/</loc>
     <lastmod>2023-03-12T11:34:26+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/posts/git-ssh-key/</loc>
+    <loc>/posts/git-ssh-key/</loc>
     <lastmod>2023-03-12T11:34:26+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/tags/api/</loc>
+    <loc>/tags/ssh/</loc>
+    <lastmod>2023-03-12T11:34:26+08:00</lastmod>
+  </url><url>
+    <loc>/tags/api/</loc>
     <lastmod>2022-09-27T20:47:46+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/posts/best-practices-in-api-design/</loc>
+    <loc>/posts/best-practices-in-api-design/</loc>
     <lastmod>2022-09-27T20:47:46+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/tags/swagger/</loc>
+    <loc>/tags/swagger/</loc>
     <lastmod>2022-09-27T20:47:46+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/tags/hugo/</loc>
+    <loc>/tags/github/</loc>
     <lastmod>2022-09-15T20:04:36+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/posts/deploy-hugo-by-github/</loc>
+    <loc>/tags/hugo/</loc>
     <lastmod>2022-09-15T20:04:36+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/tags/container/</loc>
+    <loc>/posts/deploy-hugo-by-github/</loc>
+    <lastmod>2022-09-15T20:04:36+08:00</lastmod>
+  </url><url>
+    <loc>/tags/container/</loc>
     <lastmod>2022-09-15T19:56:51+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/tags/kubernetes/</loc>
+    <loc>/tags/kubernetes/</loc>
     <lastmod>2022-09-15T19:56:51+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/tags/virtualization/</loc>
+    <loc>/tags/virtualization/</loc>
     <lastmod>2022-09-15T19:56:51+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/posts/a-brief-history-of-containers-from-1970s/</loc>
+    <loc>/posts/a-brief-history-of-containers-from-1970s/</loc>
     <lastmod>2022-09-15T19:56:51+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/tags/curl/</loc>
+    <loc>/tags/curl/</loc>
     <lastmod>2022-09-15T19:36:09+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/tags/maven/</loc>
+    <loc>/tags/maven/</loc>
     <lastmod>2022-09-15T19:36:09+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/tags/tool/</loc>
+    <loc>/tags/tool/</loc>
     <lastmod>2022-09-15T19:36:09+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/tags/wget/</loc>
+    <loc>/tags/wget/</loc>
     <lastmod>2022-09-15T19:36:09+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/posts/util-commands/</loc>
+    <loc>/posts/util-commands/</loc>
     <lastmod>2022-09-15T19:36:09+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/tags/blog/</loc>
+    <loc>/tags/blog/</loc>
     <lastmod>2022-08-17T22:28:08+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/posts/my-image-post/</loc>
+    <loc>/posts/my-image-post/</loc>
     <lastmod>2022-08-17T22:28:08+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/tags/picture/</loc>
+    <loc>/tags/picture/</loc>
     <lastmod>2022-08-17T22:28:08+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/tags/cloc/</loc>
+    <loc>/tags/cloc/</loc>
     <lastmod>2021-12-08T11:44:28+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/posts/how_to_use_cloc/</loc>
+    <loc>/posts/how_to_use_cloc/</loc>
     <lastmod>2021-12-08T11:44:28+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/tags/product/</loc>
+    <loc>/tags/product/</loc>
     <lastmod>2021-10-07T10:27:08+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/tags/roadmap/</loc>
+    <loc>/tags/roadmap/</loc>
     <lastmod>2021-10-07T10:27:08+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/posts/why-we-make-our-product-roadmaps-public/</loc>
+    <loc>/posts/why-we-make-our-product-roadmaps-public/</loc>
     <lastmod>2021-10-07T10:27:08+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/posts/small-things-that-make-apis-a-little-bit-better/</loc>
+    <loc>/posts/small-things-that-make-apis-a-little-bit-better/</loc>
     <lastmod>2021-07-12T20:32:31+08:00</lastmod>
   </url><url>
-    <loc>https://superlifebuoy.github.io/posts/hugo-quick-start/</loc>
+    <loc>/posts/hugo-quick-start/</loc>
     <lastmod>2021-02-17T20:29:21+08:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
   </url>
 </urlset>

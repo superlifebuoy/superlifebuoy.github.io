@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Wget on My New Hugo Site</title>
-    <link>https://superlifebuoy.github.io/tags/wget/</link>
-    <description>Recent content in Wget on My New Hugo Site</description>
+    <title>Wget on </title>
+    <link>/tags/wget/</link>
+    <description>Recent content in Wget on </description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Thu, 15 Sep 2022 19:36:09 +0800</lastBuildDate>
-    <atom:link href="https://superlifebuoy.github.io/tags/wget/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/wget/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>命令行工具简介</title>
-      <link>https://superlifebuoy.github.io/posts/util-commands/</link>
+      <link>/posts/util-commands/</link>
       <pubDate>Thu, 15 Sep 2022 19:36:09 +0800</pubDate>
-      <guid>https://superlifebuoy.github.io/posts/util-commands/</guid>
+      <guid>/posts/util-commands/</guid>
       <description>关于常用的命令行工具介绍，包括但不限于maven、curl、wget等。</description>
     </item>
   </channel>
