@@ -6,8 +6,36 @@
     <description>Recent content in Tags on </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 20 Mar 2023 19:52:44 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 31 Mar 2025 11:49:18 -0700</lastBuildDate>
     <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac</title>
+      <link>/tags/mac/</link>
+      <pubDate>Mon, 31 Mar 2025 11:49:18 -0700</pubDate>
+      <guid>/tags/mac/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nginx</title>
+      <link>/tags/nginx/</link>
+      <pubDate>Mon, 31 Mar 2025 11:49:18 -0700</pubDate>
+      <guid>/tags/nginx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vite</title>
+      <link>/tags/vite/</link>
+      <pubDate>Mon, 31 Mar 2025 11:49:18 -0700</pubDate>
+      <guid>/tags/vite/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>VUE</title>
+      <link>/tags/vue/</link>
+      <pubDate>Mon, 31 Mar 2025 11:49:18 -0700</pubDate>
+      <guid>/tags/vue/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Docker</title>
       <link>/tags/docker/</link>
