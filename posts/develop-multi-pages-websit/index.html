@@ -51,7 +51,7 @@
   <meta itemprop="description" content="在Mac上使用VUE &#43; Vite开发多页面网站，并部署到Nginx上。">
   <meta itemprop="datePublished" content="2025-03-31T11:49:18-07:00">
   <meta itemprop="dateModified" content="2025-03-31T11:49:18-07:00">
-  <meta itemprop="wordCount" content="198">
+  <meta itemprop="wordCount" content="272">
   <meta itemprop="keywords" content="VUE,Vite,Nginx,Mac">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Develop Multi Pages Websit">
@@ -157,14 +157,47 @@
 <p>执行如下命令，会在工程目录下新建dist文件夹。所有静态站点的文件会生成在dist中。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bas" data-lang="bas"><span style="display:flex;"><span>npm run build
 </span></span></code></pre></div><h1 id="3-部署vite工程到nginx">3 部署Vite工程到Nginx</h1>
+<h2 id="31-替换nginx默认目录内文件">3.1 替换Nginx默认目录内文件</h2>
 <p>将dist文件夹内的文件，移动到/opt/homebrew/var/www内。(需要替换Nginx自带的index.html)</p>
 <p>启动Nginx</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nginx
 </span></span></code></pre></div><p>如果Nginx已启动，可以reload</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nginx -s reload
-</span></span></code></pre></div><h2 id="31-验证">3.1 验证</h2>
+</span></span></code></pre></div><p>也可以修改Nginx默认目录地址。</p>
+<h2 id="32-修改nginx默认目录">3.2 修改Nginx默认目录</h2>
+<p>编辑Nginx配置文件/opt/homebrew/etc/nginx/nginx.conf。找到http - server - location - root配置项，修改为Vite构建的dist目录。如下：</p>
+<pre tabindex="0"><code>            #root   html;
+            root   {vite-project}/dist;
+</code></pre><p>启动Nginx</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nginx
+</span></span></code></pre></div><p>如果Nginx已启动，可以reload</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nginx -s reload
+</span></span></code></pre></div><h2 id="33-验证">3.3 验证</h2>
 <p>访问http://127.0.0.1:8080，即可看到Vite构建的index.html</p>
 <p>![Screenshot 2025-04-10 at 11.42.38](/Users/chengfeng/Desktop/Screenshot 2025-04-10 at 11.42.38.png)</p>
+<h1 id="4-增加vuetify组件框架">4 增加Vuetify组件框架</h1>
+<p>在已有Vue项目中，执行如下命令来增加Vuetify组件框架：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm i vuetify
+</span></span></code></pre></div><p>然后修改Vue项目的main.js文件，导入vuetify。如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">createApp</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;vue&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;./style.css&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Vuetify
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;vuetify/styles&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">createVuetify</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;vuetify&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">components</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;vuetify/components&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">directives</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;vuetify/directives&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Components
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">App</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./App.vue&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">vuetify</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">createVuetify</span>({
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">components</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">directives</span>,
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">createApp</span>(<span style="color:#a6e22e">App</span>).<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">vuetify</span>).<span style="color:#a6e22e">mount</span>(<span style="color:#e6db74">&#39;#app&#39;</span>)
+</span></span></code></pre></div><p>就可以开始使用vuetify组件啦。</p>
 <ul class="pa0">
   
    <li class="list di">

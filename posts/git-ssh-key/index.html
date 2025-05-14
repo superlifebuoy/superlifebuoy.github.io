@@ -49,7 +49,7 @@
   <meta itemprop="description" content="初始化Git SSH keys。">
   <meta itemprop="datePublished" content="2023-03-12T11:34:26+08:00">
   <meta itemprop="dateModified" content="2023-03-12T11:34:26+08:00">
-  <meta itemprop="wordCount" content="29">
+  <meta itemprop="wordCount" content="74">
   <meta itemprop="keywords" content="Git,SSH">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Git SSH Key">
@@ -126,7 +126,29 @@
 </span></span></code></pre></div><p>然后登陆<a href="https://github.com/settings/keys">Github网站</a>，进入Settings页面。如下图所示：</p>
 <p><img src="/git-ssh-key-list.png" alt="git-ssh-key-list"></p>
 <p>点击右上角的“New SSH key”按钮，在新页面的“Key”粘贴id_rsa.pub内容，即可新增SSH key。</p>
-<ul class="pa0">
+<h1 id="如何配置多个github账户">如何配置多个GitHub账户</h1>
+<p>在新建SSH keys时根据提示，输入指定的key名称，例如：</p>
+<pre tabindex="0"><code>id_rsa_{company_name}
+</code></pre><p>然后配置ssh的config文件，一般在～/.ssh/config。内容如下：</p>
+<pre tabindex="0"><code>Host github.com
+	HostName github.com
+	User {github_account1}
+	IdentityFile ~/.ssh/id_rsa
+
+Host {company_name}
+	HostName github.com
+	User {github_account2}
+	IdentityFile ~/.ssh/id_rsa_{comany_name}
+</code></pre><h2 id="如何验证github账户配置成功">如何验证GitHub账户配置成功</h2>
+<p>可以在终端输入如下命令验证：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh -T git@<span style="color:#f92672">{</span>config-Host<span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>如果命令行终端返回如下内容：</p>
+<pre tabindex="0"><code>Hi {github_account}! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
+</code></pre><p>则表示配置成功。</p>
+<h2 id="如何指定github账户下载代码">如何指定GitHub账户下载代码</h2>
+<p>命令如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone git@<span style="color:#f92672">{</span>config-Host<span style="color:#f92672">}</span>:username/repo.git
+</span></span></code></pre></div><ul class="pa0">
   
    <li class="list di">
      <a href="/tags/git/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Git</a>
