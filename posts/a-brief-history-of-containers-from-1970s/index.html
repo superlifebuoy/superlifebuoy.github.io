@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>容器简史[翻译] | Nimble Code Tech</title>
 <meta name="keywords" content="Virtualization, Container, Docker, Kubernetes">
 <meta name="description" content="简单介绍容器技术自1970年代以来的发展历史。">
 <meta name="author" content="">
-<link rel="canonical" href="https://nimblecode.tech/posts/a-brief-history-of-containers-from-1970s/">
+<link rel="canonical" href="http://localhost:1313/posts/a-brief-history-of-containers-from-1970s/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://nimblecode.tech/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://nimblecode.tech/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://nimblecode.tech/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://nimblecode.tech/apple-touch-icon.png">
-<link rel="mask-icon" href="https://nimblecode.tech/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://nimblecode.tech/posts/a-brief-history-of-containers-from-1970s/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/a-brief-history-of-containers-from-1970s/">
 <noscript>
     <style>
         #theme-toggle,
@@ -55,73 +55,7 @@
         }
 
     </style>
-</noscript><meta property="og:url" content="https://nimblecode.tech/posts/a-brief-history-of-containers-from-1970s/">
-  <meta property="og:site_name" content="Nimble Code Tech">
-  <meta property="og:title" content="容器简史[翻译]">
-  <meta property="og:description" content="简单介绍容器技术自1970年代以来的发展历史。">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2022-09-15T19:56:51+08:00">
-    <meta property="article:modified_time" content="2022-09-15T19:56:51+08:00">
-    <meta property="article:tag" content="Virtualization">
-    <meta property="article:tag" content="Container">
-    <meta property="article:tag" content="Docker">
-    <meta property="article:tag" content="Kubernetes">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="容器简史[翻译]">
-<meta name="twitter:description" content="简单介绍容器技术自1970年代以来的发展历史。">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://nimblecode.tech/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "容器简史[翻译]",
-      "item": "https://nimblecode.tech/posts/a-brief-history-of-containers-from-1970s/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "容器简史[翻译]",
-  "name": "容器简史[翻译]",
-  "description": "简单介绍容器技术自1970年代以来的发展历史。",
-  "keywords": [
-    "Virtualization", "Container", "Docker", "Kubernetes"
-  ],
-  "articleBody": "https://blog.aquasec.com/a-brief-history-of-containers-from-1970s-chroot-to-docker-2016\n从1970年代至今 2017年我们第一次公布这篇博客时，容器技术的面貌和今天有很大的不同。过去2年，我们看到显著的变化在持续影响着容器技术的采用。因为进入了新的十年，所以我们想要重新简述一下我们观察到的容器变化历程并提供我们认为容器在2020年的发展方向。\n要开始这次旅程，首先要进入我的DeLorean时光机。让我们回到1979年，容器概念第一次出现的时刻。\n1979: Unix V7 读者请注意。是的，我当时还不到10岁。当1979年，Unix V7还在开发的过程中，chroot系统调用出现了。它可以改变一个进程的根目录及其子目录到文件系统中的一个新地点。这是进程隔离的起点：为不同进程隔离文件访问。1982年，BSD也加上了chroot。\n2000: FreeBSD Jails 快进20年来到2000年，一个小型共享环境服务商因为安全与易于管理的原因提出了FreeBSD jails，以实现其服务与客户服务的清晰分隔。FreeBSD Jails允许管理员把一个FreeBSD系统划分成多个独立的、更小的系统——叫做“jails”——并为每个系统和配置分配IP地址。\n2001: Linux VServer 类似FreeBSD Jails，Linux VServer也是通过jail机制来实现一个计算机系统的资源(文件系统、网络、地址、内容)隔离。2001年，这项操作系统虚拟化技术是通过Linux内核补丁的形式实现的。现在这个实验性的补丁仍然可用，但最后一个稳定版本是在2006年发布的。\n2004: Solaris Containers 2004年，Solaris Containers的第一个公共beta版本发布了。该版本通过Zone提供了系统资源控制与边界分隔。这些功能是利用了ZFS的快照与克隆能力实现的。\n2005: Open VZ (Open Virtuzzo) 这是一个操作系统级别的虚拟化技术。它通过Linux内核补丁的方式来实现虚拟化、隔离、资源管理以及检查点。这个补丁的代码没有作为官方Linux内部的一部分来发布。\n2006: Process Containers Process Containers(由Google在2006年发起)是为限制、核算、隔离一批进程的资源使用(CPU、内存、磁盘I/O、网络)而设计的。一年后它被重命名为“Control Groups (cgroups)”，并最终被合并入Linux内核的2.6.24版本。\n2008: LXC LXC (Linux Containers)是第一个、最完整的Linux容器管理器实现。它是在2008年实现的，使用了cgroups与Linux命名空间。LXC可以在单独的Linux内核上运行，不再需要其他补丁支持。\n2011: Warden CloudFoundry在2011年启动了Warden项目，并在早期阶段使用了LXC，不过之后切换成了自己的实现。Warden可以在任何操作系统上以守护进程的形式运行、实现环境隔离、提供容器管理API。它开发了client-server模式来实现跨服务器的容器集合管理。另外Warden还包含cgroups、命名空间、进程生命周期的管理服务。\n2013: LMCTFY Let Me Contain That For You (LMCTFY)在2013年以Google容器栈的开源版本形式出现，它提供了Linux应用容器。应用程序可以做成“容器感知”的，来实现创建、管理他们自己的子容器。2015年，Google开始把LMCTFY核心概念贡献给libcontainer后，LMCTFY停止发展了。Libcontainer是现在Open Container Foundation的一部分。\n2013: Docker 当2013年Docker出现的时候，容器开始了大流行。Docker与容器使用的同步增长并不是一个巧合。\n就像Warden一样，Docker在初试阶段也是使用LXC的。之后Docket就把容器管理替换成了它自己的类库，libcontainer。但毫无疑问，Docker通过提供容器管理的完整生态，使自己脱颖而出。\n2016: The Importance of Container Security Is Revealed 随着基于容积技术的应用被广泛使用，系统变得复杂度增加、风险性增加。这种情况奠定了容器安全需求的基础。类似dirty COW这样的漏洞加强了这种认知。这导致安全开始伴随着整个软件开发的生命周期，使其成为容器化应用每个开发阶段的重要组成部分，即DevSecOps。其目标是在不缩短上市时间的情况下，从头开始构建安全的容器。\n2017: Container Tools Become Mature 数百种工具被开发出来，使得容器管理更加容易。虽然这些工具已经出现了若干年，但直到2017年它们中的大部分才赢得了自己的地位。仅以Kubernetes为例，自2016年它被CNCF(Cloud Native Computing Foundation)接受后，VMWare、Azure、AWS、甚至Docker都宣布在他们的基础设施之上支持它。\n随着市场的增长，一些工具已经开始为容器社区定义一些功能规范。Ceph和REX-Ray设定了容器存储的标准，同时Flannel在数据中心之间链接了数百万计的容器。另外在CI/CD领域，Jenkins完全改变了我们构建、部署应用的方式。\nAdoption of rkt and Containerd by CNCF 容器生态系统是独一无二的，因为它是由广泛的社区努力和对开源项目的承诺来支持的。2017年Docker向CNCF捐赠Containerd项目就是一个标志性事件，同一时间段里CNCF也采用了rkt(发音同rocket)作为容器运行时。这种情况下出现了不同项目间更好的协作，用户拥有更多的选择，以及一个以改进容器生态为中心的社区。\nKubernetes Grows Up 2017年，这个开源项目在朝向更成熟的技术方面，展现了非常大的进步。Kubernetes支持了不断增加复杂度的应用类型——使得企业可以同时向混合云与微服务方向迁移。在哥本哈根的DockerCon会议上，Docker宣布他们会支持Kubernetes的容器编排。Azure和AWS也紧跟着站队，提供了AKS(Azure Kubernetes Service)与EKS(一个与ECS相对的Kubernetes服务)。它还是CNCF第一个采用的项目，并且支持的第三方系统集成服务商在不断增加。\n2018: The Gold Standard 2018年我们可以看到容器化已经变成现代软件基础设施的基础，同时Kubernetes也被绝大多数的企业容器项目所使用。在2018年，Kubernetes项目在GitHub上有超过1500名贡献者，拥有一个非常显著的开源社区，以及超过27000个星星。大量采用Kubernetes的情况推动了例如AWS、Google(GKE, Google Kubernetes Engine)、Azure以及Oracle(Container Engine for Kubernetes)这样的云服务商提供Kubernetes管理服务。此外，软件服务商的领导者，例如VMWare、RedHat以及Rancher也开始提供基于Kubernetes的管理平台。\n基础设施提供商VMWare在2018年底宣布收购帮助企业部署、管理Kubernetes的咨询公司Heptio，然后开始采用Kubernetes。\n我们也见证了结合类VM隔离与容器速度的混合技术的出现。Kata containers，gVisor以及Nabla这些开源项目尝试提供安全容器运行时与轻量化虚拟机。它们运行方式与普通容器相同，但是提供更强的工作负载隔离。\n2019: A Shifting Landscape 容器领域在这一年发生了显著的变化。新的运行时引擎开始取代Docker运行时引擎，最引人注目的是containerd（一个开源的容器运行时引擎）与CRI-O（一个Kubernetes使用的轻量级运行时引擎）\n在2019年，我们看到容器领域发生了结构性的变化：Docker企业业务被收购并拆分，这导致Docker Swarn进入2年时长的终结期。同时，我们也见证了rkt容器引擎流行度的下降，虽然官方层面仍然是CNCF的一部分。\n伴随着对Kubernetes的承诺，VMware加倍努力，先后收购了Heptio与Pivotal Software(包括PAS与PKS)。此举的目的是在企业的内部环境中，利用云原生部署来提供类云能力。\n去年我们还看到了Serverless技术在落地场景上的进步。例如Knative(一个基于Kubernetes的serverless工作负载管理平台)就在企业中获得了成功。\n2019年业界还推出了基于Kubernetes的混合云解决方案，例如IBM Cloud Paks，Google Anthos，Aws Outposts以及Azue Arc等。这些解决方案模糊了云与企业内部环境之间的传统界限，因为你现在可以统一管理内部环境与云供应商环境了。\n我们认为这些浮现的新能力指明了Kubernetes进化的下一步方向。新的云能力(例如Anthos、Arc以及Outposts)指向了高度抽象的未来，即计算资源与管理层相分离。这很像现在Kubernetes的工作方式，也是把工作负载与它的管理模块分隔开。\n今日的Kubernetes，master节点与worker节点还工作在同一个物理集群中。伴随着高度抽象的发展，工作负载管理平面更够管理的工作负载节点可以分布在多个计算基础设施之上，而用户也不再知晓或关注它们实际的物理位置。\n从KubeCon圣地亚哥会议上创纪录的12000多名与会者来看，今后我们相信Kubernetes将成为容器、虚拟机和其他云原生工作负载的标准管理平台。\n",
-  "wordCount" : "129",
-  "inLanguage": "en",
-  "datePublished": "2022-09-15T19:56:51+08:00",
-  "dateModified": "2022-09-15T19:56:51+08:00",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://nimblecode.tech/posts/a-brief-history-of-containers-from-1970s/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Nimble Code Tech",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://nimblecode.tech/favicon.ico"
-    }
-  }
-}
-</script>
+</noscript>
 </head>
 
 <body class="" id="top">
@@ -139,7 +73,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://nimblecode.tech/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -232,17 +166,17 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://nimblecode.tech/tags/virtualization/">Virtualization</a></li>
-      <li><a href="https://nimblecode.tech/tags/container/">Container</a></li>
-      <li><a href="https://nimblecode.tech/tags/docker/">Docker</a></li>
-      <li><a href="https://nimblecode.tech/tags/kubernetes/">Kubernetes</a></li>
+      <li><a href="http://localhost:1313/tags/virtualization/">Virtualization</a></li>
+      <li><a href="http://localhost:1313/tags/container/">Container</a></li>
+      <li><a href="http://localhost:1313/tags/docker/">Docker</a></li>
+      <li><a href="http://localhost:1313/tags/kubernetes/">Kubernetes</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://nimblecode.tech/">Nimble Code Tech</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Nimble Code Tech</a></span> · 
 
     <span>
         Powered by

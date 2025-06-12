@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Git SSH Key | Nimble Code Tech</title>
 <meta name="keywords" content="Git, SSH">
 <meta name="description" content="初始化Git SSH keys。">
 <meta name="author" content="">
-<link rel="canonical" href="https://nimblecode.tech/posts/git-ssh-key/">
+<link rel="canonical" href="http://localhost:1313/posts/git-ssh-key/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://nimblecode.tech/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://nimblecode.tech/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://nimblecode.tech/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://nimblecode.tech/apple-touch-icon.png">
-<link rel="mask-icon" href="https://nimblecode.tech/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://nimblecode.tech/posts/git-ssh-key/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/git-ssh-key/">
 <noscript>
     <style>
         #theme-toggle,
@@ -55,71 +55,7 @@
         }
 
     </style>
-</noscript><meta property="og:url" content="https://nimblecode.tech/posts/git-ssh-key/">
-  <meta property="og:site_name" content="Nimble Code Tech">
-  <meta property="og:title" content="Git SSH Key">
-  <meta property="og:description" content="初始化Git SSH keys。">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2023-03-12T11:34:26+08:00">
-    <meta property="article:modified_time" content="2023-03-12T11:34:26+08:00">
-    <meta property="article:tag" content="Git">
-    <meta property="article:tag" content="SSH">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git SSH Key">
-<meta name="twitter:description" content="初始化Git SSH keys。">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://nimblecode.tech/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Git SSH Key",
-      "item": "https://nimblecode.tech/posts/git-ssh-key/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Git SSH Key",
-  "name": "Git SSH Key",
-  "description": "初始化Git SSH keys。",
-  "keywords": [
-    "Git", "SSH"
-  ],
-  "articleBody": "Git为什么需要SSH keys 因为Github需要识别提交代码的用户身份，以防他人冒充。而Github支持SSH协议，所以只要知道了SSH key的公钥，就可以实现前述需求了。\n如何新建SSH keys 如果是Mac OS，可以在Terminal中进入～/.ssh目录查看是否已存在key。通常SSH key是以id_rsa开头的文件，其中id_rsa.pub是公钥，后续要添加在Github中。\n如果不存在id_rsa文件，可通过在Terminal中输入如下命令生成：\nssh-keygen -t rsa -C \"youremail@example.com\" 注意\n记得将**“youremail@example.com”**替换为自己的邮件地址; 交互过程直接回车键，使用默认即可。 在哪里添加SSH keys 在Terminal中输入如下命令，拷贝id_rsa.pub内容至剪贴板：\ncat id_rsa.pub| pbcopy 然后登陆Github网站，进入Settings页面。如下图所示：\n点击右上角的“New SSH key”按钮，在新页面的“Key”粘贴id_rsa.pub内容，即可新增SSH key。\n如何配置多个GitHub账户 在新建SSH keys时根据提示，输入指定的key名称，例如：\nid_rsa_{company_name} 然后配置ssh的config文件，一般在～/.ssh/config。内容如下：\nHost github.com HostName github.com User {github_account1} IdentityFile ~/.ssh/id_rsa Host {company_name} HostName github.com User {github_account2} IdentityFile ~/.ssh/id_rsa_{comany_name} 如何验证GitHub账户配置成功 可以在终端输入如下命令验证：\nssh -T git@{config-Host} 如果命令行终端返回如下内容：\nHi {github_account}! You've successfully authenticated, but GitHub does not provide shell access. 则表示配置成功。\n如何指定GitHub账户下载代码 命令如下：\ngit clone git@{config-Host}:username/repo.git ",
-  "wordCount" : "74",
-  "inLanguage": "en",
-  "datePublished": "2023-03-12T11:34:26+08:00",
-  "dateModified": "2023-03-12T11:34:26+08:00",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://nimblecode.tech/posts/git-ssh-key/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Nimble Code Tech",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://nimblecode.tech/favicon.ico"
-    }
-  }
-}
-</script>
+</noscript>
 </head>
 
 <body class="" id="top">
@@ -137,7 +73,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://nimblecode.tech/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -223,15 +159,15 @@ Host {company_name}
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://nimblecode.tech/tags/git/">Git</a></li>
-      <li><a href="https://nimblecode.tech/tags/ssh/">SSH</a></li>
+      <li><a href="http://localhost:1313/tags/git/">Git</a></li>
+      <li><a href="http://localhost:1313/tags/ssh/">SSH</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://nimblecode.tech/">Nimble Code Tech</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Nimble Code Tech</a></span> · 
 
     <span>
         Powered by

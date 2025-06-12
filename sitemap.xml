@@ -2,126 +2,126 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nimblecode.tech/posts/develop-multi-pages-websit/</loc>
+    <loc>http://localhost:1313/posts/develop-multi-pages-websit/</loc>
     <lastmod>2025-03-31T11:49:18-07:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/mac/</loc>
+    <loc>http://localhost:1313/tags/mac/</loc>
     <lastmod>2025-03-31T11:49:18-07:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/nginx/</loc>
+    <loc>http://localhost:1313/tags/nginx/</loc>
     <lastmod>2025-03-31T11:49:18-07:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-03-31T11:49:18-07:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-03-31T11:49:18-07:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-03-31T11:49:18-07:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/vite/</loc>
+    <loc>http://localhost:1313/tags/vite/</loc>
     <lastmod>2025-03-31T11:49:18-07:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/vue/</loc>
+    <loc>http://localhost:1313/tags/vue/</loc>
     <lastmod>2025-03-31T11:49:18-07:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/posts/ssh-intro/</loc>
+    <loc>http://localhost:1313/posts/ssh-intro/</loc>
     <lastmod>2025-03-05T18:56:53-08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/docker/</loc>
+    <loc>http://localhost:1313/tags/docker/</loc>
     <lastmod>2023-03-20T19:52:44+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/posts/update-share-app/</loc>
+    <loc>http://localhost:1313/posts/update-share-app/</loc>
     <lastmod>2023-03-20T19:52:44+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/posts/docker-get-started/</loc>
+    <loc>http://localhost:1313/posts/docker-get-started/</loc>
     <lastmod>2023-03-14T22:27:10+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/git/</loc>
+    <loc>http://localhost:1313/tags/git/</loc>
     <lastmod>2023-03-12T11:34:26+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/posts/git-ssh-key/</loc>
+    <loc>http://localhost:1313/posts/git-ssh-key/</loc>
     <lastmod>2023-03-12T11:34:26+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/ssh/</loc>
+    <loc>http://localhost:1313/tags/ssh/</loc>
     <lastmod>2023-03-12T11:34:26+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/api/</loc>
+    <loc>http://localhost:1313/tags/api/</loc>
     <lastmod>2022-09-27T20:47:46+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/posts/best-practices-in-api-design/</loc>
+    <loc>http://localhost:1313/posts/best-practices-in-api-design/</loc>
     <lastmod>2022-09-27T20:47:46+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/swagger/</loc>
+    <loc>http://localhost:1313/tags/swagger/</loc>
     <lastmod>2022-09-27T20:47:46+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/github/</loc>
+    <loc>http://localhost:1313/tags/github/</loc>
     <lastmod>2022-09-15T20:04:36+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/hugo/</loc>
+    <loc>http://localhost:1313/tags/hugo/</loc>
     <lastmod>2022-09-15T20:04:36+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/posts/deploy-hugo-by-github/</loc>
+    <loc>http://localhost:1313/posts/deploy-hugo-by-github/</loc>
     <lastmod>2022-09-15T20:04:36+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/container/</loc>
+    <loc>http://localhost:1313/tags/container/</loc>
     <lastmod>2022-09-15T19:56:51+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/kubernetes/</loc>
+    <loc>http://localhost:1313/tags/kubernetes/</loc>
     <lastmod>2022-09-15T19:56:51+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/virtualization/</loc>
+    <loc>http://localhost:1313/tags/virtualization/</loc>
     <lastmod>2022-09-15T19:56:51+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/posts/a-brief-history-of-containers-from-1970s/</loc>
+    <loc>http://localhost:1313/posts/a-brief-history-of-containers-from-1970s/</loc>
     <lastmod>2022-09-15T19:56:51+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/curl/</loc>
+    <loc>http://localhost:1313/tags/curl/</loc>
     <lastmod>2022-09-15T19:36:09+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/maven/</loc>
+    <loc>http://localhost:1313/tags/maven/</loc>
     <lastmod>2022-09-15T19:36:09+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/tool/</loc>
+    <loc>http://localhost:1313/tags/tool/</loc>
     <lastmod>2022-09-15T19:36:09+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/wget/</loc>
+    <loc>http://localhost:1313/tags/wget/</loc>
     <lastmod>2022-09-15T19:36:09+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/posts/util-commands/</loc>
+    <loc>http://localhost:1313/posts/util-commands/</loc>
     <lastmod>2022-09-15T19:36:09+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/blog/</loc>
+    <loc>http://localhost:1313/tags/blog/</loc>
     <lastmod>2022-08-17T22:28:08+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/posts/my-image-post/</loc>
+    <loc>http://localhost:1313/posts/my-image-post/</loc>
     <lastmod>2022-08-17T22:28:08+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/picture/</loc>
+    <loc>http://localhost:1313/tags/picture/</loc>
     <lastmod>2022-08-17T22:28:08+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/cloc/</loc>
+    <loc>http://localhost:1313/tags/cloc/</loc>
     <lastmod>2021-12-08T11:44:28+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/posts/how_to_use_cloc/</loc>
+    <loc>http://localhost:1313/posts/how_to_use_cloc/</loc>
     <lastmod>2021-12-08T11:44:28+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/product/</loc>
+    <loc>http://localhost:1313/tags/product/</loc>
     <lastmod>2021-10-07T10:27:08+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/roadmap/</loc>
+    <loc>http://localhost:1313/tags/roadmap/</loc>
     <lastmod>2021-10-07T10:27:08+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/posts/why-we-make-our-product-roadmaps-public/</loc>
+    <loc>http://localhost:1313/posts/why-we-make-our-product-roadmaps-public/</loc>
     <lastmod>2021-10-07T10:27:08+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/posts/small-things-that-make-apis-a-little-bit-better/</loc>
+    <loc>http://localhost:1313/posts/small-things-that-make-apis-a-little-bit-better/</loc>
     <lastmod>2021-07-12T20:32:31+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/posts/hugo-quick-start/</loc>
+    <loc>http://localhost:1313/posts/hugo-quick-start/</loc>
     <lastmod>2021-02-17T20:29:21+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>
