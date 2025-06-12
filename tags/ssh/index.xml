@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SSH on Nimble Code Tech</title>
+    <link>https://example.org/tags/ssh/</link>
+    <description>Recent content in SSH on Nimble Code Tech</description>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Mar 2023 11:34:26 +0800</lastBuildDate>
+    <atom:link href="https://example.org/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git SSH Key</title>
+      <link>https://example.org/posts/git-ssh-key/</link>
+      <pubDate>Sun, 12 Mar 2023 11:34:26 +0800</pubDate>
+      <guid>https://example.org/posts/git-ssh-key/</guid>
+      <description>初始化Git SSH keys。</description>
+    </item>
+  </channel>
+</rss>

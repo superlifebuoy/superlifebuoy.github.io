@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Develop Multi Pages Websit | Nimble Code Tech</title>
+<meta name="keywords" content="VUE, Vite, Nginx, Mac">
+<meta name="description" content="在Mac上使用VUE &#43; Vite开发多页面网站，并部署到Nginx上。">
+<meta name="author" content="">
+<link rel="canonical" href="https://example.org/posts/develop-multi-pages-websit/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://example.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://example.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://example.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://example.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://example.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://example.org/posts/develop-multi-pages-websit/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://example.org/posts/develop-multi-pages-websit/">
+  <meta property="og:site_name" content="Nimble Code Tech">
+  <meta property="og:title" content="Develop Multi Pages Websit">
+  <meta property="og:description" content="在Mac上使用VUE &#43; Vite开发多页面网站，并部署到Nginx上。">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-31T11:49:18-07:00">
+    <meta property="article:modified_time" content="2025-03-31T11:49:18-07:00">
+    <meta property="article:tag" content="VUE">
+    <meta property="article:tag" content="Vite">
+    <meta property="article:tag" content="Nginx">
+    <meta property="article:tag" content="Mac">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Develop Multi Pages Websit">
+<meta name="twitter:description" content="在Mac上使用VUE &#43; Vite开发多页面网站，并部署到Nginx上。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://example.org/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Develop Multi Pages Websit",
+      "item": "https://example.org/posts/develop-multi-pages-websit/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Develop Multi Pages Websit",
+  "name": "Develop Multi Pages Websit",
+  "description": "在Mac上使用VUE + Vite开发多页面网站，并部署到Nginx上。",
+  "keywords": [
+    "VUE", "Vite", "Nginx", "Mac"
+  ],
+  "articleBody": "开发静态网站可以使用Nginx作为Web服务器，Vue作为网站内容开发框架，Vite作为工程管理工具。以下是快速使用介绍。\n1 安装Nginx 1.1 Mac安装Nginx 安装Nginx 在Mac上使用brew安装Nginx，命令如下：\nbrew install nginx 安装完成后，默认网页文件目录是 /opt/homebrew/var/www，默认端口是8080(配置文件在/opt/homebrew/etc/nginx/nginx.conf)，装载文件目录是/opt/homebrew/etc/nginx/servers/。\n启动Nginx nginx 停止Nginx nginx -s quit or nginx -s stop 1.2 Debian安装Nginx 在Debian上使用apt安装Nginx，步骤如下：\n更新系统：在开始安装之前，建议先更新系统。命令如下：\nsudo apt update \u0026\u0026 sudo apt upgrade 安装Nginx：运行以下命令安装Nginx：\nsudo apt install nginx 启动Nginx：安装Nginx后，正常情况下它会自动启动；如果没有，可执行以下命令：\nsudo systemctl start nginx 检查Nginx状态：\nsudo systemctl status nginx 一切正常的话，输出内容会包含“Active: active (running)”。\n配置防火墙：允许Nginx对外提供访问，需要打开80和443接口：\nsudo ufw allow 'Nginx HTTP' sudo ufw allow 'Nginx HTTPS' 检查Nginx：通过浏览器访问Nginx所在服务器IP地址：\n2 Nginx常用命令 nginx -h nginx version: nginx/1.27.4 Usage: nginx [-?hvVtTq] [-s signal] [-p prefix] [-e filename] [-c filename] [-g directives] Options: -?,-h : this help -v : show version and exit -V : show version and configure options then exit -t : test configuration and exit -T : test configuration, dump it and exit -q : suppress non-error messages during configuration testing -s signal : send signal to a master process: stop, quit, reopen, reload -p prefix : set prefix path (default: /opt/homebrew/Cellar/nginx/1.27.4/) -e filename : set error log file (default: /opt/homebrew/var/log/nginx/error.log) -c filename : set configuration file (default: /opt/homebrew/etc/nginx/nginx.conf) -g directives : set global directives out of configuration file 3 使用Vite构建Vue工程 执行命令如下：\nnpm create vite@latest {my-vue-app} -- --template vue 启动该工程如下：\ncd {my-vue-app} npm install npm run dev 一般启动输出内容如下：\nVITE v6.2.5 ready in 163 ms ➜ Local: http://localhost:5173/ ➜ Network: use --host to expose ➜ press h + enter to show help 3.1 构建应用 执行如下命令，会在工程目录下新建dist文件夹。所有静态站点的文件会生成在dist中。\nnpm run build 4 部署Vite工程到Nginx 4.1 替换Nginx默认目录内文件 将dist文件夹内的文件，移动到/opt/homebrew/var/www内。(需要替换Nginx自带的index.html)\n启动Nginx\nnginx 如果Nginx已启动，可以reload\nnginx -s reload 也可以修改Nginx默认目录地址。\n4.2 修改Nginx默认目录 编辑Nginx配置文件/opt/homebrew/etc/nginx/nginx.conf。找到http - server - location - root配置项，修改为Vite构建的dist目录。如下：\n#root html; root {vite-project}/dist; 启动Nginx\nnginx 如果Nginx已启动，可以reload\nnginx -s reload 4.3 验证 访问http://127.0.0.1:8080，即可看到Vite构建的index.html\n![Screenshot 2025-04-10 at 11.42.38](/Users/chengfeng/Desktop/Screenshot 2025-04-10 at 11.42.38.png)\n4 增加Vuetify组件框架 在已有Vue项目中，执行如下命令来增加Vuetify组件框架：\nnpm i vuetify 然后修改Vue项目的main.js文件，导入vuetify。如下：\nimport { createApp } from 'vue' import './style.css' // Vuetify import 'vuetify/styles' import { createVuetify } from 'vuetify' import * as components from 'vuetify/components' import * as directives from 'vuetify/directives' // Components import App from './App.vue' const vuetify = createVuetify({ components, directives, }) createApp(App).use(vuetify).mount('#app') 就可以开始使用vuetify组件啦。\n",
+  "wordCount" : "314",
+  "inLanguage": "en",
+  "datePublished": "2025-03-31T11:49:18-07:00",
+  "dateModified": "2025-03-31T11:49:18-07:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://example.org/posts/develop-multi-pages-websit/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nimble Code Tech",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://example.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://example.org/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Develop Multi Pages Websit
+    </h1>
+    <div class="post-meta"><span title='2025-03-31 11:49:18 -0700 PDT'>March 31, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>开发静态网站可以使用Nginx作为Web服务器，Vue作为网站内容开发框架，Vite作为工程管理工具。以下是快速使用介绍。</p>
+<h1 id="1-安装nginx">1 安装Nginx<a hidden class="anchor" aria-hidden="true" href="#1-安装nginx">#</a></h1>
+<h2 id="11-mac安装nginx">1.1 Mac安装Nginx<a hidden class="anchor" aria-hidden="true" href="#11-mac安装nginx">#</a></h2>
+<h3 id="安装nginx">安装Nginx<a hidden class="anchor" aria-hidden="true" href="#安装nginx">#</a></h3>
+<p>在Mac上使用<a href="https://brew.sh/">brew</a>安装Nginx，命令如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install nginx
+</span></span></code></pre></div><p>安装完成后，默认网页文件目录是 /opt/homebrew/var/www，默认端口是8080(配置文件在/opt/homebrew/etc/nginx/nginx.conf)，装载文件目录是/opt/homebrew/etc/nginx/servers/。</p>
+<h3 id="启动nginx">启动Nginx<a hidden class="anchor" aria-hidden="true" href="#启动nginx">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>nginx
+</span></span></code></pre></div><h3 id="停止nginx">停止Nginx<a hidden class="anchor" aria-hidden="true" href="#停止nginx">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>nginx -s quit
+</span></span><span style="display:flex;"><span>or
+</span></span><span style="display:flex;"><span>nginx -s stop
+</span></span></code></pre></div><h2 id="12-debian安装nginx">1.2 Debian安装Nginx<a hidden class="anchor" aria-hidden="true" href="#12-debian安装nginx">#</a></h2>
+<p>在Debian上使用apt安装Nginx，步骤如下：</p>
+<ol>
+<li>
+<p>更新系统：在开始安装之前，建议先更新系统。命令如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt upgrade
+</span></span></code></pre></div></li>
+<li>
+<p>安装Nginx：运行以下命令安装Nginx：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo apt install nginx
+</span></span></code></pre></div></li>
+<li>
+<p>启动Nginx：安装Nginx后，正常情况下它会自动启动；如果没有，可执行以下命令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo systemctl start nginx
+</span></span></code></pre></div></li>
+<li>
+<p>检查Nginx状态：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo systemctl status nginx
+</span></span></code></pre></div><p>一切正常的话，输出内容会包含“<strong>Active: active (running)</strong>”。</p>
+</li>
+<li>
+<p>配置防火墙：允许Nginx对外提供访问，需要打开80和443接口：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo ufw allow <span style="color:#e6db74">&#39;Nginx HTTP&#39;</span>
+</span></span><span style="display:flex;"><span>sudo ufw allow <span style="color:#e6db74">&#39;Nginx HTTPS&#39;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>检查Nginx：通过浏览器访问Nginx所在服务器IP地址：</p>
+</li>
+</ol>
+<h1 id="2-nginx常用命令">2 Nginx常用命令<a hidden class="anchor" aria-hidden="true" href="#2-nginx常用命令">#</a></h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nginx -h
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nginx version: nginx/1.27.4
+</span></span><span style="display:flex;"><span>Usage: nginx <span style="color:#f92672">[</span>-?hvVtTq<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-s signal<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-p prefix<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>             <span style="color:#f92672">[</span>-e filename<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-c filename<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-g directives<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Options:
+</span></span><span style="display:flex;"><span>  -?,-h         : this help
+</span></span><span style="display:flex;"><span>  -v            : show version and exit
+</span></span><span style="display:flex;"><span>  -V            : show version and configure options <span style="color:#66d9ef">then</span> exit
+</span></span><span style="display:flex;"><span>  -t            : test configuration and exit
+</span></span><span style="display:flex;"><span>  -T            : test configuration, dump it and exit
+</span></span><span style="display:flex;"><span>  -q            : suppress non-error messages during configuration testing
+</span></span><span style="display:flex;"><span>  -s signal     : send signal to a master process: stop, quit, reopen, reload
+</span></span><span style="display:flex;"><span>  -p prefix     : set prefix path <span style="color:#f92672">(</span>default: /opt/homebrew/Cellar/nginx/1.27.4/<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  -e filename   : set error log file <span style="color:#f92672">(</span>default: /opt/homebrew/var/log/nginx/error.log<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  -c filename   : set configuration file <span style="color:#f92672">(</span>default: /opt/homebrew/etc/nginx/nginx.conf<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  -g directives : set global directives out of configuration file
+</span></span></code></pre></div><h1 id="3-使用vite构建vue工程">3 使用Vite构建Vue工程<a hidden class="anchor" aria-hidden="true" href="#3-使用vite构建vue工程">#</a></h1>
+<p>执行命令如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm create vite@latest <span style="color:#f92672">{</span>my-vue-app<span style="color:#f92672">}</span> -- --template vue
+</span></span></code></pre></div><p>启动该工程如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bas" data-lang="bas"><span style="display:flex;"><span>cd {my<span style="color:#f92672">-</span>vue<span style="color:#f92672">-</span>app}
+</span></span><span style="display:flex;"><span>npm install
+</span></span><span style="display:flex;"><span>npm run dev
+</span></span></code></pre></div><p>一般启动输出内容如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  VITE v6.2.5  ready in <span style="color:#ae81ff">163</span> ms
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  ➜  Local:   http://localhost:5173/
+</span></span><span style="display:flex;"><span>  ➜  Network: use --host to expose
+</span></span><span style="display:flex;"><span>  ➜  press h + enter to show help
+</span></span></code></pre></div><h2 id="31-构建应用">3.1 构建应用<a hidden class="anchor" aria-hidden="true" href="#31-构建应用">#</a></h2>
+<p>执行如下命令，会在工程目录下新建dist文件夹。所有静态站点的文件会生成在dist中。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bas" data-lang="bas"><span style="display:flex;"><span>npm run build
+</span></span></code></pre></div><h1 id="4-部署vite工程到nginx">4 部署Vite工程到Nginx<a hidden class="anchor" aria-hidden="true" href="#4-部署vite工程到nginx">#</a></h1>
+<h2 id="41-替换nginx默认目录内文件">4.1 替换Nginx默认目录内文件<a hidden class="anchor" aria-hidden="true" href="#41-替换nginx默认目录内文件">#</a></h2>
+<p>将dist文件夹内的文件，移动到/opt/homebrew/var/www内。(需要替换Nginx自带的index.html)</p>
+<p>启动Nginx</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nginx
+</span></span></code></pre></div><p>如果Nginx已启动，可以reload</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nginx -s reload
+</span></span></code></pre></div><p>也可以修改Nginx默认目录地址。</p>
+<h2 id="42-修改nginx默认目录">4.2 修改Nginx默认目录<a hidden class="anchor" aria-hidden="true" href="#42-修改nginx默认目录">#</a></h2>
+<p>编辑Nginx配置文件/opt/homebrew/etc/nginx/nginx.conf。找到http - server - location - root配置项，修改为Vite构建的dist目录。如下：</p>
+<pre tabindex="0"><code>            #root   html;
+            root   {vite-project}/dist;
+</code></pre><p>启动Nginx</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nginx
+</span></span></code></pre></div><p>如果Nginx已启动，可以reload</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nginx -s reload
+</span></span></code></pre></div><h2 id="43-验证">4.3 验证<a hidden class="anchor" aria-hidden="true" href="#43-验证">#</a></h2>
+<p>访问http://127.0.0.1:8080，即可看到Vite构建的index.html</p>
+<p>![Screenshot 2025-04-10 at 11.42.38](/Users/chengfeng/Desktop/Screenshot 2025-04-10 at 11.42.38.png)</p>
+<h1 id="4-增加vuetify组件框架">4 增加Vuetify组件框架<a hidden class="anchor" aria-hidden="true" href="#4-增加vuetify组件框架">#</a></h1>
+<p>在已有Vue项目中，执行如下命令来增加Vuetify组件框架：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm i vuetify
+</span></span></code></pre></div><p>然后修改Vue项目的main.js文件，导入vuetify。如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">createApp</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;vue&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;./style.css&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Vuetify
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;vuetify/styles&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">createVuetify</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;vuetify&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">components</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;vuetify/components&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">directives</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;vuetify/directives&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Components
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">App</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./App.vue&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">vuetify</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">createVuetify</span>({
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">components</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">directives</span>,
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">createApp</span>(<span style="color:#a6e22e">App</span>).<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">vuetify</span>).<span style="color:#a6e22e">mount</span>(<span style="color:#e6db74">&#39;#app&#39;</span>)
+</span></span></code></pre></div><p>就可以开始使用vuetify组件啦。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://example.org/tags/vue/">VUE</a></li>
+      <li><a href="https://example.org/tags/vite/">Vite</a></li>
+      <li><a href="https://example.org/tags/nginx/">Nginx</a></li>
+      <li><a href="https://example.org/tags/mac/">Mac</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://example.org/">Nimble Code Tech</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
