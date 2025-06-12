@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Swagger on Nimble Code Tech</title>
-    <link>http://localhost:1313/tags/swagger/</link>
+    <link>https://nimblecode.tech/tags/swagger/</link>
     <description>Recent content in Swagger on Nimble Code Tech</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 27 Sep 2022 20:47:46 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/swagger/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nimblecode.tech/tags/swagger/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>API设计的最佳实践[翻译]</title>
-      <link>http://localhost:1313/posts/best-practices-in-api-design/</link>
+      <link>https://nimblecode.tech/posts/best-practices-in-api-design/</link>
       <pubDate>Tue, 27 Sep 2022 20:47:46 +0800</pubDate>
-      <guid>http://localhost:1313/posts/best-practices-in-api-design/</guid>
+      <guid>https://nimblecode.tech/posts/best-practices-in-api-design/</guid>
       <description>Swagger关于API设计的最佳实践。</description>
     </item>
   </channel>
