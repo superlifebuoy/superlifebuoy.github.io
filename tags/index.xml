@@ -6,8 +6,43 @@
     <description>Recent content in Tags on Nimble Code Tech</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Mar 2025 11:49:18 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 12 Jun 2025 18:49:14 -0700</lastBuildDate>
     <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog</title>
+      <link>/tags/blog/</link>
+      <pubDate>Thu, 12 Jun 2025 18:49:14 -0700</pubDate>
+      <guid>/tags/blog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Domain</title>
+      <link>/tags/domain/</link>
+      <pubDate>Thu, 12 Jun 2025 18:49:14 -0700</pubDate>
+      <guid>/tags/domain/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GitHub Pages</title>
+      <link>/tags/github-pages/</link>
+      <pubDate>Thu, 12 Jun 2025 18:49:14 -0700</pubDate>
+      <guid>/tags/github-pages/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>域名</title>
+      <link>/tags/%E5%9F%9F%E5%90%8D/</link>
+      <pubDate>Thu, 12 Jun 2025 18:49:14 -0700</pubDate>
+      <guid>/tags/%E5%9F%9F%E5%90%8D/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>网站</title>
+      <link>/tags/%E7%BD%91%E7%AB%99/</link>
+      <pubDate>Thu, 12 Jun 2025 18:49:14 -0700</pubDate>
+      <guid>/tags/%E7%BD%91%E7%AB%99/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Mac</title>
       <link>/tags/mac/</link>
@@ -132,13 +167,6 @@
       <link>/tags/wget/</link>
       <pubDate>Thu, 15 Sep 2022 19:36:09 +0800</pubDate>
       <guid>/tags/wget/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Blog</title>
-      <link>/tags/blog/</link>
-      <pubDate>Wed, 17 Aug 2022 22:28:08 +0800</pubDate>
-      <guid>/tags/blog/</guid>
       <description></description>
     </item>
     <item>

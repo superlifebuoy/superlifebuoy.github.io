@@ -6,10 +6,17 @@
     <description>Recent content on Nimble Code Tech</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Mar 2025 11:49:18 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 12 Jun 2025 18:49:14 -0700</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Develop Multi Pages Websit</title>
+      <title>个人域名映射到GitHub Pages</title>
+      <link>/posts/link-domain-to-git-pages/</link>
+      <pubDate>Thu, 12 Jun 2025 18:49:14 -0700</pubDate>
+      <guid>/posts/link-domain-to-git-pages/</guid>
+      <description>详细介绍如何将自己拥有的域名解析到GitHub Pages，从而实现通过访问自己的域名来显示GitHub Pages内容。</description>
+    </item>
+    <item>
+      <title>Develop Multi Pages Website</title>
       <link>/posts/develop-multi-pages-websit/</link>
       <pubDate>Mon, 31 Mar 2025 11:49:18 -0700</pubDate>
       <guid>/posts/develop-multi-pages-websit/</guid>
