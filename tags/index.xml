@@ -6,8 +6,64 @@
     <description>Recent content in Tags on Nimble Code Tech</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Jun 2025 18:49:14 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jul 2025 21:35:58 -0700</lastBuildDate>
     <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ab</title>
+      <link>/tags/ab/</link>
+      <pubDate>Wed, 02 Jul 2025 21:35:58 -0700</pubDate>
+      <guid>/tags/ab/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AppachBench</title>
+      <link>/tags/appachbench/</link>
+      <pubDate>Wed, 02 Jul 2025 21:35:58 -0700</pubDate>
+      <guid>/tags/appachbench/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HTTP</title>
+      <link>/tags/http/</link>
+      <pubDate>Wed, 02 Jul 2025 21:35:58 -0700</pubDate>
+      <guid>/tags/http/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>压力测试</title>
+      <link>/tags/%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Wed, 02 Jul 2025 21:35:58 -0700</pubDate>
+      <guid>/tags/%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>基准工具</title>
+      <link>/tags/%E5%9F%BA%E5%87%86%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Wed, 02 Jul 2025 21:35:58 -0700</pubDate>
+      <guid>/tags/%E5%9F%BA%E5%87%86%E5%B7%A5%E5%85%B7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>性能测试</title>
+      <link>/tags/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Wed, 02 Jul 2025 21:35:58 -0700</pubDate>
+      <guid>/tags/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>测试</title>
+      <link>/tags/%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Wed, 02 Jul 2025 21:35:58 -0700</pubDate>
+      <guid>/tags/%E6%B5%8B%E8%AF%95/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>稳定性测试</title>
+      <link>/tags/%E7%A8%B3%E5%AE%9A%E6%80%A7%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Wed, 02 Jul 2025 21:35:58 -0700</pubDate>
+      <guid>/tags/%E7%A8%B3%E5%AE%9A%E6%80%A7%E6%B5%8B%E8%AF%95/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Blog</title>
       <link>/tags/blog/</link>

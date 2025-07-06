@@ -6,8 +6,15 @@
     <description>Recent content on Nimble Code Tech</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Jun 2025 18:49:14 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jul 2025 21:35:58 -0700</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache ab —— 一个基准工具</title>
+      <link>/posts/apache-ab-tester/</link>
+      <pubDate>Wed, 02 Jul 2025 21:35:58 -0700</pubDate>
+      <guid>/posts/apache-ab-tester/</guid>
+      <description>本文简要介绍Apache ab(ApacheBench)，一个性能基准工具。</description>
+    </item>
     <item>
       <title>个人域名映射到GitHub Pages</title>
       <link>/posts/link-domain-to-git-pages/</link>
