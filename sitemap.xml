@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/tags/bugs/</loc>
+    <lastmod>2025-07-19T16:25:27-07:00</lastmod>
+  </url><url>
+    <loc>/tags/findbugs/</loc>
+    <lastmod>2025-07-19T16:25:27-07:00</lastmod>
+  </url><url>
+    <loc>/tags/java/</loc>
+    <lastmod>2025-07-19T16:25:27-07:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2025-07-19T16:25:27-07:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2025-07-19T16:25:27-07:00</lastmod>
+  </url><url>
+    <loc>/tags/spotbugs/</loc>
+    <lastmod>2025-07-19T16:25:27-07:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2025-07-19T16:25:27-07:00</lastmod>
+  </url><url>
+    <loc>/tags/tool/</loc>
+    <lastmod>2025-07-19T16:25:27-07:00</lastmod>
+  </url><url>
+    <loc>/posts/how-to-use-spotbugs/</loc>
+    <lastmod>2025-07-19T16:25:27-07:00</lastmod>
+  </url><url>
     <loc>/tags/ab/</loc>
     <lastmod>2025-07-02T21:35:58-07:00</lastmod>
   </url><url>
@@ -12,15 +39,6 @@
     <lastmod>2025-07-02T21:35:58-07:00</lastmod>
   </url><url>
     <loc>/tags/http/</loc>
-    <lastmod>2025-07-02T21:35:58-07:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2025-07-02T21:35:58-07:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2025-07-02T21:35:58-07:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2025-07-02T21:35:58-07:00</lastmod>
   </url><url>
     <loc>/tags/%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/</loc>
@@ -126,9 +144,6 @@
     <lastmod>2022-09-15T19:36:09+08:00</lastmod>
   </url><url>
     <loc>/tags/maven/</loc>
-    <lastmod>2022-09-15T19:36:09+08:00</lastmod>
-  </url><url>
-    <loc>/tags/tool/</loc>
     <lastmod>2022-09-15T19:36:09+08:00</lastmod>
   </url><url>
     <loc>/tags/wget/</loc>
