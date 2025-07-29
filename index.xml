@@ -6,8 +6,15 @@
     <description>Recent content on Nimble Code Tech</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Jul 2025 16:25:27 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 29 Jul 2025 14:15:45 -0700</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Posthog Quickstart</title>
+      <link>/posts/posthog-quickstart/</link>
+      <pubDate>Tue, 29 Jul 2025 14:15:45 -0700</pubDate>
+      <guid>/posts/posthog-quickstart/</guid>
+      <description></description>
+    </item>
     <item>
       <title>如何使用SpotBugs</title>
       <link>/posts/how-to-use-spotbugs/</link>
