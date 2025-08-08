@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Java on Nimble Code Tech</title>
-    <link>/tags/java/</link>
-    <description>Recent content in Java on Nimble Code Tech</description>
+    <title>Unit Test Coverage on Nimble Code Tech</title>
+    <link>/tags/unit-test-coverage/</link>
+    <description>Recent content in Unit Test Coverage on Nimble Code Tech</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 07 Aug 2025 19:52:39 -0700</lastBuildDate>
-    <atom:link href="/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/unit-test-coverage/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何测算Java代码的单元测试覆盖率</title>
       <link>/posts/eclmma-quickstart/</link>
       <pubDate>Thu, 07 Aug 2025 19:52:39 -0700</pubDate>
       <guid>/posts/eclmma-quickstart/</guid>
       <description>介绍什么是单元测试覆盖率，以及测算Java单元测试覆盖率的两个工具：JaCoCo与EclEmma。</description>
-    </item>
-    <item>
-      <title>如何使用SpotBugs</title>
-      <link>/posts/how-to-use-spotbugs/</link>
-      <pubDate>Sat, 19 Jul 2025 16:25:27 -0700</pubDate>
-      <guid>/posts/how-to-use-spotbugs/</guid>
-      <description>介绍如何使用SpotBugs，来发现代码的静态问题。</description>
     </item>
   </channel>
 </rss>

@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Nimble Code Tech</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Jul 2025 14:15:45 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 07 Aug 2025 19:52:39 -0700</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何测算Java代码的单元测试覆盖率</title>
+      <link>/posts/eclmma-quickstart/</link>
+      <pubDate>Thu, 07 Aug 2025 19:52:39 -0700</pubDate>
+      <guid>/posts/eclmma-quickstart/</guid>
+      <description>介绍什么是单元测试覆盖率，以及测算Java单元测试覆盖率的两个工具：JaCoCo与EclEmma。</description>
+    </item>
     <item>
       <title>PostHog入门</title>
       <link>/posts/posthog-quickstart/</link>

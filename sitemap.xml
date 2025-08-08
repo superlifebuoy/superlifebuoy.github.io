@@ -2,19 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/tags/eclemma/</loc>
+    <lastmod>2025-08-07T19:52:39-07:00</lastmod>
+  </url><url>
+    <loc>/tags/jacoco/</loc>
+    <lastmod>2025-08-07T19:52:39-07:00</lastmod>
+  </url><url>
+    <loc>/tags/java/</loc>
+    <lastmod>2025-08-07T19:52:39-07:00</lastmod>
+  </url><url>
     <loc>/</loc>
-    <lastmod>2025-07-29T14:15:45-07:00</lastmod>
+    <lastmod>2025-08-07T19:52:39-07:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2025-08-07T19:52:39-07:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2025-08-07T19:52:39-07:00</lastmod>
+  </url><url>
+    <loc>/tags/unit-test-coverage/</loc>
+    <lastmod>2025-08-07T19:52:39-07:00</lastmod>
+  </url><url>
+    <loc>/tags/unit-testing/</loc>
+    <lastmod>2025-08-07T19:52:39-07:00</lastmod>
+  </url><url>
+    <loc>/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2025-08-07T19:52:39-07:00</lastmod>
+  </url><url>
+    <loc>/posts/eclmma-quickstart/</loc>
+    <lastmod>2025-08-07T19:52:39-07:00</lastmod>
+  </url><url>
+    <loc>/tags/%E8%A6%86%E7%9B%96%E7%8E%87/</loc>
+    <lastmod>2025-08-07T19:52:39-07:00</lastmod>
   </url><url>
     <loc>/tags/posthog/</loc>
     <lastmod>2025-07-29T14:15:45-07:00</lastmod>
   </url><url>
     <loc>/posts/posthog-quickstart/</loc>
-    <lastmod>2025-07-29T14:15:45-07:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2025-07-29T14:15:45-07:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2025-07-29T14:15:45-07:00</lastmod>
   </url><url>
     <loc>/tags/%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%90/</loc>
@@ -30,9 +54,6 @@
     <lastmod>2025-07-19T16:25:27-07:00</lastmod>
   </url><url>
     <loc>/tags/findbugs/</loc>
-    <lastmod>2025-07-19T16:25:27-07:00</lastmod>
-  </url><url>
-    <loc>/tags/java/</loc>
     <lastmod>2025-07-19T16:25:27-07:00</lastmod>
   </url><url>
     <loc>/tags/spotbugs/</loc>

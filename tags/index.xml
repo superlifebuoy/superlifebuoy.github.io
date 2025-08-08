@@ -6,8 +6,57 @@
     <description>Recent content in Tags on Nimble Code Tech</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Jul 2025 14:15:45 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 07 Aug 2025 19:52:39 -0700</lastBuildDate>
     <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EclEmma</title>
+      <link>/tags/eclemma/</link>
+      <pubDate>Thu, 07 Aug 2025 19:52:39 -0700</pubDate>
+      <guid>/tags/eclemma/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JaCoCo</title>
+      <link>/tags/jacoco/</link>
+      <pubDate>Thu, 07 Aug 2025 19:52:39 -0700</pubDate>
+      <guid>/tags/jacoco/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Java</title>
+      <link>/tags/java/</link>
+      <pubDate>Thu, 07 Aug 2025 19:52:39 -0700</pubDate>
+      <guid>/tags/java/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unit Test Coverage</title>
+      <link>/tags/unit-test-coverage/</link>
+      <pubDate>Thu, 07 Aug 2025 19:52:39 -0700</pubDate>
+      <guid>/tags/unit-test-coverage/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unit Testing</title>
+      <link>/tags/unit-testing/</link>
+      <pubDate>Thu, 07 Aug 2025 19:52:39 -0700</pubDate>
+      <guid>/tags/unit-testing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>单元测试</title>
+      <link>/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Thu, 07 Aug 2025 19:52:39 -0700</pubDate>
+      <guid>/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>覆盖率</title>
+      <link>/tags/%E8%A6%86%E7%9B%96%E7%8E%87/</link>
+      <pubDate>Thu, 07 Aug 2025 19:52:39 -0700</pubDate>
+      <guid>/tags/%E8%A6%86%E7%9B%96%E7%8E%87/</guid>
+      <description></description>
+    </item>
     <item>
       <title>PostHog</title>
       <link>/tags/posthog/</link>
@@ -48,13 +97,6 @@
       <link>/tags/findbugs/</link>
       <pubDate>Sat, 19 Jul 2025 16:25:27 -0700</pubDate>
       <guid>/tags/findbugs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Java</title>
-      <link>/tags/java/</link>
-      <pubDate>Sat, 19 Jul 2025 16:25:27 -0700</pubDate>
-      <guid>/tags/java/</guid>
       <description></description>
     </item>
     <item>
