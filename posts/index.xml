@@ -100,6 +100,20 @@ Host anotherHost
 &lt;h2 id=&#34;4-github使用场景&#34;&gt;4 Github使用场景&lt;/h2&gt;</description>
     </item>
     <item>
+      <title>类Unix系统常用命令简介</title>
+      <link>/posts/mac-command-intro/</link>
+      <pubDate>Thu, 08 Aug 2024 23:07:15 -0700</pubDate>
+      <guid>/posts/mac-command-intro/</guid>
+      <description>一个常用类Unix系统命令的简介集合。不定时更新。</description>
+    </item>
+    <item>
+      <title>Maven入门</title>
+      <link>/posts/maven-intro/</link>
+      <pubDate>Wed, 07 Aug 2024 23:15:47 -0700</pubDate>
+      <guid>/posts/maven-intro/</guid>
+      <description>简单介绍Maven，收集一些常用的Maven命令和参数。不定时更新。</description>
+    </item>
+    <item>
       <title>更新与分发Docker镜像（2）</title>
       <link>/posts/update-share-app/</link>
       <pubDate>Mon, 20 Mar 2023 19:52:44 +0800</pubDate>
