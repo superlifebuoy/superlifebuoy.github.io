@@ -6,8 +6,29 @@
     <description>Recent content in Tags on Nimble Code Tech</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Aug 2025 19:52:39 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 16 Aug 2025 14:46:00 -0700</lastBuildDate>
     <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Insights</title>
+      <link>/tags/insights/</link>
+      <pubDate>Sat, 16 Aug 2025 14:46:00 -0700</pubDate>
+      <guid>/tags/insights/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PostHog</title>
+      <link>/tags/posthog/</link>
+      <pubDate>Sat, 16 Aug 2025 14:46:00 -0700</pubDate>
+      <guid>/tags/posthog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Trends</title>
+      <link>/tags/trends/</link>
+      <pubDate>Sat, 16 Aug 2025 14:46:00 -0700</pubDate>
+      <guid>/tags/trends/</guid>
+      <description></description>
+    </item>
     <item>
       <title>EclEmma</title>
       <link>/tags/eclemma/</link>
@@ -55,13 +76,6 @@
       <link>/tags/%E8%A6%86%E7%9B%96%E7%8E%87/</link>
       <pubDate>Thu, 07 Aug 2025 19:52:39 -0700</pubDate>
       <guid>/tags/%E8%A6%86%E7%9B%96%E7%8E%87/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>PostHog</title>
-      <link>/tags/posthog/</link>
-      <pubDate>Tue, 29 Jul 2025 14:15:45 -0700</pubDate>
-      <guid>/tags/posthog/</guid>
       <description></description>
     </item>
     <item>

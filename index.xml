@@ -6,8 +6,15 @@
     <description>Recent content on Nimble Code Tech</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Aug 2025 19:52:39 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 16 Aug 2025 14:46:00 -0700</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PostHog的趋势洞察简介</title>
+      <link>/posts/posthog-creating-insights/</link>
+      <pubDate>Sat, 16 Aug 2025 14:46:00 -0700</pubDate>
+      <guid>/posts/posthog-creating-insights/</guid>
+      <description>简单介绍PostHog的业务洞察类型，进而介绍Trends的使用方法。</description>
+    </item>
     <item>
       <title>如何测算Java代码的单元测试覆盖率</title>
       <link>/posts/eclmma-quickstart/</link>

@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/tags/insights/</loc>
+    <lastmod>2025-08-16T14:46:00-07:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2025-08-16T14:46:00-07:00</lastmod>
+  </url><url>
+    <loc>/tags/posthog/</loc>
+    <lastmod>2025-08-16T14:46:00-07:00</lastmod>
+  </url><url>
+    <loc>/posts/posthog-creating-insights/</loc>
+    <lastmod>2025-08-16T14:46:00-07:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2025-08-16T14:46:00-07:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2025-08-16T14:46:00-07:00</lastmod>
+  </url><url>
+    <loc>/tags/trends/</loc>
+    <lastmod>2025-08-16T14:46:00-07:00</lastmod>
+  </url><url>
     <loc>/tags/eclemma/</loc>
     <lastmod>2025-08-07T19:52:39-07:00</lastmod>
   </url><url>
@@ -9,15 +30,6 @@
     <lastmod>2025-08-07T19:52:39-07:00</lastmod>
   </url><url>
     <loc>/tags/java/</loc>
-    <lastmod>2025-08-07T19:52:39-07:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2025-08-07T19:52:39-07:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2025-08-07T19:52:39-07:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2025-08-07T19:52:39-07:00</lastmod>
   </url><url>
     <loc>/tags/unit-test-coverage/</loc>
@@ -34,9 +46,6 @@
   </url><url>
     <loc>/tags/%E8%A6%86%E7%9B%96%E7%8E%87/</loc>
     <lastmod>2025-08-07T19:52:39-07:00</lastmod>
-  </url><url>
-    <loc>/tags/posthog/</loc>
-    <lastmod>2025-07-29T14:15:45-07:00</lastmod>
   </url><url>
     <loc>/posts/posthog-quickstart/</loc>
     <lastmod>2025-07-29T14:15:45-07:00</lastmod>
