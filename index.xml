@@ -6,8 +6,15 @@
     <description>Recent content on Nimble Code Tech</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Aug 2025 14:46:00 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 03 Oct 2025 14:35:52 -0700</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ollama &#43; Spring实现本地大语言模型验证</title>
+      <link>/posts/local-llms/</link>
+      <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
+      <guid>/posts/local-llms/</guid>
+      <description>使用Ollama，普通人也可以轻松在自己的电脑上体验大语言模型。使用Spring AI，做工程的程序员也可以轻松集成AI能力。</description>
+    </item>
     <item>
       <title>PostHog的趋势洞察简介</title>
       <link>/posts/posthog-creating-insights/</link>

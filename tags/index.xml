@@ -6,8 +6,43 @@
     <description>Recent content in Tags on Nimble Code Tech</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Aug 2025 14:46:00 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 03 Oct 2025 14:35:52 -0700</lastBuildDate>
     <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLMs</title>
+      <link>/tags/llms/</link>
+      <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
+      <guid>/tags/llms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ollama</title>
+      <link>/tags/ollama/</link>
+      <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
+      <guid>/tags/ollama/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spring AI</title>
+      <link>/tags/spring-ai/</link>
+      <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
+      <guid>/tags/spring-ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大语言模型</title>
+      <link>/tags/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
+      <guid>/tags/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>本地</title>
+      <link>/tags/%E6%9C%AC%E5%9C%B0/</link>
+      <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
+      <guid>/tags/%E6%9C%AC%E5%9C%B0/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Insights</title>
       <link>/tags/insights/</link>

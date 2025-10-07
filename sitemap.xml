@@ -2,22 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tags/insights/</loc>
-    <lastmod>2025-08-16T14:46:00-07:00</lastmod>
+    <loc>/tags/llms/</loc>
+    <lastmod>2025-10-03T14:35:52-07:00</lastmod>
   </url><url>
     <loc>/</loc>
+    <lastmod>2025-10-03T14:35:52-07:00</lastmod>
+  </url><url>
+    <loc>/tags/ollama/</loc>
+    <lastmod>2025-10-03T14:35:52-07:00</lastmod>
+  </url><url>
+    <loc>/posts/local-llms/</loc>
+    <lastmod>2025-10-03T14:35:52-07:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2025-10-03T14:35:52-07:00</lastmod>
+  </url><url>
+    <loc>/tags/spring-ai/</loc>
+    <lastmod>2025-10-03T14:35:52-07:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2025-10-03T14:35:52-07:00</lastmod>
+  </url><url>
+    <loc>/tags/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/</loc>
+    <lastmod>2025-10-03T14:35:52-07:00</lastmod>
+  </url><url>
+    <loc>/tags/%E6%9C%AC%E5%9C%B0/</loc>
+    <lastmod>2025-10-03T14:35:52-07:00</lastmod>
+  </url><url>
+    <loc>/tags/insights/</loc>
     <lastmod>2025-08-16T14:46:00-07:00</lastmod>
   </url><url>
     <loc>/tags/posthog/</loc>
     <lastmod>2025-08-16T14:46:00-07:00</lastmod>
   </url><url>
     <loc>/posts/posthog-creating-insights/</loc>
-    <lastmod>2025-08-16T14:46:00-07:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2025-08-16T14:46:00-07:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2025-08-16T14:46:00-07:00</lastmod>
   </url><url>
     <loc>/tags/trends/</loc>
