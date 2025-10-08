@@ -23,11 +23,11 @@
       <description>讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。</description>
     </item>
     <item>
-      <title>Hugo Quick Start</title>
+      <title>Hugo快速入门</title>
       <link>/posts/hugo-quick-start/</link>
       <pubDate>Wed, 17 Feb 2021 20:29:21 +0800</pubDate>
       <guid>/posts/hugo-quick-start/</guid>
-      <description>Hugo官方Quick Start的翻译。</description>
+      <description>快速了解Hugo的使用方法。</description>
     </item>
   </channel>
 </rss>

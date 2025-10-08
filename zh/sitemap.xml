@@ -191,6 +191,16 @@
   </url><url>
     <loc>/tags/blog/</loc>
     <lastmod>2025-06-12T18:49:14-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/tags/blog/"
+                />
   </url><url>
     <loc>/tags/domain/</loc>
     <lastmod>2025-06-12T18:49:14-07:00</lastmod>
@@ -281,6 +291,16 @@
   </url><url>
     <loc>/tags/hugo/</loc>
     <lastmod>2022-09-15T20:04:36+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/tags/hugo/"
+                />
   </url><url>
     <loc>/posts/deploy-hugo-by-github/</loc>
     <lastmod>2022-09-15T20:04:36+08:00</lastmod>
@@ -332,6 +352,16 @@
   </url><url>
     <loc>/posts/hugo-quick-start/</loc>
     <lastmod>2021-02-17T20:29:21+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/posts/hugo-quick-start/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/posts/hugo-quick-start/"
+                />
   </url><url>
     <loc>/categories/</loc>
     <xhtml:link

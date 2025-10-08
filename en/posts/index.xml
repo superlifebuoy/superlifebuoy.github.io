@@ -15,5 +15,12 @@
       <guid>/en/posts/local-llms/</guid>
       <description>With Ollama, everyone can easily experience large language models on their own computers. Using Spring AI, programmers focused on business development can easily integrate AI capabilities.</description>
     </item>
+    <item>
+      <title>Hugo Quick Start</title>
+      <link>/en/posts/hugo-quick-start/</link>
+      <pubDate>Wed, 17 Feb 2021 20:29:21 +0800</pubDate>
+      <guid>/en/posts/hugo-quick-start/</guid>
+      <description>Hugo官方Quick Start的翻译。</description>
+    </item>
   </channel>
 </rss>

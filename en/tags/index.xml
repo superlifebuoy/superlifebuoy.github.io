@@ -43,5 +43,19 @@
       <guid>/en/tags/spring-ai/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Blog</title>
+      <link>/en/tags/blog/</link>
+      <pubDate>Wed, 17 Feb 2021 20:29:21 +0800</pubDate>
+      <guid>/en/tags/blog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>/en/tags/hugo/</link>
+      <pubDate>Wed, 17 Feb 2021 20:29:21 +0800</pubDate>
+      <guid>/en/tags/hugo/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
