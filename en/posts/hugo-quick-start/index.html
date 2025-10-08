@@ -24,7 +24,7 @@
 <meta name="robots" content="index, follow">
 <title>Hugo Quick Start | Nimble Code Tech</title>
 <meta name="keywords" content="Blog, Hugo">
-<meta name="description" content="Hugo官方Quick Start的翻译。">
+<meta name="description" content="A quick guide to using Hugo.">
 <meta name="author" content="">
 <link rel="canonical" href="https://nimblecode.tech/en/posts/hugo-quick-start/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.a090830a421002426baafbd314e38f149d77b4c48a12ee9312700d770b27fb26.css" integrity="sha256-oJCDCkIQAkJrqvvTFOOPFJ13tMSKEu6TEnANdwsn&#43;yY=" rel="preload stylesheet" as="style">
@@ -76,7 +76,7 @@
 </noscript><meta property="og:url" content="https://nimblecode.tech/en/posts/hugo-quick-start/">
   <meta property="og:site_name" content="Nimble Code Tech">
   <meta property="og:title" content="Hugo Quick Start">
-  <meta property="og:description" content="Hugo官方Quick Start的翻译。">
+  <meta property="og:description" content="A quick guide to using Hugo.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -86,7 +86,7 @@
     <meta property="article:tag" content="Hugo">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hugo Quick Start">
-<meta name="twitter:description" content="Hugo官方Quick Start的翻译。">
+<meta name="twitter:description" content="A quick guide to using Hugo.">
 
 
 <script type="application/ld+json">
@@ -115,12 +115,12 @@
   "@type": "BlogPosting",
   "headline": "Hugo Quick Start",
   "name": "Hugo Quick Start",
-  "description": "Hugo官方Quick Start的翻译。",
+  "description": "A quick guide to using Hugo.",
   "keywords": [
     "Blog", "Hugo"
   ],
-  "articleBody": "Hugo原文链接\nQuick Start 通过漂亮的Ananke主题来创建一个Hugo站点。\n这篇Quick Start是在macOS上操作的。在其他操作系统上安装Hugo的方法，请参见此链接。\n运行此Quick Start中的代码时，最好电脑上已安装了Git。\n通过其他方法学习Hugo，例如书籍或视频教程等，请参见此链接。\n第1步：安装Hugo Homebrew和MacPorts是macOS的两个软件包管理器，可以通过brew.sh和macports.org来安装。如果你使用的是Windows等其他操作系统，请参见此链接。\nbrew install hugo # or port install hugo 要验证Hugo是否已经正确安装，请输入如下命令：\nhugo version 第2步：创建一个新站点 hugo new site quickstart 上面的命令会创建一个名叫quickstart的文件夹，并将新站点生成在这个文件夹内。\nHugo默认的配置文件类型是toml。如果想使用yaml格式的配置文件，则在生成新站点时添加参数“–config-format”。\nhugo new site quickstart --config-format yaml 第3步：添加一个主题 链接themes.gohugo.io是Hugo可用主题的列表地址。这篇Quick Start使用的主题是Ananke主题。\n首先，从GitHub下载主题并添加到themes文件夹内：\ncd quickstart git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 如果你没有GitHub账号的话：\n如果你没有安装git，可以直接从https://github.com/budparr/gohugo-theme-ananke/archive/master.zip下载最新版本的主题压缩包。 然后解压缩.zip文件，生成一个“gohugo-theme-ananke-master”文件夹。 重命名该文件夹为“ananke”，并拷贝到\"themes\"文件夹内。 最后，将这个主题的名字写入站点配置文件中：\necho 'theme = \"ananke\"' \u003e\u003e config.toml 第4步：添加一些内容 你可以手动创建一些内容文件(例如content/\u003c类别\u003e/\u003c文件名\u003e.\u003c后缀\u003e)并在文件开头增加一些元信息。但更好的方法是你通过new命令来自动完成上面的内容(例如增加标题与生成日期等)：\nhugo new posts/my-first-post.md 如果需要的话，你可以编辑这个新生成的内容文件。它的开头内容类似下面：\n--- title: \"My First Post\" date: 2019-03-26T08:47:11+01:00 draft: true --- Draft指明当前文件是否草稿状态。如果是true，则该文件是草稿状态，不会被部署到站点进行展示。一旦你完成了该文件的最终编辑，则可以设置draft: false。更多信息参见此链接。\n第5步：启动Hugo服务器 现在，启动Hugo服务器，并指定草稿状态的文件也可部署展示：\nhugo server -D 你会看到类似如下输出：\n| EN +------------------+----+ Pages | 10 Paginator pages | 0 Non-page files | 0 Static files | 3 Processed images | 0 Aliases | 1 Sitemaps | 1 Cleaned | 0 Total in 11 ms Watching for changes in /Users/bep/quickstart/{content,data,layouts,static,themes} Watching for config changes in /Users/bep/quickstart/config.toml Environment: \"development\" Serving pages from memory Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender Web Server is available at http://localhost:1313/ (bind address 127.0.0.1) Press Ctrl+C to stop 通过http://localhost:1313/来访问你的新站点\n你可以试着修改内容文件，并刷新浏览器来查看改动的内容(有时需要你强制刷新浏览器，一般快捷键是Ctrl-R)。\n第6步：定制化主题 你的新站点已经看起来很不错了，但是你可能想在把它推给公众前再做一些小小的修改。\n站点配置 使用一个文本编辑器打开config.toml文件：\nbaseURL = \"https://example.org/\" languageCode = \"en-us\" title = \"My New Hugo Site\" theme = \"ananke\" 试着将上面的title信息换得更个性化一些吧。另外，如果你已经有一个域名了，可以将域名设置到baseURL属性这里。注意，通过hugo server -D在本地以开发模式启动Hugo时，不需要设置这个值。\n**小贴士：**Hugo运行时，站点配置文件的修改或者内容文件的修改，都可以立刻在浏览器展示出来。你唯一需要做的就是刷新浏览器，有时还需要清理一下缓存。\nAnanke主题的其它配置选项，可以参看主题网站。\n更加深入的主题定制化，请参看此链接\n第7步：构建静态页面 很简单，只需输入：\nhugo -D 默认情况下，静态页面会生成在./public/文件夹内(执行命令时可以通过-d/–destination参数来临时改变生成路径，或者直接在站点配置文件中通过publishdir属性来修改)。 \b\b\b\b\n",
-  "wordCount" : "194",
+  "articleBody": "Hugo Quick Start\nQuick Start Create a Hugo site with the beautiful Ananke theme.\nThis Quick Start guide is for macOS. For installing Hugo on other operating systems, please see this link。\nIt is recommended that you have Git installed on your computer when running the code in this Quick Start.\nFor other ways to learn Hugo, such as books or video tutorials, please see this link。\nStep 1: Install Hugo Homebrew and MacPorts are two package managers for macOS, which can be installed via brew.sh and macports.org. If you are using a different operating system like Windows, please see this link。\nbrew install hugo # or port install hugo To verify that Hugo is correctly installed, enter the following command:\nhugo version Step 2: Create a New Site hugo new site quickstart The command above creates a new folder named quickstart and generates the new site within it.\nThe default configuration file type for Hugo is TOML. If you want to use the YAML format for your configuration file, add the “–config-format” parameter when generating the new site:\nhugo new site quickstart --config-format yaml Step 3: Add a Theme The link themes.gohugo.io is the list of available Hugo themes. This Quick Start uses the Ananke theme.\nFirst, download the theme from GitHub and add it to the “themes” folder:\ncd quickstart git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke If you do not have a GitHub account:\nIf you do not have Git installed, you can directly download the latest version of the theme archive from https://github.com/budparr/gohugo-theme-ananke/archive/master.zip. Then, unzip the .zip file, which will create a folder named “gohugo-theme-ananke-master”. Rename the folder to “ananke” and copy it into the “themes” folder. Finally, write the theme name into the site configuration file:\necho 'theme = \"ananke\"' \u003e\u003e config.toml Step 4: Add Some Content You can manually create content files (e.g., content//.) and add some front matter (metadata) at the beginning of the file. However, a better method is to use the new command to automatically complete the above (e.g., adding a title and creation date):\nhugo new posts/my-first-post.md If needed, you can edit this newly generated content file. Its beginning content will look similar to this:\n--- title: \"My First Post\" date: 2019-03-26T08:47:11+01:00 draft: true --- Draft specifies whether the current file is a draft. If it is true, the file is in draft status and will not be deployed to the site for display. Once you have finished the final editing of the file, you can set draft: false. For more information, see this link。\nStep 5: Start the Hugo Server Now, start the Hugo server and specify that draft files should also be deployed and displayed:\nhugo server -D You will see output similar to the following:\n| EN +------------------+----+ Pages | 10 Paginator pages | 0 Non-page files | 0 Static files | 3 Processed images | 0 Aliases | 1 Sitemaps | 1 Cleaned | 0 Total in 11 ms Watching for changes in /Users/bep/quickstart/{content,data,layouts,static,themes} Watching for config changes in /Users/bep/quickstart/config.toml Environment: \"development\" Serving pages from memory Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender Web Server is available at http://localhost:1313/ (bind address 127.0.0.1) Press Ctrl+C to stop Access your new site via http://localhost:1313/.\nYou can try modifying the content files and refreshing your browser to see the changes (sometimes you need to force a refresh of the browser, typically with the shortcut Ctrl-R).\nStep 6: Customize the Theme Your new site already looks great, but you might want to make a few small modifications before pushing it live to the public.\nSite Configuration Open the config.toml file with a text editor:\nbaseURL = \"https://example.org/\" languageCode = \"en-us\" title = \"My New Hugo Site\" theme = \"ananke\" Try changing the “title” information above to be more personalized. Additionally, if you already have a domain name, you can set it in the “baseURL” property. Note that when starting Hugo in development mode locally with “hugo server -D”, you do not need to set this value.\nTip: Any modifications to the site configuration file or content files while Hugo is running will be immediately displayed in the browser. The only thing you need to do is refresh the browser, sometimes requiring you to clear the cache.\nFor other configuration options for the Ananke theme, please refer to the theme website.\nFor more in-depth theme customization, please see this link.\nStep 7: Build Static Pages It’s simple, just input:\nhugo -D By default, the static pages will be generated in the ./public/ folder (you can temporarily change the output path with the -d/–destination parameter when executing the command, or modify it permanently via the publishdir property in the site configuration file).\n",
+  "wordCount" : "786",
   "inLanguage": "en",
   "datePublished": "2021-02-17T20:29:21+08:00",
   "dateModified": "2021-02-17T20:29:21+08:00",
@@ -206,57 +206,57 @@
 
 </div>
   </header> 
-  <div class="post-content"><p><a href="https://gohugo.io/getting-started/quick-start/">Hugo原文链接</a></p>
+  <div class="post-content"><p><a href="https://gohugo.io/getting-started/quick-start/">Hugo Quick Start</a></p>
 <h2 id="quick-start">Quick Start<a hidden class="anchor" aria-hidden="true" href="#quick-start">#</a></h2>
-<p>通过漂亮的Ananke主题来创建一个Hugo站点。</p>
+<p>Create a Hugo site with the beautiful Ananke theme.</p>
 <blockquote>
-<p>这篇Quick Start是在macOS上操作的。在其他操作系统上安装Hugo的方法，请参见此<a href="https://gohugo.io/getting-started/installing">链接</a>。</p></blockquote>
+<p>This Quick Start guide is for macOS. For installing Hugo on other operating systems, please see this <a href="https://gohugo.io/getting-started/installing">link</a>。</p></blockquote>
 <blockquote>
-<p>运行此Quick Start中的代码时，最好电脑上已安装了<a href="https://git-scm.com/downloads">Git</a>。</p></blockquote>
+<p>It is recommended that you have <a href="https://git-scm.com/downloads">Git</a> installed on your computer when running the code in this Quick Start.</p></blockquote>
 <blockquote>
-<p>通过其他方法学习Hugo，例如书籍或视频教程等，请参见此<a href="https://gohugo.io/getting-started/external-learning-resources/">链接</a>。</p></blockquote>
-<h3 id="第1步安装hugo">第1步：安装Hugo<a hidden class="anchor" aria-hidden="true" href="#第1步安装hugo">#</a></h3>
+<p>For other ways to learn Hugo, such as books or video tutorials, please see this <a href="https://gohugo.io/getting-started/external-learning-resources/">link</a>。</p></blockquote>
+<h3 id="step-1-install-hugo">Step 1: Install Hugo<a hidden class="anchor" aria-hidden="true" href="#step-1-install-hugo">#</a></h3>
 <blockquote>
-<p>Homebrew和MacPorts是macOS的两个软件包管理器，可以通过<a href="https://brew.sh/">brew.sh</a>和<a href="https://www.macports.org/">macports.org</a>来安装。如果你使用的是Windows等其他操作系统，请参见此<a href="https://gohugo.io/getting-started/installing">链接</a>。</p></blockquote>
+<p>Homebrew and MacPorts are two package managers for macOS, which can be installed via <a href="https://brew.sh/">brew.sh</a> and <a href="https://www.macports.org/">macports.org</a>. If you are using a different operating system like Windows, please see this <a href="https://gohugo.io/getting-started/installing">link</a>。</p></blockquote>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>brew install hugo
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># or</span>
 </span></span><span style="display:flex;"><span>port install hugo
-</span></span></code></pre></div><p>要验证Hugo是否已经正确安装，请输入如下命令：</p>
+</span></span></code></pre></div><p>To verify that Hugo is correctly installed, enter the following command:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo version
-</span></span></code></pre></div><h3 id="第2步创建一个新站点">第2步：创建一个新站点<a hidden class="anchor" aria-hidden="true" href="#第2步创建一个新站点">#</a></h3>
+</span></span></code></pre></div><h3 id="step-2-create-a-new-site">Step 2: Create a New Site<a hidden class="anchor" aria-hidden="true" href="#step-2-create-a-new-site">#</a></h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new site quickstart
-</span></span></code></pre></div><p>上面的命令会创建一个名叫quickstart的文件夹，并将新站点生成在这个文件夹内。</p>
-<p>Hugo默认的配置文件类型是toml。如果想使用yaml格式的配置文件，则在生成新站点时添加参数“&ndash;config-format”。</p>
+</span></span></code></pre></div><p>The command above creates a new folder named quickstart and generates the new site within it.</p>
+<p>The default configuration file type for Hugo is TOML. If you want to use the YAML format for your configuration file, add the &ldquo;&ndash;config-format&rdquo; parameter when generating the new site:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new site quickstart --config-format yaml
-</span></span></code></pre></div><h3 id="第3步添加一个主题">第3步：添加一个主题<a hidden class="anchor" aria-hidden="true" href="#第3步添加一个主题">#</a></h3>
-<p>链接<a href="https://themes.gohugo.io/">themes.gohugo.io</a>是Hugo可用主题的列表地址。这篇Quick Start使用的主题是<a href="https://themes.gohugo.io/gohugo-theme-ananke/">Ananke主题</a>。</p>
-<p>首先，从GitHub下载主题并添加到themes文件夹内：</p>
+</span></span></code></pre></div><h3 id="step-3-add-a-theme">Step 3: Add a Theme<a hidden class="anchor" aria-hidden="true" href="#step-3-add-a-theme">#</a></h3>
+<p>The link <a href="https://themes.gohugo.io/">themes.gohugo.io</a> is the list of available Hugo themes. This Quick Start uses the <a href="https://themes.gohugo.io/gohugo-theme-ananke/">Ananke theme</a>.</p>
+<p>First, download the theme from GitHub and add it to the &ldquo;themes&rdquo; folder:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd quickstart
 </span></span><span style="display:flex;"><span>git init
 </span></span><span style="display:flex;"><span>git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
-</span></span></code></pre></div><p>如果你没有GitHub账号的话：</p>
+</span></span></code></pre></div><p>If you do not have a GitHub account:</p>
 <ul>
-<li>如果你没有安装git，可以直接从<a href="https://github.com/budparr/gohugo-theme-ananke/archive/master.zip">https://github.com/budparr/gohugo-theme-ananke/archive/master.zip</a>下载最新版本的主题压缩包。</li>
-<li>然后解压缩.zip文件，生成一个“gohugo-theme-ananke-master”文件夹。</li>
-<li>重命名该文件夹为“ananke”，并拷贝到&quot;themes&quot;文件夹内。</li>
+<li>If you do not have Git installed, you can directly download the latest version of the theme archive from <a href="https://github.com/budparr/gohugo-theme-ananke/archive/master.zip">https://github.com/budparr/gohugo-theme-ananke/archive/master.zip</a>.</li>
+<li>Then, unzip the .zip file, which will create a folder named &ldquo;gohugo-theme-ananke-master&rdquo;.</li>
+<li>Rename the folder to &ldquo;ananke&rdquo; and copy it into the &ldquo;themes&rdquo; folder.</li>
 </ul>
-<p>最后，将这个主题的名字写入站点配置文件中：</p>
+<p>Finally, write the theme name into the site configuration file:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;theme = &#34;ananke&#34;&#39;</span> &gt;&gt; config.toml
-</span></span></code></pre></div><h3 id="第4步添加一些内容">第4步：添加一些内容<a hidden class="anchor" aria-hidden="true" href="#第4步添加一些内容">#</a></h3>
-<p>你可以手动创建一些内容文件(例如content/&lt;类别&gt;/&lt;文件名&gt;.&lt;后缀&gt;)并在文件开头增加一些元信息。但更好的方法是你通过new命令来自动完成上面的内容(例如增加标题与生成日期等)：</p>
+</span></span></code></pre></div><h3 id="step-4-add-some-content">Step 4: Add Some Content<a hidden class="anchor" aria-hidden="true" href="#step-4-add-some-content">#</a></h3>
+<p>You can manually create content files (e.g., content/<!-- raw HTML omitted -->/<!-- raw HTML omitted -->.<!-- raw HTML omitted -->) and add some front matter (metadata) at the beginning of the file. However, a better method is to use the new command to automatically complete the above (e.g., adding a title and creation date):</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new posts/my-first-post.md
-</span></span></code></pre></div><p>如果需要的话，你可以编辑这个新生成的内容文件。它的开头内容类似下面：</p>
+</span></span></code></pre></div><p>If needed, you can edit this newly generated content file. Its beginning content will look similar to this:</p>
 <pre tabindex="0"><code>---
 title: &#34;My First Post&#34;
 date: 2019-03-26T08:47:11+01:00
 draft: true
 ---
 </code></pre><blockquote>
-<p>Draft指明当前文件是否草稿状态。如果是true，则该文件是草稿状态，不会被部署到站点进行展示。一旦你完成了该文件的最终编辑，则可以设置draft: false。更多信息参见此<a href="https://gohugo.io/getting-started/usage/#draft-future-and-expired-content">链接</a>。</p></blockquote>
-<h3 id="第5步启动hugo服务器">第5步：启动Hugo服务器<a hidden class="anchor" aria-hidden="true" href="#第5步启动hugo服务器">#</a></h3>
-<p>现在，启动Hugo服务器，并指定草稿状态的文件也可部署展示：</p>
+<p>Draft specifies whether the current file is a draft. If it is true, the file is in draft status and will not be deployed to the site for display. Once you have finished the final editing of the file, you can set draft: false. For more information, see this <a href="https://gohugo.io/getting-started/usage/#draft-future-and-expired-content">link</a>。</p></blockquote>
+<h3 id="step-5-start-the-hugo-server">Step 5: Start the Hugo Server<a hidden class="anchor" aria-hidden="true" href="#step-5-start-the-hugo-server">#</a></h3>
+<p>Now, start the Hugo server and specify that draft files should also be deployed and displayed:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo server -D
-</span></span></code></pre></div><p>你会看到类似如下输出：</p>
+</span></span></code></pre></div><p>You will see output similar to the following:</p>
 <pre tabindex="0"><code>                   | EN
 +------------------+----+
   Pages            | 10
@@ -276,26 +276,25 @@ Serving pages from memory
 Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
-</code></pre><p><strong>通过<a href="http://localhost:1313/">http://localhost:1313/</a>来访问你的新站点</strong></p>
-<p>你可以试着修改内容文件，并刷新浏览器来查看改动的内容(有时需要你强制刷新浏览器，一般快捷键是Ctrl-R)。</p>
-<h3 id="第6步定制化主题">第6步：定制化主题<a hidden class="anchor" aria-hidden="true" href="#第6步定制化主题">#</a></h3>
-<p>你的新站点已经看起来很不错了，但是你可能想在把它推给公众前再做一些小小的修改。</p>
-<h4 id="站点配置">站点配置<a hidden class="anchor" aria-hidden="true" href="#站点配置">#</a></h4>
-<p>使用一个文本编辑器打开config.toml文件：</p>
+</code></pre><p><strong>Access your new site via <a href="http://localhost:1313/">http://localhost:1313/</a>.</strong></p>
+<p>You can try modifying the content files and refreshing your browser to see the changes (sometimes you need to force a refresh of the browser, typically with the shortcut Ctrl-R).</p>
+<h3 id="step-6-customize-the-theme">Step 6: Customize the Theme<a hidden class="anchor" aria-hidden="true" href="#step-6-customize-the-theme">#</a></h3>
+<p>Your new site already looks great, but you might want to make a few small modifications before pushing it live to the public.</p>
+<h4 id="site-configuration">Site Configuration<a hidden class="anchor" aria-hidden="true" href="#site-configuration">#</a></h4>
+<p>Open the config.toml file with a text editor:</p>
 <pre tabindex="0"><code>baseURL = &#34;https://example.org/&#34;
 languageCode = &#34;en-us&#34;
 title = &#34;My New Hugo Site&#34;
 theme = &#34;ananke&#34;
-</code></pre><p>试着将上面的title信息换得更个性化一些吧。另外，如果你已经有一个域名了，可以将域名设置到baseURL属性这里。注意，通过hugo server -D在本地以开发模式启动Hugo时，不需要设置这个值。</p>
+</code></pre><p>Try changing the &ldquo;title&rdquo; information above to be more personalized. Additionally, if you already have a domain name, you can set it in the &ldquo;baseURL&rdquo; property. Note that when starting Hugo in development mode locally with &ldquo;hugo server -D&rdquo;, you do not need to set this value.</p>
 <blockquote>
-<p>**小贴士：**Hugo运行时，站点配置文件的修改或者内容文件的修改，都可以立刻在浏览器展示出来。你唯一需要做的就是刷新浏览器，有时还需要<a href="https://kb.iu.edu/d/ahic">清理一下缓存</a>。</p></blockquote>
-<p>Ananke主题的其它配置选项，可以参看<a href="https://github.com/budparr/gohugo-theme-ananke">主题网站</a>。</p>
-<p><strong>更加深入的主题定制化，请参看此<a href="https://gohugo.io/hugo-modules/theme-components/">链接</a></strong></p>
-<h3 id="第7步构建静态页面">第7步：构建静态页面<a hidden class="anchor" aria-hidden="true" href="#第7步构建静态页面">#</a></h3>
-<p>很简单，只需输入：</p>
+<p><strong>Tip</strong>: Any modifications to the site configuration file or content files while Hugo is running will be immediately displayed in the browser. The only thing you need to do is refresh the browser, sometimes requiring you to clear the cache.</p></blockquote>
+<p>For other configuration options for the Ananke theme, please refer to the <a href="https://github.com/budparr/gohugo-theme-ananke">theme website</a>.</p>
+<p><strong>For more in-depth theme customization, please see this <a href="https://gohugo.io/hugo-modules/theme-components/">link</a>.</strong></p>
+<h3 id="step-7-build-static-pages">Step 7: Build Static Pages<a hidden class="anchor" aria-hidden="true" href="#step-7-build-static-pages">#</a></h3>
+<p>It&rsquo;s simple, just input:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo -D
-</span></span></code></pre></div><p>默认情况下，静态页面会生成在./public/文件夹内(执行命令时可以通过-d/&ndash;destination参数来临时改变生成路径，或者直接在站点配置文件中通过publishdir属性来修改)。
-</p>
+</span></span></code></pre></div><p>By default, the static pages will be generated in the ./public/ folder (you can temporarily change the output path with the -d/&ndash;destination parameter when executing the command, or modify it permanently via the publishdir property in the site configuration file).</p>
 
 
   </div>
