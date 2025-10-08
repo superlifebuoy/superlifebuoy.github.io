@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="zh" dir="auto">
 
 <head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KG4P5QR587"></script>
@@ -27,7 +27,7 @@
 <meta name="description" content="介绍如何使用SpotBugs，来发现代码的静态问题。">
 <meta name="author" content="">
 <link rel="canonical" href="/posts/how-to-use-spotbugs/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a090830a421002426baafbd314e38f149d77b4c48a12ee9312700d770b27fb26.css" integrity="sha256-oJCDCkIQAkJrqvvTFOOPFJ13tMSKEu6TEnANdwsn&#43;yY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -35,7 +35,7 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="/posts/how-to-use-spotbugs/">
+<link rel="alternate" hreflang="zh" href="/posts/how-to-use-spotbugs/">
 <noscript>
     <style>
         #theme-toggle,
@@ -76,7 +76,7 @@
   <meta property="og:site_name" content="Nimble Code Tech">
   <meta property="og:title" content="如何使用SpotBugs">
   <meta property="og:description" content="介绍如何使用SpotBugs，来发现代码的静态问题。">
-  <meta property="og:locale" content="en-us">
+  <meta property="og:locale" content="zh">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2025-07-19T16:25:27-07:00">
@@ -123,7 +123,7 @@
   ],
   "articleBody": "提高代码质量的方法有很多，为此构建的工具也很多。在Java技术栈中，SpotBugs就是一个常用的工具。\n1 SpotBugs是什么 SpotBugs是一个静态分析Java代码错误的工具，它是从FindBugs分出来的。目前SpotBugs可检查出400多种错误模式(具体说明在这里)。\nSpotBugs可以分析任何Java版本编译的程序，但是运行它需要JDK 11或以上版本才可以。\n2 SpotBugs的使用方法 SpotBugs既可以独立运行，也可以作为插件结合其他框架/工具一起使用。最为常见的是Maven插件、Gradle插件、Eclipse插件、IntelliJ插件。\n下面仅以Maven插件与Eclipse插件来说明使用方法。\n2.1 Maven插件 要在Maven工程中使用SpotBugs插件，首先需要在工程pom.xml文件中增加spotbugs-maven-plugin。\ncom.github.spotbugs spotbugs-maven-plugin 4.9.3.0 com.github.spotbugs spotbugs 4.9.3 这个插件最常用的goal(目标/任务)有3个，分别是：spotbugs、check、gui。\n2.1.1 spotbugs 执行spotbugs的命令如下：\nmvn spotbugs:spotbugs 输出结果类似下图：\nspotbugs会尝试静态分析当前Maven工程的代码质量问题(使用详情见这里)，并将分析结果输出到工程target目录内。分析结果包含两部分：一个spotbugsXml.xml文件；一个site目录。具体如下图：\n2.1.2 check 执行check的命令如下：\nmvn spotbugs:check 输出结果类似下图：\ncheck会像spotbugs一样尝试静态分析当前Maven工程的代码质量问题，但在发现任何错误时会抛出错误并立即停止构建工程(使用详情见这里)。\n2.1.3 gui 执行gui的命令如下：\nmvn spotbugs:gui 输出结果类似下图：\ngui的主要作用是会启动SpotBugs的GUI界面，分析之前spotbugs产生的结果内容(使用详情见这里)。SpotBugs的GUI界面如下图所示：\n2.2 Eclipse插件 安装SoptBugs的Eclipse插件，需要打开Eclipse的Eclipse Marketplace，然后搜索“SpotBugs”。具体如下图：\n点击“安装”即可完成SpotBugs的Eclipse插件的安装过程。\n使用方法也很简单，只要在想要使用SpotBugs扫描的工程上右键，选择“SpotBugs” - “Find Bugs”，即可开始做代码静态分析。具体如下图：\nSpotBugs执行完成后，可以在工具栏打开“Bug Explorer”来查看结果。双击具体的Bug记录，即可定位到有问题的源码。例如下面这个Bug：\n这是一个Null Pointer Exception(空指针异常)。当switch的判断走默认case时，因为mv是null(未初始化)，所以调用mv.setViewName方法会失败。\n2.3 IntelliJ插件 使用详见这里。(我不使用IntelliJ，所以就不详细介绍啦～)\n3 SpotBugs可识别的Bug模式 目前SpotBugs可识别超过400种Bug模式，具体描述在这里。SpotBugs将它们分成了10个大类：\n类型 描述 Bad practice (BAD_PRACTICE) 这类问题主要是因为坏的编码习惯造成的。它们都违反了基本的编码实践。例如hashCode()和equals()问题、Serializable问题以及finalize()使用问题等。 Correctness (CORRECTNESS) 可能导致错误的代码。这些代码的实现明显与开发人员的意图不符。例如一个父类方法加了@OverridingMethodsMustInvokeSuper注解，但是子类overriding的方法中没有调用super方法。 Experimental (EXPERIMENTAL) SpotBugs试验性的或未经充分验证的错误。 Internationalization (I18N) 与国际化和本地化有关的代码缺陷。 Malicious code vulnerability (MALICIOUS_CODE) 易受不信任代码攻击的bug。例如finalizer应该是protected的，而不是public的 Multithreaded correctness (MT_CORRECTNESS) 与线程、锁和内存可见性有关的bug。例如在多线程环境下对资源进行非线程安全的操作。 Bogus random noise (NOISE) 主要是作为数据挖掘实验中的对照，而非用于查找软件中的实际bug。 Performance (PERFORMANCE) 可能存在性能问题的代码，不一定是bug。例如在不同的java文件中重复出现多次完全相同的、超大尺寸的字符串。 Security (SECURITY) 对输入数据未做任何安全处理，从而可能产生被远程利用的安全漏洞bug。例如可能造成XSS攻击的问题。 Dodgy code (STYLE) 代码混乱、反常或编写方式会导致错误等。例如从未使用的变量、无效的switch流程、未确认的强制类型转换以及对确定为空的值进行多余的空检查等。 4 总结 SpotBugs无法识别出所有的代码bug，也无法保证所有识别出的bug都是准确的。但它确实大大提高了Java代码质量改进的效率，降低了改进成本。我们应该把SpotBugs作为优化代码的第一步操作。\n",
   "wordCount" : "124",
-  "inLanguage": "en",
+  "inLanguage": "zh",
   "datePublished": "2025-07-19T16:25:27-07:00",
   "dateModified": "2025-07-19T16:25:27-07:00",
   "mainEntityOfPage": {
@@ -179,6 +179,12 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                    <ul class="lang-switch"><li>|</li>
+                        <li>
+                            <a href="/en/" title="English"
+                                aria-label="English">En</a>
+                        </li>
+                    </ul>
             </div>
         </div>
         <ul id="menu">
@@ -199,7 +205,7 @@
         </svg>
       </span>
     </h1>
-    <div class="post-meta"><span title='2025-07-19 16:25:27 -0700 PDT'>July 19, 2025</span>
+    <div class="post-meta"><span title='2025-07-19 16:25:27 -0700 PDT'>2025年7月19日</span>
 
 </div>
   </header> 

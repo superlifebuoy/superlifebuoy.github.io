@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Docker on Nimble Code Tech</title>
+    <link>//localhost:1313/zh/tags/docker/</link>
+    <description>Recent content in Docker on Nimble Code Tech</description>
+    <generator>Hugo -- 0.151.0</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 20 Mar 2023 19:52:44 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/zh/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>更新与分发Docker镜像（2）</title>
+      <link>//localhost:1313/zh/posts/update-share-app/</link>
+      <pubDate>Mon, 20 Mar 2023 19:52:44 +0800</pubDate>
+      <guid>//localhost:1313/zh/posts/update-share-app/</guid>
+      <description>如何更新Docker镜像？如果推送Docker镜像到镜像仓库？</description>
+    </item>
+    <item>
+      <title>Docker入门（1）</title>
+      <link>//localhost:1313/zh/posts/docker-get-started/</link>
+      <pubDate>Tue, 14 Mar 2023 22:27:10 +0800</pubDate>
+      <guid>//localhost:1313/zh/posts/docker-get-started/</guid>
+      <description>Docker是什么？如何使用它？</description>
+    </item>
+    <item>
+      <title>容器简史[翻译]</title>
+      <link>//localhost:1313/zh/posts/a-brief-history-of-containers-from-1970s/</link>
+      <pubDate>Thu, 15 Sep 2022 19:56:51 +0800</pubDate>
+      <guid>//localhost:1313/zh/posts/a-brief-history-of-containers-from-1970s/</guid>
+      <description>简单介绍容器技术自1970年代以来的发展历史。</description>
+    </item>
+  </channel>
+</rss>

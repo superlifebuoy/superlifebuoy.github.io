@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KG4P5QR587"></script>
+<script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Re Os As Pe Ms Fs capture Ve calculateEventProperties js register register_once register_for_session unregister unregister_for_session qs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty zs Ls createPersonProfile Us Rs Bs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ds debug I Ns getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_mT7wOBjidgcQVEyPjDDfTMDJlObxehaWFU39siHPudu', {
+        api_host: 'https://us.i.posthog.com',
+        defaults: '2025-05-24',
+        person_profiles: 'identified_only', 
+    })
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KG4P5QR587');
+</script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>如何使用SpotBugs | Nimble Code Tech</title>
+<meta name="keywords" content="Tool, Java, FindBugs, SpotBugs, Bugs">
+<meta name="description" content="介绍如何使用SpotBugs，来发现代码的静态问题。">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/zh/posts/how-to-use-spotbugs/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a090830a421002426baafbd314e38f149d77b4c48a12ee9312700d770b27fb26.css" integrity="sha256-oJCDCkIQAkJrqvvTFOOPFJ13tMSKEu6TEnANdwsn&#43;yY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="//localhost:1313/zh/posts/how-to-use-spotbugs/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/zh/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                    <ul class="lang-switch"><li>|</li>
+                        <li>
+                            <a href="//localhost:1313/" title="English"
+                                aria-label="English">En</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      如何使用SpotBugs
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h1>
+    <div class="post-meta"><span title='2025-07-19 16:25:27 -0700 PDT'>2025年7月19日</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>提高代码质量的方法有很多，为此构建的工具也很多。在Java技术栈中，SpotBugs就是一个常用的工具。</p>
+<h2 id="1-spotbugs是什么">1 SpotBugs是什么<a hidden class="anchor" aria-hidden="true" href="#1-spotbugs是什么">#</a></h2>
+<p><a href="https://spotbugs.github.io/">SpotBugs</a>是一个静态分析Java代码错误的工具，它是从<a href="https://findbugs.sourceforge.net/">FindBugs</a>分出来的。目前SpotBugs可检查出400多种错误模式(具体说明在<a href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html">这里</a>)。</p>
+<p>SpotBugs可以分析任何Java版本编译的程序，但是运行它需要JDK 11或以上版本才可以。</p>
+<h2 id="2-spotbugs的使用方法">2 SpotBugs的使用方法<a hidden class="anchor" aria-hidden="true" href="#2-spotbugs的使用方法">#</a></h2>
+<p>SpotBugs既可以独立运行，也可以作为插件结合其他框架/工具一起使用。最为常见的是Maven插件、Gradle插件、Eclipse插件、IntelliJ插件。</p>
+<p>下面仅以Maven插件与Eclipse插件来说明使用方法。</p>
+<h3 id="21-maven插件">2.1 Maven插件<a hidden class="anchor" aria-hidden="true" href="#21-maven插件">#</a></h3>
+<p>要在Maven工程中使用SpotBugs插件，首先需要在工程pom.xml文件中增加spotbugs-maven-plugin。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;plugin&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;groupId&gt;</span>com.github.spotbugs<span style="color:#f92672">&lt;/groupId&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;artifactId&gt;</span>spotbugs-maven-plugin<span style="color:#f92672">&lt;/artifactId&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;version&gt;</span>4.9.3.0<span style="color:#f92672">&lt;/version&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;dependencies&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- overwrite dependency on spotbugs if you want to specify the version of spotbugs --&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;dependency&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;groupId&gt;</span>com.github.spotbugs<span style="color:#f92672">&lt;/groupId&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;artifactId&gt;</span>spotbugs<span style="color:#f92672">&lt;/artifactId&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;version&gt;</span>4.9.3<span style="color:#f92672">&lt;/version&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/dependency&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/dependencies&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/plugin&gt;</span>
+</span></span></code></pre></div><p>这个插件最常用的goal(目标/任务)有3个，分别是：spotbugs、check、gui。</p>
+<h4 id="211-spotbugs">2.1.1 spotbugs<a hidden class="anchor" aria-hidden="true" href="#211-spotbugs">#</a></h4>
+<p>执行spotbugs的命令如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mvn spotbugs:spotbugs
+</span></span></code></pre></div><p>输出结果类似下图：</p>
+<p><img alt="goal-spotbugs" loading="lazy" src="/how-to-use-spotbugs/goal-spotbugs.png"></p>
+<p>spotbugs会尝试静态分析当前Maven工程的代码质量问题(使用详情见<a href="https://spotbugs.github.io/spotbugs-maven-plugin/spotbugs-mojo.html">这里</a>)，并将分析结果输出到工程target目录内。分析结果包含两部分：一个spotbugsXml.xml文件；一个site目录。具体如下图：</p>
+<p><img alt="goal-spotbugs-result" loading="lazy" src="/how-to-use-spotbugs/goal-spotbugs-result.png"></p>
+<h3 id="212-check">2.1.2 check<a hidden class="anchor" aria-hidden="true" href="#212-check">#</a></h3>
+<p>执行check的命令如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mvn spotbugs:check
+</span></span></code></pre></div><p>输出结果类似下图：</p>
+<p><img alt="goal-check" loading="lazy" src="/how-to-use-spotbugs/goal-check.png"></p>
+<p>check会像spotbugs一样尝试静态分析当前Maven工程的代码质量问题，但在发现任何错误时会抛出错误并立即停止构建工程(使用详情见<a href="https://spotbugs.github.io/spotbugs-maven-plugin/check-mojo.html">这里</a>)。</p>
+<h3 id="213-gui">2.1.3 gui<a hidden class="anchor" aria-hidden="true" href="#213-gui">#</a></h3>
+<p>执行gui的命令如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mvn spotbugs:gui
+</span></span></code></pre></div><p>输出结果类似下图：</p>
+<p><img alt="goal-gui" loading="lazy" src="/how-to-use-spotbugs/goal-gui.png"></p>
+<p>gui的主要作用是会启动SpotBugs的GUI界面，分析之前spotbugs产生的结果内容(使用详情见<a href="https://spotbugs.github.io/spotbugs-maven-plugin/gui-mojo.html">这里</a>)。SpotBugs的GUI界面如下图所示：</p>
+<p><img alt="goal-gui-result" loading="lazy" src="/how-to-use-spotbugs/goal-gui-result.png"></p>
+<h3 id="22-eclipse插件">2.2 Eclipse插件<a hidden class="anchor" aria-hidden="true" href="#22-eclipse插件">#</a></h3>
+<p>安装SoptBugs的Eclipse插件，需要打开Eclipse的Eclipse Marketplace，然后搜索“SpotBugs”。具体如下图：</p>
+<p><img alt="spotbugs-eclipse" loading="lazy" src="/how-to-use-spotbugs/spotbugs-eclipse.png"></p>
+<p>点击“安装”即可完成SpotBugs的Eclipse插件的安装过程。</p>
+<p>使用方法也很简单，只要在想要使用SpotBugs扫描的工程上右键，选择“SpotBugs” - “Find Bugs”，即可开始做代码静态分析。具体如下图：</p>
+<p><img alt="fire-spotbugs-eclipse" loading="lazy" src="/how-to-use-spotbugs/fire-spotbugs-eclipse.png"></p>
+<p>SpotBugs执行完成后，可以在工具栏打开“Bug Explorer”来查看结果。双击具体的Bug记录，即可定位到有问题的源码。例如下面这个Bug：</p>
+<p><img alt="fire-spotbugs-eclipse-result" loading="lazy" src="/how-to-use-spotbugs/fire-spotbugs-eclipse-result.png"></p>
+<p>这是一个Null Pointer Exception(空指针异常)。当switch的判断走默认case时，因为mv是null(未初始化)，所以调用mv.setViewName方法会失败。</p>
+<h3 id="23-intellij插件">2.3 IntelliJ插件<a hidden class="anchor" aria-hidden="true" href="#23-intellij插件">#</a></h3>
+<p>使用详见<a href="https://plugins.jetbrains.com/plugin/14014-spotbugs-idea">这里</a>。(我不使用IntelliJ，所以就不详细介绍啦～)</p>
+<h2 id="3-spotbugs可识别的bug模式">3 SpotBugs可识别的Bug模式<a hidden class="anchor" aria-hidden="true" href="#3-spotbugs可识别的bug模式">#</a></h2>
+<p>目前SpotBugs可识别超过400种Bug模式，具体描述在<a href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html">这里</a>。SpotBugs将它们分成了10个大类：</p>
+<table>
+  <thead>
+      <tr>
+          <th>类型</th>
+          <th>描述</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Bad practice (BAD_PRACTICE)</td>
+          <td>这类问题主要是因为坏的编码习惯造成的。它们都违反了基本的编码实践。例如hashCode()和equals()问题、Serializable问题以及finalize()使用问题等。</td>
+      </tr>
+      <tr>
+          <td>Correctness (CORRECTNESS)</td>
+          <td>可能导致错误的代码。这些代码的实现明显与开发人员的意图不符。例如一个父类方法加了@OverridingMethodsMustInvokeSuper注解，但是子类overriding的方法中没有调用super方法。</td>
+      </tr>
+      <tr>
+          <td>Experimental (EXPERIMENTAL)</td>
+          <td>SpotBugs试验性的或未经充分验证的错误。</td>
+      </tr>
+      <tr>
+          <td>Internationalization (I18N)</td>
+          <td>与国际化和本地化有关的代码缺陷。</td>
+      </tr>
+      <tr>
+          <td>Malicious code vulnerability (MALICIOUS_CODE)</td>
+          <td>易受不信任代码攻击的bug。例如finalizer应该是protected的，而不是public的</td>
+      </tr>
+      <tr>
+          <td>Multithreaded correctness (MT_CORRECTNESS)</td>
+          <td>与线程、锁和内存可见性有关的bug。例如在多线程环境下对资源进行非线程安全的操作。</td>
+      </tr>
+      <tr>
+          <td>Bogus random noise (NOISE)</td>
+          <td>主要是作为数据挖掘实验中的对照，而非用于查找软件中的实际bug。</td>
+      </tr>
+      <tr>
+          <td>Performance (PERFORMANCE)</td>
+          <td>可能存在性能问题的代码，不一定是bug。例如在不同的java文件中重复出现多次完全相同的、超大尺寸的字符串。</td>
+      </tr>
+      <tr>
+          <td>Security (SECURITY)</td>
+          <td>对输入数据未做任何安全处理，从而可能产生被远程利用的安全漏洞bug。例如可能造成XSS攻击的问题。</td>
+      </tr>
+      <tr>
+          <td>Dodgy code (STYLE)</td>
+          <td>代码混乱、反常或编写方式会导致错误等。例如从未使用的变量、无效的switch流程、未确认的强制类型转换以及对确定为空的值进行多余的空检查等。</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="4-总结">4 总结<a hidden class="anchor" aria-hidden="true" href="#4-总结">#</a></h2>
+<p><strong>SpotBugs无法识别出所有的代码bug，也无法保证所有识别出的bug都是准确的。但它确实大大提高了Java代码质量改进的效率，降低了改进成本。我们应该把SpotBugs作为优化代码的第一步操作。</strong></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="//localhost:1313/zh/tags/tool/">Tool</a></li>
+      <li><a href="//localhost:1313/zh/tags/java/">Java</a></li>
+      <li><a href="//localhost:1313/zh/tags/findbugs/">FindBugs</a></li>
+      <li><a href="//localhost:1313/zh/tags/spotbugs/">SpotBugs</a></li>
+      <li><a href="//localhost:1313/zh/tags/bugs/">Bugs</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="//localhost:1313/zh/">Nimble Code Tech</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

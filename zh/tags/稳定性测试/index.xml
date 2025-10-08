@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>稳定性测试 on Nimble Code Tech</title>
+    <link>//localhost:1313/zh/tags/%E7%A8%B3%E5%AE%9A%E6%80%A7%E6%B5%8B%E8%AF%95/</link>
+    <description>Recent content in 稳定性测试 on Nimble Code Tech</description>
+    <generator>Hugo -- 0.151.0</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 02 Jul 2025 21:35:58 -0700</lastBuildDate>
+    <atom:link href="//localhost:1313/zh/tags/%E7%A8%B3%E5%AE%9A%E6%80%A7%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache ab —— 一个基准工具</title>
+      <link>//localhost:1313/zh/posts/apache-ab-tester/</link>
+      <pubDate>Wed, 02 Jul 2025 21:35:58 -0700</pubDate>
+      <guid>//localhost:1313/zh/posts/apache-ab-tester/</guid>
+      <description>本文简要介绍Apache ab(ApacheBench)，一个性能基准工具。</description>
+    </item>
+  </channel>
+</rss>

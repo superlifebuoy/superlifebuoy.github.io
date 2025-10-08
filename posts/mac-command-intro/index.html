@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="zh" dir="auto">
 
 <head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KG4P5QR587"></script>
@@ -27,7 +27,7 @@
 <meta name="description" content="一个常用类Unix系统命令的简介集合。不定时更新。">
 <meta name="author" content="">
 <link rel="canonical" href="/posts/mac-command-intro/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a090830a421002426baafbd314e38f149d77b4c48a12ee9312700d770b27fb26.css" integrity="sha256-oJCDCkIQAkJrqvvTFOOPFJ13tMSKEu6TEnANdwsn&#43;yY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -35,7 +35,7 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="/posts/mac-command-intro/">
+<link rel="alternate" hreflang="zh" href="/posts/mac-command-intro/">
 <noscript>
     <style>
         #theme-toggle,
@@ -76,7 +76,7 @@
   <meta property="og:site_name" content="Nimble Code Tech">
   <meta property="og:title" content="类Unix系统常用命令简介">
   <meta property="og:description" content="一个常用类Unix系统命令的简介集合。不定时更新。">
-  <meta property="og:locale" content="en-us">
+  <meta property="og:locale" content="zh">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2024-08-08T23:07:15-07:00">
@@ -123,7 +123,7 @@
   ],
   "articleBody": "1 ssh 指定用户名连接 ssh {username}@{ip address} 2 scp SCP(Secure Copy Protocol)是一种在本地主机与远程主机之间，或在两个远程主机之间安全传输计算机文件的方式。\n下载文件 scp {username}@{ip.address}:/{dir}/{file} {targetDir} 上传文件 scp {dir}/{file} {username}@{ip.address}:{targetDir} 下载目录 scp -r {username}@{ip.address}:/{dir} {targetDir} 上传目录 scp -r {dir} {username}@{ip.address}:{targetDir} 3 tar 解压缩jar包 tar -zxvf {jar包} -C {目标目录} -z：有gzip属性的，可选 -x：解压，必须 -v：显示所有过程，可选 -f：使用的文件名称；这个参数是最后一个参数，后面只能跟jar包，必须 -C：指定目标目录，必须预先存在，可选 4 lsof lsof(list open files)是一个“列出打开的文件”命令。在许多类Unix系统中用于查找/显示所有打开的文件及其打开这些文件的进程列表。\n查看占用端口进程 lsof -i :{port} ",
   "wordCount" : "51",
-  "inLanguage": "en",
+  "inLanguage": "zh",
   "datePublished": "2024-08-08T23:07:15-07:00",
   "dateModified": "2024-08-08T23:07:15-07:00",
   "mainEntityOfPage": {
@@ -179,6 +179,12 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                    <ul class="lang-switch"><li>|</li>
+                        <li>
+                            <a href="/en/" title="English"
+                                aria-label="English">En</a>
+                        </li>
+                    </ul>
             </div>
         </div>
         <ul id="menu">
@@ -193,7 +199,7 @@
     <h1 class="post-title entry-hint-parent">
       类Unix系统常用命令简介
     </h1>
-    <div class="post-meta"><span title='2024-08-08 23:07:15 -0700 PDT'>August 8, 2024</span>
+    <div class="post-meta"><span title='2024-08-08 23:07:15 -0700 PDT'>2024年8月8日</span>
 
 </div>
   </header> 

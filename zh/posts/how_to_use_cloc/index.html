@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KG4P5QR587"></script>
+<script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Re Os As Pe Ms Fs capture Ve calculateEventProperties js register register_once register_for_session unregister unregister_for_session qs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty zs Ls createPersonProfile Us Rs Bs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ds debug I Ns getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_mT7wOBjidgcQVEyPjDDfTMDJlObxehaWFU39siHPudu', {
+        api_host: 'https://us.i.posthog.com',
+        defaults: '2025-05-24',
+        person_profiles: 'identified_only', 
+    })
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KG4P5QR587');
+</script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>How to Use cloc | Nimble Code Tech</title>
+<meta name="keywords" content="Tool, cloc">
+<meta name="description" content="关于cloc的简介——一个开源、易用的代码行统计工具。">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/zh/posts/how_to_use_cloc/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a090830a421002426baafbd314e38f149d77b4c48a12ee9312700d770b27fb26.css" integrity="sha256-oJCDCkIQAkJrqvvTFOOPFJ13tMSKEu6TEnANdwsn&#43;yY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="//localhost:1313/zh/posts/how_to_use_cloc/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/zh/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                    <ul class="lang-switch"><li>|</li>
+                        <li>
+                            <a href="//localhost:1313/" title="English"
+                                aria-label="English">En</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      How to Use cloc
+    </h1>
+    <div class="post-meta"><span title='2021-12-08 11:44:28 +0800 +0800'>2021年12月8日</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="cloc是什么">cloc是什么<a hidden class="anchor" aria-hidden="true" href="#cloc是什么">#</a></h2>
+<p>cloc是Count Lines of Code的缩写，根据名字可以看出是一个统计代码量的开源工具。<a href="https://github.com/AlDanial/cloc">地址点这里</a></p>
+<p>在我们第一次接触一个项目的时候，Cloc能帮助我们回答两个问题：</p>
+<ul>
+<li>这个项目有多大？</li>
+<li>这个项目用什么写的？</li>
+</ul>
+<h3 id="overview">Overview<a hidden class="anchor" aria-hidden="true" href="#overview">#</a></h3>
+<p>cloc完全使用Perl语言实现，并且没有任何外部依赖(一些需要使用的外部模块，已经被cloc包含进去了)。因此，cloc的可移植性非常好，只要有Perl v5.6及以上的执行环境即可运行。目前已知cloc可以运行在多种Linux发行版、FreeBSD、NetBSD、OpenBSD、macOS、AIX、HP-UX、Solaris、IRIX、z/OS以及Windows上。</p>
+<p>cloc已经可以识别很多种编程语言的源代码行、注释行、空白行。给定两个版本的代码库源码，cloc还能计算出源码行、注释行、空白行的差异。</p>
+<h3 id="quick-start">Quick Start<a hidden class="anchor" aria-hidden="true" href="#quick-start">#</a></h3>
+<h4 id="install-cloc">Install cloc<a hidden class="anchor" aria-hidden="true" href="#install-cloc">#</a></h4>
+<p>这里仅以macOS下使用Homebrew安装为例。执行如下命令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>brew install cloc
+</span></span></code></pre></div><p>即可完成安装过程，非常方便。感谢Homebrew。</p>
+<p>终端执行cloc -v可以查看cloc用法的简要说明：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>➜  ~ cloc -v
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                       cloc -- Count Lines of Code
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Usage:
+</span></span><span style="display:flex;"><span>    cloc <span style="color:#f92672">[</span>options<span style="color:#f92672">]</span> &lt;file<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>/dir<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>/git hash<span style="color:#f92672">(</span>es<span style="color:#f92672">)</span>&gt;
+</span></span><span style="display:flex;"><span>        Count physical lines of source code and comments in the given files
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">(</span>may be archives such as compressed tarballs or zip files<span style="color:#f92672">)</span> and/or
+</span></span><span style="display:flex;"><span>        recursively below the given directories or git commit hashes.
+</span></span><span style="display:flex;"><span>        Example:    cloc src/ include/ main.c
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    cloc <span style="color:#f92672">[</span>options<span style="color:#f92672">]</span> --diff &lt;set1&gt;  &lt;set2&gt;
+</span></span><span style="display:flex;"><span>        Compute differences of physical lines of source code and comments
+</span></span><span style="display:flex;"><span>        between any pairwise combination of directory names, archive
+</span></span><span style="display:flex;"><span>        files or git commit hashes.
+</span></span><span style="display:flex;"><span>        Example:    cloc --diff Python-3.5.tar.xz python-3.6/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cloc --help  shows full documentation on the options.
+</span></span><span style="display:flex;"><span>https://github.com/AlDanial/cloc has numerous examples and more information.
+</span></span><span style="display:flex;"><span>➜  ~
+</span></span></code></pre></div><h4 id="run-cloc">Run cloc<a hidden class="anchor" aria-hidden="true" href="#run-cloc">#</a></h4>
+<p>我们就以cloc项目本身为例，使用cloc来统计代码信息。</p>
+<p>首先git clone源码工程：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>➜  ~ git clone https://github.com/cloudevents/spec.git
+</span></span></code></pre></div><p>然后执行cloc命令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>➜  ~ cloc spec/
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">51</span> text files.
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">51</span> unique files.
+</span></span><span style="display:flex;"><span>       <span style="color:#ae81ff">4</span> files ignored.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>github.com/AlDanial/cloc v 1.90  T<span style="color:#f92672">=</span>0.05 s <span style="color:#f92672">(</span>965.0 files/s, 163426.5 lines/s<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>-------------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>Language                     files          blank        comment           code
+</span></span><span style="display:flex;"><span>-------------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>Markdown                        <span style="color:#ae81ff">39</span>           <span style="color:#ae81ff">1566</span>              <span style="color:#ae81ff">0</span>           <span style="color:#ae81ff">5483</span>
+</span></span><span style="display:flex;"><span>Bourne Shell                     <span style="color:#ae81ff">3</span>            <span style="color:#ae81ff">100</span>            <span style="color:#ae81ff">158</span>            <span style="color:#ae81ff">449</span>
+</span></span><span style="display:flex;"><span>JSON                             <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>            <span style="color:#ae81ff">191</span>
+</span></span><span style="display:flex;"><span>YAML                             <span style="color:#ae81ff">2</span>             <span style="color:#ae81ff">14</span>             <span style="color:#ae81ff">19</span>             <span style="color:#ae81ff">67</span>
+</span></span><span style="display:flex;"><span>Protocol Buffers                 <span style="color:#ae81ff">1</span>             <span style="color:#ae81ff">12</span>             <span style="color:#ae81ff">15</span>             <span style="color:#ae81ff">32</span>
+</span></span><span style="display:flex;"><span>make                             <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>             <span style="color:#ae81ff">21</span>
+</span></span><span style="display:flex;"><span>-------------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>SUM:                            <span style="color:#ae81ff">48</span>           <span style="color:#ae81ff">1694</span>            <span style="color:#ae81ff">192</span>           <span style="color:#ae81ff">6243</span>
+</span></span><span style="display:flex;"><span>-------------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>➜  ~
+</span></span></code></pre></div><p>可以看到cloc先输出了各类文件数量，然后分析了各类文件的空白行、注释行、代码行数量，最后还给出了汇总值，非常清晰明了。</p>
+<h3 id="why-use-cloc">Why Use cloc<a hidden class="anchor" aria-hidden="true" href="#why-use-cloc">#</a></h3>
+<p>cloc拥有众多优秀的特性，使得它易用、纯粹、可扩展以及可移植：</p>
+<ol>
+<li>只有一个自包含的文件，几乎没有安装过程：下载并执行即可(需要有Perl执行环境)。</li>
+<li>可以从源文件中读取语言注释定义，所以理论上cloc可以和尚不存在的计算机语言一起工作。</li>
+<li>可以按语言或项目分多次运行，并将结果合并输出。</li>
+<li>可以输出各种格式的结果：纯文本、SQL、JSON、XML、YAML、逗号分隔的值列表等。</li>
+<li>可以从压缩文件中统计代码信息(目前支持tar、zip、ear类型)。</li>
+<li>拥用众多的问题排查参数。</li>
+<li>支持文件或目录名中空格与异常字符的处理。</li>
+<li>除了标准Perl之外，没有任何外部依赖。</li>
+<li>可以运行在Linux、FreeBSD、NetBSD、OpenBSD、macOS、AIX、HP-UX、Solaris、IRIX和z/OS等具有Perl 5.6或以上版本的系统上。源码版本可以在Windows上使用ActiveState Perl、Strawberry Perl、Cygwin或MobaXTerm+Perl插件运行。另外，在Windows上还可以运行没有依赖性的Windows二进制文件。</li>
+</ol>
+<h3 id="how-it-works">How it Works<a hidden class="anchor" aria-hidden="true" href="#how-it-works">#</a></h3>
+<p>简单来说，cloc的执行方式类似SLOCCount：首先创建一个要扫描的文件列表，然后尝试确认文件中是否包含已知的计算机语言源码，最后对完成确认的文件执行对应语言的例程来计算相关行数量。</p>
+<p>如果想要了解细节版本，请继续向下看：</p>
+<ol>
+<li>如果输入文件是一个压缩文件(例如.tar.gz或.zip)，cloc会创建一个临时目录然后使用系统工具(例如tar、bzip2、unzip等)将压缩文件的内容解压到这个目录中，最后将这个临时目录作为一个扫描的输入源。(该过程在类Unix系统中比在Windows系统中更稳定)</li>
+<li>使用File::Find递归查找输入目录，并组成待扫描的文件列表。这个过程会忽略二进制文件和空文件。</li>
+<li>确保待扫描文件的内容都是不同的(首先通过文件大小比较，然后对相似大小的文件用Digest::MD5做MD5比较)。相同内容的文件按字符顺序排序，只保留第一个文件做扫描，其余相似文件会排除在待扫描文件列表与最终输出结果之外。(使用&ndash;skip-uniqueness参数可以关闭文件内容检测，并强制将所有文件都包括在输出结果中。)</li>
+<li>cloc根据待扫描文件的扩展名做分类，并匹配到相关的计算机语言(cloc支持的计算机语言与扩展，可以通过&ndash;show-lang和&ndash;show-ext参数查看)。为匹配到的文件会被排除在待扫描文件列表之外。对于没有扩展名的文件，cloc会读取文件第一行判断是否shell脚本(以#!开头)。如果是shell脚本，该文件就被归入脚本语言。如果待扫描文件即没有扩展名也不是脚本语言，也会被排除在待扫描文件列表之外。</li>
+<li>到此，待扫描文件列表中都是可识别源码的文件了。对每个文件，cloc会执行如下操作：
+<ul>
+<li>把整个文件内容读到内存中。</li>
+<li>统计所有行数(= L_original)。</li>
+<li>移除所有空行，再统计一遍(= L_non_blank)。</li>
+<li>查找对应计算机语言的注释过滤器(例如C++有两个注释过滤器：一个处理//开头的注释；另一个处理/*和*/包含的注释)。然后依次使用过滤器来删除注释行，得到剩余的源代码行数(= L_code)。</li>
+<li>最后统计该文件的相关信息：空白行数 = L_original - L_non_blank；注释行数 = L_non_blank - L_code；源代码行数 = L_code。</li>
+</ul>
+</li>
+</ol>
+<h3 id="recognized-languages">Recognized Languages<a hidden class="anchor" aria-hidden="true" href="#recognized-languages">#</a></h3>
+<p>使用&ndash;show-lang参数，可以查看cloc目前已支持的计算机语言。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>prompt&gt; cloc --show-lang
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ABAP                       <span style="color:#f92672">(</span>abap<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>ActionScript               <span style="color:#f92672">(</span>as<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Ada                        <span style="color:#f92672">(</span>ada, adb, ads, pad<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>ADSO/IDSM                  <span style="color:#f92672">(</span>adso<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Agda                       <span style="color:#f92672">(</span>agda, lagda<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>AMPLE                      <span style="color:#f92672">(</span>ample, dofile, startup<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Ant                        <span style="color:#f92672">(</span>build.xml, build.xml<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>ANTLR Grammar              <span style="color:#f92672">(</span>g, g4<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Apex Class                 <span style="color:#f92672">(</span>cls<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Apex Trigger               <span style="color:#f92672">(</span>trigger<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>APL                        <span style="color:#f92672">(</span>apl, apla, aplc, aplf, apli, apln, aplo, dyalog, dyapp, mipage<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Arduino Sketch             <span style="color:#f92672">(</span>ino, pde<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>AsciiDoc                   <span style="color:#f92672">(</span>adoc, asciidoc<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>ASP                        <span style="color:#f92672">(</span>asa, ashx, asp, axd<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>ASP.NET                    <span style="color:#f92672">(</span>asax, ascx, asmx, aspx, master, sitemap, webinfo<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>AspectJ                    <span style="color:#f92672">(</span>aj<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Assembly                   <span style="color:#f92672">(</span>a51, asm, nasm, S, s<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>AutoHotkey                 <span style="color:#f92672">(</span>ahk, ahkl<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>awk                        <span style="color:#f92672">(</span>auk, awk, gawk, mawk, nawk<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Bazel                      <span style="color:#f92672">(</span>BUILD<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>BizTalk Orchestration      <span style="color:#f92672">(</span>odx<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>BizTalk Pipeline           <span style="color:#f92672">(</span>btp<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Blade                      <span style="color:#f92672">(</span>blade, blade.php<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Bourne Again Shell         <span style="color:#f92672">(</span>bash<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Bourne Shell               <span style="color:#f92672">(</span>sh<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>BrightScript               <span style="color:#f92672">(</span>brs<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>builder                    <span style="color:#f92672">(</span>xml.builder<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>C                          <span style="color:#f92672">(</span>c, cats, ec, idc, pgc<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>C Shell                    <span style="color:#f92672">(</span>csh, tcsh<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>C#                         <span style="color:#f92672">(</span>cs<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>C# Designer                <span style="color:#f92672">(</span>designer.cs<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>C++                        <span style="color:#f92672">(</span>C, c++, cc, CPP, cpp, cxx, h++, inl, ipp, pcc, tcc, tpp<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><h3 id="an-example">An Example<a hidden class="anchor" aria-hidden="true" href="#an-example">#</a></h3>
+<p>cloc不仅功能强大，而且非常易用。和shell脚本结合后，可以大大提升我们的效率。下面举一个网络上找到的例子——如何快速分析一个GitHub上的项目：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>git clone --depth <span style="color:#ae81ff">1</span> <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> temp-linecount-repo <span style="color:#f92672">&amp;&amp;</span>
+</span></span><span style="display:flex;"><span>  printf <span style="color:#e6db74">&#34;(&#39;temp-linecount-repo&#39; will be deleted automatically)\n\n\n&#34;</span> <span style="color:#f92672">&amp;&amp;</span>
+</span></span><span style="display:flex;"><span>  cloc temp-linecount-repo <span style="color:#f92672">&amp;&amp;</span>
+</span></span><span style="display:flex;"><span>  rm -rf temp-linecount-repo
+</span></span></code></pre></div><p>将以上内容保存，并命名为github_cloc.sh。执行该脚本并分析cloc项目：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>➜  Utils ./github_cloc.sh https://github.com/AlDanial/cloc.git
+</span></span><span style="display:flex;"><span>Cloning into <span style="color:#e6db74">&#39;temp-linecount-repo&#39;</span>...
+</span></span><span style="display:flex;"><span>remote: Enumerating objects: 821, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>remote: Counting objects: 100% <span style="color:#f92672">(</span>821/821<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>remote: Compressing objects: 100% <span style="color:#f92672">(</span>555/555<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>remote: Total <span style="color:#ae81ff">821</span> <span style="color:#f92672">(</span>delta 165<span style="color:#f92672">)</span>, reused <span style="color:#ae81ff">729</span> <span style="color:#f92672">(</span>delta 140<span style="color:#f92672">)</span>, pack-reused <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>Receiving objects: 100% <span style="color:#f92672">(</span>821/821<span style="color:#f92672">)</span>, 556.48 KiB | 548.00 KiB/s, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span>Resolving deltas: 100% <span style="color:#f92672">(</span>165/165<span style="color:#f92672">)</span>, <span style="color:#66d9ef">done</span>.
+</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span><span style="color:#e6db74">&#39;temp-linecount-repo&#39;</span> will be deleted automatically<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">686</span> text files.
+</span></span><span style="display:flex;"><span>     <span style="color:#ae81ff">627</span> unique files.
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">96</span> files ignored.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>github.com/AlDanial/cloc v 1.90  T<span style="color:#f92672">=</span>0.65 s <span style="color:#f92672">(</span>915.6 files/s, 97633.0 lines/s<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>----------------------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>Language                              files          blank        comment           code
+</span></span><span style="display:flex;"><span>----------------------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>Perl                                      <span style="color:#ae81ff">8</span>           <span style="color:#ae81ff">2300</span>           <span style="color:#ae81ff">5037</span>          <span style="color:#ae81ff">25719</span>
+</span></span><span style="display:flex;"><span>YAML                                    <span style="color:#ae81ff">315</span>             <span style="color:#ae81ff">12</span>            <span style="color:#ae81ff">317</span>           <span style="color:#ae81ff">7564</span>
+</span></span><span style="display:flex;"><span>Markdown                                  <span style="color:#ae81ff">3</span>            <span style="color:#ae81ff">297</span>             <span style="color:#ae81ff">32</span>           <span style="color:#ae81ff">2806</span>
+</span></span><span style="display:flex;"><span>ANTLR Grammar                             <span style="color:#ae81ff">2</span>            <span style="color:#ae81ff">200</span>             <span style="color:#ae81ff">59</span>           <span style="color:#ae81ff">1012</span>
+</span></span><span style="display:flex;"><span>R                                         <span style="color:#ae81ff">3</span>             <span style="color:#ae81ff">95</span>            <span style="color:#ae81ff">312</span>            <span style="color:#ae81ff">698</span>
+</span></span><span style="display:flex;"><span>C/C++ Header                              <span style="color:#ae81ff">1</span>            <span style="color:#ae81ff">191</span>            <span style="color:#ae81ff">780</span>            <span style="color:#ae81ff">617</span>
+</span></span><span style="display:flex;"><span>C++                                      <span style="color:#ae81ff">11</span>            <span style="color:#ae81ff">132</span>            <span style="color:#ae81ff">183</span>            <span style="color:#ae81ff">603</span>
+</span></span><span style="display:flex;"><span>Forth                                     <span style="color:#ae81ff">2</span>             <span style="color:#ae81ff">17</span>             <span style="color:#ae81ff">84</span>            <span style="color:#ae81ff">529</span>
+</span></span><span style="display:flex;"><span>TypeScript                                <span style="color:#ae81ff">4</span>             <span style="color:#ae81ff">53</span>             <span style="color:#ae81ff">39</span>            <span style="color:#ae81ff">416</span>
+</span></span><span style="display:flex;"><span>Logtalk                                   <span style="color:#ae81ff">1</span>             <span style="color:#ae81ff">59</span>             <span style="color:#ae81ff">57</span>            <span style="color:#ae81ff">368</span>
+</span></span><span style="display:flex;"><span>C                                         <span style="color:#ae81ff">7</span>            <span style="color:#ae81ff">110</span>             <span style="color:#ae81ff">72</span>            <span style="color:#ae81ff">354</span>
+</span></span><span style="display:flex;"><span>Windows Message File                      <span style="color:#ae81ff">2</span>             <span style="color:#ae81ff">89</span>              <span style="color:#ae81ff">9</span>            <span style="color:#ae81ff">348</span>
+</span></span><span style="display:flex;"><span>TeX                                       <span style="color:#ae81ff">2</span>             <span style="color:#ae81ff">36</span>             <span style="color:#ae81ff">64</span>            <span style="color:#ae81ff">265</span>
+</span></span><span style="display:flex;"><span>Racket                                    <span style="color:#ae81ff">1</span>             <span style="color:#ae81ff">32</span>            <span style="color:#ae81ff">159</span>            <span style="color:#ae81ff">247</span>
+</span></span><span style="display:flex;"><span>make                                      <span style="color:#ae81ff">4</span>             <span style="color:#ae81ff">85</span>            <span style="color:#ae81ff">159</span>            <span style="color:#ae81ff">247</span>
+</span></span><span style="display:flex;"><span>SVG                                       <span style="color:#ae81ff">1</span>             <span style="color:#ae81ff">19</span>              <span style="color:#ae81ff">4</span>            <span style="color:#ae81ff">242</span>
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>Literate Idris                            <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>NAnt script                               <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>              <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>ProGuard                                  <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">7</span>             <span style="color:#ae81ff">14</span>              <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>Tcl/Tk                                    <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>dhall                                     <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">6</span>             <span style="color:#ae81ff">17</span>              <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>ColdFusion                                <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>DOS Batch                                 <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>Focus                                     <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>MUMPS                                     <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>              <span style="color:#ae81ff">2</span>              <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>XQuery                                    <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>              <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>xBase                                     <span style="color:#ae81ff">1</span>              <span style="color:#ae81ff">0</span>              <span style="color:#ae81ff">9</span>              <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>----------------------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>SUM:                                    <span style="color:#ae81ff">593</span>           <span style="color:#ae81ff">5089</span>           <span style="color:#ae81ff">9803</span>          <span style="color:#ae81ff">48342</span>
+</span></span><span style="display:flex;"><span>----------------------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>➜  Utils
+</span></span></code></pre></div><p>非常方便。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="//localhost:1313/zh/tags/tool/">Tool</a></li>
+      <li><a href="//localhost:1313/zh/tags/cloc/">Cloc</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="//localhost:1313/zh/">Nimble Code Tech</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

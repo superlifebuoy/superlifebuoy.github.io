@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="zh" dir="auto">
 
 <head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KG4P5QR587"></script>
@@ -27,7 +27,7 @@
 <meta name="description" content="讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。">
 <meta name="author" content="">
 <link rel="canonical" href="/posts/deploy-hugo-by-github/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a090830a421002426baafbd314e38f149d77b4c48a12ee9312700d770b27fb26.css" integrity="sha256-oJCDCkIQAkJrqvvTFOOPFJ13tMSKEu6TEnANdwsn&#43;yY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -35,7 +35,7 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="/posts/deploy-hugo-by-github/">
+<link rel="alternate" hreflang="zh" href="/posts/deploy-hugo-by-github/">
 <noscript>
     <style>
         #theme-toggle,
@@ -76,7 +76,7 @@
   <meta property="og:site_name" content="Nimble Code Tech">
   <meta property="og:title" content="通过Github部署Hugo">
   <meta property="og:description" content="讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。">
-  <meta property="og:locale" content="en-us">
+  <meta property="og:locale" content="zh">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2022-09-15T20:04:36+08:00">
@@ -120,7 +120,7 @@
   ],
   "articleBody": "详细步骤请参考这篇blog\n以下内容为纯执行步骤：\n第1步：在Github创建一个仓库 仓库名任意，只要不是.github.io即可(例如就叫做blog)。这个仓库可以是私有的。\n第2步：关联本地Hugo项目 cd git remote add origin git@github.com:USERNAME/blog.git 第3步：在Github创建一个.github.io仓库 就是你的Github用户名。这个仓库用来存放最终发布的blog内容。\n第4步：关联已安装的theme 如果Hugo项目安装了一些theme，需要git submodule add这些theme。以ananke为例，命令如下：\ngit submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke 第5步：关联Hugo的public文件夹 如果Hugo项目路径下已存在public文件夹，请直接删除。不用担心。\ngit submodule add -b master git@github.com:/.github.io.git public 第6步：生成并发布内容 hugo cd public git status git add . git commit -m \"first commit\" git push -u orgin master 注意：本地网站是关联的blog仓库，本地网站下的public文件夹是以子模块的形式关联的github.io仓库，他们是相对独立的。\n自动化部署脚本 将以上步骤整理成自动执行脚本deploy.sh。脚本commit信息会使用当前时间。将deploy.sh脚本放到Hugo项目路径下，写完blog后直接双击运行即可自动部署发布。\n#!/bin/bash echo -e \"\\033[0;32mDeploying updates to GitHub...\\033[0m\" # Build the project. hugo # if using a theme, replace with `hugo -t ` # Go To Public folder cd public # Add changes to git. git add . # Commit changes. msg=\"rebuilding site `date`\" if [ $# -eq 1 ] then msg=\"$1\" fi git commit -m \"$msg\" # Push source and build repos. git push origin master # Come Back up to the Project Root cd .. 给网站添加评论(未验证) Hugo支持Disqus评论，只需要在配置文件config.toml中设置disqusShortname = “disqusShortname\"即可。如果没有disqusShortname，需要到Disqus官网注册一个账号。注册后添加一个网站，添加时会让填一个shortname，Disqus会生成一个shortname.disqus.com的网址。另外还需要把config.toml中的baseURL地址，也就是公网访问地址添加到Diqus的信任网址中，类似于互相添加信任。\n",
   "wordCount" : "136",
-  "inLanguage": "en",
+  "inLanguage": "zh",
   "datePublished": "2022-09-15T20:04:36+08:00",
   "dateModified": "2022-09-15T20:04:36+08:00",
   "mainEntityOfPage": {
@@ -176,6 +176,12 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                    <ul class="lang-switch"><li>|</li>
+                        <li>
+                            <a href="/en/" title="English"
+                                aria-label="English">En</a>
+                        </li>
+                    </ul>
             </div>
         </div>
         <ul id="menu">
@@ -190,7 +196,7 @@
     <h1 class="post-title entry-hint-parent">
       通过Github部署Hugo
     </h1>
-    <div class="post-meta"><span title='2022-09-15 20:04:36 +0800 +0800'>September 15, 2022</span>
+    <div class="post-meta"><span title='2022-09-15 20:04:36 +0800 +0800'>2022年9月15日</span>
 
 </div>
   </header> 

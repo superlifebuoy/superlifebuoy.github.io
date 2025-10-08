@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="zh" dir="auto">
 
 <head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KG4P5QR587"></script>
@@ -27,7 +27,7 @@
 <meta name="description" content="如何更新Docker镜像？如果推送Docker镜像到镜像仓库？">
 <meta name="author" content="">
 <link rel="canonical" href="/posts/update-share-app/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a090830a421002426baafbd314e38f149d77b4c48a12ee9312700d770b27fb26.css" integrity="sha256-oJCDCkIQAkJrqvvTFOOPFJ13tMSKEu6TEnANdwsn&#43;yY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -35,7 +35,7 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="/posts/update-share-app/">
+<link rel="alternate" hreflang="zh" href="/posts/update-share-app/">
 <noscript>
     <style>
         #theme-toggle,
@@ -76,7 +76,7 @@
   <meta property="og:site_name" content="Nimble Code Tech">
   <meta property="og:title" content="更新与分发Docker镜像（2）">
   <meta property="og:description" content="如何更新Docker镜像？如果推送Docker镜像到镜像仓库？">
-  <meta property="og:locale" content="en-us">
+  <meta property="og:locale" content="zh">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2023-03-20T19:52:44+08:00">
@@ -119,7 +119,7 @@
   ],
   "articleBody": "更新Docker镜像 在Docker入门（1）中，我们初步尝试了Docker的特性，并将getting-started这个演示用的todo应用做了容器化尝试。接下来，我们会进一步尝试更新它的代码，并构建新的Docker镜像，最终把它推送到Docker镜像仓库中。\n更新应用代码 之前，在没有任何todo item时，getting-started会在页面显示“No items yet! Add one above!”。现在，我们尝试修改这行文案内容。\n编辑src/static/js/app.js文件 使用编辑器打开src/static/js/app.js文件，并做如下内容调整：\n... - No items yet! Add one above!\n+ You have no todo items yet! Add one above!\n... 构建新镜像 保存src/static/js/app.js文件后，就可以根据新文件内容来构建新镜像了：\ndocker build -t getting-started . 本地验证 构建新镜像后，我们可以通过docker run命令在本地验证修改效果。命令如下：\ndocker run -dp 3000:3000 getting-started 注意事项 在启动新docker镜像的容器时，有可能出现类似如下内容的错误：\ndocker: Error response from daemon: driver failed programming external connectivity on endpoint laughing_burnell (bb242b2ca4d67eba76e79474fb36bb5125708ebdabd7f45c8eaf16caaabde9dd): Bind for 0.0.0.0:3000 failed: port is already allocated. 这个错误的原因是之前启动的旧容器还未停止，它已经占用了3000端口，导致新容器无法启动。要解决这个问题，需要首先把旧容器停掉。\n删除旧的容器 如果你使用终端停止旧容器，可以依次执行如下命令：\n通过docker ps命令查找容器ID； docker ps 使用docker stop命令来停掉旧容器。根据docker ps获得的容器ID替换下面命令中的； docker stop 旧容器停止后，还可以使用docker rm命令来删除它； docker rm 你也可以一步实现停止并删除容器，只需要在docker rm命令中增加force即可。例如docker rm -f 。\n如果你使用Docker Desktop停止容器，可以根据下面指令执行：\n打开Docker Desktop的Container面板； 在需要删除的旧容器条目中，选择Action一栏的垃圾桶图标； 在弹出的对话框中，选择“Delete forever”即可。 启动新的容器 再次使用docker run命令，启动新容器：\ndocker run -dp 3000:3000 getting-started 打开浏览器，访问http://localhost:3000，就能看到更新文案后的页面啦。\n分发Docker镜像 更新Docker镜像后，可以对外分发新镜像。完成该过程，需要使用Docker注册中心(Docker registry)。默认的Docker注册中心就是Docker Hub。\n创建镜像仓库 要分发Docker镜像，首先需要创建一个Docker仓库并向其推送镜像文件。以下是具体操作流程：\n在Docker Hub完成注册或登录； 点击页面的“Create Repository”按钮； 仓库名称可以使用getting-started；切记仓库可见性选择Public； 点击“Create”按钮，完成创建过程。 如果你在页面看到如下图所示内容，则证明Docker仓库已经创建成功，并且可以使用图中命令完成Docker镜像的推送。\n推送镜像 使用Play with Docker验证 ",
   "wordCount" : "128",
-  "inLanguage": "en",
+  "inLanguage": "zh",
   "datePublished": "2023-03-20T19:52:44+08:00",
   "dateModified": "2023-03-20T19:52:44+08:00",
   "mainEntityOfPage": {
@@ -175,6 +175,12 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                    <ul class="lang-switch"><li>|</li>
+                        <li>
+                            <a href="/en/" title="English"
+                                aria-label="English">En</a>
+                        </li>
+                    </ul>
             </div>
         </div>
         <ul id="menu">
@@ -189,7 +195,7 @@
     <h1 class="post-title entry-hint-parent">
       更新与分发Docker镜像（2）
     </h1>
-    <div class="post-meta"><span title='2023-03-20 19:52:44 +0800 +0800'>March 20, 2023</span>
+    <div class="post-meta"><span title='2023-03-20 19:52:44 +0800 +0800'>2023年3月20日</span>
 
 </div>
   </header> 

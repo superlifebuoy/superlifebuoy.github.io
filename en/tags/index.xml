@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Nimble Code Tech</title>
+    <link>/en/tags/</link>
+    <description>Recent content in Tags on Nimble Code Tech</description>
+    <generator>Hugo -- 0.151.0</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 03 Oct 2025 14:35:52 -0700</lastBuildDate>
+    <atom:link href="/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Large Language Models</title>
+      <link>/en/tags/large-language-models/</link>
+      <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
+      <guid>/en/tags/large-language-models/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLMs</title>
+      <link>/en/tags/llms/</link>
+      <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
+      <guid>/en/tags/llms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Local</title>
+      <link>/en/tags/local/</link>
+      <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
+      <guid>/en/tags/local/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ollama</title>
+      <link>/en/tags/ollama/</link>
+      <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
+      <guid>/en/tags/ollama/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spring AI</title>
+      <link>/en/tags/spring-ai/</link>
+      <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
+      <guid>/en/tags/spring-ai/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

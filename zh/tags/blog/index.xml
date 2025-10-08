@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Blog on Nimble Code Tech</title>
+    <link>//localhost:1313/zh/tags/blog/</link>
+    <description>Recent content in Blog on Nimble Code Tech</description>
+    <generator>Hugo -- 0.151.0</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 12 Jun 2025 18:49:14 -0700</lastBuildDate>
+    <atom:link href="//localhost:1313/zh/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>个人域名映射到GitHub Pages</title>
+      <link>//localhost:1313/zh/posts/link-domain-to-git-pages/</link>
+      <pubDate>Thu, 12 Jun 2025 18:49:14 -0700</pubDate>
+      <guid>//localhost:1313/zh/posts/link-domain-to-git-pages/</guid>
+      <description>详细介绍如何将自己拥有的域名解析到GitHub Pages，从而实现通过访问自己的域名来显示GitHub Pages内容。</description>
+    </item>
+    <item>
+      <title>My Image Post</title>
+      <link>//localhost:1313/zh/posts/my-image-post/</link>
+      <pubDate>Wed, 17 Aug 2022 22:28:08 +0800</pubDate>
+      <guid>//localhost:1313/zh/posts/my-image-post/</guid>
+      <description>讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。</description>
+    </item>
+    <item>
+      <title>Hugo Quick Start</title>
+      <link>//localhost:1313/zh/posts/hugo-quick-start/</link>
+      <pubDate>Wed, 17 Feb 2021 20:29:21 +0800</pubDate>
+      <guid>//localhost:1313/zh/posts/hugo-quick-start/</guid>
+      <description>Hugo官方Quick Start的翻译。</description>
+    </item>
+  </channel>
+</rss>
