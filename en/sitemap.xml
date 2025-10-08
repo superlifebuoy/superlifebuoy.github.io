@@ -2,152 +2,152 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/en/tags/large-language-models/</loc>
+    <loc>https://nimblecode.tech/en/tags/large-language-models/</loc>
     <lastmod>2025-10-03T14:35:52-07:00</lastmod>
   </url><url>
-    <loc>/en/tags/llms/</loc>
-    <lastmod>2025-10-03T14:35:52-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="/tags/llms/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/tags/llms/"
-                />
-  </url><url>
-    <loc>/en/tags/local/</loc>
-    <lastmod>2025-10-03T14:35:52-07:00</lastmod>
-  </url><url>
-    <loc>/en/</loc>
+    <loc>https://nimblecode.tech/en/tags/llms/</loc>
     <lastmod>2025-10-03T14:35:52-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/"
+                href="https://nimblecode.tech/tags/llms/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/"
+                href="https://nimblecode.tech/en/tags/llms/"
                 />
   </url><url>
-    <loc>/en/tags/ollama/</loc>
+    <loc>https://nimblecode.tech/en/tags/local/</loc>
+    <lastmod>2025-10-03T14:35:52-07:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/en/</loc>
     <lastmod>2025-10-03T14:35:52-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/tags/ollama/"
+                href="https://nimblecode.tech/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/ollama/"
+                href="https://nimblecode.tech/en/"
                 />
   </url><url>
-    <loc>/en/posts/local-llms/</loc>
+    <loc>https://nimblecode.tech/en/tags/ollama/</loc>
     <lastmod>2025-10-03T14:35:52-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/posts/local-llms/"
+                href="https://nimblecode.tech/tags/ollama/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/posts/local-llms/"
+                href="https://nimblecode.tech/en/tags/ollama/"
                 />
   </url><url>
-    <loc>/en/posts/</loc>
+    <loc>https://nimblecode.tech/en/posts/local-llms/</loc>
     <lastmod>2025-10-03T14:35:52-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/posts/"
+                href="https://nimblecode.tech/posts/local-llms/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/posts/"
+                href="https://nimblecode.tech/en/posts/local-llms/"
                 />
   </url><url>
-    <loc>/en/tags/spring-ai/</loc>
+    <loc>https://nimblecode.tech/en/posts/</loc>
     <lastmod>2025-10-03T14:35:52-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/tags/spring-ai/"
+                href="https://nimblecode.tech/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/spring-ai/"
+                href="https://nimblecode.tech/en/posts/"
                 />
   </url><url>
-    <loc>/en/tags/</loc>
+    <loc>https://nimblecode.tech/en/tags/spring-ai/</loc>
     <lastmod>2025-10-03T14:35:52-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/tags/"
+                href="https://nimblecode.tech/tags/spring-ai/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/"
+                href="https://nimblecode.tech/en/tags/spring-ai/"
                 />
   </url><url>
-    <loc>/en/tags/blog/</loc>
+    <loc>https://nimblecode.tech/en/tags/</loc>
+    <lastmod>2025-10-03T14:35:52-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://nimblecode.tech/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nimblecode.tech/en/tags/"
+                />
+  </url><url>
+    <loc>https://nimblecode.tech/en/tags/blog/</loc>
     <lastmod>2021-02-17T20:29:21+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/tags/blog/"
+                href="https://nimblecode.tech/tags/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/blog/"
+                href="https://nimblecode.tech/en/tags/blog/"
                 />
   </url><url>
-    <loc>/en/tags/hugo/</loc>
+    <loc>https://nimblecode.tech/en/tags/hugo/</loc>
     <lastmod>2021-02-17T20:29:21+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/tags/hugo/"
+                href="https://nimblecode.tech/tags/hugo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/hugo/"
+                href="https://nimblecode.tech/en/tags/hugo/"
                 />
   </url><url>
-    <loc>/en/posts/hugo-quick-start/</loc>
+    <loc>https://nimblecode.tech/en/posts/hugo-quick-start/</loc>
     <lastmod>2021-02-17T20:29:21+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/posts/hugo-quick-start/"
+                href="https://nimblecode.tech/posts/hugo-quick-start/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/posts/hugo-quick-start/"
+                href="https://nimblecode.tech/en/posts/hugo-quick-start/"
                 />
   </url><url>
-    <loc>/en/categories/</loc>
+    <loc>https://nimblecode.tech/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/categories/"
+                href="https://nimblecode.tech/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/categories/"
+                href="https://nimblecode.tech/en/categories/"
                 />
   </url>
 </urlset>

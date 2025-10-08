@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ollama on Nimble Code Tech</title>
-    <link>/tags/ollama/</link>
+    <link>https://nimblecode.tech/tags/ollama/</link>
     <description>Recent content in Ollama on Nimble Code Tech</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh</language>
     <lastBuildDate>Fri, 03 Oct 2025 14:35:52 -0700</lastBuildDate>
-    <atom:link href="/tags/ollama/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nimblecode.tech/tags/ollama/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ollama &#43; Spring实现本地大语言模型验证</title>
-      <link>/posts/local-llms/</link>
+      <link>https://nimblecode.tech/posts/local-llms/</link>
       <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
-      <guid>/posts/local-llms/</guid>
+      <guid>https://nimblecode.tech/posts/local-llms/</guid>
       <description>使用Ollama，普通人也可以轻松在自己的电脑上体验大语言模型。使用Spring AI，做工程的程序员也可以轻松集成AI能力。</description>
     </item>
   </channel>

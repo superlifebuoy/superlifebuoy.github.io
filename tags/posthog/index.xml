@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>PostHog on Nimble Code Tech</title>
-    <link>/tags/posthog/</link>
+    <link>https://nimblecode.tech/tags/posthog/</link>
     <description>Recent content in PostHog on Nimble Code Tech</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh</language>
     <lastBuildDate>Sat, 16 Aug 2025 14:46:00 -0700</lastBuildDate>
-    <atom:link href="/tags/posthog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nimblecode.tech/tags/posthog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PostHog的趋势洞察简介</title>
-      <link>/posts/posthog-creating-insights/</link>
+      <link>https://nimblecode.tech/posts/posthog-creating-insights/</link>
       <pubDate>Sat, 16 Aug 2025 14:46:00 -0700</pubDate>
-      <guid>/posts/posthog-creating-insights/</guid>
+      <guid>https://nimblecode.tech/posts/posthog-creating-insights/</guid>
       <description>简单介绍PostHog的业务洞察类型，进而介绍Trends的使用方法。</description>
     </item>
     <item>
       <title>PostHog入门</title>
-      <link>/posts/posthog-quickstart/</link>
+      <link>https://nimblecode.tech/posts/posthog-quickstart/</link>
       <pubDate>Tue, 29 Jul 2025 14:15:45 -0700</pubDate>
-      <guid>/posts/posthog-quickstart/</guid>
+      <guid>https://nimblecode.tech/posts/posthog-quickstart/</guid>
       <description>PostHog是一个产品分析、测试、观察的平台，旨在帮助开发者构建更好的产品。这篇内容简要介绍如何注册PostHog账号、如何将网站接入PostHog。</description>
     </item>
   </channel>

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tool on Nimble Code Tech</title>
-    <link>/tags/tool/</link>
+    <link>https://nimblecode.tech/tags/tool/</link>
     <description>Recent content in Tool on Nimble Code Tech</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh</language>
     <lastBuildDate>Sat, 19 Jul 2025 16:25:27 -0700</lastBuildDate>
-    <atom:link href="/tags/tool/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nimblecode.tech/tags/tool/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何使用SpotBugs</title>
-      <link>/posts/how-to-use-spotbugs/</link>
+      <link>https://nimblecode.tech/posts/how-to-use-spotbugs/</link>
       <pubDate>Sat, 19 Jul 2025 16:25:27 -0700</pubDate>
-      <guid>/posts/how-to-use-spotbugs/</guid>
+      <guid>https://nimblecode.tech/posts/how-to-use-spotbugs/</guid>
       <description>介绍如何使用SpotBugs，来发现代码的静态问题。</description>
     </item>
     <item>
       <title>命令行工具简介</title>
-      <link>/posts/util-commands/</link>
+      <link>https://nimblecode.tech/posts/util-commands/</link>
       <pubDate>Thu, 15 Sep 2022 19:36:09 +0800</pubDate>
-      <guid>/posts/util-commands/</guid>
+      <guid>https://nimblecode.tech/posts/util-commands/</guid>
       <description>关于常用的命令行工具介绍，包括但不限于maven、curl、wget等。</description>
     </item>
     <item>
       <title>How to Use cloc</title>
-      <link>/posts/how_to_use_cloc/</link>
+      <link>https://nimblecode.tech/posts/how_to_use_cloc/</link>
       <pubDate>Wed, 08 Dec 2021 11:44:28 +0800</pubDate>
-      <guid>/posts/how_to_use_cloc/</guid>
+      <guid>https://nimblecode.tech/posts/how_to_use_cloc/</guid>
       <description>关于cloc的简介——一个开源、易用的代码行统计工具。</description>
     </item>
   </channel>

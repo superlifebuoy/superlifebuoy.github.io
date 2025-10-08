@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Mac on Nimble Code Tech</title>
-    <link>/tags/mac/</link>
+    <link>https://nimblecode.tech/tags/mac/</link>
     <description>Recent content in Mac on Nimble Code Tech</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh</language>
     <lastBuildDate>Mon, 31 Mar 2025 11:49:18 -0700</lastBuildDate>
-    <atom:link href="/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nimblecode.tech/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Develop Multi Pages Website</title>
-      <link>/posts/develop-multi-pages-websit/</link>
+      <link>https://nimblecode.tech/posts/develop-multi-pages-websit/</link>
       <pubDate>Mon, 31 Mar 2025 11:49:18 -0700</pubDate>
-      <guid>/posts/develop-multi-pages-websit/</guid>
+      <guid>https://nimblecode.tech/posts/develop-multi-pages-websit/</guid>
       <description>在Mac上使用VUE + Vite开发多页面网站，并部署到Nginx上。</description>
     </item>
   </channel>
