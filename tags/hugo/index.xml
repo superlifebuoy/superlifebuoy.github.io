@@ -6,8 +6,15 @@
     <description>Recent content in Hugo on Nimble Code Tech</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 15 Sep 2022 20:04:36 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 25 Oct 2025 21:54:33 -0700</lastBuildDate>
     <atom:link href="https://nimblecode.tech/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何将网站加入Google搜索索引？</title>
+      <link>https://nimblecode.tech/posts/google-search-console/</link>
+      <pubDate>Sat, 25 Oct 2025 21:54:33 -0700</pubDate>
+      <guid>https://nimblecode.tech/posts/google-search-console/</guid>
+      <description>使用Hugo建站后，通过Google Search Console将网站内容加入Google搜索引擎索引中去。</description>
+    </item>
     <item>
       <title>通过Github部署Hugo</title>
       <link>https://nimblecode.tech/posts/deploy-hugo-by-github/</link>

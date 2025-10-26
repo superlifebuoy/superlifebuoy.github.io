@@ -2,6 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nimblecode.tech/tags/google/</loc>
+    <lastmod>2025-10-25T21:54:33-07:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/google-search-console/</loc>
+    <lastmod>2025-10-25T21:54:33-07:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/gsc/</loc>
+    <lastmod>2025-10-25T21:54:33-07:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/hugo/</loc>
+    <lastmod>2025-10-25T21:54:33-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nimblecode.tech/en/tags/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://nimblecode.tech/tags/hugo/"
+                />
+  </url><url>
+    <loc>https://nimblecode.tech/</loc>
+    <lastmod>2025-10-25T21:54:33-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nimblecode.tech/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://nimblecode.tech/"
+                />
+  </url><url>
+    <loc>https://nimblecode.tech/posts/</loc>
+    <lastmod>2025-10-25T21:54:33-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nimblecode.tech/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://nimblecode.tech/posts/"
+                />
+  </url><url>
+    <loc>https://nimblecode.tech/tags/seo/</loc>
+    <lastmod>2025-10-25T21:54:33-07:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/</loc>
+    <lastmod>2025-10-25T21:54:33-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nimblecode.tech/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://nimblecode.tech/tags/"
+                />
+  </url><url>
+    <loc>https://nimblecode.tech/posts/google-search-console/</loc>
+    <lastmod>2025-10-25T21:54:33-07:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/</loc>
+    <lastmod>2025-10-25T21:54:33-07:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/%E7%B4%A2%E5%BC%95/</loc>
+    <lastmod>2025-10-25T21:54:33-07:00</lastmod>
+  </url><url>
     <loc>https://nimblecode.tech/tags/llms/</loc>
     <lastmod>2025-10-03T14:35:52-07:00</lastmod>
     <xhtml:link
@@ -13,19 +86,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://nimblecode.tech/tags/llms/"
-                />
-  </url><url>
-    <loc>https://nimblecode.tech/</loc>
-    <lastmod>2025-10-03T14:35:52-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://nimblecode.tech/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://nimblecode.tech/"
                 />
   </url><url>
     <loc>https://nimblecode.tech/tags/ollama/</loc>
@@ -54,19 +114,6 @@
                 href="https://nimblecode.tech/posts/local-llms/"
                 />
   </url><url>
-    <loc>https://nimblecode.tech/posts/</loc>
-    <lastmod>2025-10-03T14:35:52-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://nimblecode.tech/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://nimblecode.tech/posts/"
-                />
-  </url><url>
     <loc>https://nimblecode.tech/tags/spring-ai/</loc>
     <lastmod>2025-10-03T14:35:52-07:00</lastmod>
     <xhtml:link
@@ -78,19 +125,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://nimblecode.tech/tags/spring-ai/"
-                />
-  </url><url>
-    <loc>https://nimblecode.tech/tags/</loc>
-    <lastmod>2025-10-03T14:35:52-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://nimblecode.tech/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://nimblecode.tech/tags/"
                 />
   </url><url>
     <loc>https://nimblecode.tech/tags/%E6%9C%AC%E5%9C%B0/</loc>
@@ -288,19 +322,6 @@
   </url><url>
     <loc>https://nimblecode.tech/tags/github/</loc>
     <lastmod>2022-09-15T20:04:36+08:00</lastmod>
-  </url><url>
-    <loc>https://nimblecode.tech/tags/hugo/</loc>
-    <lastmod>2022-09-15T20:04:36+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://nimblecode.tech/en/tags/hugo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://nimblecode.tech/tags/hugo/"
-                />
   </url><url>
     <loc>https://nimblecode.tech/posts/deploy-hugo-by-github/</loc>
     <lastmod>2022-09-15T20:04:36+08:00</lastmod>
