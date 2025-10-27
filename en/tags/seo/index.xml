@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Hugo on Nimble Code Tech</title>
-    <link>https://nimblecode.tech/en/tags/hugo/</link>
-    <description>Recent content in Hugo on Nimble Code Tech</description>
+    <title>SEO on Nimble Code Tech</title>
+    <link>https://nimblecode.tech/en/tags/seo/</link>
+    <description>Recent content in SEO on Nimble Code Tech</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 27 Oct 2025 12:01:33 -0700</lastBuildDate>
-    <atom:link href="https://nimblecode.tech/en/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nimblecode.tech/en/tags/seo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to add a website to the Google search index?</title>
       <link>https://nimblecode.tech/en/posts/google-search-console/</link>
       <pubDate>Mon, 27 Oct 2025 12:01:33 -0700</pubDate>
       <guid>https://nimblecode.tech/en/posts/google-search-console/</guid>
       <description>After building a website with Hugo, use Google Search Console to add the website&amp;rsquo;s content to the Google search engine index.</description>
-    </item>
-    <item>
-      <title>Hugo Quick Start</title>
-      <link>https://nimblecode.tech/en/posts/hugo-quick-start/</link>
-      <pubDate>Wed, 17 Feb 2021 20:29:21 +0800</pubDate>
-      <guid>https://nimblecode.tech/en/posts/hugo-quick-start/</guid>
-      <description>A quick guide to using Hugo.</description>
     </item>
   </channel>
 </rss>
