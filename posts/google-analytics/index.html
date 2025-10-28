@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KG4P5QR587"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KG4P5QR587');
+</script>
+<script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Re Os As Pe Ms Fs capture Ve calculateEventProperties js register register_once register_for_session unregister unregister_for_session qs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty zs Ls createPersonProfile Us Rs Bs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ds debug I Ns getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_mT7wOBjidgcQVEyPjDDfTMDJlObxehaWFU39siHPudu', {
+        api_host: 'https://us.i.posthog.com',
+        defaults: '2025-05-24',
+        person_profiles: 'identified_only', 
+    })
+</script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>网站接入Google Analytics | Nimble Code Tech</title>
+<meta name="keywords" content="SEO, Hugo, Google, Google Analytics, GA">
+<meta name="description" content="使用 Hugo 建站后，通过 Google Analytics 收集、分析用户在网站上的操作。">
+<meta name="author" content="">
+<link rel="canonical" href="https://nimblecode.tech/posts/google-analytics/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a090830a421002426baafbd314e38f149d77b4c48a12ee9312700d770b27fb26.css" integrity="sha256-oJCDCkIQAkJrqvvTFOOPFJ13tMSKEu6TEnANdwsn&#43;yY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://nimblecode.tech/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://nimblecode.tech/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://nimblecode.tech/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://nimblecode.tech/apple-touch-icon.png">
+<link rel="mask-icon" href="https://nimblecode.tech/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://nimblecode.tech/posts/google-analytics/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://nimblecode.tech/posts/google-analytics/">
+  <meta property="og:site_name" content="Nimble Code Tech">
+  <meta property="og:title" content="网站接入Google Analytics">
+  <meta property="og:description" content="使用 Hugo 建站后，通过 Google Analytics 收集、分析用户在网站上的操作。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-28T15:44:00-07:00">
+    <meta property="article:modified_time" content="2025-10-28T15:44:00-07:00">
+    <meta property="article:tag" content="SEO">
+    <meta property="article:tag" content="Hugo">
+    <meta property="article:tag" content="Google">
+    <meta property="article:tag" content="Google Analytics">
+    <meta property="article:tag" content="GA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="网站接入Google Analytics">
+<meta name="twitter:description" content="使用 Hugo 建站后，通过 Google Analytics 收集、分析用户在网站上的操作。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://nimblecode.tech/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "网站接入Google Analytics",
+      "item": "https://nimblecode.tech/posts/google-analytics/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "网站接入Google Analytics",
+  "name": "网站接入Google Analytics",
+  "description": "使用 Hugo 建站后，通过 Google Analytics 收集、分析用户在网站上的操作。",
+  "keywords": [
+    "SEO", "Hugo", "Google", "Google Analytics", "GA"
+  ],
+  "articleBody": "在《如何将网站加入Google搜索索引？》介绍了如何将一个网站接入Google Search Console，这样可以将该网站内容录入Google索引中。那么加入索引后，如何分析网站的用户行为呢？除了《PostHog入门》介绍的PostHog外，还可以借助Google Analytics的能力。\n1 简介 Google Analytics (GA) 是 Google 提供的一款免费且功能强大的网站及应用数据分析平台。它是全球使用最广泛的网络分析服务，被营销人员、网站管理员和数据分析师视为了解用户行为和衡量数字营销效果的必备工具。\n其核心工作原理是：通过在目标网站或应用中嵌入一小段 JavaScript 跟踪代码（或 SDK），实时收集用户与内容互动产生的匿名化数据。\n2 接入 Google Analytics 下面以 Hugo 生成的静态网站接入 Google Analytics 为例。\n2.1 注册 Google Analytics 要将自己的网站接入 Google Analytics，可以打开其网站。\n点击“开始衡量”，就可以创建自己的 Google Analytics 账号了。\n完成账号的创建后，需要继续创建“媒体资源”。\n完成“媒体资源”的创建后，下一步是完成“商家描述”。\n然后根据实际的业务需求，勾选相应的“业务目标”。\n2.2 配置 JS 跟踪代码 最后就是“数据收集”的配置了。\nGoogle Analytics 支持的数据采集平台有3类：网站、Android应用、iOS应用。下面以网站类型为例，进行说明。\n首先是要配置网站网址和数据流名称。\n创建完数据流之后，Google Analytics会自动生成一份 JavaScript 跟踪代码。\n这段代码中会为每一个数据流分配一个唯一的id，形式如G-**********。\n千万不要改动这段id值，否则 Google Analytics 在收集数据时会出错，导致数据收集失败。\n这段代码需要添加到目标网站的每一个需要被 Google Analytics 跟踪的页面中去。\n2.3 Hugo 网站配置 以 Hugo 生成的静态网站为例，一般选用的 Hugo theme 都是结构化的。\n打开 Hugo 项目的themes/{theme}/layouts/partials/目录，可以看到很多页面组件。\n其中head.html文件就是所有网页的头部内容。将2.2中 Google Analytics 提供的 JavaScript 跟踪代码添加到第一行即可。\n完成 Hugo 网站的重新构建部署后，就可以回到 Google Analytics 进行验证了。点击2.2中页面右上角的“测试安装情况”。\n一切正常的话，页面下方会显示“在您的网站上正确检测到了 Google 代码”。\n2.4 完成 Google Analytics 流程 点击“确认”后，就可以看到之前配置的网站数据流列表以及网站数据流详情了。\n点击列表页面的“下一步”完成整个 Google Analytics 的接入过程，等待网站数据开始收集即可。\n此时进入 Google Analytics 的控制台，是看不到任何有效数据的。\n这个初始过程一般需要半天到1天，安心等待即可。\n3 Google Analytics 的主要作用和价值 Google Analytics 的主要作用是提供数据驱动的洞察，帮助用户：\n1. 了解用户群体 (Audience)：谁在访问我的网站？\n地理位置： 访客来自哪个国家或城市。\n人口统计： 用户的年龄、性别、兴趣等（如果启用相关功能）。\n技术设备： 访客使用哪种设备（桌面、手机、平板）、哪种操作系统和浏览器。\n2. 追踪流量来源 (Acquisition)：访客是如何找到我的网站的？\n自然搜索 (Organic Search)： 通过 Google、Baidu 等搜索引擎。\n直接访问 (Direct)： 直接输入网址或通过书签访问。\n社交流量 (Social)： 通过 Facebook、Twitter、微信等社交媒体平台。\n引荐流量 (Referral)： 通过其他网站的链接点击。\n广告活动 (Paid Search/Display)： 通过 Google Ads 或其他付费推广活动。\n3. 分析用户行为 (Behavior)：访客在我的网站上做了什么？\n浏览页面： 哪些页面最受欢迎、哪些页面加载速度慢。\n跳出率 (Bounce Rate)： 用户在浏览单个页面后就离开的百分比。\n停留时间： 用户在网站上停留的平均时长。\n行为流程： 用户从哪个页面进入，到哪个页面离开。\n4. 衡量转化目标 (Conversion)：我的营销目标是否达成？\n通过设置 “目标”或“转化事件”，可以追踪用户完成了对业务有价值的行为，例如：\n完成购买（电子商务）。\n填写联系表单。\n注册成为会员。\n点击下载文件。\n总之，充分利用 Google Analytics 的能力，可以帮助网站/App更好的统计数据、提升产品能力、帮助最终用户。\n4 One More Thing 完成 Google Analytics 的接入后，还可以将其与 Google Search Console 的资源进行关联。\n在 Google Analytics控制台点击左下角“管理” -\u003e “媒体资源设置” -\u003e “产品关联” -\u003e “Search Console 关联”，即可轻松完成后续关联流程。\n",
+  "wordCount" : "195",
+  "inLanguage": "zh",
+  "datePublished": "2025-10-28T15:44:00-07:00",
+  "dateModified": "2025-10-28T15:44:00-07:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://nimblecode.tech/posts/google-analytics/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nimble Code Tech",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nimblecode.tech/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://nimblecode.tech/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                    <ul class="lang-switch"><li>|</li>
+                        <li>
+                            <a href="https://nimblecode.tech/en/" title="English"
+                                aria-label="English">En</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      网站接入Google Analytics
+    </h1>
+    <div class="post-meta"><span title='2025-10-28 15:44:00 -0700 PDT'>2025年10月28日</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>在<a href="https://nimblecode.tech/posts/google-search-console/">《如何将网站加入Google搜索索引？》</a>介绍了如何将一个网站接入Google Search Console，这样可以将该网站内容录入Google索引中。那么加入索引后，如何分析网站的用户行为呢？除了<a href="https://nimblecode.tech/posts/posthog-quickstart/">《PostHog入门》</a>介绍的PostHog外，还可以借助Google Analytics的能力。</p>
+<h1 id="1-简介">1 简介<a hidden class="anchor" aria-hidden="true" href="#1-简介">#</a></h1>
+<p>Google Analytics (GA) 是 Google 提供的一款<strong>免费且功能强大的网站及应用数据分析平台</strong>。它是全球使用最广泛的网络分析服务，被营销人员、网站管理员和数据分析师视为了解用户行为和衡量数字营销效果的必备工具。</p>
+<p>其核心工作原理是：通过在目标网站或应用中嵌入一小段 <strong>JavaScript 跟踪代码</strong>（或 SDK），实时收集用户与内容互动产生的匿名化数据。</p>
+<h1 id="2-接入-google-analytics">2 接入 Google Analytics<a hidden class="anchor" aria-hidden="true" href="#2-接入-google-analytics">#</a></h1>
+<p>下面以 Hugo 生成的静态网站接入 Google Analytics 为例。</p>
+<h2 id="21-注册-google-analytics">2.1 注册 Google Analytics<a hidden class="anchor" aria-hidden="true" href="#21-注册-google-analytics">#</a></h2>
+<p>要将自己的网站接入 <a href="https://marketingplatform.google.com/about/analytics/">Google Analytics</a>，可以打开其<a href="https://marketingplatform.google.com/about/analytics/">网站</a>。</p>
+<p><img alt="ga-homepage" loading="lazy" src="/google-analytics/ga-homepage.png"></p>
+<p>点击“开始衡量”，就可以创建自己的 Google Analytics 账号了。</p>
+<p><img alt="ga-account" loading="lazy" src="/google-analytics/ga-account.png"></p>
+<p>完成账号的创建后，需要继续创建“媒体资源”。</p>
+<p><img alt="ga-media" loading="lazy" src="/google-analytics/ga-media.png"></p>
+<p>完成“媒体资源”的创建后，下一步是完成“商家描述”。</p>
+<p><img alt="ga-merchant" loading="lazy" src="/google-analytics/ga-merchant.png"></p>
+<p>然后根据实际的业务需求，勾选相应的“业务目标”。</p>
+<p><img alt="ga-bz-options" loading="lazy" src="/google-analytics/ga-bz-options.png"></p>
+<h2 id="22-配置-js-跟踪代码">2.2 配置 JS 跟踪代码<a hidden class="anchor" aria-hidden="true" href="#22-配置-js-跟踪代码">#</a></h2>
+<p>最后就是“数据收集”的配置了。</p>
+<p><img alt="ga-data-type" loading="lazy" src="/google-analytics/ga-data-type.png"></p>
+<p>Google Analytics 支持的数据采集平台有3类：网站、Android应用、iOS应用。下面以网站类型为例，进行说明。</p>
+<p>首先是要配置网站网址和数据流名称。</p>
+<p><img alt="ga-web-data" loading="lazy" src="/google-analytics/ga-web-data.png"></p>
+<p>创建完数据流之后，Google Analytics会自动生成一份 <strong>JavaScript 跟踪代码</strong>。</p>
+<p><img alt="ga-web-js" loading="lazy" src="/google-analytics/ga-web-js.png"></p>
+<p>这段代码中会为每一个数据流分配一个唯一的<code>id</code>，形式如<code>G-**********</code>。</p>
+<p><strong>千万不要改动这段<code>id</code>值，否则 Google Analytics 在收集数据时会出错，导致数据收集失败</strong>。</p>
+<p>这段代码需要添加到目标网站的每一个需要被 Google Analytics 跟踪的页面中去。</p>
+<h2 id="23-hugo-网站配置">2.3 Hugo 网站配置<a hidden class="anchor" aria-hidden="true" href="#23-hugo-网站配置">#</a></h2>
+<p>以 Hugo 生成的静态网站为例，一般选用的 Hugo theme 都是结构化的。</p>
+<p>打开 Hugo 项目的<code>themes/{theme}/layouts/partials/</code>目录，可以看到很多页面组件。</p>
+<p><img alt="hugo-theme-head" loading="lazy" src="/google-analytics/hugo-theme-head.png"></p>
+<p>其中<code>head.html</code>文件就是所有网页的头部内容。将2.2中 Google Analytics 提供的 <strong>JavaScript 跟踪代码</strong>添加到第一行即可。</p>
+<p><img alt="hugo-theme-head-code" loading="lazy" src="/google-analytics/hugo-theme-head-code.png"></p>
+<p>完成 Hugo 网站的重新构建部署后，就可以回到 Google Analytics 进行验证了。点击2.2中页面右上角的“测试安装情况”。</p>
+<p><img alt="ga-web-js-success" loading="lazy" src="/google-analytics/ga-web-js-success.png"></p>
+<p>一切正常的话，页面下方会显示“在您的网站上正确检测到了 Google 代码”。</p>
+<h2 id="24-完成-google-analytics-流程">2.4 完成 Google Analytics 流程<a hidden class="anchor" aria-hidden="true" href="#24-完成-google-analytics-流程">#</a></h2>
+<p>点击“确认”后，就可以看到之前配置的网站数据流列表以及网站数据流详情了。</p>
+<p><img alt="ga-media-list" loading="lazy" src="/google-analytics/ga-media-list.png"></p>
+<p><img alt="ga-media-detail" loading="lazy" src="/google-analytics/ga-media-detail.png"></p>
+<p>点击列表页面的“下一步”完成整个 Google Analytics 的接入过程，等待网站数据开始收集即可。</p>
+<p><img alt="ga-media-wait" loading="lazy" src="/google-analytics/ga-media-wait.png"></p>
+<p>此时进入 Google Analytics 的控制台，是看不到任何有效数据的。</p>
+<p><img alt="ga-console" loading="lazy" src="/google-analytics/ga-console.png"></p>
+<p>这个初始过程一般需要半天到1天，安心等待即可。</p>
+<h1 id="3-google-analytics-的主要作用和价值">3 Google Analytics 的主要作用和价值<a hidden class="anchor" aria-hidden="true" href="#3-google-analytics-的主要作用和价值">#</a></h1>
+<p>Google Analytics 的主要作用是提供数据驱动的洞察，帮助用户：</p>
+<p><strong>1. 了解用户群体 (Audience)：谁在访问我的网站？</strong></p>
+<ul>
+<li>
+<p>地理位置： 访客来自哪个国家或城市。</p>
+</li>
+<li>
+<p>人口统计： 用户的年龄、性别、兴趣等（如果启用相关功能）。</p>
+</li>
+<li>
+<p>技术设备： 访客使用哪种设备（桌面、手机、平板）、哪种操作系统和浏览器。</p>
+</li>
+</ul>
+<p><strong>2. 追踪流量来源 (Acquisition)：访客是如何找到我的网站的？</strong></p>
+<ul>
+<li>
+<p>自然搜索 (Organic Search)： 通过 Google、Baidu 等搜索引擎。</p>
+</li>
+<li>
+<p>直接访问 (Direct)： 直接输入网址或通过书签访问。</p>
+</li>
+<li>
+<p>社交流量 (Social)： 通过 Facebook、Twitter、微信等社交媒体平台。</p>
+</li>
+<li>
+<p>引荐流量 (Referral)： 通过其他网站的链接点击。</p>
+</li>
+<li>
+<p>广告活动 (Paid Search/Display)： 通过 Google Ads 或其他付费推广活动。</p>
+</li>
+</ul>
+<p><strong>3. 分析用户行为 (Behavior)：访客在我的网站上做了什么？</strong></p>
+<ul>
+<li>
+<p>浏览页面： 哪些页面最受欢迎、哪些页面加载速度慢。</p>
+</li>
+<li>
+<p>跳出率 (Bounce Rate)： 用户在浏览单个页面后就离开的百分比。</p>
+</li>
+<li>
+<p>停留时间： 用户在网站上停留的平均时长。</p>
+</li>
+<li>
+<p>行为流程： 用户从哪个页面进入，到哪个页面离开。</p>
+</li>
+</ul>
+<p><strong>4. 衡量转化目标 (Conversion)：我的营销目标是否达成？</strong></p>
+<ul>
+<li>
+<p>通过设置 “目标”或“转化事件”，可以追踪用户完成了对业务有价值的行为，例如：</p>
+</li>
+<li>
+<p>完成购买（电子商务）。</p>
+</li>
+<li>
+<p>填写联系表单。</p>
+</li>
+<li>
+<p>注册成为会员。</p>
+</li>
+<li>
+<p>点击下载文件。</p>
+</li>
+</ul>
+<p>总之，充分利用 Google Analytics 的能力，可以帮助网站/App更好的统计数据、提升产品能力、帮助最终用户。</p>
+<h1 id="4-one-more-thing">4 One More Thing<a hidden class="anchor" aria-hidden="true" href="#4-one-more-thing">#</a></h1>
+<p>完成 Google Analytics 的接入后，还可以将其与 Google Search Console 的资源进行关联。</p>
+<p><img alt="ga-gsc" loading="lazy" src="/google-analytics/ga-gsc.png"></p>
+<p>在 Google Analytics控制台点击左下角“管理” -&gt; “媒体资源设置” -&gt; “产品关联” -&gt; “Search Console 关联”，即可轻松完成后续关联流程。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://nimblecode.tech/tags/seo/">SEO</a></li>
+      <li><a href="https://nimblecode.tech/tags/hugo/">Hugo</a></li>
+      <li><a href="https://nimblecode.tech/tags/google/">Google</a></li>
+      <li><a href="https://nimblecode.tech/tags/google-analytics/">Google Analytics</a></li>
+      <li><a href="https://nimblecode.tech/tags/ga/">GA</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://nimblecode.tech/">Nimble Code Tech</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
