@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KG4P5QR587"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KG4P5QR587');
+</script>
+<script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Re Os As Pe Ms Fs capture Ve calculateEventProperties js register register_once register_for_session unregister unregister_for_session qs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty zs Ls createPersonProfile Us Rs Bs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ds debug I Ns getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_mT7wOBjidgcQVEyPjDDfTMDJlObxehaWFU39siHPudu', {
+        api_host: 'https://us.i.posthog.com',
+        defaults: '2025-05-24',
+        person_profiles: 'identified_only', 
+    })
+</script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>新 Kindle 阅读器复活亚马逊中国区 Kindle 图书 | Nimble Code Tech</title>
+<meta name="keywords" content="Kindle, Calibre, DeDRM, 中国区 Kindle">
+<meta name="description" content="借助 Calibre 与 DeDRM，将中国区 Kindle 图书导入新 Kindle 继续阅读。">
+<meta name="author" content="">
+<link rel="canonical" href="https://nimblecode.tech/posts/import-kindle-cn-books/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a090830a421002426baafbd314e38f149d77b4c48a12ee9312700d770b27fb26.css" integrity="sha256-oJCDCkIQAkJrqvvTFOOPFJ13tMSKEu6TEnANdwsn&#43;yY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://nimblecode.tech/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://nimblecode.tech/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://nimblecode.tech/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://nimblecode.tech/apple-touch-icon.png">
+<link rel="mask-icon" href="https://nimblecode.tech/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://nimblecode.tech/posts/import-kindle-cn-books/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://nimblecode.tech/posts/import-kindle-cn-books/">
+  <meta property="og:site_name" content="Nimble Code Tech">
+  <meta property="og:title" content="新 Kindle 阅读器复活亚马逊中国区 Kindle 图书">
+  <meta property="og:description" content="借助 Calibre 与 DeDRM，将中国区 Kindle 图书导入新 Kindle 继续阅读。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-30T11:04:27-07:00">
+    <meta property="article:modified_time" content="2025-10-30T11:04:27-07:00">
+    <meta property="article:tag" content="Kindle">
+    <meta property="article:tag" content="Calibre">
+    <meta property="article:tag" content="DeDRM">
+    <meta property="article:tag" content="中国区 Kindle">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="新 Kindle 阅读器复活亚马逊中国区 Kindle 图书">
+<meta name="twitter:description" content="借助 Calibre 与 DeDRM，将中国区 Kindle 图书导入新 Kindle 继续阅读。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://nimblecode.tech/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "新 Kindle 阅读器复活亚马逊中国区 Kindle 图书",
+      "item": "https://nimblecode.tech/posts/import-kindle-cn-books/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "新 Kindle 阅读器复活亚马逊中国区 Kindle 图书",
+  "name": "新 Kindle 阅读器复活亚马逊中国区 Kindle 图书",
+  "description": "借助 Calibre 与 DeDRM，将中国区 Kindle 图书导入新 Kindle 继续阅读。",
+  "keywords": [
+    "Kindle", "Calibre", "DeDRM", "中国区 Kindle"
+  ],
+  "articleBody": "1 背景 亚马逊中国通知即将关闭 Kindle 服务后，我通过 X 上 @yihong0618 的工具批量下载了之前购买的图书。之后通过 Calibre 与 DeDRM 陆续转成PDF文档，在 iPad 上得以继续阅读。但是 iPad 的屏幕阅读体验、重量、电量续航都达不到 Kindle 阅读器的体感，这是我一直以来的痛点。\n最近我新买了一台 Kindle Colorsoft 。\n久违的阅读体验感，让我想尝试将之前保存的中国区 Kindle 图书导入新 Kindle Colosofte。\n1.1 前置条件 要实现这个目标，有两个必要前提：\n保存有中国区 Kindle 图书的文件，一般是.azw3格式； 保存有导出图书文件时的 Kindle 设备号，一般是G开头的16位字符串。 这两个条件缺一不可。\n2 安装 Calibre 与 DeDRM Kindle 图书文件的转换需要用到 Calibre 与 DeDRM 这两个软件。\nCalibre 是一款功能强大、免费的电子书管理软件，它被广泛认为是电子书爱好者的“一站式解决方案”。它不仅能帮助用户组织和管理庞大的电子书库，还能实现格式转换、编辑、同步到阅读器等一系列复杂操作。\nDeDRM 是 Calibre 社区开发和维护的一个非常著名的第三方插件包，它的主要目的是移除电子书文件上的数字版权管理 (DRM) 保护。\n希望大家只转换自己已购买的电子书文件，不要转换非自购的电子书文件。\n2.1 Calibre 与 DeDRM 的版本匹配 DeDRM 的最新版本是 v7.2.1 ，发布时间是2021年4月11日。之后作者再也没有发布过新版本了。根据 README 的描述：\nUsers with calibre 5.x or later should use release 7.2.0 or later of the tools. Users with calibe 4.x or earlier should use release 6.8.x of the tools. 最新版本的 DeDRM 适配 Calibre 5.x 之后的版本。但在实际使用中，我使用 Calibre 最新的 8.13.0 版本时，配置 DeDRM 会导致 Calibre 异常退出。尝试使用 Calibre 旧的 7.x 版本时，也会在配置 DeDRM 会导致 Calibre 异常退出。最终我选择了 Calibre 的 5.44 版本，可以正常使用 DeDRM 的 7.2.1 版本插件。\nCalibre: 5.44 DeDRM: 7.2.1 我看到有人在 Windows 笔记本上使用 Calibre 7.7 版本正常配置 DeDRM 7.2.1。估计是电脑系统差异的影响，我的是 M4 的 Mac mini。\n2.2 下载/安装 Calibre 与 DeDRM Calibre 5.44 的下载，需要到历史仓库中完成。地址在这里。\n根据操作系统选择对应版本下载、安装即可。\nDeDRM 是在 GitHub 上维护的。v7.2.1 版本的地址在这里。\n下载 DeDRM_tools_7.2.1.zip 文件后解压，可以看到5个文件。\n其中DeDRM_tools_7.2.1.zip是后续要用到的插件文件。\n然后打开 Calibre ，导航路径“Preferences” -\u003e “Plug-ins” -\u003e “Load plug-in from file”，选择DeDRM_tools_7.2.1.zip完成 DeDRM 插件的安装过程。记得重启 Calibre 一下。\n2.3 配置 DeDRM 要使得 Calibre 能够转换中国区 Kindle 图书文件，还需要配置 DeDRM 插件。在 Calibre 的 Plug-ins 页面选择之前安装的 DeDRM ，再点击“Customise plug-in” -\u003e “eInk Kindle ebooks”，输入之前导出图书文件时的 Kindle 设备号即可。\n3 转换图书文件与导入新 Kindle 完成 Calibre 与 DeDRM 的安装与配置后，就可以转换中国区 Kindle 图书了。\n3.1 Calibre 导入图书文件 Calibre 导入书籍非常简单，可以点击“Add books”按钮来完成，也可以将图书文件直接拖拽到 Calibre 界面中间即可。\n3.2 Calibre 转换图书文件 因为之前已经为 Calibre 配置好了 DeDRM 插件，所以在导入图书文件到 Calibre 时就已经自动将其转换成去除 DRM 保护的.azw3文件了。选中一本图书点击“o”，或者点击右侧“Click to open”，可以找到该图书文件的地址。\n这里的文件就是后续可以导入新 Kindle 的文件啦。\n如果想要把图书文件转成其他格式，可以点击“Convert books”进入转换界面。右上角可以选择转换的目标格式，确认后点击右下角的“OK”即可。例如我之前就是转成.pdf文档，然后导入 Apple Books 查看的。\n3.3 导入新 Kindle 使用 USB 线将电脑与 Kindle 连接。\n如果是 Mac 的话，连接后并不能直接将转换好的图书文件拖拽到 Kindle 中去，而是需要去亚马逊下载特定的管理软件。\n在这里下载SendToKindleForMac-installer.pkg安装文件。\n安装完成后打开USB File Manager这个软件，就可以连接到 Kindle 了。将3.2中已去除 DRM 保护的.azw3文件或整个图书文件夹，拖拽到 Kindle 的documents/目录下，就完成了图书文件导入新 Kindle 的过程了。\n断开电脑与 Kindle 的连接。\n噔噔噔噔～～～ 就可以在新 Kindle 中阅读之前购买的中国区 Kindle 图书啦～\n4 最后 如果你也是 Kindle 爱好者，如果你还有之前购买的 Kindle 图书文件，希望这篇文章可以帮到你一点点～\n",
+  "wordCount" : "279",
+  "inLanguage": "zh",
+  "datePublished": "2025-10-30T11:04:27-07:00",
+  "dateModified": "2025-10-30T11:04:27-07:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://nimblecode.tech/posts/import-kindle-cn-books/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nimble Code Tech",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nimblecode.tech/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://nimblecode.tech/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                    <ul class="lang-switch"><li>|</li>
+                        <li>
+                            <a href="https://nimblecode.tech/en/" title="English"
+                                aria-label="English">En</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      新 Kindle 阅读器复活亚马逊中国区 Kindle 图书
+    </h1>
+    <div class="post-meta"><span title='2025-10-30 11:04:27 -0700 PDT'>2025年10月30日</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="1-背景">1 背景<a hidden class="anchor" aria-hidden="true" href="#1-背景">#</a></h1>
+<p>亚马逊中国通知即将关闭 Kindle 服务后，我通过 X 上 @yihong0618 的工具批量下载了之前购买的图书。之后通过 Calibre 与 DeDRM 陆续转成PDF文档，在 iPad 上得以继续阅读。但是 iPad 的屏幕阅读体验、重量、电量续航都达不到 Kindle 阅读器的体感，这是我一直以来的痛点。</p>
+<p>最近我新买了一台 Kindle Colorsoft 。</p>
+<p><img alt="kindle-cs-1" loading="lazy" src="/import-kindle-cn-books/kindle-cs-1.png">
+<img alt="kindle-cs-2" loading="lazy" src="/import-kindle-cn-books/kindle-cs-2.png"></p>
+<p>久违的阅读体验感，让我想尝试将之前保存的中国区 Kindle 图书导入新 Kindle Colosofte。</p>
+<h2 id="11-前置条件">1.1 前置条件<a hidden class="anchor" aria-hidden="true" href="#11-前置条件">#</a></h2>
+<p>要实现这个目标，有两个必要前提：</p>
+<ul>
+<li>保存有中国区 Kindle 图书的文件，一般是<code>.azw3</code>格式；</li>
+<li>保存有导出图书文件时的 Kindle 设备号，一般是<code>G</code>开头的16位字符串。</li>
+</ul>
+<p>这两个条件缺一不可。</p>
+<h1 id="2-安装-calibre-与-dedrm">2 安装 Calibre 与 DeDRM<a hidden class="anchor" aria-hidden="true" href="#2-安装-calibre-与-dedrm">#</a></h1>
+<p>Kindle 图书文件的转换需要用到 Calibre 与 DeDRM 这两个软件。</p>
+<p>Calibre 是一款功能强大、免费的电子书管理软件，它被广泛认为是电子书爱好者的“一站式解决方案”。它不仅能帮助用户组织和管理庞大的电子书库，还能实现格式转换、编辑、同步到阅读器等一系列复杂操作。</p>
+<p>DeDRM 是 Calibre 社区开发和维护的一个非常著名的第三方插件包，它的主要目的是移除电子书文件上的数字版权管理 (DRM) 保护。</p>
+<p><strong>希望大家只转换自己已购买的电子书文件，不要转换非自购的电子书文件。</strong></p>
+<h2 id="21-calibre-与-dedrm-的版本匹配">2.1 Calibre 与 DeDRM 的版本匹配<a hidden class="anchor" aria-hidden="true" href="#21-calibre-与-dedrm-的版本匹配">#</a></h2>
+<p>DeDRM 的最新版本是 <a href="https://github.com/apprenticeharper/DeDRM_tools/releases/tag/v7.2.1">v7.2.1</a> ，发布时间是2021年4月11日。之后作者再也没有发布过新版本了。根据 README 的描述：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Users with calibre 5.x or later should use release 7.2.0 or later of the tools. 
+</span></span><span style="display:flex;"><span>Users with calibe 4.x or earlier should use release 6.8.x of the tools.
+</span></span></code></pre></div><p>最新版本的 DeDRM 适配 Calibre 5.x 之后的版本。但在实际使用中，我使用 Calibre 最新的 8.13.0 版本时，配置 DeDRM 会导致 Calibre 异常退出。尝试使用 Calibre 旧的 7.x 版本时，也会在配置 DeDRM 会导致 Calibre 异常退出。最终我选择了 Calibre 的 5.44 版本，可以正常使用 DeDRM 的 7.2.1 版本插件。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Calibre: 5.44
+</span></span><span style="display:flex;"><span>DeDRM: 7.2.1
+</span></span></code></pre></div><p><strong>我看到有人在 Windows 笔记本上使用 Calibre 7.7 版本正常配置 DeDRM 7.2.1。估计是电脑系统差异的影响，我的是 M4 的 Mac mini。</strong></p>
+<h2 id="22-下载安装-calibre-与-dedrm">2.2 下载/安装 Calibre 与 DeDRM<a hidden class="anchor" aria-hidden="true" href="#22-下载安装-calibre-与-dedrm">#</a></h2>
+<p>Calibre 5.44 的下载，需要到历史仓库中完成。地址在<a href="https://download.calibre-ebook.com/5.44.0/">这里</a>。</p>
+<p><img alt="calibre" loading="lazy" src="/import-kindle-cn-books/calibre.png"></p>
+<p>根据操作系统选择对应版本下载、安装即可。</p>
+<p>DeDRM 是在 GitHub 上维护的。v7.2.1 版本的地址在<a href="https://github.com/apprenticeharper/DeDRM_tools/releases/tag/v7.2.1">这里</a>。</p>
+<p><img alt="dedrm" loading="lazy" src="/import-kindle-cn-books/dedrm.png"></p>
+<p>下载 DeDRM_tools_7.2.1.zip 文件后解压，可以看到5个文件。</p>
+<p><img alt="dedrm-plugin" loading="lazy" src="/import-kindle-cn-books/dedrm-plugin.png"></p>
+<p>其中<code>DeDRM_tools_7.2.1.zip</code>是后续要用到的插件文件。</p>
+<p>然后打开 Calibre ，导航路径“Preferences” -&gt; “Plug-ins” -&gt; “Load plug-in from file”，选择<code>DeDRM_tools_7.2.1.zip</code>完成 DeDRM 插件的安装过程。记得重启 Calibre 一下。</p>
+<p><img alt="calibre-1" loading="lazy" src="/import-kindle-cn-books/calibre-1.png">
+<img alt="calibre-2" loading="lazy" src="/import-kindle-cn-books/calibre-2.png">
+<img alt="calibre-3" loading="lazy" src="/import-kindle-cn-books/calibre-3.png">
+<img alt="calibre-4" loading="lazy" src="/import-kindle-cn-books/calibre-4.png">
+<img alt="calibre-5" loading="lazy" src="/import-kindle-cn-books/calibre-5.png"></p>
+<h2 id="23-配置-dedrm">2.3 配置 DeDRM<a hidden class="anchor" aria-hidden="true" href="#23-配置-dedrm">#</a></h2>
+<p>要使得 Calibre 能够转换中国区 Kindle 图书文件，还需要配置 DeDRM 插件。在 Calibre 的 Plug-ins 页面选择之前安装的 DeDRM ，再点击“Customise plug-in” -&gt; “eInk Kindle ebooks”，输入之前<strong>导出图书文件时的 Kindle 设备号</strong>即可。</p>
+<p><img alt="dedrm-1" loading="lazy" src="/import-kindle-cn-books/dedrm-1.png">
+<img alt="dedrm-2" loading="lazy" src="/import-kindle-cn-books/dedrm-2.png"></p>
+<h1 id="3-转换图书文件与导入新-kindle">3 转换图书文件与导入新 Kindle<a hidden class="anchor" aria-hidden="true" href="#3-转换图书文件与导入新-kindle">#</a></h1>
+<p>完成 Calibre 与 DeDRM 的安装与配置后，就可以转换中国区 Kindle 图书了。</p>
+<h2 id="31-calibre-导入图书文件">3.1 Calibre 导入图书文件<a hidden class="anchor" aria-hidden="true" href="#31-calibre-导入图书文件">#</a></h2>
+<p>Calibre 导入书籍非常简单，可以点击“Add books”按钮来完成，也可以将图书文件直接拖拽到 Calibre 界面中间即可。</p>
+<p><img alt="calibre-import" loading="lazy" src="/import-kindle-cn-books/calibre-import.png"></p>
+<hr>
+<h2 id="32-calibre-转换图书文件">3.2 Calibre 转换图书文件<a hidden class="anchor" aria-hidden="true" href="#32-calibre-转换图书文件">#</a></h2>
+<p>因为之前已经为 Calibre 配置好了 DeDRM 插件，所以在导入图书文件到 Calibre 时就已经自动将其转换成去除 DRM 保护的<code>.azw3</code>文件了。选中一本图书点击“o”，或者点击右侧“Click to open”，可以找到该图书文件的地址。</p>
+<p><img alt="calibre-trans-1" loading="lazy" src="/import-kindle-cn-books/calibre-trans-1.png">
+<img alt="calibre-trans-2" loading="lazy" src="/import-kindle-cn-books/calibre-trans-2.png"></p>
+<p>这里的文件就是后续可以导入新 Kindle 的文件啦。</p>
+<p>如果想要把图书文件转成其他格式，可以点击“Convert books”进入转换界面。右上角可以选择转换的目标格式，确认后点击右下角的“OK”即可。例如我之前就是转成<code>.pdf</code>文档，然后导入 Apple Books 查看的。</p>
+<p><img alt="calibre-trans-3" loading="lazy" src="/import-kindle-cn-books/calibre-trans-3.png">
+<img alt="calibre-trans-4" loading="lazy" src="/import-kindle-cn-books/calibre-trans-4.png"></p>
+<h2 id="33-导入新-kindle">3.3 导入新 Kindle<a hidden class="anchor" aria-hidden="true" href="#33-导入新-kindle">#</a></h2>
+<p>使用 USB 线将电脑与 Kindle 连接。</p>
+<p>如果是 Mac 的话，连接后并不能直接将转换好的图书文件拖拽到 Kindle 中去，而是需要去亚马逊下载特定的管理软件。</p>
+<p>在<a href="https://www.amazon.com/gp/help/customer/display.html/ref=hp_Connect_USB_MTP?nodeId=TCUBEdEkbIhK07ysFu">这里</a>下载<code>SendToKindleForMac-installer.pkg</code>安装文件。</p>
+<p><img alt="kindle-import-1" loading="lazy" src="/import-kindle-cn-books/kindle-import-1.png"></p>
+<p>安装完成后打开<code>USB File Manager</code>这个软件，就可以连接到 Kindle 了。将3.2中已去除 DRM 保护的<code>.azw3</code>文件或整个图书文件夹，拖拽到 Kindle 的<code>documents/</code>目录下，就完成了图书文件导入新 Kindle 的过程了。</p>
+<p><img alt="kindle-import-2" loading="lazy" src="/import-kindle-cn-books/kindle-import-2.png"></p>
+<p>断开电脑与 Kindle 的连接。</p>
+<p>噔噔噔噔～～～ 就可以在新 Kindle 中阅读之前购买的中国区 Kindle 图书啦～</p>
+<p><img alt="kindle-import-3" loading="lazy" src="/import-kindle-cn-books/kindle-import-3.png">
+<img alt="kindle-import-4" loading="lazy" src="/import-kindle-cn-books/kindle-import-4.png"></p>
+<h1 id="4-最后">4 最后<a hidden class="anchor" aria-hidden="true" href="#4-最后">#</a></h1>
+<p>如果你也是 Kindle 爱好者，如果你还有之前购买的 Kindle 图书文件，希望这篇文章可以帮到你一点点～</p>
+<p><img alt="last" loading="lazy" src="/import-kindle-cn-books/last.png"></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://nimblecode.tech/tags/kindle/">Kindle</a></li>
+      <li><a href="https://nimblecode.tech/tags/calibre/">Calibre</a></li>
+      <li><a href="https://nimblecode.tech/tags/dedrm/">DeDRM</a></li>
+      <li><a href="https://nimblecode.tech/tags/%E4%B8%AD%E5%9B%BD%E5%8C%BA-kindle/">中国区 Kindle</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://nimblecode.tech/">Nimble Code Tech</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
