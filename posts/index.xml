@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Nimble Code Tech</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 30 Oct 2025 11:04:27 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 02 Nov 2025 13:08:15 -0800</lastBuildDate>
     <atom:link href="https://nimblecode.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>双11购物清单</title>
+      <link>https://nimblecode.tech/posts/tao-partner-test/</link>
+      <pubDate>Sun, 02 Nov 2025 13:08:15 -0800</pubDate>
+      <guid>https://nimblecode.tech/posts/tao-partner-test/</guid>
+      <description>这是我的双11购物清单，也是一个淘宝客测试文章。</description>
+    </item>
     <item>
       <title>新 Kindle 阅读器复活亚马逊中国区 Kindle 图书</title>
       <link>https://nimblecode.tech/posts/import-kindle-cn-books/</link>

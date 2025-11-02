@@ -2,17 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nimblecode.tech/tags/calibre/</loc>
-    <lastmod>2025-10-30T11:04:27-07:00</lastmod>
-  </url><url>
-    <loc>https://nimblecode.tech/tags/dedrm/</loc>
-    <lastmod>2025-10-30T11:04:27-07:00</lastmod>
-  </url><url>
-    <loc>https://nimblecode.tech/tags/kindle/</loc>
-    <lastmod>2025-10-30T11:04:27-07:00</lastmod>
-  </url><url>
     <loc>https://nimblecode.tech/</loc>
-    <lastmod>2025-10-30T11:04:27-07:00</lastmod>
+    <lastmod>2025-11-02T13:08:15-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -25,7 +16,7 @@
                 />
   </url><url>
     <loc>https://nimblecode.tech/posts/</loc>
-    <lastmod>2025-10-30T11:04:27-07:00</lastmod>
+    <lastmod>2025-11-02T13:08:15-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -38,7 +29,7 @@
                 />
   </url><url>
     <loc>https://nimblecode.tech/tags/</loc>
-    <lastmod>2025-10-30T11:04:27-07:00</lastmod>
+    <lastmod>2025-11-02T13:08:15-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -49,6 +40,27 @@
                 hreflang="zh"
                 href="https://nimblecode.tech/tags/"
                 />
+  </url><url>
+    <loc>https://nimblecode.tech/tags/%E5%8F%8C11/</loc>
+    <lastmod>2025-11-02T13:08:15-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/posts/tao-partner-test/</loc>
+    <lastmod>2025-11-02T13:08:15-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/%E6%B7%98%E5%AE%9D/</loc>
+    <lastmod>2025-11-02T13:08:15-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/%E6%B7%98%E5%AE%9D%E5%AE%A2/</loc>
+    <lastmod>2025-11-02T13:08:15-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/calibre/</loc>
+    <lastmod>2025-10-30T11:04:27-07:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/dedrm/</loc>
+    <lastmod>2025-10-30T11:04:27-07:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/kindle/</loc>
+    <lastmod>2025-10-30T11:04:27-07:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/posts/import-kindle-cn-books/</loc>
     <lastmod>2025-10-30T11:04:27-07:00</lastmod>
