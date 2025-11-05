@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Nimble Code Tech</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 04 Nov 2025 14:10:07 -0800</lastBuildDate>
+    <lastBuildDate>Wed, 05 Nov 2025 10:44:20 -0800</lastBuildDate>
     <atom:link href="https://nimblecode.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何将网站加入 Bing 搜索引擎？</title>
+      <link>https://nimblecode.tech/posts/ms-webmaster-tools/</link>
+      <pubDate>Wed, 05 Nov 2025 10:44:20 -0800</pubDate>
+      <guid>https://nimblecode.tech/posts/ms-webmaster-tools/</guid>
+      <description>使用Hugo建站后，通过 Microsoft Webmaster Tools 将网站内容加入 Bing 搜索引擎索引中去。</description>
+    </item>
     <item>
       <title>Hugo 网站配置 favicon.ico</title>
       <link>https://nimblecode.tech/posts/add-favicon/</link>
