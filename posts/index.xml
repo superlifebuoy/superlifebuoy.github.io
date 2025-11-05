@@ -2,101 +2,136 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Nimble Code Tech</title>
-    <link>https://nimblecode.tech/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Nimble Code Tech</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 02 Nov 2025 13:08:15 -0800</lastBuildDate>
-    <atom:link href="https://nimblecode.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Nov 2025 14:10:07 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 网站配置 favicon.ico</title>
+      <link>http://localhost:1313/posts/add-favicon/</link>
+      <pubDate>Mon, 03 Nov 2025 14:10:07 -0800</pubDate>
+      <guid>http://localhost:1313/posts/add-favicon/</guid>
+      <description>&lt;h2 id=&#34;1-起因&#34;&gt;1 起因&lt;/h2&gt;
+&lt;p&gt;今天收到 Google 邮件，提醒我 &lt;a href=&#34;https://nimblecode.tech/&#34;&gt;nimblecode.tech&lt;/a&gt; 上有网页无法被编入索引。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;gmail-404&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/add-favicon/gmail-404.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;根据邮件连接，我登陆 Google Search Console 后发现，是链接 &lt;a href=&#34;https://nimblecode.tech/favicon.ico&#34;&gt;https://nimblecode.tech/favicon.ico&lt;/a&gt; 未被找到。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;GSC-1&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/add-favicon/GSC-1.png&#34;&gt;
+&lt;img alt=&#34;GSC-2&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/add-favicon/GSC-2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;通过浏览器访问，确实返回404。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;icon-404&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/add-favicon/icon-404.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;我在 Hugo 的&lt;code&gt;public/&lt;/code&gt;目录下也未发现&lt;code&gt;favicon.ico&lt;/code&gt;文件。作为一个前端入门选手，就很奇怪&lt;code&gt;favicon.ico&lt;/code&gt;是一个怎样的文件？为什么 Googlebot 会去爬取它呢？&lt;/p&gt;
+&lt;h2 id=&#34;2-faviconico-是什么&#34;&gt;2 favicon.ico 是什么？&lt;/h2&gt;
+&lt;p&gt;通过&lt;a href=&#34;&#34;&gt;维基百科&lt;/a&gt;了解到如下内容：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Favicon是favorites icon的缩写，亦被称为website icon（网站图标）、page icon（页面图标）或urlicon（URL图标）。
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Favicon是与某个网站或网页相关联的图标。网站设计者可以多种方式建立这种图标，而目前也有很多网页浏览器支持此功能。
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;浏览器可以将favicon显示于浏览器的地址栏中，也可置于书签列表的网站名前，还可以放在标签式浏览界面中的页标题前。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;21-faviconico-的历史&#34;&gt;2.1 favicon.ico 的历史&lt;/h3&gt;
+&lt;p&gt;Favicon 功能是一个典型的例子，展示了最初由一家公司引入的非标准功能发展为行业事实标准的过程。&lt;/p&gt;
+&lt;p&gt;1999年3月微软的 IE 5 浏览器最早将 favicon 用于收藏夹功能，便于用户在 &lt;strong&gt;“收藏夹（Favorites）”&lt;/strong&gt; 列表中更容易区分和识别他们收藏的网站。&lt;strong&gt;“favorite icon”&lt;/strong&gt; 这一名称也由此而来。但是这种实现也会产生一些隐私问题的副作用——网站拥有者可以通过日志确认多少人下载了&lt;code&gt;favicon.ico&lt;/code&gt;文件，进而知道多少人将他们的网站加入收藏夹。&lt;/p&gt;
+&lt;p&gt;后来，随着 Mozilla Firefox、Opera、Safari等浏览器相继支持 favicon，它的用途也从最初的“收藏夹图标”扩展到了：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;浏览器地址栏&lt;/li&gt;
+&lt;li&gt;浏览器标签页（成为快速识别网站的主要方式）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;因为用途的增加，之前的隐私副作用随之消失。favicon.ico 也随之变为行业的事实标准。&lt;/p&gt;
+&lt;h2 id=&#34;3-生成-faviconico&#34;&gt;3 生成 favicon.ico&lt;/h2&gt;
+&lt;p&gt;文件后缀&lt;code&gt;.ico&lt;/code&gt;是一种在Windows系统上图标文件使用的位图格式，当初并没有注册成为一个 MIME 类型。但到了2003年，格式&lt;code&gt;.ico&lt;/code&gt;终于在&lt;a href=&#34;https://www.iana.org/&#34;&gt;IANA&lt;/a&gt;获得注册，其 MIME 类型是 &lt;code&gt;image/vnd.microsoft.icon&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;生成&lt;code&gt;.ico&lt;/code&gt;文件的方式有很多种。例如&lt;a href=&#34;https://favicon.io/&#34;&gt;https://favicon.io/&lt;/a&gt;，选择对应的原始文件类型进行生成即可：&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;favicon.io&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/add-favicon/favicon.io.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;31-faviconico-其他格式&#34;&gt;3.1 favicon.ico 其他格式&lt;/h3&gt;
+&lt;p&gt;历史上最初使用的是&lt;code&gt;.ico&lt;/code&gt;文件格式，通常是 16 * 16 像素的小图像。现在的浏览器也支持 PNG、GIF 甚至 SVG 等其他格式，并且需要不同大小的图标来适应各种设备和用途（例如 32 * 32、64 * 64，以及用于移动设备主屏幕的更大尺寸）。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>双11购物清单</title>
-      <link>https://nimblecode.tech/posts/tao-partner-test/</link>
+      <link>http://localhost:1313/posts/tao-partner-test/</link>
       <pubDate>Sun, 02 Nov 2025 13:08:15 -0800</pubDate>
-      <guid>https://nimblecode.tech/posts/tao-partner-test/</guid>
+      <guid>http://localhost:1313/posts/tao-partner-test/</guid>
       <description>这是我的双11购物清单，也是一个淘宝客测试文章。</description>
     </item>
     <item>
       <title>新 Kindle 阅读器复活亚马逊中国区 Kindle 图书</title>
-      <link>https://nimblecode.tech/posts/import-kindle-cn-books/</link>
+      <link>http://localhost:1313/posts/import-kindle-cn-books/</link>
       <pubDate>Thu, 30 Oct 2025 11:04:27 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/import-kindle-cn-books/</guid>
+      <guid>http://localhost:1313/posts/import-kindle-cn-books/</guid>
       <description>借助 Calibre 与 DeDRM，将中国区 Kindle 图书导入新 Kindle 继续阅读。</description>
     </item>
     <item>
       <title>网站接入Google Analytics</title>
-      <link>https://nimblecode.tech/posts/google-analytics/</link>
+      <link>http://localhost:1313/posts/google-analytics/</link>
       <pubDate>Tue, 28 Oct 2025 15:44:00 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/google-analytics/</guid>
+      <guid>http://localhost:1313/posts/google-analytics/</guid>
       <description>使用 Hugo 建站后，通过 Google Analytics 收集、分析用户在网站上的操作。</description>
     </item>
     <item>
       <title>如何将网站加入Google搜索索引？</title>
-      <link>https://nimblecode.tech/posts/google-search-console/</link>
+      <link>http://localhost:1313/posts/google-search-console/</link>
       <pubDate>Sat, 25 Oct 2025 21:54:33 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/google-search-console/</guid>
+      <guid>http://localhost:1313/posts/google-search-console/</guid>
       <description>使用Hugo建站后，通过Google Search Console将网站内容加入Google搜索引擎索引中去。</description>
     </item>
     <item>
       <title>Ollama &#43; Spring实现本地大语言模型验证</title>
-      <link>https://nimblecode.tech/posts/local-llms/</link>
+      <link>http://localhost:1313/posts/local-llms/</link>
       <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/local-llms/</guid>
+      <guid>http://localhost:1313/posts/local-llms/</guid>
       <description>使用Ollama，普通人也可以轻松在自己的电脑上体验大语言模型。使用Spring AI，做工程的程序员也可以轻松集成AI能力。</description>
     </item>
     <item>
       <title>PostHog的趋势洞察简介</title>
-      <link>https://nimblecode.tech/posts/posthog-creating-insights/</link>
+      <link>http://localhost:1313/posts/posthog-creating-insights/</link>
       <pubDate>Sat, 16 Aug 2025 14:46:00 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/posthog-creating-insights/</guid>
+      <guid>http://localhost:1313/posts/posthog-creating-insights/</guid>
       <description>简单介绍PostHog的业务洞察类型，进而介绍Trends的使用方法。</description>
     </item>
     <item>
       <title>如何测算Java代码的单元测试覆盖率</title>
-      <link>https://nimblecode.tech/posts/eclmma-quickstart/</link>
+      <link>http://localhost:1313/posts/eclmma-quickstart/</link>
       <pubDate>Thu, 07 Aug 2025 19:52:39 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/eclmma-quickstart/</guid>
+      <guid>http://localhost:1313/posts/eclmma-quickstart/</guid>
       <description>介绍什么是单元测试覆盖率，以及测算Java单元测试覆盖率的两个工具：JaCoCo与EclEmma。</description>
     </item>
     <item>
       <title>PostHog入门</title>
-      <link>https://nimblecode.tech/posts/posthog-quickstart/</link>
+      <link>http://localhost:1313/posts/posthog-quickstart/</link>
       <pubDate>Tue, 29 Jul 2025 14:15:45 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/posthog-quickstart/</guid>
+      <guid>http://localhost:1313/posts/posthog-quickstart/</guid>
       <description>PostHog是一个产品分析、测试、观察的平台，旨在帮助开发者构建更好的产品。这篇内容简要介绍如何注册PostHog账号、如何将网站接入PostHog。</description>
     </item>
     <item>
       <title>如何使用SpotBugs</title>
-      <link>https://nimblecode.tech/posts/how-to-use-spotbugs/</link>
+      <link>http://localhost:1313/posts/how-to-use-spotbugs/</link>
       <pubDate>Sat, 19 Jul 2025 16:25:27 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/how-to-use-spotbugs/</guid>
+      <guid>http://localhost:1313/posts/how-to-use-spotbugs/</guid>
       <description>介绍如何使用SpotBugs，来发现代码的静态问题。</description>
     </item>
     <item>
       <title>Apache ab —— 一个基准工具</title>
-      <link>https://nimblecode.tech/posts/apache-ab-tester/</link>
+      <link>http://localhost:1313/posts/apache-ab-tester/</link>
       <pubDate>Wed, 02 Jul 2025 21:35:58 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/apache-ab-tester/</guid>
+      <guid>http://localhost:1313/posts/apache-ab-tester/</guid>
       <description>本文简要介绍Apache ab(ApacheBench)，一个性能基准工具。</description>
     </item>
     <item>
       <title>个人域名映射到GitHub Pages</title>
-      <link>https://nimblecode.tech/posts/link-domain-to-git-pages/</link>
+      <link>http://localhost:1313/posts/link-domain-to-git-pages/</link>
       <pubDate>Thu, 12 Jun 2025 18:49:14 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/link-domain-to-git-pages/</guid>
+      <guid>http://localhost:1313/posts/link-domain-to-git-pages/</guid>
       <description>详细介绍如何将自己拥有的域名解析到GitHub Pages，从而实现通过访问自己的域名来显示GitHub Pages内容。</description>
     </item>
     <item>
       <title>Develop Multi Pages Website</title>
-      <link>https://nimblecode.tech/posts/develop-multi-pages-websit/</link>
+      <link>http://localhost:1313/posts/develop-multi-pages-websit/</link>
       <pubDate>Mon, 31 Mar 2025 11:49:18 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/develop-multi-pages-websit/</guid>
+      <guid>http://localhost:1313/posts/develop-multi-pages-websit/</guid>
       <description>在Mac上使用VUE + Vite开发多页面网站，并部署到Nginx上。</description>
     </item>
     <item>
       <title>Ssh Intro</title>
-      <link>https://nimblecode.tech/posts/ssh-intro/</link>
+      <link>http://localhost:1313/posts/ssh-intro/</link>
       <pubDate>Wed, 05 Mar 2025 18:56:53 -0800</pubDate>
-      <guid>https://nimblecode.tech/posts/ssh-intro/</guid>
+      <guid>http://localhost:1313/posts/ssh-intro/</guid>
       <description>&lt;h1 id=&#34;ssh配置与使用&#34;&gt;SSH配置与使用&lt;/h1&gt;
 &lt;h2 id=&#34;1-ssh是什么&#34;&gt;1 SSH是什么&lt;/h2&gt;
 &lt;p&gt;SSH(Secure Shell Protocol)是一种加密的网络传输协议。&lt;/p&gt;
@@ -143,100 +178,100 @@ Host anotherHost
     </item>
     <item>
       <title>类Unix系统常用命令简介</title>
-      <link>https://nimblecode.tech/posts/mac-command-intro/</link>
+      <link>http://localhost:1313/posts/mac-command-intro/</link>
       <pubDate>Thu, 08 Aug 2024 23:07:15 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/mac-command-intro/</guid>
+      <guid>http://localhost:1313/posts/mac-command-intro/</guid>
       <description>一个常用类Unix系统命令的简介集合。不定时更新。</description>
     </item>
     <item>
       <title>Maven入门</title>
-      <link>https://nimblecode.tech/posts/maven-intro/</link>
+      <link>http://localhost:1313/posts/maven-intro/</link>
       <pubDate>Wed, 07 Aug 2024 23:15:47 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/maven-intro/</guid>
+      <guid>http://localhost:1313/posts/maven-intro/</guid>
       <description>简单介绍Maven，收集一些常用的Maven命令和参数。不定时更新。</description>
     </item>
     <item>
       <title>更新与分发Docker镜像（2）</title>
-      <link>https://nimblecode.tech/posts/update-share-app/</link>
+      <link>http://localhost:1313/posts/update-share-app/</link>
       <pubDate>Mon, 20 Mar 2023 19:52:44 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/update-share-app/</guid>
+      <guid>http://localhost:1313/posts/update-share-app/</guid>
       <description>如何更新Docker镜像？如果推送Docker镜像到镜像仓库？</description>
     </item>
     <item>
       <title>Docker入门（1）</title>
-      <link>https://nimblecode.tech/posts/docker-get-started/</link>
+      <link>http://localhost:1313/posts/docker-get-started/</link>
       <pubDate>Tue, 14 Mar 2023 22:27:10 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/docker-get-started/</guid>
+      <guid>http://localhost:1313/posts/docker-get-started/</guid>
       <description>Docker是什么？如何使用它？</description>
     </item>
     <item>
       <title>Git SSH Key</title>
-      <link>https://nimblecode.tech/posts/git-ssh-key/</link>
+      <link>http://localhost:1313/posts/git-ssh-key/</link>
       <pubDate>Sun, 12 Mar 2023 11:34:26 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/git-ssh-key/</guid>
+      <guid>http://localhost:1313/posts/git-ssh-key/</guid>
       <description>初始化Git SSH keys。</description>
     </item>
     <item>
       <title>API设计的最佳实践[翻译]</title>
-      <link>https://nimblecode.tech/posts/best-practices-in-api-design/</link>
+      <link>http://localhost:1313/posts/best-practices-in-api-design/</link>
       <pubDate>Tue, 27 Sep 2022 20:47:46 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/best-practices-in-api-design/</guid>
+      <guid>http://localhost:1313/posts/best-practices-in-api-design/</guid>
       <description>Swagger关于API设计的最佳实践。</description>
     </item>
     <item>
       <title>通过Github部署Hugo</title>
-      <link>https://nimblecode.tech/posts/deploy-hugo-by-github/</link>
+      <link>http://localhost:1313/posts/deploy-hugo-by-github/</link>
       <pubDate>Thu, 15 Sep 2022 20:04:36 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/deploy-hugo-by-github/</guid>
+      <guid>http://localhost:1313/posts/deploy-hugo-by-github/</guid>
       <description>讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。</description>
     </item>
     <item>
       <title>容器简史[翻译]</title>
-      <link>https://nimblecode.tech/posts/a-brief-history-of-containers-from-1970s/</link>
+      <link>http://localhost:1313/posts/a-brief-history-of-containers-from-1970s/</link>
       <pubDate>Thu, 15 Sep 2022 19:56:51 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/a-brief-history-of-containers-from-1970s/</guid>
+      <guid>http://localhost:1313/posts/a-brief-history-of-containers-from-1970s/</guid>
       <description>简单介绍容器技术自1970年代以来的发展历史。</description>
     </item>
     <item>
       <title>命令行工具简介</title>
-      <link>https://nimblecode.tech/posts/util-commands/</link>
+      <link>http://localhost:1313/posts/util-commands/</link>
       <pubDate>Thu, 15 Sep 2022 19:36:09 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/util-commands/</guid>
+      <guid>http://localhost:1313/posts/util-commands/</guid>
       <description>关于常用的命令行工具介绍，包括但不限于maven、curl、wget等。</description>
     </item>
     <item>
       <title>My Image Post</title>
-      <link>https://nimblecode.tech/posts/my-image-post/</link>
+      <link>http://localhost:1313/posts/my-image-post/</link>
       <pubDate>Wed, 17 Aug 2022 22:28:08 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/my-image-post/</guid>
+      <guid>http://localhost:1313/posts/my-image-post/</guid>
       <description>讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。</description>
     </item>
     <item>
       <title>How to Use cloc</title>
-      <link>https://nimblecode.tech/posts/how_to_use_cloc/</link>
+      <link>http://localhost:1313/posts/how_to_use_cloc/</link>
       <pubDate>Wed, 08 Dec 2021 11:44:28 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/how_to_use_cloc/</guid>
+      <guid>http://localhost:1313/posts/how_to_use_cloc/</guid>
       <description>关于cloc的简介——一个开源、易用的代码行统计工具。</description>
     </item>
     <item>
       <title>Why We Make Our Product Roadmaps Public [翻译]</title>
-      <link>https://nimblecode.tech/posts/why-we-make-our-product-roadmaps-public/</link>
+      <link>http://localhost:1313/posts/why-we-make-our-product-roadmaps-public/</link>
       <pubDate>Thu, 07 Oct 2021 10:27:08 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/why-we-make-our-product-roadmaps-public/</guid>
+      <guid>http://localhost:1313/posts/why-we-make-our-product-roadmaps-public/</guid>
       <description>WSO2在这篇文章中讲述了他们为什么要把产品路线图开放出来。</description>
     </item>
     <item>
       <title>Small Things That Make Apis a Little Bit Better [翻译]</title>
-      <link>https://nimblecode.tech/posts/small-things-that-make-apis-a-little-bit-better/</link>
+      <link>http://localhost:1313/posts/small-things-that-make-apis-a-little-bit-better/</link>
       <pubDate>Mon, 12 Jul 2021 20:32:31 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/small-things-that-make-apis-a-little-bit-better/</guid>
+      <guid>http://localhost:1313/posts/small-things-that-make-apis-a-little-bit-better/</guid>
       <description>讲述如何让API更好的一些实践方法。</description>
     </item>
     <item>
       <title>Hugo快速入门</title>
-      <link>https://nimblecode.tech/posts/hugo-quick-start/</link>
+      <link>http://localhost:1313/posts/hugo-quick-start/</link>
       <pubDate>Wed, 17 Feb 2021 20:29:21 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/hugo-quick-start/</guid>
+      <guid>http://localhost:1313/posts/hugo-quick-start/</guid>
       <description>快速了解Hugo的使用方法。</description>
     </item>
   </channel>

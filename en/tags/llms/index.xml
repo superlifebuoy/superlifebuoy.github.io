@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>LLMs on Nimble Code Tech</title>
-    <link>https://nimblecode.tech/en/tags/llms/</link>
+    <link>http://localhost:1313/en/tags/llms/</link>
     <description>Recent content in LLMs on Nimble Code Tech</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 03 Oct 2025 14:35:52 -0700</lastBuildDate>
-    <atom:link href="https://nimblecode.tech/en/tags/llms/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/en/tags/llms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ollama &#43; Spring to Implement Local Large Language Model Program</title>
-      <link>https://nimblecode.tech/en/posts/local-llms/</link>
+      <link>http://localhost:1313/en/posts/local-llms/</link>
       <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
-      <guid>https://nimblecode.tech/en/posts/local-llms/</guid>
+      <guid>http://localhost:1313/en/posts/local-llms/</guid>
       <description>With Ollama, everyone can easily experience large language models on their own computers. Using Spring AI, programmers focused on business development can easily integrate AI capabilities.</description>
     </item>
   </channel>
