@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Cloc on Nimble Code Tech</title>
-    <link>http://localhost:1313/tags/cloc/</link>
+    <link>https://nimblecode.tech/tags/cloc/</link>
     <description>Recent content in Cloc on Nimble Code Tech</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh</language>
     <lastBuildDate>Wed, 08 Dec 2021 11:44:28 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/cloc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nimblecode.tech/tags/cloc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Use cloc</title>
-      <link>http://localhost:1313/posts/how_to_use_cloc/</link>
+      <link>https://nimblecode.tech/posts/how_to_use_cloc/</link>
       <pubDate>Wed, 08 Dec 2021 11:44:28 +0800</pubDate>
-      <guid>http://localhost:1313/posts/how_to_use_cloc/</guid>
+      <guid>https://nimblecode.tech/posts/how_to_use_cloc/</guid>
       <description>关于cloc的简介——一个开源、易用的代码行统计工具。</description>
     </item>
   </channel>

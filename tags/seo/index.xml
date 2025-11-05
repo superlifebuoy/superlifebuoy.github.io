@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>SEO on Nimble Code Tech</title>
-    <link>http://localhost:1313/tags/seo/</link>
+    <link>https://nimblecode.tech/tags/seo/</link>
     <description>Recent content in SEO on Nimble Code Tech</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh</language>
     <lastBuildDate>Tue, 28 Oct 2025 15:44:00 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/seo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nimblecode.tech/tags/seo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>网站接入Google Analytics</title>
-      <link>http://localhost:1313/posts/google-analytics/</link>
+      <link>https://nimblecode.tech/posts/google-analytics/</link>
       <pubDate>Tue, 28 Oct 2025 15:44:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/google-analytics/</guid>
+      <guid>https://nimblecode.tech/posts/google-analytics/</guid>
       <description>使用 Hugo 建站后，通过 Google Analytics 收集、分析用户在网站上的操作。</description>
     </item>
     <item>
       <title>如何将网站加入Google搜索索引？</title>
-      <link>http://localhost:1313/posts/google-search-console/</link>
+      <link>https://nimblecode.tech/posts/google-search-console/</link>
       <pubDate>Sat, 25 Oct 2025 21:54:33 -0700</pubDate>
-      <guid>http://localhost:1313/posts/google-search-console/</guid>
+      <guid>https://nimblecode.tech/posts/google-search-console/</guid>
       <description>使用Hugo建站后，通过Google Search Console将网站内容加入Google搜索引擎索引中去。</description>
     </item>
   </channel>

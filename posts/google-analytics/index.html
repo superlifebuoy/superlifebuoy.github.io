@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KG4P5QR587"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -21,21 +21,21 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>网站接入Google Analytics | Nimble Code Tech</title>
 <meta name="keywords" content="SEO, Hugo, Google, Google Analytics, GA">
 <meta name="description" content="使用 Hugo 建站后，通过 Google Analytics 收集、分析用户在网站上的操作。">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/google-analytics/">
+<link rel="canonical" href="https://nimblecode.tech/posts/google-analytics/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.a090830a421002426baafbd314e38f149d77b4c48a12ee9312700d770b27fb26.css" integrity="sha256-oJCDCkIQAkJrqvvTFOOPFJ13tMSKEu6TEnANdwsn&#43;yY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://nimblecode.tech/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://nimblecode.tech/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://nimblecode.tech/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://nimblecode.tech/apple-touch-icon.png">
+<link rel="mask-icon" href="https://nimblecode.tech/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="zh" href="http://localhost:1313/posts/google-analytics/">
+<link rel="alternate" hreflang="zh" href="https://nimblecode.tech/posts/google-analytics/">
 <noscript>
     <style>
         #theme-toggle,
@@ -72,7 +72,74 @@
         }
 
     </style>
-</noscript>
+</noscript><meta property="og:url" content="https://nimblecode.tech/posts/google-analytics/">
+  <meta property="og:site_name" content="Nimble Code Tech">
+  <meta property="og:title" content="网站接入Google Analytics">
+  <meta property="og:description" content="使用 Hugo 建站后，通过 Google Analytics 收集、分析用户在网站上的操作。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-28T15:44:00-07:00">
+    <meta property="article:modified_time" content="2025-10-28T15:44:00-07:00">
+    <meta property="article:tag" content="SEO">
+    <meta property="article:tag" content="Hugo">
+    <meta property="article:tag" content="Google">
+    <meta property="article:tag" content="Google Analytics">
+    <meta property="article:tag" content="GA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="网站接入Google Analytics">
+<meta name="twitter:description" content="使用 Hugo 建站后，通过 Google Analytics 收集、分析用户在网站上的操作。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://nimblecode.tech/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "网站接入Google Analytics",
+      "item": "https://nimblecode.tech/posts/google-analytics/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "网站接入Google Analytics",
+  "name": "网站接入Google Analytics",
+  "description": "使用 Hugo 建站后，通过 Google Analytics 收集、分析用户在网站上的操作。",
+  "keywords": [
+    "SEO", "Hugo", "Google", "Google Analytics", "GA"
+  ],
+  "articleBody": "在《如何将网站加入Google搜索索引？》介绍了如何将一个网站接入Google Search Console，这样可以将该网站内容录入Google索引中。那么加入索引后，如何分析网站的用户行为呢？除了《PostHog入门》介绍的PostHog外，还可以借助Google Analytics的能力。\n1 简介 Google Analytics (GA) 是 Google 提供的一款免费且功能强大的网站及应用数据分析平台。它是全球使用最广泛的网络分析服务，被营销人员、网站管理员和数据分析师视为了解用户行为和衡量数字营销效果的必备工具。\n其核心工作原理是：通过在目标网站或应用中嵌入一小段 JavaScript 跟踪代码（或 SDK），实时收集用户与内容互动产生的匿名化数据。\n2 接入 Google Analytics 下面以 Hugo 生成的静态网站接入 Google Analytics 为例。\n2.1 注册 Google Analytics 要将自己的网站接入 Google Analytics，可以打开其网站。\n点击“开始衡量”，就可以创建自己的 Google Analytics 账号了。\n完成账号的创建后，需要继续创建“媒体资源”。\n完成“媒体资源”的创建后，下一步是完成“商家描述”。\n然后根据实际的业务需求，勾选相应的“业务目标”。\n2.2 配置 JS 跟踪代码 最后就是“数据收集”的配置了。\nGoogle Analytics 支持的数据采集平台有3类：网站、Android应用、iOS应用。下面以网站类型为例，进行说明。\n首先是要配置网站网址和数据流名称。\n创建完数据流之后，Google Analytics会自动生成一份 JavaScript 跟踪代码。\n这段代码中会为每一个数据流分配一个唯一的id，形式如G-**********。\n千万不要改动这段id值，否则 Google Analytics 在收集数据时会出错，导致数据收集失败。\n这段代码需要添加到目标网站的每一个需要被 Google Analytics 跟踪的页面中去。\n2.3 Hugo 网站配置 以 Hugo 生成的静态网站为例，一般选用的 Hugo theme 都是结构化的。\n打开 Hugo 项目的themes/{theme}/layouts/partials/目录，可以看到很多页面组件。\n其中head.html文件就是所有网页的头部内容。将2.2中 Google Analytics 提供的 JavaScript 跟踪代码添加到第一行即可。\n完成 Hugo 网站的重新构建部署后，就可以回到 Google Analytics 进行验证了。点击2.2中页面右上角的“测试安装情况”。\n一切正常的话，页面下方会显示“在您的网站上正确检测到了 Google 代码”。\n2.4 完成 Google Analytics 流程 点击“确认”后，就可以看到之前配置的网站数据流列表以及网站数据流详情了。\n点击列表页面的“下一步”完成整个 Google Analytics 的接入过程，等待网站数据开始收集即可。\n此时进入 Google Analytics 的控制台，是看不到任何有效数据的。\n这个初始过程一般需要半天到1天，安心等待即可。\n3 Google Analytics 的主要作用和价值 Google Analytics 的主要作用是提供数据驱动的洞察，帮助用户：\n1. 了解用户群体 (Audience)：谁在访问我的网站？\n地理位置： 访客来自哪个国家或城市。\n人口统计： 用户的年龄、性别、兴趣等（如果启用相关功能）。\n技术设备： 访客使用哪种设备（桌面、手机、平板）、哪种操作系统和浏览器。\n2. 追踪流量来源 (Acquisition)：访客是如何找到我的网站的？\n自然搜索 (Organic Search)： 通过 Google、Baidu 等搜索引擎。\n直接访问 (Direct)： 直接输入网址或通过书签访问。\n社交流量 (Social)： 通过 Facebook、Twitter、微信等社交媒体平台。\n引荐流量 (Referral)： 通过其他网站的链接点击。\n广告活动 (Paid Search/Display)： 通过 Google Ads 或其他付费推广活动。\n3. 分析用户行为 (Behavior)：访客在我的网站上做了什么？\n浏览页面： 哪些页面最受欢迎、哪些页面加载速度慢。\n跳出率 (Bounce Rate)： 用户在浏览单个页面后就离开的百分比。\n停留时间： 用户在网站上停留的平均时长。\n行为流程： 用户从哪个页面进入，到哪个页面离开。\n4. 衡量转化目标 (Conversion)：我的营销目标是否达成？\n通过设置 “目标”或“转化事件”，可以追踪用户完成了对业务有价值的行为，例如：\n完成购买（电子商务）。\n填写联系表单。\n注册成为会员。\n点击下载文件。\n总之，充分利用 Google Analytics 的能力，可以帮助网站/App更好的统计数据、提升产品能力、帮助最终用户。\n4 One More Thing 完成 Google Analytics 的接入后，还可以将其与 Google Search Console 的资源进行关联。\n在 Google Analytics控制台点击左下角“管理” -\u003e “媒体资源设置” -\u003e “产品关联” -\u003e “Search Console 关联”，即可轻松完成后续关联流程。\n",
+  "wordCount" : "195",
+  "inLanguage": "zh",
+  "datePublished": "2025-10-28T15:44:00-07:00",
+  "dateModified": "2025-10-28T15:44:00-07:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://nimblecode.tech/posts/google-analytics/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nimble Code Tech",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nimblecode.tech/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -90,7 +157,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
+            <a href="https://nimblecode.tech/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -114,7 +181,7 @@
                 </button>
                     <ul class="lang-switch"><li>|</li>
                         <li>
-                            <a href="http://localhost:1313/en/" title="English"
+                            <a href="https://nimblecode.tech/en/" title="English"
                                 aria-label="English">En</a>
                         </li>
                     </ul>
@@ -258,18 +325,18 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/seo/">SEO</a></li>
-      <li><a href="http://localhost:1313/tags/hugo/">Hugo</a></li>
-      <li><a href="http://localhost:1313/tags/google/">Google</a></li>
-      <li><a href="http://localhost:1313/tags/google-analytics/">Google Analytics</a></li>
-      <li><a href="http://localhost:1313/tags/ga/">GA</a></li>
+      <li><a href="https://nimblecode.tech/tags/seo/">SEO</a></li>
+      <li><a href="https://nimblecode.tech/tags/hugo/">Hugo</a></li>
+      <li><a href="https://nimblecode.tech/tags/google/">Google</a></li>
+      <li><a href="https://nimblecode.tech/tags/google-analytics/">Google Analytics</a></li>
+      <li><a href="https://nimblecode.tech/tags/ga/">GA</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Nimble Code Tech</a></span> · 
+        <span>&copy; 2025 <a href="https://nimblecode.tech/">Nimble Code Tech</a></span> · 
 
     <span>
         Powered by

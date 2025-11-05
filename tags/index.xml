@@ -2,542 +2,563 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Nimble Code Tech</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://nimblecode.tech/tags/</link>
     <description>Recent content in Tags on Nimble Code Tech</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 02 Nov 2025 13:08:15 -0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Nov 2025 14:10:07 -0800</lastBuildDate>
+    <atom:link href="https://nimblecode.tech/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>双11</title>
-      <link>http://localhost:1313/tags/%E5%8F%8C11/</link>
-      <pubDate>Sun, 02 Nov 2025 13:08:15 -0800</pubDate>
-      <guid>http://localhost:1313/tags/%E5%8F%8C11/</guid>
+      <title>.Ico</title>
+      <link>https://nimblecode.tech/tags/.ico/</link>
+      <pubDate>Tue, 04 Nov 2025 14:10:07 -0800</pubDate>
+      <guid>https://nimblecode.tech/tags/.ico/</guid>
       <description></description>
     </item>
     <item>
-      <title>淘宝</title>
-      <link>http://localhost:1313/tags/%E6%B7%98%E5%AE%9D/</link>
-      <pubDate>Sun, 02 Nov 2025 13:08:15 -0800</pubDate>
-      <guid>http://localhost:1313/tags/%E6%B7%98%E5%AE%9D/</guid>
+      <title>Favicon</title>
+      <link>https://nimblecode.tech/tags/favicon/</link>
+      <pubDate>Tue, 04 Nov 2025 14:10:07 -0800</pubDate>
+      <guid>https://nimblecode.tech/tags/favicon/</guid>
       <description></description>
     </item>
     <item>
-      <title>淘宝客</title>
-      <link>http://localhost:1313/tags/%E6%B7%98%E5%AE%9D%E5%AE%A2/</link>
-      <pubDate>Sun, 02 Nov 2025 13:08:15 -0800</pubDate>
-      <guid>http://localhost:1313/tags/%E6%B7%98%E5%AE%9D%E5%AE%A2/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Calibre</title>
-      <link>http://localhost:1313/tags/calibre/</link>
-      <pubDate>Thu, 30 Oct 2025 11:04:27 -0700</pubDate>
-      <guid>http://localhost:1313/tags/calibre/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>DeDRM</title>
-      <link>http://localhost:1313/tags/dedrm/</link>
-      <pubDate>Thu, 30 Oct 2025 11:04:27 -0700</pubDate>
-      <guid>http://localhost:1313/tags/dedrm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Kindle</title>
-      <link>http://localhost:1313/tags/kindle/</link>
-      <pubDate>Thu, 30 Oct 2025 11:04:27 -0700</pubDate>
-      <guid>http://localhost:1313/tags/kindle/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>中国区 Kindle</title>
-      <link>http://localhost:1313/tags/%E4%B8%AD%E5%9B%BD%E5%8C%BA-kindle/</link>
-      <pubDate>Thu, 30 Oct 2025 11:04:27 -0700</pubDate>
-      <guid>http://localhost:1313/tags/%E4%B8%AD%E5%9B%BD%E5%8C%BA-kindle/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>GA</title>
-      <link>http://localhost:1313/tags/ga/</link>
-      <pubDate>Tue, 28 Oct 2025 15:44:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/ga/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Google</title>
-      <link>http://localhost:1313/tags/google/</link>
-      <pubDate>Tue, 28 Oct 2025 15:44:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/google/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Google Analytics</title>
-      <link>http://localhost:1313/tags/google-analytics/</link>
-      <pubDate>Tue, 28 Oct 2025 15:44:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/google-analytics/</guid>
+      <title>Favicon.ico</title>
+      <link>https://nimblecode.tech/tags/favicon.ico/</link>
+      <pubDate>Tue, 04 Nov 2025 14:10:07 -0800</pubDate>
+      <guid>https://nimblecode.tech/tags/favicon.ico/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>http://localhost:1313/tags/hugo/</link>
+      <link>https://nimblecode.tech/tags/hugo/</link>
+      <pubDate>Tue, 04 Nov 2025 14:10:07 -0800</pubDate>
+      <guid>https://nimblecode.tech/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>双11</title>
+      <link>https://nimblecode.tech/tags/%E5%8F%8C11/</link>
+      <pubDate>Sun, 02 Nov 2025 13:08:15 -0800</pubDate>
+      <guid>https://nimblecode.tech/tags/%E5%8F%8C11/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>淘宝</title>
+      <link>https://nimblecode.tech/tags/%E6%B7%98%E5%AE%9D/</link>
+      <pubDate>Sun, 02 Nov 2025 13:08:15 -0800</pubDate>
+      <guid>https://nimblecode.tech/tags/%E6%B7%98%E5%AE%9D/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>淘宝客</title>
+      <link>https://nimblecode.tech/tags/%E6%B7%98%E5%AE%9D%E5%AE%A2/</link>
+      <pubDate>Sun, 02 Nov 2025 13:08:15 -0800</pubDate>
+      <guid>https://nimblecode.tech/tags/%E6%B7%98%E5%AE%9D%E5%AE%A2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Calibre</title>
+      <link>https://nimblecode.tech/tags/calibre/</link>
+      <pubDate>Thu, 30 Oct 2025 11:04:27 -0700</pubDate>
+      <guid>https://nimblecode.tech/tags/calibre/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DeDRM</title>
+      <link>https://nimblecode.tech/tags/dedrm/</link>
+      <pubDate>Thu, 30 Oct 2025 11:04:27 -0700</pubDate>
+      <guid>https://nimblecode.tech/tags/dedrm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kindle</title>
+      <link>https://nimblecode.tech/tags/kindle/</link>
+      <pubDate>Thu, 30 Oct 2025 11:04:27 -0700</pubDate>
+      <guid>https://nimblecode.tech/tags/kindle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>中国区 Kindle</title>
+      <link>https://nimblecode.tech/tags/%E4%B8%AD%E5%9B%BD%E5%8C%BA-kindle/</link>
+      <pubDate>Thu, 30 Oct 2025 11:04:27 -0700</pubDate>
+      <guid>https://nimblecode.tech/tags/%E4%B8%AD%E5%9B%BD%E5%8C%BA-kindle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GA</title>
+      <link>https://nimblecode.tech/tags/ga/</link>
       <pubDate>Tue, 28 Oct 2025 15:44:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/hugo/</guid>
+      <guid>https://nimblecode.tech/tags/ga/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Google</title>
+      <link>https://nimblecode.tech/tags/google/</link>
+      <pubDate>Tue, 28 Oct 2025 15:44:00 -0700</pubDate>
+      <guid>https://nimblecode.tech/tags/google/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Google Analytics</title>
+      <link>https://nimblecode.tech/tags/google-analytics/</link>
+      <pubDate>Tue, 28 Oct 2025 15:44:00 -0700</pubDate>
+      <guid>https://nimblecode.tech/tags/google-analytics/</guid>
       <description></description>
     </item>
     <item>
       <title>SEO</title>
-      <link>http://localhost:1313/tags/seo/</link>
+      <link>https://nimblecode.tech/tags/seo/</link>
       <pubDate>Tue, 28 Oct 2025 15:44:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/seo/</guid>
+      <guid>https://nimblecode.tech/tags/seo/</guid>
       <description></description>
     </item>
     <item>
       <title>Google Search Console</title>
-      <link>http://localhost:1313/tags/google-search-console/</link>
+      <link>https://nimblecode.tech/tags/google-search-console/</link>
       <pubDate>Sat, 25 Oct 2025 21:54:33 -0700</pubDate>
-      <guid>http://localhost:1313/tags/google-search-console/</guid>
+      <guid>https://nimblecode.tech/tags/google-search-console/</guid>
       <description></description>
     </item>
     <item>
       <title>GSC</title>
-      <link>http://localhost:1313/tags/gsc/</link>
+      <link>https://nimblecode.tech/tags/gsc/</link>
       <pubDate>Sat, 25 Oct 2025 21:54:33 -0700</pubDate>
-      <guid>http://localhost:1313/tags/gsc/</guid>
+      <guid>https://nimblecode.tech/tags/gsc/</guid>
       <description></description>
     </item>
     <item>
       <title>搜索引擎</title>
-      <link>http://localhost:1313/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/</link>
+      <link>https://nimblecode.tech/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/</link>
       <pubDate>Sat, 25 Oct 2025 21:54:33 -0700</pubDate>
-      <guid>http://localhost:1313/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/</guid>
+      <guid>https://nimblecode.tech/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/</guid>
       <description></description>
     </item>
     <item>
       <title>索引</title>
-      <link>http://localhost:1313/tags/%E7%B4%A2%E5%BC%95/</link>
+      <link>https://nimblecode.tech/tags/%E7%B4%A2%E5%BC%95/</link>
       <pubDate>Sat, 25 Oct 2025 21:54:33 -0700</pubDate>
-      <guid>http://localhost:1313/tags/%E7%B4%A2%E5%BC%95/</guid>
+      <guid>https://nimblecode.tech/tags/%E7%B4%A2%E5%BC%95/</guid>
       <description></description>
     </item>
     <item>
       <title>LLMs</title>
-      <link>http://localhost:1313/tags/llms/</link>
+      <link>https://nimblecode.tech/tags/llms/</link>
       <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
-      <guid>http://localhost:1313/tags/llms/</guid>
+      <guid>https://nimblecode.tech/tags/llms/</guid>
       <description></description>
     </item>
     <item>
       <title>Ollama</title>
-      <link>http://localhost:1313/tags/ollama/</link>
+      <link>https://nimblecode.tech/tags/ollama/</link>
       <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
-      <guid>http://localhost:1313/tags/ollama/</guid>
+      <guid>https://nimblecode.tech/tags/ollama/</guid>
       <description></description>
     </item>
     <item>
       <title>Spring AI</title>
-      <link>http://localhost:1313/tags/spring-ai/</link>
+      <link>https://nimblecode.tech/tags/spring-ai/</link>
       <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
-      <guid>http://localhost:1313/tags/spring-ai/</guid>
+      <guid>https://nimblecode.tech/tags/spring-ai/</guid>
       <description></description>
     </item>
     <item>
       <title>本地</title>
-      <link>http://localhost:1313/tags/%E6%9C%AC%E5%9C%B0/</link>
+      <link>https://nimblecode.tech/tags/%E6%9C%AC%E5%9C%B0/</link>
       <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
-      <guid>http://localhost:1313/tags/%E6%9C%AC%E5%9C%B0/</guid>
+      <guid>https://nimblecode.tech/tags/%E6%9C%AC%E5%9C%B0/</guid>
       <description></description>
     </item>
     <item>
       <title>大语言模型</title>
-      <link>http://localhost:1313/tags/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/</link>
+      <link>https://nimblecode.tech/tags/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/</link>
       <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
-      <guid>http://localhost:1313/tags/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/</guid>
+      <guid>https://nimblecode.tech/tags/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/</guid>
       <description></description>
     </item>
     <item>
       <title>Insights</title>
-      <link>http://localhost:1313/tags/insights/</link>
+      <link>https://nimblecode.tech/tags/insights/</link>
       <pubDate>Sat, 16 Aug 2025 14:46:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/insights/</guid>
+      <guid>https://nimblecode.tech/tags/insights/</guid>
       <description></description>
     </item>
     <item>
       <title>PostHog</title>
-      <link>http://localhost:1313/tags/posthog/</link>
+      <link>https://nimblecode.tech/tags/posthog/</link>
       <pubDate>Sat, 16 Aug 2025 14:46:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/posthog/</guid>
+      <guid>https://nimblecode.tech/tags/posthog/</guid>
       <description></description>
     </item>
     <item>
       <title>Trends</title>
-      <link>http://localhost:1313/tags/trends/</link>
+      <link>https://nimblecode.tech/tags/trends/</link>
       <pubDate>Sat, 16 Aug 2025 14:46:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/trends/</guid>
+      <guid>https://nimblecode.tech/tags/trends/</guid>
       <description></description>
     </item>
     <item>
       <title>EclEmma</title>
-      <link>http://localhost:1313/tags/eclemma/</link>
+      <link>https://nimblecode.tech/tags/eclemma/</link>
       <pubDate>Thu, 07 Aug 2025 19:52:39 -0700</pubDate>
-      <guid>http://localhost:1313/tags/eclemma/</guid>
+      <guid>https://nimblecode.tech/tags/eclemma/</guid>
       <description></description>
     </item>
     <item>
       <title>JaCoCo</title>
-      <link>http://localhost:1313/tags/jacoco/</link>
+      <link>https://nimblecode.tech/tags/jacoco/</link>
       <pubDate>Thu, 07 Aug 2025 19:52:39 -0700</pubDate>
-      <guid>http://localhost:1313/tags/jacoco/</guid>
+      <guid>https://nimblecode.tech/tags/jacoco/</guid>
       <description></description>
     </item>
     <item>
       <title>Java</title>
-      <link>http://localhost:1313/tags/java/</link>
+      <link>https://nimblecode.tech/tags/java/</link>
       <pubDate>Thu, 07 Aug 2025 19:52:39 -0700</pubDate>
-      <guid>http://localhost:1313/tags/java/</guid>
+      <guid>https://nimblecode.tech/tags/java/</guid>
       <description></description>
     </item>
     <item>
       <title>Unit Test Coverage</title>
-      <link>http://localhost:1313/tags/unit-test-coverage/</link>
+      <link>https://nimblecode.tech/tags/unit-test-coverage/</link>
       <pubDate>Thu, 07 Aug 2025 19:52:39 -0700</pubDate>
-      <guid>http://localhost:1313/tags/unit-test-coverage/</guid>
+      <guid>https://nimblecode.tech/tags/unit-test-coverage/</guid>
       <description></description>
     </item>
     <item>
       <title>Unit Testing</title>
-      <link>http://localhost:1313/tags/unit-testing/</link>
+      <link>https://nimblecode.tech/tags/unit-testing/</link>
       <pubDate>Thu, 07 Aug 2025 19:52:39 -0700</pubDate>
-      <guid>http://localhost:1313/tags/unit-testing/</guid>
+      <guid>https://nimblecode.tech/tags/unit-testing/</guid>
       <description></description>
     </item>
     <item>
       <title>单元测试</title>
-      <link>http://localhost:1313/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</link>
+      <link>https://nimblecode.tech/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</link>
       <pubDate>Thu, 07 Aug 2025 19:52:39 -0700</pubDate>
-      <guid>http://localhost:1313/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</guid>
+      <guid>https://nimblecode.tech/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</guid>
       <description></description>
     </item>
     <item>
       <title>覆盖率</title>
-      <link>http://localhost:1313/tags/%E8%A6%86%E7%9B%96%E7%8E%87/</link>
+      <link>https://nimblecode.tech/tags/%E8%A6%86%E7%9B%96%E7%8E%87/</link>
       <pubDate>Thu, 07 Aug 2025 19:52:39 -0700</pubDate>
-      <guid>http://localhost:1313/tags/%E8%A6%86%E7%9B%96%E7%8E%87/</guid>
+      <guid>https://nimblecode.tech/tags/%E8%A6%86%E7%9B%96%E7%8E%87/</guid>
       <description></description>
     </item>
     <item>
       <title>产品分析</title>
-      <link>http://localhost:1313/tags/%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%90/</link>
+      <link>https://nimblecode.tech/tags/%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%90/</link>
       <pubDate>Tue, 29 Jul 2025 14:15:45 -0700</pubDate>
-      <guid>http://localhost:1313/tags/%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%90/</guid>
+      <guid>https://nimblecode.tech/tags/%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%90/</guid>
       <description></description>
     </item>
     <item>
       <title>网站</title>
-      <link>http://localhost:1313/tags/%E7%BD%91%E7%AB%99/</link>
+      <link>https://nimblecode.tech/tags/%E7%BD%91%E7%AB%99/</link>
       <pubDate>Tue, 29 Jul 2025 14:15:45 -0700</pubDate>
-      <guid>http://localhost:1313/tags/%E7%BD%91%E7%AB%99/</guid>
+      <guid>https://nimblecode.tech/tags/%E7%BD%91%E7%AB%99/</guid>
       <description></description>
     </item>
     <item>
       <title>用户行为分析</title>
-      <link>http://localhost:1313/tags/%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90/</link>
+      <link>https://nimblecode.tech/tags/%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90/</link>
       <pubDate>Tue, 29 Jul 2025 14:15:45 -0700</pubDate>
-      <guid>http://localhost:1313/tags/%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90/</guid>
+      <guid>https://nimblecode.tech/tags/%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90/</guid>
       <description></description>
     </item>
     <item>
       <title>Bugs</title>
-      <link>http://localhost:1313/tags/bugs/</link>
+      <link>https://nimblecode.tech/tags/bugs/</link>
       <pubDate>Sat, 19 Jul 2025 16:25:27 -0700</pubDate>
-      <guid>http://localhost:1313/tags/bugs/</guid>
+      <guid>https://nimblecode.tech/tags/bugs/</guid>
       <description></description>
     </item>
     <item>
       <title>FindBugs</title>
-      <link>http://localhost:1313/tags/findbugs/</link>
+      <link>https://nimblecode.tech/tags/findbugs/</link>
       <pubDate>Sat, 19 Jul 2025 16:25:27 -0700</pubDate>
-      <guid>http://localhost:1313/tags/findbugs/</guid>
+      <guid>https://nimblecode.tech/tags/findbugs/</guid>
       <description></description>
     </item>
     <item>
       <title>SpotBugs</title>
-      <link>http://localhost:1313/tags/spotbugs/</link>
+      <link>https://nimblecode.tech/tags/spotbugs/</link>
       <pubDate>Sat, 19 Jul 2025 16:25:27 -0700</pubDate>
-      <guid>http://localhost:1313/tags/spotbugs/</guid>
+      <guid>https://nimblecode.tech/tags/spotbugs/</guid>
       <description></description>
     </item>
     <item>
       <title>Tool</title>
-      <link>http://localhost:1313/tags/tool/</link>
+      <link>https://nimblecode.tech/tags/tool/</link>
       <pubDate>Sat, 19 Jul 2025 16:25:27 -0700</pubDate>
-      <guid>http://localhost:1313/tags/tool/</guid>
+      <guid>https://nimblecode.tech/tags/tool/</guid>
       <description></description>
     </item>
     <item>
       <title>Ab</title>
-      <link>http://localhost:1313/tags/ab/</link>
+      <link>https://nimblecode.tech/tags/ab/</link>
       <pubDate>Wed, 02 Jul 2025 21:35:58 -0700</pubDate>
-      <guid>http://localhost:1313/tags/ab/</guid>
+      <guid>https://nimblecode.tech/tags/ab/</guid>
       <description></description>
     </item>
     <item>
       <title>AppachBench</title>
-      <link>http://localhost:1313/tags/appachbench/</link>
+      <link>https://nimblecode.tech/tags/appachbench/</link>
       <pubDate>Wed, 02 Jul 2025 21:35:58 -0700</pubDate>
-      <guid>http://localhost:1313/tags/appachbench/</guid>
+      <guid>https://nimblecode.tech/tags/appachbench/</guid>
       <description></description>
     </item>
     <item>
       <title>HTTP</title>
-      <link>http://localhost:1313/tags/http/</link>
+      <link>https://nimblecode.tech/tags/http/</link>
       <pubDate>Wed, 02 Jul 2025 21:35:58 -0700</pubDate>
-      <guid>http://localhost:1313/tags/http/</guid>
+      <guid>https://nimblecode.tech/tags/http/</guid>
       <description></description>
     </item>
     <item>
       <title>测试</title>
-      <link>http://localhost:1313/tags/%E6%B5%8B%E8%AF%95/</link>
+      <link>https://nimblecode.tech/tags/%E6%B5%8B%E8%AF%95/</link>
       <pubDate>Wed, 02 Jul 2025 21:35:58 -0700</pubDate>
-      <guid>http://localhost:1313/tags/%E6%B5%8B%E8%AF%95/</guid>
+      <guid>https://nimblecode.tech/tags/%E6%B5%8B%E8%AF%95/</guid>
       <description></description>
     </item>
     <item>
       <title>基准工具</title>
-      <link>http://localhost:1313/tags/%E5%9F%BA%E5%87%86%E5%B7%A5%E5%85%B7/</link>
+      <link>https://nimblecode.tech/tags/%E5%9F%BA%E5%87%86%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Wed, 02 Jul 2025 21:35:58 -0700</pubDate>
-      <guid>http://localhost:1313/tags/%E5%9F%BA%E5%87%86%E5%B7%A5%E5%85%B7/</guid>
+      <guid>https://nimblecode.tech/tags/%E5%9F%BA%E5%87%86%E5%B7%A5%E5%85%B7/</guid>
       <description></description>
     </item>
     <item>
       <title>稳定性测试</title>
-      <link>http://localhost:1313/tags/%E7%A8%B3%E5%AE%9A%E6%80%A7%E6%B5%8B%E8%AF%95/</link>
+      <link>https://nimblecode.tech/tags/%E7%A8%B3%E5%AE%9A%E6%80%A7%E6%B5%8B%E8%AF%95/</link>
       <pubDate>Wed, 02 Jul 2025 21:35:58 -0700</pubDate>
-      <guid>http://localhost:1313/tags/%E7%A8%B3%E5%AE%9A%E6%80%A7%E6%B5%8B%E8%AF%95/</guid>
+      <guid>https://nimblecode.tech/tags/%E7%A8%B3%E5%AE%9A%E6%80%A7%E6%B5%8B%E8%AF%95/</guid>
       <description></description>
     </item>
     <item>
       <title>性能测试</title>
-      <link>http://localhost:1313/tags/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/</link>
+      <link>https://nimblecode.tech/tags/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/</link>
       <pubDate>Wed, 02 Jul 2025 21:35:58 -0700</pubDate>
-      <guid>http://localhost:1313/tags/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/</guid>
+      <guid>https://nimblecode.tech/tags/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/</guid>
       <description></description>
     </item>
     <item>
       <title>压力测试</title>
-      <link>http://localhost:1313/tags/%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/</link>
+      <link>https://nimblecode.tech/tags/%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/</link>
       <pubDate>Wed, 02 Jul 2025 21:35:58 -0700</pubDate>
-      <guid>http://localhost:1313/tags/%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/</guid>
+      <guid>https://nimblecode.tech/tags/%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/</guid>
       <description></description>
     </item>
     <item>
       <title>Blog</title>
-      <link>http://localhost:1313/tags/blog/</link>
+      <link>https://nimblecode.tech/tags/blog/</link>
       <pubDate>Thu, 12 Jun 2025 18:49:14 -0700</pubDate>
-      <guid>http://localhost:1313/tags/blog/</guid>
+      <guid>https://nimblecode.tech/tags/blog/</guid>
       <description></description>
     </item>
     <item>
       <title>Domain</title>
-      <link>http://localhost:1313/tags/domain/</link>
+      <link>https://nimblecode.tech/tags/domain/</link>
       <pubDate>Thu, 12 Jun 2025 18:49:14 -0700</pubDate>
-      <guid>http://localhost:1313/tags/domain/</guid>
+      <guid>https://nimblecode.tech/tags/domain/</guid>
       <description></description>
     </item>
     <item>
       <title>GitHub Pages</title>
-      <link>http://localhost:1313/tags/github-pages/</link>
+      <link>https://nimblecode.tech/tags/github-pages/</link>
       <pubDate>Thu, 12 Jun 2025 18:49:14 -0700</pubDate>
-      <guid>http://localhost:1313/tags/github-pages/</guid>
+      <guid>https://nimblecode.tech/tags/github-pages/</guid>
       <description></description>
     </item>
     <item>
       <title>域名</title>
-      <link>http://localhost:1313/tags/%E5%9F%9F%E5%90%8D/</link>
+      <link>https://nimblecode.tech/tags/%E5%9F%9F%E5%90%8D/</link>
       <pubDate>Thu, 12 Jun 2025 18:49:14 -0700</pubDate>
-      <guid>http://localhost:1313/tags/%E5%9F%9F%E5%90%8D/</guid>
+      <guid>https://nimblecode.tech/tags/%E5%9F%9F%E5%90%8D/</guid>
       <description></description>
     </item>
     <item>
       <title>Mac</title>
-      <link>http://localhost:1313/tags/mac/</link>
+      <link>https://nimblecode.tech/tags/mac/</link>
       <pubDate>Mon, 31 Mar 2025 11:49:18 -0700</pubDate>
-      <guid>http://localhost:1313/tags/mac/</guid>
+      <guid>https://nimblecode.tech/tags/mac/</guid>
       <description></description>
     </item>
     <item>
       <title>Nginx</title>
-      <link>http://localhost:1313/tags/nginx/</link>
+      <link>https://nimblecode.tech/tags/nginx/</link>
       <pubDate>Mon, 31 Mar 2025 11:49:18 -0700</pubDate>
-      <guid>http://localhost:1313/tags/nginx/</guid>
+      <guid>https://nimblecode.tech/tags/nginx/</guid>
       <description></description>
     </item>
     <item>
       <title>Vite</title>
-      <link>http://localhost:1313/tags/vite/</link>
+      <link>https://nimblecode.tech/tags/vite/</link>
       <pubDate>Mon, 31 Mar 2025 11:49:18 -0700</pubDate>
-      <guid>http://localhost:1313/tags/vite/</guid>
+      <guid>https://nimblecode.tech/tags/vite/</guid>
       <description></description>
     </item>
     <item>
       <title>VUE</title>
-      <link>http://localhost:1313/tags/vue/</link>
+      <link>https://nimblecode.tech/tags/vue/</link>
       <pubDate>Mon, 31 Mar 2025 11:49:18 -0700</pubDate>
-      <guid>http://localhost:1313/tags/vue/</guid>
+      <guid>https://nimblecode.tech/tags/vue/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
+      <link>https://nimblecode.tech/tags/linux/</link>
       <pubDate>Thu, 08 Aug 2024 23:07:15 -0700</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
+      <guid>https://nimblecode.tech/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Lsof</title>
-      <link>http://localhost:1313/tags/lsof/</link>
+      <link>https://nimblecode.tech/tags/lsof/</link>
       <pubDate>Thu, 08 Aug 2024 23:07:15 -0700</pubDate>
-      <guid>http://localhost:1313/tags/lsof/</guid>
+      <guid>https://nimblecode.tech/tags/lsof/</guid>
       <description></description>
     </item>
     <item>
       <title>Scp</title>
-      <link>http://localhost:1313/tags/scp/</link>
+      <link>https://nimblecode.tech/tags/scp/</link>
       <pubDate>Thu, 08 Aug 2024 23:07:15 -0700</pubDate>
-      <guid>http://localhost:1313/tags/scp/</guid>
+      <guid>https://nimblecode.tech/tags/scp/</guid>
       <description></description>
     </item>
     <item>
       <title>Ssh</title>
-      <link>http://localhost:1313/tags/ssh/</link>
+      <link>https://nimblecode.tech/tags/ssh/</link>
       <pubDate>Thu, 08 Aug 2024 23:07:15 -0700</pubDate>
-      <guid>http://localhost:1313/tags/ssh/</guid>
+      <guid>https://nimblecode.tech/tags/ssh/</guid>
       <description></description>
     </item>
     <item>
       <title>Tar</title>
-      <link>http://localhost:1313/tags/tar/</link>
+      <link>https://nimblecode.tech/tags/tar/</link>
       <pubDate>Thu, 08 Aug 2024 23:07:15 -0700</pubDate>
-      <guid>http://localhost:1313/tags/tar/</guid>
+      <guid>https://nimblecode.tech/tags/tar/</guid>
       <description></description>
     </item>
     <item>
       <title>Maven</title>
-      <link>http://localhost:1313/tags/maven/</link>
+      <link>https://nimblecode.tech/tags/maven/</link>
       <pubDate>Wed, 07 Aug 2024 23:15:47 -0700</pubDate>
-      <guid>http://localhost:1313/tags/maven/</guid>
+      <guid>https://nimblecode.tech/tags/maven/</guid>
       <description></description>
     </item>
     <item>
       <title>Mvn</title>
-      <link>http://localhost:1313/tags/mvn/</link>
+      <link>https://nimblecode.tech/tags/mvn/</link>
       <pubDate>Wed, 07 Aug 2024 23:15:47 -0700</pubDate>
-      <guid>http://localhost:1313/tags/mvn/</guid>
+      <guid>https://nimblecode.tech/tags/mvn/</guid>
       <description></description>
     </item>
     <item>
       <title>Pom</title>
-      <link>http://localhost:1313/tags/pom/</link>
+      <link>https://nimblecode.tech/tags/pom/</link>
       <pubDate>Wed, 07 Aug 2024 23:15:47 -0700</pubDate>
-      <guid>http://localhost:1313/tags/pom/</guid>
+      <guid>https://nimblecode.tech/tags/pom/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker</title>
-      <link>http://localhost:1313/tags/docker/</link>
+      <link>https://nimblecode.tech/tags/docker/</link>
       <pubDate>Mon, 20 Mar 2023 19:52:44 +0800</pubDate>
-      <guid>http://localhost:1313/tags/docker/</guid>
+      <guid>https://nimblecode.tech/tags/docker/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-      <link>http://localhost:1313/tags/git/</link>
+      <link>https://nimblecode.tech/tags/git/</link>
       <pubDate>Sun, 12 Mar 2023 11:34:26 +0800</pubDate>
-      <guid>http://localhost:1313/tags/git/</guid>
+      <guid>https://nimblecode.tech/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>API</title>
-      <link>http://localhost:1313/tags/api/</link>
+      <link>https://nimblecode.tech/tags/api/</link>
       <pubDate>Tue, 27 Sep 2022 20:47:46 +0800</pubDate>
-      <guid>http://localhost:1313/tags/api/</guid>
+      <guid>https://nimblecode.tech/tags/api/</guid>
       <description></description>
     </item>
     <item>
       <title>Swagger</title>
-      <link>http://localhost:1313/tags/swagger/</link>
+      <link>https://nimblecode.tech/tags/swagger/</link>
       <pubDate>Tue, 27 Sep 2022 20:47:46 +0800</pubDate>
-      <guid>http://localhost:1313/tags/swagger/</guid>
+      <guid>https://nimblecode.tech/tags/swagger/</guid>
       <description></description>
     </item>
     <item>
       <title>Github</title>
-      <link>http://localhost:1313/tags/github/</link>
+      <link>https://nimblecode.tech/tags/github/</link>
       <pubDate>Thu, 15 Sep 2022 20:04:36 +0800</pubDate>
-      <guid>http://localhost:1313/tags/github/</guid>
+      <guid>https://nimblecode.tech/tags/github/</guid>
       <description></description>
     </item>
     <item>
       <title>Container</title>
-      <link>http://localhost:1313/tags/container/</link>
+      <link>https://nimblecode.tech/tags/container/</link>
       <pubDate>Thu, 15 Sep 2022 19:56:51 +0800</pubDate>
-      <guid>http://localhost:1313/tags/container/</guid>
+      <guid>https://nimblecode.tech/tags/container/</guid>
       <description></description>
     </item>
     <item>
       <title>Kubernetes</title>
-      <link>http://localhost:1313/tags/kubernetes/</link>
+      <link>https://nimblecode.tech/tags/kubernetes/</link>
       <pubDate>Thu, 15 Sep 2022 19:56:51 +0800</pubDate>
-      <guid>http://localhost:1313/tags/kubernetes/</guid>
+      <guid>https://nimblecode.tech/tags/kubernetes/</guid>
       <description></description>
     </item>
     <item>
       <title>Virtualization</title>
-      <link>http://localhost:1313/tags/virtualization/</link>
+      <link>https://nimblecode.tech/tags/virtualization/</link>
       <pubDate>Thu, 15 Sep 2022 19:56:51 +0800</pubDate>
-      <guid>http://localhost:1313/tags/virtualization/</guid>
+      <guid>https://nimblecode.tech/tags/virtualization/</guid>
       <description></description>
     </item>
     <item>
       <title>Curl</title>
-      <link>http://localhost:1313/tags/curl/</link>
+      <link>https://nimblecode.tech/tags/curl/</link>
       <pubDate>Thu, 15 Sep 2022 19:36:09 +0800</pubDate>
-      <guid>http://localhost:1313/tags/curl/</guid>
+      <guid>https://nimblecode.tech/tags/curl/</guid>
       <description></description>
     </item>
     <item>
       <title>Wget</title>
-      <link>http://localhost:1313/tags/wget/</link>
+      <link>https://nimblecode.tech/tags/wget/</link>
       <pubDate>Thu, 15 Sep 2022 19:36:09 +0800</pubDate>
-      <guid>http://localhost:1313/tags/wget/</guid>
+      <guid>https://nimblecode.tech/tags/wget/</guid>
       <description></description>
     </item>
     <item>
       <title>Picture</title>
-      <link>http://localhost:1313/tags/picture/</link>
+      <link>https://nimblecode.tech/tags/picture/</link>
       <pubDate>Wed, 17 Aug 2022 22:28:08 +0800</pubDate>
-      <guid>http://localhost:1313/tags/picture/</guid>
+      <guid>https://nimblecode.tech/tags/picture/</guid>
       <description></description>
     </item>
     <item>
       <title>Cloc</title>
-      <link>http://localhost:1313/tags/cloc/</link>
+      <link>https://nimblecode.tech/tags/cloc/</link>
       <pubDate>Wed, 08 Dec 2021 11:44:28 +0800</pubDate>
-      <guid>http://localhost:1313/tags/cloc/</guid>
+      <guid>https://nimblecode.tech/tags/cloc/</guid>
       <description></description>
     </item>
     <item>
       <title>Product</title>
-      <link>http://localhost:1313/tags/product/</link>
+      <link>https://nimblecode.tech/tags/product/</link>
       <pubDate>Thu, 07 Oct 2021 10:27:08 +0800</pubDate>
-      <guid>http://localhost:1313/tags/product/</guid>
+      <guid>https://nimblecode.tech/tags/product/</guid>
       <description></description>
     </item>
     <item>
       <title>Roadmap</title>
-      <link>http://localhost:1313/tags/roadmap/</link>
+      <link>https://nimblecode.tech/tags/roadmap/</link>
       <pubDate>Thu, 07 Oct 2021 10:27:08 +0800</pubDate>
-      <guid>http://localhost:1313/tags/roadmap/</guid>
+      <guid>https://nimblecode.tech/tags/roadmap/</guid>
       <description></description>
     </item>
   </channel>

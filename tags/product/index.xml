@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Product on Nimble Code Tech</title>
-    <link>http://localhost:1313/tags/product/</link>
+    <link>https://nimblecode.tech/tags/product/</link>
     <description>Recent content in Product on Nimble Code Tech</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh</language>
     <lastBuildDate>Thu, 07 Oct 2021 10:27:08 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/product/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nimblecode.tech/tags/product/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why We Make Our Product Roadmaps Public [翻译]</title>
-      <link>http://localhost:1313/posts/why-we-make-our-product-roadmaps-public/</link>
+      <link>https://nimblecode.tech/posts/why-we-make-our-product-roadmaps-public/</link>
       <pubDate>Thu, 07 Oct 2021 10:27:08 +0800</pubDate>
-      <guid>http://localhost:1313/posts/why-we-make-our-product-roadmaps-public/</guid>
+      <guid>https://nimblecode.tech/posts/why-we-make-our-product-roadmaps-public/</guid>
       <description>WSO2在这篇文章中讲述了他们为什么要把产品路线图开放出来。</description>
     </item>
   </channel>
