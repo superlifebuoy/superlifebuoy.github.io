@@ -16,6 +16,13 @@
       <description>使用Hugo建站后，通过 Microsoft Webmaster Tools 将网站内容加入 Bing 搜索引擎索引中去。</description>
     </item>
     <item>
+      <title>让 API 更好的一些小事 [翻译]</title>
+      <link>https://nimblecode.tech/posts/small-things-that-make-apis-a-little-bit-better/</link>
+      <pubDate>Wed, 05 Nov 2025 20:32:31 +0800</pubDate>
+      <guid>https://nimblecode.tech/posts/small-things-that-make-apis-a-little-bit-better/</guid>
+      <description>讲述如何让 API 更好的一些实践方法。</description>
+    </item>
+    <item>
       <title>Hugo 网站配置 favicon.ico</title>
       <link>https://nimblecode.tech/posts/add-favicon/</link>
       <pubDate>Tue, 04 Nov 2025 14:10:07 -0800</pubDate>
@@ -51,7 +58,7 @@
       <description>使用Hugo建站后，通过Google Search Console将网站内容加入Google搜索引擎索引中去。</description>
     </item>
     <item>
-      <title>Ollama &#43; Spring实现本地大语言模型验证</title>
+      <title>本地验证大语言模型：Ollama &#43; Spring</title>
       <link>https://nimblecode.tech/posts/local-llms/</link>
       <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
       <guid>https://nimblecode.tech/posts/local-llms/</guid>
@@ -238,13 +245,6 @@ Host anotherHost
       <pubDate>Thu, 07 Oct 2021 10:27:08 +0800</pubDate>
       <guid>https://nimblecode.tech/posts/why-we-make-our-product-roadmaps-public/</guid>
       <description>WSO2在这篇文章中讲述了他们为什么要把产品路线图开放出来。</description>
-    </item>
-    <item>
-      <title>Small Things That Make Apis a Little Bit Better [翻译]</title>
-      <link>https://nimblecode.tech/posts/small-things-that-make-apis-a-little-bit-better/</link>
-      <pubDate>Mon, 12 Jul 2021 20:32:31 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/small-things-that-make-apis-a-little-bit-better/</guid>
-      <description>讲述如何让API更好的一些实践方法。</description>
     </item>
     <item>
       <title>Hugo快速入门</title>

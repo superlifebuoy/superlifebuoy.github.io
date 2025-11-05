@@ -9,7 +9,7 @@
     <lastBuildDate>Fri, 03 Oct 2025 14:35:52 -0700</lastBuildDate>
     <atom:link href="https://nimblecode.tech/tags/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ollama &#43; Spring实现本地大语言模型验证</title>
+      <title>本地验证大语言模型：Ollama &#43; Spring</title>
       <link>https://nimblecode.tech/posts/local-llms/</link>
       <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
       <guid>https://nimblecode.tech/posts/local-llms/</guid>
