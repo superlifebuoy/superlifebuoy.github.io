@@ -2,11 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nimblecode.tech/tags/microsoft/</loc>
-    <lastmod>2025-11-05T10:44:20-08:00</lastmod>
-  </url><url>
     <loc>https://nimblecode.tech/</loc>
-    <lastmod>2025-11-05T10:44:20-08:00</lastmod>
+    <lastmod>2025-11-06T13:08:15-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -19,7 +16,7 @@
                 />
   </url><url>
     <loc>https://nimblecode.tech/posts/</loc>
-    <lastmod>2025-11-05T10:44:20-08:00</lastmod>
+    <lastmod>2025-11-06T13:08:15-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -30,6 +27,34 @@
                 hreflang="zh"
                 href="https://nimblecode.tech/posts/"
                 />
+  </url><url>
+    <loc>https://nimblecode.tech/tags/</loc>
+    <lastmod>2025-11-06T13:08:15-08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nimblecode.tech/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://nimblecode.tech/tags/"
+                />
+  </url><url>
+    <loc>https://nimblecode.tech/tags/%E5%8F%8C11/</loc>
+    <lastmod>2025-11-06T13:08:15-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/%E6%B7%98%E5%AE%9D/</loc>
+    <lastmod>2025-11-06T13:08:15-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/%E6%B7%98%E5%AE%9D%E5%AE%A2/</loc>
+    <lastmod>2025-11-06T13:08:15-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/posts/tao-partner-test/</loc>
+    <lastmod>2025-11-06T13:08:15-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/microsoft/</loc>
+    <lastmod>2025-11-05T10:44:20-08:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/tags/seo/</loc>
     <lastmod>2025-11-05T10:44:20-08:00</lastmod>
@@ -42,19 +67,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://nimblecode.tech/tags/seo/"
-                />
-  </url><url>
-    <loc>https://nimblecode.tech/tags/</loc>
-    <lastmod>2025-11-05T10:44:20-08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://nimblecode.tech/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://nimblecode.tech/tags/"
                 />
   </url><url>
     <loc>https://nimblecode.tech/tags/webmaster-tools/</loc>
@@ -99,18 +111,6 @@
   </url><url>
     <loc>https://nimblecode.tech/posts/add-favicon/</loc>
     <lastmod>2025-11-04T14:10:07-08:00</lastmod>
-  </url><url>
-    <loc>https://nimblecode.tech/tags/%E5%8F%8C11/</loc>
-    <lastmod>2025-11-02T13:08:15-08:00</lastmod>
-  </url><url>
-    <loc>https://nimblecode.tech/posts/tao-partner-test/</loc>
-    <lastmod>2025-11-02T13:08:15-08:00</lastmod>
-  </url><url>
-    <loc>https://nimblecode.tech/tags/%E6%B7%98%E5%AE%9D/</loc>
-    <lastmod>2025-11-02T13:08:15-08:00</lastmod>
-  </url><url>
-    <loc>https://nimblecode.tech/tags/%E6%B7%98%E5%AE%9D%E5%AE%A2/</loc>
-    <lastmod>2025-11-02T13:08:15-08:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/tags/calibre/</loc>
     <lastmod>2025-10-30T11:04:27-07:00</lastmod>
