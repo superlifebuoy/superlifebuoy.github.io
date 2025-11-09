@@ -202,25 +202,25 @@
 
 </div>
   </header> 
-  <div class="post-content"><h1 id="1-背景">1 背景<a hidden class="anchor" aria-hidden="true" href="#1-背景">#</a></h1>
+  <div class="post-content"><h2 id="1-背景">1 背景<a hidden class="anchor" aria-hidden="true" href="#1-背景">#</a></h2>
 <p>亚马逊中国通知即将关闭 Kindle 服务后，我通过 X 上 @yihong0618 的工具批量下载了之前购买的图书。之后通过 Calibre 与 DeDRM 陆续转成PDF文档，在 iPad 上得以继续阅读。但是 iPad 的屏幕阅读体验、重量、电量续航都达不到 Kindle 阅读器的体感，这是我一直以来的痛点。</p>
 <p>最近我新买了一台 Kindle Colorsoft 。</p>
 <p><img alt="kindle-cs-1" loading="lazy" src="/import-kindle-cn-books/kindle-cs-1.png">
 <img alt="kindle-cs-2" loading="lazy" src="/import-kindle-cn-books/kindle-cs-2.png"></p>
 <p>久违的阅读体验感，让我想尝试将之前保存的中国区 Kindle 图书导入新 Kindle Colosofte。</p>
-<h2 id="11-前置条件">1.1 前置条件<a hidden class="anchor" aria-hidden="true" href="#11-前置条件">#</a></h2>
+<h3 id="11-前置条件">1.1 前置条件<a hidden class="anchor" aria-hidden="true" href="#11-前置条件">#</a></h3>
 <p>要实现这个目标，有两个必要前提：</p>
 <ul>
 <li>保存有中国区 Kindle 图书的文件，一般是<code>.azw3</code>格式；</li>
 <li>保存有导出图书文件时的 Kindle 设备号，一般是<code>G</code>开头的16位字符串。</li>
 </ul>
 <p>这两个条件缺一不可。</p>
-<h1 id="2-安装-calibre-与-dedrm">2 安装 Calibre 与 DeDRM<a hidden class="anchor" aria-hidden="true" href="#2-安装-calibre-与-dedrm">#</a></h1>
+<h2 id="2-安装-calibre-与-dedrm">2 安装 Calibre 与 DeDRM<a hidden class="anchor" aria-hidden="true" href="#2-安装-calibre-与-dedrm">#</a></h2>
 <p>Kindle 图书文件的转换需要用到 Calibre 与 DeDRM 这两个软件。</p>
 <p>Calibre 是一款功能强大、免费的电子书管理软件，它被广泛认为是电子书爱好者的“一站式解决方案”。它不仅能帮助用户组织和管理庞大的电子书库，还能实现格式转换、编辑、同步到阅读器等一系列复杂操作。</p>
 <p>DeDRM 是 Calibre 社区开发和维护的一个非常著名的第三方插件包，它的主要目的是移除电子书文件上的数字版权管理 (DRM) 保护。</p>
 <p><strong>希望大家只转换自己已购买的电子书文件，不要转换非自购的电子书文件。</strong></p>
-<h2 id="21-calibre-与-dedrm-的版本匹配">2.1 Calibre 与 DeDRM 的版本匹配<a hidden class="anchor" aria-hidden="true" href="#21-calibre-与-dedrm-的版本匹配">#</a></h2>
+<h3 id="21-calibre-与-dedrm-的版本匹配">2.1 Calibre 与 DeDRM 的版本匹配<a hidden class="anchor" aria-hidden="true" href="#21-calibre-与-dedrm-的版本匹配">#</a></h3>
 <p>DeDRM 的最新版本是 <a href="https://github.com/apprenticeharper/DeDRM_tools/releases/tag/v7.2.1">v7.2.1</a> ，发布时间是2021年4月11日。之后作者再也没有发布过新版本了。根据 README 的描述：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Users with calibre 5.x or later should use release 7.2.0 or later of the tools. 
 </span></span><span style="display:flex;"><span>Users with calibe 4.x or earlier should use release 6.8.x of the tools.
@@ -228,7 +228,7 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Calibre: 5.44
 </span></span><span style="display:flex;"><span>DeDRM: 7.2.1
 </span></span></code></pre></div><p><strong>我看到有人在 Windows 笔记本上使用 Calibre 7.7 版本正常配置 DeDRM 7.2.1。估计是电脑系统差异的影响，我的是 M4 的 Mac mini。</strong></p>
-<h2 id="22-下载安装-calibre-与-dedrm">2.2 下载/安装 Calibre 与 DeDRM<a hidden class="anchor" aria-hidden="true" href="#22-下载安装-calibre-与-dedrm">#</a></h2>
+<h3 id="22-下载安装-calibre-与-dedrm">2.2 下载/安装 Calibre 与 DeDRM<a hidden class="anchor" aria-hidden="true" href="#22-下载安装-calibre-与-dedrm">#</a></h3>
 <p>Calibre 5.44 的下载，需要到历史仓库中完成。地址在<a href="https://download.calibre-ebook.com/5.44.0/">这里</a>。</p>
 <p><img alt="calibre" loading="lazy" src="/import-kindle-cn-books/calibre.png"></p>
 <p>根据操作系统选择对应版本下载、安装即可。</p>
@@ -243,17 +243,17 @@
 <img alt="calibre-3" loading="lazy" src="/import-kindle-cn-books/calibre-3.png">
 <img alt="calibre-4" loading="lazy" src="/import-kindle-cn-books/calibre-4.png">
 <img alt="calibre-5" loading="lazy" src="/import-kindle-cn-books/calibre-5.png"></p>
-<h2 id="23-配置-dedrm">2.3 配置 DeDRM<a hidden class="anchor" aria-hidden="true" href="#23-配置-dedrm">#</a></h2>
+<h3 id="23-配置-dedrm">2.3 配置 DeDRM<a hidden class="anchor" aria-hidden="true" href="#23-配置-dedrm">#</a></h3>
 <p>要使得 Calibre 能够转换中国区 Kindle 图书文件，还需要配置 DeDRM 插件。在 Calibre 的 Plug-ins 页面选择之前安装的 DeDRM ，再点击“Customise plug-in” -&gt; “eInk Kindle ebooks”，输入之前<strong>导出图书文件时的 Kindle 设备号</strong>即可。</p>
 <p><img alt="dedrm-1" loading="lazy" src="/import-kindle-cn-books/dedrm-1.png">
 <img alt="dedrm-2" loading="lazy" src="/import-kindle-cn-books/dedrm-2.png"></p>
-<h1 id="3-转换图书文件与导入新-kindle">3 转换图书文件与导入新 Kindle<a hidden class="anchor" aria-hidden="true" href="#3-转换图书文件与导入新-kindle">#</a></h1>
+<h2 id="3-转换图书文件与导入新-kindle">3 转换图书文件与导入新 Kindle<a hidden class="anchor" aria-hidden="true" href="#3-转换图书文件与导入新-kindle">#</a></h2>
 <p>完成 Calibre 与 DeDRM 的安装与配置后，就可以转换中国区 Kindle 图书了。</p>
-<h2 id="31-calibre-导入图书文件">3.1 Calibre 导入图书文件<a hidden class="anchor" aria-hidden="true" href="#31-calibre-导入图书文件">#</a></h2>
+<h3 id="31-calibre-导入图书文件">3.1 Calibre 导入图书文件<a hidden class="anchor" aria-hidden="true" href="#31-calibre-导入图书文件">#</a></h3>
 <p>Calibre 导入书籍非常简单，可以点击“Add books”按钮来完成，也可以将图书文件直接拖拽到 Calibre 界面中间即可。</p>
 <p><img alt="calibre-import" loading="lazy" src="/import-kindle-cn-books/calibre-import.png"></p>
 <hr>
-<h2 id="32-calibre-转换图书文件">3.2 Calibre 转换图书文件<a hidden class="anchor" aria-hidden="true" href="#32-calibre-转换图书文件">#</a></h2>
+<h3 id="32-calibre-转换图书文件">3.2 Calibre 转换图书文件<a hidden class="anchor" aria-hidden="true" href="#32-calibre-转换图书文件">#</a></h3>
 <p>因为之前已经为 Calibre 配置好了 DeDRM 插件，所以在导入图书文件到 Calibre 时就已经自动将其转换成去除 DRM 保护的<code>.azw3</code>文件了。选中一本图书点击“o”，或者点击右侧“Click to open”，可以找到该图书文件的地址。</p>
 <p><img alt="calibre-trans-1" loading="lazy" src="/import-kindle-cn-books/calibre-trans-1.png">
 <img alt="calibre-trans-2" loading="lazy" src="/import-kindle-cn-books/calibre-trans-2.png"></p>
@@ -261,7 +261,7 @@
 <p>如果想要把图书文件转成其他格式，可以点击“Convert books”进入转换界面。右上角可以选择转换的目标格式，确认后点击右下角的“OK”即可。例如我之前就是转成<code>.pdf</code>文档，然后导入 Apple Books 查看的。</p>
 <p><img alt="calibre-trans-3" loading="lazy" src="/import-kindle-cn-books/calibre-trans-3.png">
 <img alt="calibre-trans-4" loading="lazy" src="/import-kindle-cn-books/calibre-trans-4.png"></p>
-<h2 id="33-导入新-kindle">3.3 导入新 Kindle<a hidden class="anchor" aria-hidden="true" href="#33-导入新-kindle">#</a></h2>
+<h3 id="33-导入新-kindle">3.3 导入新 Kindle<a hidden class="anchor" aria-hidden="true" href="#33-导入新-kindle">#</a></h3>
 <p>使用 USB 线将电脑与 Kindle 连接。</p>
 <p>如果是 Mac 的话，连接后并不能直接将转换好的图书文件拖拽到 Kindle 中去，而是需要去亚马逊下载特定的管理软件。</p>
 <p>在<a href="https://www.amazon.com/gp/help/customer/display.html/ref=hp_Connect_USB_MTP?nodeId=TCUBEdEkbIhK07ysFu">这里</a>下载<code>SendToKindleForMac-installer.pkg</code>安装文件。</p>
@@ -272,7 +272,7 @@
 <p>噔噔噔噔～～～ 就可以在新 Kindle 中阅读之前购买的中国区 Kindle 图书啦～</p>
 <p><img alt="kindle-import-3" loading="lazy" src="/import-kindle-cn-books/kindle-import-3.png">
 <img alt="kindle-import-4" loading="lazy" src="/import-kindle-cn-books/kindle-import-4.png"></p>
-<h1 id="4-最后">4 最后<a hidden class="anchor" aria-hidden="true" href="#4-最后">#</a></h1>
+<h2 id="4-最后">4 最后<a hidden class="anchor" aria-hidden="true" href="#4-最后">#</a></h2>
 <p>如果你也是 Kindle 爱好者，如果你还有之前购买的 Kindle 图书文件，希望这篇文章可以帮到你一点点～</p>
 <p><img alt="last" loading="lazy" src="/import-kindle-cn-books/last.png"></p>
 

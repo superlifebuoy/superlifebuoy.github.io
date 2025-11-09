@@ -202,34 +202,34 @@
 </div>
   </header> 
   <div class="post-content"><p>业务洞察(Insight)是产品分析的重要组成部分。它能使你可视化地观察已发生的事件和动作，进而分析用户是如何使用产品的。</p>
-<h1 id="1-业务洞察类型">1 业务洞察类型<a hidden class="anchor" aria-hidden="true" href="#1-业务洞察类型">#</a></h1>
+<h2 id="1-业务洞察类型">1 业务洞察类型<a hidden class="anchor" aria-hidden="true" href="#1-业务洞察类型">#</a></h2>
 <p>PostHog目前提供了7种类型的业务洞察(Insight)。</p>
-<h2 id="11-趋势trends">1.1 趋势(Trends)<a hidden class="anchor" aria-hidden="true" href="#11-趋势trends">#</a></h2>
+<h3 id="11-趋势trends">1.1 趋势(Trends)<a hidden class="anchor" aria-hidden="true" href="#11-趋势trends">#</a></h3>
 <p><img alt="trends" loading="lazy" src="/posthog-creating-insights/trends.png"></p>
 <p>趋势功能(Trends)可以帮助跟踪指标随时间的变化，也可以通过公式轻松创建自定义的指标。</p>
-<h2 id="12-漏斗funnels">1.2 漏斗(Funnels)<a hidden class="anchor" aria-hidden="true" href="#12-漏斗funnels">#</a></h2>
+<h3 id="12-漏斗funnels">1.2 漏斗(Funnels)<a hidden class="anchor" aria-hidden="true" href="#12-漏斗funnels">#</a></h3>
 <p><img alt="funnels" loading="lazy" src="/posthog-creating-insights/funnels.png"></p>
 <p>使用漏斗分析(Funnels)可以理解用户使用产品时，在各步骤之间的转化情况，进而识别业务流程成功完成或失败的可能原因，以及跟踪转化率随时间的变化情况。</p>
-<h2 id="13-留存分析retention">1.3 留存分析(Retention)<a hidden class="anchor" aria-hidden="true" href="#13-留存分析retention">#</a></h2>
+<h3 id="13-留存分析retention">1.3 留存分析(Retention)<a hidden class="anchor" aria-hidden="true" href="#13-留存分析retention">#</a></h3>
 <p><img alt="retention" loading="lazy" src="/posthog-creating-insights/retention.png"></p>
 <p>留存分析功能(Retention)可以帮助观察用户返回产品的频率，并比较不同用户群体的留存情况。</p>
-<h2 id="14-用户路径user-paths">1.4 用户路径(User Paths)<a hidden class="anchor" aria-hidden="true" href="#14-用户路径user-paths">#</a></h2>
+<h3 id="14-用户路径user-paths">1.4 用户路径(User Paths)<a hidden class="anchor" aria-hidden="true" href="#14-用户路径user-paths">#</a></h3>
 <p><img alt="user-paths" loading="lazy" src="/posthog-creating-insights/user-paths.png"></p>
 <p>用户路径(User Paths)可以帮助了解用户在应用或网站中进行操作的流程，在哪些环节用户被卡住，以及用户为何没有发现新功能。</p>
-<h2 id="15-粘性分析stickiness">1.5 粘性分析(Stickiness)<a hidden class="anchor" aria-hidden="true" href="#15-粘性分析stickiness">#</a></h2>
+<h3 id="15-粘性分析stickiness">1.5 粘性分析(Stickiness)<a hidden class="anchor" aria-hidden="true" href="#15-粘性分析stickiness">#</a></h3>
 <p><img alt="stickiness" loading="lazy" src="/posthog-creating-insights/stickiness.png"></p>
 <p>利用粘性分析(Stickiness)可以深入分析用户与产品互动的深度，进而识别出最活跃的用户群体，并确定哪些功能最能驱动用户进行互动。</p>
-<h2 id="16-生命周期lifecycle">1.6 生命周期(Lifecycle)<a hidden class="anchor" aria-hidden="true" href="#16-生命周期lifecycle">#</a></h2>
+<h3 id="16-生命周期lifecycle">1.6 生命周期(Lifecycle)<a hidden class="anchor" aria-hidden="true" href="#16-生命周期lifecycle">#</a></h3>
 <p><img alt="lifecycle" loading="lazy" src="/posthog-creating-insights/lifecycle.png"></p>
 <p>生命周期(Lifecycle)可以将用户分为新用户、回头客、复活用户和休眠用户，从而来评估产品的健康状况。</p>
-<h2 id="17-sqlstructured-query-language">1.7 SQL(Structured Query Language)<a hidden class="anchor" aria-hidden="true" href="#17-sqlstructured-query-language">#</a></h2>
+<h3 id="17-sqlstructured-query-language">1.7 SQL(Structured Query Language)<a hidden class="anchor" aria-hidden="true" href="#17-sqlstructured-query-language">#</a></h3>
 <p><img alt="sql" loading="lazy" src="/posthog-creating-insights/sql.png"></p>
 <p>使用SQL可以基于现有数据，创建自定义数据表。</p>
 <p>接下来选择Trends进行更加详细的介绍。</p>
-<h1 id="2-趋势洞察trends">2 趋势洞察(Trends)<a hidden class="anchor" aria-hidden="true" href="#2-趋势洞察trends">#</a></h1>
+<h2 id="2-趋势洞察trends">2 趋势洞察(Trends)<a hidden class="anchor" aria-hidden="true" href="#2-趋势洞察trends">#</a></h2>
 <p>Trends可以用多种方式绘制来自用户、事件或属性的数据。通过Trends有助于发现数据中的模式，也可以监控产品以确保一切运行顺畅。</p>
 <p>Trends是PostHog中的默认洞察类型。</p>
-<h2 id="21-从trends中能学到什么">2.1 从Trends中能学到什么？<a hidden class="anchor" aria-hidden="true" href="#21-从trends中能学到什么">#</a></h2>
+<h3 id="21-从trends中能学到什么">2.1 从Trends中能学到什么？<a hidden class="anchor" aria-hidden="true" href="#21-从trends中能学到什么">#</a></h3>
 <p>通过Trends，我们可以：</p>
 <ul>
 <li>了解产品最重要的指标，随时间的变化情况；</li>
@@ -247,7 +247,7 @@
 <p><img alt="hogflix-bar-h" loading="lazy" src="/posthog-creating-insights/hogflix-bar-h.png"></p>
 <p>此外，Trends还可以根据属性对这些用户进行分类。例如，上图中的条形图显示了按国家分类的Hogflix观众。</p>
 <p>除了条形图(Bar chart)外，Trends还支持线图、面积图、饼图、表格等类型的显示。</p>
-<h2 id="22-创建一个trends">2.2 创建一个Trends<a hidden class="anchor" aria-hidden="true" href="#22-创建一个trends">#</a></h2>
+<h3 id="22-创建一个trends">2.2 创建一个Trends<a hidden class="anchor" aria-hidden="true" href="#22-创建一个trends">#</a></h3>
 <p>创建一个新的Trends需要5个步骤：</p>
 <ol>
 <li>新建一个Trends；</li>
@@ -256,16 +256,16 @@
 <li>调整时间范围；</li>
 <li>保存并分享这个Trends。</li>
 </ol>
-<h3 id="221-创建一个trends">2.2.1 创建一个Trends<a hidden class="anchor" aria-hidden="true" href="#221-创建一个trends">#</a></h3>
+<h4 id="221-创建一个trends">2.2.1 创建一个Trends<a hidden class="anchor" aria-hidden="true" href="#221-创建一个trends">#</a></h4>
 <p>要创建新的Trends，可以在页面左侧菜单栏点击“Product analytics(产品分析)”菜单。在这里还可以查看所有已保存的业务洞察(Insights)列表。然后点击右上角的“New insight”按钮——也可以点击左侧菜单栏中“Product analytics(产品分析)”旁边的+号。</p>
 <p>Trends是默认的业务洞察类型，因此点击“New insight”会默认创建趋势洞察。</p>
-<h3 id="222-配置这个trends">2.2.2 配置这个Trends<a hidden class="anchor" aria-hidden="true" href="#222-配置这个trends">#</a></h3>
+<h4 id="222-配置这个trends">2.2.2 配置这个Trends<a hidden class="anchor" aria-hidden="true" href="#222-配置这个trends">#</a></h4>
 <p>Trends默认的事件类型是“Pageview”。点击“A”图标右侧的下拉按钮，可以更改Trends当前使用的事件类型。</p>
 <p><img alt="trends-event" loading="lazy" src="/posthog-creating-insights/trends-event.png"></p>
 <p>这个下拉按钮的内容允许我们查看所有可选的事件类型(event)和动作类型(action)，并选择要用于该Trends的类型数据。</p>
 <p>默认情况下，PostHog会对各个分类事件的数据做总数聚合。我们可以点击下拉菜单选择其他指标，例如唯一用户(Unique users)或日活跃用户(Daily active users)。通过<a href="https://posthog.com/docs/product-analytics/trends/aggregations">事件和属性聚合文档</a>可以查看更加完整的说明。</p>
 <p>**注意：**图表中的虚线表示该时段的数据仍在收集中。例如，如果选择过去30天的日期范围并按周分组，则当前所在的周将显示为虚线。因为该周尚未结束。</p>
-<h3 id="223-添加基于属性的过滤器">2.2.3 添加基于属性的过滤器<a hidden class="anchor" aria-hidden="true" href="#223-添加基于属性的过滤器">#</a></h3>
+<h4 id="223-添加基于属性的过滤器">2.2.3 添加基于属性的过滤器<a hidden class="anchor" aria-hidden="true" href="#223-添加基于属性的过滤器">#</a></h4>
 <p>配置好一个Trends后，常常需要对整体数据的其中一部分进行进一步分析。例如，对网站PV数据中特定URL页面的浏览数据做分析，或特定国家/地区用户访问的数据做分析。要实现这个功能，就可以使用属性过滤器(property filter)。</p>
 <p>要为Trends添加属性过滤器，需要点击事件名称旁边的“过滤器”图标，然后点击“Add filter”按钮。我们在弹出的下拉菜单中选择要基于什么属性进行筛选即可。</p>
 <style>
@@ -326,20 +326,20 @@
 
 
 <p>点击“Add graph series”可以添加更多数据分类图表。阅读<a href="https://posthog.com/docs/product-analytics/trends/filters">过滤器文档</a>可以了解更多详细信息。</p>
-<h3 id="224-调整时间范围">2.2.4 调整时间范围<a hidden class="anchor" aria-hidden="true" href="#224-调整时间范围">#</a></h3>
+<h4 id="224-调整时间范围">2.2.4 调整时间范围<a hidden class="anchor" aria-hidden="true" href="#224-调整时间范围">#</a></h4>
 <p>Trends的默认时间范围是过去7天。如果需要更改此设置，可以点击显示“Last 7 days”的下拉菜单，并选择新的时间范围。此外，还可以选择事件的分组方式，例如按小时、天、周或月分组。</p>
 <p><img alt="time-range" loading="lazy" src="/posthog-creating-insights/time-range.png"></p>
 <p>Smoothing(平滑处理——即应用7天或28天的滚动平均值)在数据按天分组时可用。这个功能可以消除数据中的过多波动，并在噪声较大的数据中识别长期趋势。</p>
 <p>**注意：**设置过长的日期范围会严重影响查询性能，尤其是在处理高吞吐量事件时。如果发现加载时间过长，建议缩短日期范围或启用采样功能。</p>
-<h3 id="225-保存并分享这个trends">2.2.5 保存并分享这个Trends<a hidden class="anchor" aria-hidden="true" href="#225-保存并分享这个trends">#</a></h3>
+<h4 id="225-保存并分享这个trends">2.2.5 保存并分享这个Trends<a hidden class="anchor" aria-hidden="true" href="#225-保存并分享这个trends">#</a></h4>
 <p>完成Trends配置后，点击名称旁边的铅笔图标即可完成整个创建过程。除了名称外，我们还可以添加针对这个Trends的描述信息。描述信息支持Markdown格式，所以我们可以添加链接、要点和文本格式等，为其他用户提供更多上下文信息。</p>
 <p>我们可以随时点击右上角的“Save”按钮来保存最新的变更内容。保存后，该按钮将变成“Edit”按钮。</p>
-<h1 id="3-分享业务洞察">3 分享业务洞察<a hidden class="anchor" aria-hidden="true" href="#3-分享业务洞察">#</a></h1>
+<h2 id="3-分享业务洞察">3 分享业务洞察<a hidden class="anchor" aria-hidden="true" href="#3-分享业务洞察">#</a></h2>
 <p>分享业务洞察有以下几种方式：</p>
-<h2 id="31-添加到dashboard">3.1 添加到Dashboard<a hidden class="anchor" aria-hidden="true" href="#31-添加到dashboard">#</a></h2>
+<h3 id="31-添加到dashboard">3.1 添加到Dashboard<a hidden class="anchor" aria-hidden="true" href="#31-添加到dashboard">#</a></h3>
 <p>一个业务洞察可以同时在多个Dashboard中显示，因此无需重复创建相同的业务洞察。我们只需点击“Add to dashboard”，然后就可以在该Dashboard中查看这个业务洞察了。点击“Manage dashboards”可以在多个dashboards间进行切换。</p>
 <p><img alt="dashboard" loading="lazy" src="/posthog-creating-insights/dashboard.png"></p>
-<h2 id="32-添加到notebook">3.2 添加到Notebook<a hidden class="anchor" aria-hidden="true" href="#32-添加到notebook">#</a></h2>
+<h3 id="32-添加到notebook">3.2 添加到Notebook<a hidden class="anchor" aria-hidden="true" href="#32-添加到notebook">#</a></h3>
 <p>Notebook是利用现有业务洞察进行临时分析，或创建新业务洞察的绝佳工具。点击右上角的“Add to notebook”即可将业务洞察添加到Notebook。或者我们点击右侧边栏的“Notebook”，然后将产品分析页面中的业务洞察拖放至Notebook内也可以。</p>
 <style>
 .aspect-ratio {
@@ -369,11 +369,11 @@
 </div>
 
 
-<h2 id="33-分享或导出">3.3 分享或导出<a hidden class="anchor" aria-hidden="true" href="#33-分享或导出">#</a></h2>
+<h3 id="33-分享或导出">3.3 分享或导出<a hidden class="anchor" aria-hidden="true" href="#33-分享或导出">#</a></h3>
 <p>点击任何业务洞察的“&hellip;”菜单按钮，可以导出或嵌入该业务洞察内容。如果选择“Share or embed”则可用iframe的形式分享业务洞察的实时内容。如果选择“Export”并选择“PNG”选项，则生成该业务洞察的PNG图片。该图片可以在任何地方使用。例如下面的示例：</p>
 <p><img alt="insight-export" loading="lazy" src="/posthog-creating-insights/insight-export.png"></p>
 <p>**注意：导出文件过大？**如果发现导出速度过慢或卡顿，可以改用批量导出功能。</p>
-<h2 id="34-创建订阅">3.4 创建订阅<a hidden class="anchor" aria-hidden="true" href="#34-创建订阅">#</a></h2>
+<h3 id="34-创建订阅">3.4 创建订阅<a hidden class="anchor" aria-hidden="true" href="#34-创建订阅">#</a></h3>
 <p>我们还可以为业务洞察创建一个订阅，这样可以将该洞察内容发送至邮箱、邮箱列表或Slack频道。在“Subscribe”点击“New subscription”，然后选择想要的订阅类型及频率即可。</p>
 <p>查看<a href="https://posthog.com/docs/product-analytics/subscriptions">订阅文档</a>可以获得更完整的信息。</p>
 

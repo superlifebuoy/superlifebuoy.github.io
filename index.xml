@@ -107,19 +107,18 @@
       <description>详细介绍如何将自己拥有的域名解析到GitHub Pages，从而实现通过访问自己的域名来显示GitHub Pages内容。</description>
     </item>
     <item>
-      <title>Develop Multi Pages Website</title>
+      <title>开发多页面网站并部署Nginx</title>
       <link>https://nimblecode.tech/posts/develop-multi-pages-websit/</link>
       <pubDate>Mon, 31 Mar 2025 11:49:18 -0700</pubDate>
       <guid>https://nimblecode.tech/posts/develop-multi-pages-websit/</guid>
       <description>在Mac上使用VUE + Vite开发多页面网站，并部署到Nginx上。</description>
     </item>
     <item>
-      <title>Ssh Intro</title>
+      <title>SSH配置与使用</title>
       <link>https://nimblecode.tech/posts/ssh-intro/</link>
       <pubDate>Wed, 05 Mar 2025 18:56:53 -0800</pubDate>
       <guid>https://nimblecode.tech/posts/ssh-intro/</guid>
-      <description>&lt;h1 id=&#34;ssh配置与使用&#34;&gt;SSH配置与使用&lt;/h1&gt;
-&lt;h2 id=&#34;1-ssh是什么&#34;&gt;1 SSH是什么&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;1-ssh是什么&#34;&gt;1 SSH是什么&lt;/h2&gt;
 &lt;p&gt;SSH(Secure Shell Protocol)是一种加密的网络传输协议。&lt;/p&gt;
 &lt;h2 id=&#34;2-基本用法&#34;&gt;2 基本用法&lt;/h2&gt;
 &lt;h3 id=&#34;2x-config配置&#34;&gt;2.x config配置&lt;/h3&gt;

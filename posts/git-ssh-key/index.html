@@ -118,8 +118,8 @@
   "keywords": [
     "Git", "SSH"
   ],
-  "articleBody": "Git为什么需要SSH keys 因为Github需要识别提交代码的用户身份，以防他人冒充。而Github支持SSH协议，所以只要知道了SSH key的公钥，就可以实现前述需求了。\n如何新建SSH keys 如果是Mac OS，可以在Terminal中进入～/.ssh目录查看是否已存在key。通常SSH key是以id_rsa开头的文件，其中id_rsa.pub是公钥，后续要添加在Github中。\n如果不存在id_rsa文件，可通过在Terminal中输入如下命令生成：\nssh-keygen -t rsa -C \"youremail@example.com\" 注意\n记得将**“youremail@example.com”**替换为自己的邮件地址; 交互过程直接回车键，使用默认即可。 在哪里添加SSH keys 在Terminal中输入如下命令，拷贝id_rsa.pub内容至剪贴板：\ncat id_rsa.pub| pbcopy 然后登陆Github网站，进入Settings页面。如下图所示：\n点击右上角的“New SSH key”按钮，在新页面的“Key”粘贴id_rsa.pub内容，即可新增SSH key。\n如何配置多个GitHub账户 在新建SSH keys时根据提示，输入指定的key名称，例如：\nid_rsa_{company_name} 然后配置ssh的config文件，一般在～/.ssh/config。内容如下：\nHost github.com HostName github.com User {github_account1} IdentityFile ~/.ssh/id_rsa Host {company_name} HostName github.com User {github_account2} IdentityFile ~/.ssh/id_rsa_{comany_name} 如何验证GitHub账户配置成功 可以在终端输入如下命令验证：\nssh -T git@{config-Host} 如果命令行终端返回如下内容：\nHi {github_account}! You've successfully authenticated, but GitHub does not provide shell access. 则表示配置成功。\n如何指定GitHub账户下载代码 命令如下：\ngit clone git@{config-Host}:username/repo.git ",
-  "wordCount" : "74",
+  "articleBody": "1 Git为什么需要SSH keys 因为Github需要识别提交代码的用户身份，以防他人冒充。而Github支持SSH协议，所以只要知道了SSH key的公钥，就可以实现前述需求了。\n2 如何新建SSH keys 如果是Mac OS，可以在Terminal中进入～/.ssh目录查看是否已存在key。通常SSH key是以id_rsa开头的文件，其中id_rsa.pub是公钥，后续要添加在Github中。\n如果不存在id_rsa文件，可通过在Terminal中输入如下命令生成：\nssh-keygen -t rsa -C \"youremail@example.com\" 注意\n记得将**“youremail@example.com”**替换为自己的邮件地址; 交互过程直接回车键，使用默认即可。 3 在哪里添加SSH keys 在Terminal中输入如下命令，拷贝id_rsa.pub内容至剪贴板：\ncat id_rsa.pub| pbcopy 然后登陆Github网站，进入Settings页面。如下图所示：\n点击右上角的“New SSH key”按钮，在新页面的“Key”粘贴id_rsa.pub内容，即可新增SSH key。\n4 如何配置多个GitHub账户 在新建SSH keys时根据提示，输入指定的key名称，例如：\nid_rsa_{company_name} 然后配置ssh的config文件，一般在～/.ssh/config。内容如下：\nHost github.com HostName github.com User {github_account1} IdentityFile ~/.ssh/id_rsa Host {company_name} HostName github.com User {github_account2} IdentityFile ~/.ssh/id_rsa_{comany_name} 4.1 如何验证GitHub账户配置成功 可以在终端输入如下命令验证：\nssh -T git@{config-Host} 如果命令行终端返回如下内容：\nHi {github_account}! You've successfully authenticated, but GitHub does not provide shell access. 则表示配置成功。\n4.2 如何指定GitHub账户下载代码 命令如下：\ngit clone git@{config-Host}:username/repo.git ",
+  "wordCount" : "80",
   "inLanguage": "zh",
   "datePublished": "2023-03-12T11:34:26+08:00",
   "dateModified": "2023-03-12T11:34:26+08:00",
@@ -200,9 +200,9 @@
 
 </div>
   </header> 
-  <div class="post-content"><h1 id="git为什么需要ssh-keys">Git为什么需要SSH keys<a hidden class="anchor" aria-hidden="true" href="#git为什么需要ssh-keys">#</a></h1>
+  <div class="post-content"><h2 id="1-git为什么需要ssh-keys">1 Git为什么需要SSH keys<a hidden class="anchor" aria-hidden="true" href="#1-git为什么需要ssh-keys">#</a></h2>
 <p>因为Github需要识别提交代码的用户身份，以防他人冒充。而Github支持SSH协议，所以只要知道了SSH key的公钥，就可以实现前述需求了。</p>
-<h1 id="如何新建ssh-keys">如何新建SSH keys<a hidden class="anchor" aria-hidden="true" href="#如何新建ssh-keys">#</a></h1>
+<h2 id="2-如何新建ssh-keys">2 如何新建SSH keys<a hidden class="anchor" aria-hidden="true" href="#2-如何新建ssh-keys">#</a></h2>
 <p>如果是Mac OS，可以在Terminal中进入～/.ssh目录查看是否已存在key。通常SSH key是以id_rsa开头的文件，其中id_rsa.pub是公钥，后续要添加在Github中。</p>
 <p><img alt="ssh-key-terminal" loading="lazy" src="/ssh-key-terminal.png"></p>
 <p>如果不存在id_rsa文件，可通过在Terminal中输入如下命令生成：</p>
@@ -212,13 +212,13 @@
 <li>记得将**“youremail@example.com”**替换为自己的邮件地址;</li>
 <li>交互过程直接回车键，使用默认即可。</li>
 </ul>
-<h1 id="在哪里添加ssh-keys">在哪里添加SSH keys<a hidden class="anchor" aria-hidden="true" href="#在哪里添加ssh-keys">#</a></h1>
+<h2 id="3-在哪里添加ssh-keys">3 在哪里添加SSH keys<a hidden class="anchor" aria-hidden="true" href="#3-在哪里添加ssh-keys">#</a></h2>
 <p>在Terminal中输入如下命令，拷贝id_rsa.pub内容至剪贴板：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cat id_rsa.pub| pbcopy
 </span></span></code></pre></div><p>然后登陆<a href="https://github.com/settings/keys">Github网站</a>，进入Settings页面。如下图所示：</p>
 <p><img alt="git-ssh-key-list" loading="lazy" src="/git-ssh-key-list.png"></p>
 <p>点击右上角的“New SSH key”按钮，在新页面的“Key”粘贴id_rsa.pub内容，即可新增SSH key。</p>
-<h1 id="如何配置多个github账户">如何配置多个GitHub账户<a hidden class="anchor" aria-hidden="true" href="#如何配置多个github账户">#</a></h1>
+<h2 id="4-如何配置多个github账户">4 如何配置多个GitHub账户<a hidden class="anchor" aria-hidden="true" href="#4-如何配置多个github账户">#</a></h2>
 <p>在新建SSH keys时根据提示，输入指定的key名称，例如：</p>
 <pre tabindex="0"><code>id_rsa_{company_name}
 </code></pre><p>然后配置ssh的config文件，一般在～/.ssh/config。内容如下：</p>
@@ -231,13 +231,13 @@ Host {company_name}
 	HostName github.com
 	User {github_account2}
 	IdentityFile ~/.ssh/id_rsa_{comany_name}
-</code></pre><h2 id="如何验证github账户配置成功">如何验证GitHub账户配置成功<a hidden class="anchor" aria-hidden="true" href="#如何验证github账户配置成功">#</a></h2>
+</code></pre><h3 id="41-如何验证github账户配置成功">4.1 如何验证GitHub账户配置成功<a hidden class="anchor" aria-hidden="true" href="#41-如何验证github账户配置成功">#</a></h3>
 <p>可以在终端输入如下命令验证：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh -T git@<span style="color:#f92672">{</span>config-Host<span style="color:#f92672">}</span>
 </span></span></code></pre></div><p>如果命令行终端返回如下内容：</p>
 <pre tabindex="0"><code>Hi {github_account}! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
 </code></pre><p>则表示配置成功。</p>
-<h2 id="如何指定github账户下载代码">如何指定GitHub账户下载代码<a hidden class="anchor" aria-hidden="true" href="#如何指定github账户下载代码">#</a></h2>
+<h3 id="42-如何指定github账户下载代码">4.2 如何指定GitHub账户下载代码<a hidden class="anchor" aria-hidden="true" href="#42-如何指定github账户下载代码">#</a></h3>
 <p>命令如下：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone git@<span style="color:#f92672">{</span>config-Host<span style="color:#f92672">}</span>:username/repo.git
 </span></span></code></pre></div>

@@ -209,12 +209,12 @@
 </div>
   </header> 
   <div class="post-content"><p><a href="https://posthog.com/">PostHog</a>是一个开源的产品分析平台，旨在帮助开发者构建更好的产品。它提供了一系列工具，包括用户行为分析、会话回放、功能标志、A/B测试等，支持自托管，确保数据安全和隐私。PostHog允许团队深入了解用户行为，而无需牺牲数据控制权。﻿</p>
-<h1 id="1-选择数据中心并注册">1 选择数据中心并注册<a hidden class="anchor" aria-hidden="true" href="#1-选择数据中心并注册">#</a></h1>
+<h2 id="1-选择数据中心并注册">1 选择数据中心并注册<a hidden class="anchor" aria-hidden="true" href="#1-选择数据中心并注册">#</a></h2>
 <p><a href="https://us.posthog.com/signup">PostHog的注册页面在这里</a>。因为欧盟《通用数据保护条例》的原因，PostHog目前设立了两个数据中心：一个在美国弗吉尼亚、一个在德国法兰克福。默认选择美国的数据中心即可。</p>
 <p><img alt="select-data-region" loading="lazy" src="/posthog-quickstart/select-data-region.png"></p>
 <p>然后选择Google账号、GitHub账号、GitLab账号绑定，或者使用Email完成注册即可。这个过程中会需要填写用户名称、组织名称、当前用户角色。如下图所示：</p>
 <p><img alt="tell-about-yourself" loading="lazy" src="/posthog-quickstart/tell-about-yourself.png"></p>
-<h1 id="2-选择使用的posthog产品">2 选择使用的PostHog产品<a hidden class="anchor" aria-hidden="true" href="#2-选择使用的posthog产品">#</a></h1>
+<h2 id="2-选择使用的posthog产品">2 选择使用的PostHog产品<a hidden class="anchor" aria-hidden="true" href="#2-选择使用的posthog产品">#</a></h2>
 <p>接下来PostHog会提示用户选择使用的PostHog产品。你只需要根据自己产品的分析场景，选择对应的PostHog产品即可。例如我们需要产品分析和网站分析：</p>
 <p><img alt="select-products" loading="lazy" src="/posthog-quickstart/select-products.png"></p>
 <p>PostHog提供的产品列表如下：</p>
@@ -260,7 +260,7 @@
       </tr>
   </tbody>
 </table>
-<h1 id="3-接入posthog平台">3 接入PostHog平台<a hidden class="anchor" aria-hidden="true" href="#3-接入posthog平台">#</a></h1>
+<h2 id="3-接入posthog平台">3 接入PostHog平台<a hidden class="anchor" aria-hidden="true" href="#3-接入posthog平台">#</a></h2>
 <p>然后根据选择的PostHog产品，新页面会提示你选择接入PostHog平台的方式：</p>
 <p><img alt="install-posthog" loading="lazy" src="/posthog-quickstart/install-posthog.png"></p>
 <p>这里我们以HTML页面代码方式接入为例，选择HTML snippet。然后PostHog会弹出该方式的接入步骤说明：</p>
@@ -268,19 +268,19 @@
 <p>如上图所示，只需把图中的代码片段复制到网站页面的<!-- raw HTML omitted -->标签中即可。这样该网站就完成了PostHog的接入，非常简单。</p>
 <p>要验证接入效果，只需把增加了如上代码片段的网站重新发布到线上，然后点击页面几次。就可以观察到PostHog的接入步骤说明页面的状态变化：</p>
 <p><img alt="install-posthog-html-complete" loading="lazy" src="/posthog-quickstart/install-posthog-html-complete.png"></p>
-<h1 id="4-添加授权域名">4 添加授权域名<a hidden class="anchor" aria-hidden="true" href="#4-添加授权域名">#</a></h1>
+<h2 id="4-添加授权域名">4 添加授权域名<a hidden class="anchor" aria-hidden="true" href="#4-添加授权域名">#</a></h2>
 <p>完成PostHog接入后，网站还需要完成域名授权。该步骤是因为之前选择了使用网站分析产品：</p>
 <p><img alt="authorize-domains" loading="lazy" src="/posthog-quickstart/authorize-domains.png"></p>
 <p>点击页面下方“Add new authorized URL”即可完成添加域名流程。需要特别注意的是，<strong>PostHog不允许添加的域名使用通配符（例如：https://*.posthog. com）。域名必须是可以访问的具体链接（例如：https://app.posthog. com）。</strong>。</p>
 <p>PostHog还贴心的在添加的域名右边，提供“Launch”按钮方便验证：</p>
 <p><img alt="launch-authorized-domain" loading="lazy" src="/posthog-quickstart/launch-authorized-domain.png"></p>
-<h1 id="5-常规配置与邀请成员">5 常规配置与邀请成员<a hidden class="anchor" aria-hidden="true" href="#5-常规配置与邀请成员">#</a></h1>
+<h2 id="5-常规配置与邀请成员">5 常规配置与邀请成员<a hidden class="anchor" aria-hidden="true" href="#5-常规配置与邀请成员">#</a></h2>
 <p>最后PostHog会提示一些常规配置：</p>
 <p><img alt="set-up-configuration" loading="lazy" src="/posthog-quickstart/set-up-configuration.png"></p>
 <p>以及邀请成员：</p>
 <p><img alt="invite-teammates" loading="lazy" src="/posthog-quickstart/invite-teammates.png"></p>
 <p>常规配置可以先保持不变。邀请成员可以按需添加。</p>
-<h1 id="6-todo">6 TODO<a hidden class="anchor" aria-hidden="true" href="#6-todo">#</a></h1>
+<h2 id="6-todo">6 TODO<a hidden class="anchor" aria-hidden="true" href="#6-todo">#</a></h2>
 <p>至此，PostHog的接入流程就全部完成了。后续登录PostHog就可以看到之前在接入过程中的页面访问记录。</p>
 <p><img alt="posthog" loading="lazy" src="/posthog-quickstart/posthog.png"></p>
 

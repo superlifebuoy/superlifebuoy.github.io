@@ -203,21 +203,21 @@
 
 </div>
   </header> 
-  <div class="post-content"><h1 id="1-ssh">1 ssh<a hidden class="anchor" aria-hidden="true" href="#1-ssh">#</a></h1>
-<h2 id="指定用户名连接">指定用户名连接<a hidden class="anchor" aria-hidden="true" href="#指定用户名连接">#</a></h2>
+  <div class="post-content"><h2 id="1-ssh">1 ssh<a hidden class="anchor" aria-hidden="true" href="#1-ssh">#</a></h2>
+<h3 id="指定用户名连接">指定用户名连接<a hidden class="anchor" aria-hidden="true" href="#指定用户名连接">#</a></h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh <span style="color:#f92672">{</span>username<span style="color:#f92672">}</span>@<span style="color:#f92672">{</span>ip address<span style="color:#f92672">}</span>
-</span></span></code></pre></div><h1 id="2-scp">2 scp<a hidden class="anchor" aria-hidden="true" href="#2-scp">#</a></h1>
+</span></span></code></pre></div><h2 id="2-scp">2 scp<a hidden class="anchor" aria-hidden="true" href="#2-scp">#</a></h2>
 <p>SCP(Secure Copy Protocol)是一种在本地主机与远程主机之间，或在两个远程主机之间安全传输计算机文件的方式。</p>
-<h2 id="下载文件">下载文件<a hidden class="anchor" aria-hidden="true" href="#下载文件">#</a></h2>
+<h3 id="下载文件">下载文件<a hidden class="anchor" aria-hidden="true" href="#下载文件">#</a></h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>scp <span style="color:#f92672">{</span>username<span style="color:#f92672">}</span>@<span style="color:#f92672">{</span>ip.address<span style="color:#f92672">}</span>:/<span style="color:#f92672">{</span>dir<span style="color:#f92672">}</span>/<span style="color:#f92672">{</span>file<span style="color:#f92672">}</span> <span style="color:#f92672">{</span>targetDir<span style="color:#f92672">}</span>
-</span></span></code></pre></div><h2 id="上传文件">上传文件<a hidden class="anchor" aria-hidden="true" href="#上传文件">#</a></h2>
+</span></span></code></pre></div><h3 id="上传文件">上传文件<a hidden class="anchor" aria-hidden="true" href="#上传文件">#</a></h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>scp <span style="color:#f92672">{</span>dir<span style="color:#f92672">}</span>/<span style="color:#f92672">{</span>file<span style="color:#f92672">}</span> <span style="color:#f92672">{</span>username<span style="color:#f92672">}</span>@<span style="color:#f92672">{</span>ip.address<span style="color:#f92672">}</span>:<span style="color:#f92672">{</span>targetDir<span style="color:#f92672">}</span>
-</span></span></code></pre></div><h2 id="下载目录">下载目录<a hidden class="anchor" aria-hidden="true" href="#下载目录">#</a></h2>
+</span></span></code></pre></div><h3 id="下载目录">下载目录<a hidden class="anchor" aria-hidden="true" href="#下载目录">#</a></h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>scp -r <span style="color:#f92672">{</span>username<span style="color:#f92672">}</span>@<span style="color:#f92672">{</span>ip.address<span style="color:#f92672">}</span>:/<span style="color:#f92672">{</span>dir<span style="color:#f92672">}</span> <span style="color:#f92672">{</span>targetDir<span style="color:#f92672">}</span>
-</span></span></code></pre></div><h2 id="上传目录">上传目录<a hidden class="anchor" aria-hidden="true" href="#上传目录">#</a></h2>
+</span></span></code></pre></div><h3 id="上传目录">上传目录<a hidden class="anchor" aria-hidden="true" href="#上传目录">#</a></h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>scp -r <span style="color:#f92672">{</span>dir<span style="color:#f92672">}</span> <span style="color:#f92672">{</span>username<span style="color:#f92672">}</span>@<span style="color:#f92672">{</span>ip.address<span style="color:#f92672">}</span>:<span style="color:#f92672">{</span>targetDir<span style="color:#f92672">}</span>
-</span></span></code></pre></div><h1 id="3-tar">3 tar<a hidden class="anchor" aria-hidden="true" href="#3-tar">#</a></h1>
-<h2 id="解压缩jar包">解压缩jar包<a hidden class="anchor" aria-hidden="true" href="#解压缩jar包">#</a></h2>
+</span></span></code></pre></div><h2 id="3-tar">3 tar<a hidden class="anchor" aria-hidden="true" href="#3-tar">#</a></h2>
+<h3 id="解压缩jar包">解压缩jar包<a hidden class="anchor" aria-hidden="true" href="#解压缩jar包">#</a></h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tar -zxvf <span style="color:#f92672">{</span>jar包<span style="color:#f92672">}</span> -C <span style="color:#f92672">{</span>目标目录<span style="color:#f92672">}</span>
 </span></span></code></pre></div><ul>
 <li><strong>-z</strong>：有gzip属性的，可选</li>
@@ -226,9 +226,9 @@
 <li><strong>-f</strong>：使用的文件名称；<strong>这个参数是最后一个参数，后面只能跟jar包</strong>，必须</li>
 <li><strong>-C</strong>：指定目标目录，必须预先存在，可选</li>
 </ul>
-<h1 id="4-lsof">4 lsof<a hidden class="anchor" aria-hidden="true" href="#4-lsof">#</a></h1>
+<h2 id="4-lsof">4 lsof<a hidden class="anchor" aria-hidden="true" href="#4-lsof">#</a></h2>
 <p>lsof(list open files)是一个“列出打开的文件”命令。在许多类Unix系统中用于查找/显示所有打开的文件及其打开这些文件的进程列表。</p>
-<h2 id="查看占用端口进程">查看占用端口进程<a hidden class="anchor" aria-hidden="true" href="#查看占用端口进程">#</a></h2>
+<h3 id="查看占用端口进程">查看占用端口进程<a hidden class="anchor" aria-hidden="true" href="#查看占用端口进程">#</a></h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>lsof -i :<span style="color:#f92672">{</span>port<span style="color:#f92672">}</span>
 </span></span></code></pre></div>
 
