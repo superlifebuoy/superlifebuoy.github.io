@@ -2,11 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nimblecode.tech/posts/tao-partner-test/</loc>
-    <lastmod>2025-11-06T13:08:15-08:00</lastmod>
+    <loc>https://nimblecode.tech/tags/aliyun/</loc>
+    <lastmod>2025-11-10T14:36:45-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/ecs/</loc>
+    <lastmod>2025-11-10T14:36:45-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/java/</loc>
+    <lastmod>2025-11-10T14:36:45-08:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/</loc>
-    <lastmod>2025-11-06T13:08:15-08:00</lastmod>
+    <lastmod>2025-11-10T14:36:45-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -19,7 +25,7 @@
                 />
   </url><url>
     <loc>https://nimblecode.tech/posts/</loc>
-    <lastmod>2025-11-06T13:08:15-08:00</lastmod>
+    <lastmod>2025-11-10T14:36:45-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -32,7 +38,7 @@
                 />
   </url><url>
     <loc>https://nimblecode.tech/tags/</loc>
-    <lastmod>2025-11-06T13:08:15-08:00</lastmod>
+    <lastmod>2025-11-10T14:36:45-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -43,6 +49,18 @@
                 hreflang="zh"
                 href="https://nimblecode.tech/tags/"
                 />
+  </url><url>
+    <loc>https://nimblecode.tech/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</loc>
+    <lastmod>2025-11-10T14:36:45-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/posts/aliyun-monitor/</loc>
+    <lastmod>2025-11-10T14:36:45-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/%E4%BA%91%E7%9B%91%E6%8E%A7/</loc>
+    <lastmod>2025-11-10T14:36:45-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/posts/tao-partner-test/</loc>
+    <lastmod>2025-11-06T13:08:15-08:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/tags/%E5%8F%8C11/</loc>
     <lastmod>2025-11-06T13:08:15-08:00</lastmod>
@@ -87,9 +105,6 @@
     <loc>https://nimblecode.tech/posts/small-things-that-make-apis-a-little-bit-better/</loc>
     <lastmod>2025-11-05T20:32:31+08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/.ico/</loc>
-    <lastmod>2025-11-04T14:10:07-08:00</lastmod>
-  </url><url>
     <loc>https://nimblecode.tech/tags/favicon/</loc>
     <lastmod>2025-11-04T14:10:07-08:00</lastmod>
   </url><url>
@@ -110,6 +125,9 @@
                 />
   </url><url>
     <loc>https://nimblecode.tech/posts/add-favicon/</loc>
+    <lastmod>2025-11-04T14:10:07-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/ico/</loc>
     <lastmod>2025-11-04T14:10:07-08:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/tags/calibre/</loc>
@@ -262,9 +280,6 @@
     <lastmod>2025-08-07T19:52:39-07:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/tags/jacoco/</loc>
-    <lastmod>2025-08-07T19:52:39-07:00</lastmod>
-  </url><url>
-    <loc>https://nimblecode.tech/tags/java/</loc>
     <lastmod>2025-08-07T19:52:39-07:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/tags/unit-test-coverage/</loc>

@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Nimble Code Tech</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 06 Nov 2025 13:08:15 -0800</lastBuildDate>
+    <lastBuildDate>Mon, 10 Nov 2025 14:36:45 -0800</lastBuildDate>
     <atom:link href="https://nimblecode.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>监控阿里云 ECS 的进程</title>
+      <link>https://nimblecode.tech/posts/aliyun-monitor/</link>
+      <pubDate>Mon, 10 Nov 2025 14:36:45 -0800</pubDate>
+      <guid>https://nimblecode.tech/posts/aliyun-monitor/</guid>
+      <description>介绍云监控产品，并简单配置 Java 进程监控。</description>
+    </item>
     <item>
       <title>2025双11购物清单 &#43; 淘宝客接入流程 [更新]</title>
       <link>https://nimblecode.tech/posts/tao-partner-test/</link>
@@ -58,7 +65,7 @@
       <description>使用Hugo建站后，通过Google Search Console将网站内容加入Google搜索引擎索引中去。</description>
     </item>
     <item>
-      <title>本地验证大语言模型：Ollama &#43; Spring</title>
+      <title>本地验证：Ollama &#43; Spring</title>
       <link>https://nimblecode.tech/posts/local-llms/</link>
       <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
       <guid>https://nimblecode.tech/posts/local-llms/</guid>
@@ -181,76 +188,6 @@ Host anotherHost
       <pubDate>Mon, 20 Mar 2023 19:52:44 +0800</pubDate>
       <guid>https://nimblecode.tech/posts/update-share-app/</guid>
       <description>如何更新Docker镜像？如果推送Docker镜像到镜像仓库？</description>
-    </item>
-    <item>
-      <title>Docker入门（1）</title>
-      <link>https://nimblecode.tech/posts/docker-get-started/</link>
-      <pubDate>Tue, 14 Mar 2023 22:27:10 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/docker-get-started/</guid>
-      <description>Docker是什么？如何使用它？</description>
-    </item>
-    <item>
-      <title>Git SSH Key</title>
-      <link>https://nimblecode.tech/posts/git-ssh-key/</link>
-      <pubDate>Sun, 12 Mar 2023 11:34:26 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/git-ssh-key/</guid>
-      <description>初始化Git SSH keys。</description>
-    </item>
-    <item>
-      <title>API设计的最佳实践[翻译]</title>
-      <link>https://nimblecode.tech/posts/best-practices-in-api-design/</link>
-      <pubDate>Tue, 27 Sep 2022 20:47:46 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/best-practices-in-api-design/</guid>
-      <description>Swagger关于API设计的最佳实践。</description>
-    </item>
-    <item>
-      <title>通过Github部署Hugo</title>
-      <link>https://nimblecode.tech/posts/deploy-hugo-by-github/</link>
-      <pubDate>Thu, 15 Sep 2022 20:04:36 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/deploy-hugo-by-github/</guid>
-      <description>讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。</description>
-    </item>
-    <item>
-      <title>容器简史[翻译]</title>
-      <link>https://nimblecode.tech/posts/a-brief-history-of-containers-from-1970s/</link>
-      <pubDate>Thu, 15 Sep 2022 19:56:51 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/a-brief-history-of-containers-from-1970s/</guid>
-      <description>简单介绍容器技术自1970年代以来的发展历史。</description>
-    </item>
-    <item>
-      <title>命令行工具简介</title>
-      <link>https://nimblecode.tech/posts/util-commands/</link>
-      <pubDate>Thu, 15 Sep 2022 19:36:09 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/util-commands/</guid>
-      <description>关于常用的命令行工具介绍，包括但不限于maven、curl、wget等。</description>
-    </item>
-    <item>
-      <title>My Image Post</title>
-      <link>https://nimblecode.tech/posts/my-image-post/</link>
-      <pubDate>Wed, 17 Aug 2022 22:28:08 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/my-image-post/</guid>
-      <description>讲述如何通过Github来发布Hugo产生的静态网站内容，并提供一个简单的自动发布脚本。</description>
-    </item>
-    <item>
-      <title>How to Use cloc</title>
-      <link>https://nimblecode.tech/posts/how_to_use_cloc/</link>
-      <pubDate>Wed, 08 Dec 2021 11:44:28 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/how_to_use_cloc/</guid>
-      <description>关于cloc的简介——一个开源、易用的代码行统计工具。</description>
-    </item>
-    <item>
-      <title>Why We Make Our Product Roadmaps Public [翻译]</title>
-      <link>https://nimblecode.tech/posts/why-we-make-our-product-roadmaps-public/</link>
-      <pubDate>Thu, 07 Oct 2021 10:27:08 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/why-we-make-our-product-roadmaps-public/</guid>
-      <description>WSO2在这篇文章中讲述了他们为什么要把产品路线图开放出来。</description>
-    </item>
-    <item>
-      <title>Hugo快速入门</title>
-      <link>https://nimblecode.tech/posts/hugo-quick-start/</link>
-      <pubDate>Wed, 17 Feb 2021 20:29:21 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/hugo-quick-start/</guid>
-      <description>快速了解Hugo的使用方法。</description>
     </item>
   </channel>
 </rss>

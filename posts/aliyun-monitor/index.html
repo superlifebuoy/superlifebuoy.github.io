@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KG4P5QR587"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KG4P5QR587');
+</script>
+<script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Re Os As Pe Ms Fs capture Ve calculateEventProperties js register register_once register_for_session unregister unregister_for_session qs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty zs Ls createPersonProfile Us Rs Bs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ds debug I Ns getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_mT7wOBjidgcQVEyPjDDfTMDJlObxehaWFU39siHPudu', {
+        api_host: 'https://us.i.posthog.com',
+        defaults: '2025-05-24',
+        person_profiles: 'identified_only', 
+    })
+</script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>监控阿里云 ECS 的进程 | Nimble Code Tech</title>
+<meta name="keywords" content="阿里云, aliyun, ECS, 云监控, Java">
+<meta name="description" content="介绍云监控产品，并简单配置 Java 进程监控。">
+<meta name="author" content="">
+<link rel="canonical" href="https://nimblecode.tech/posts/aliyun-monitor/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a090830a421002426baafbd314e38f149d77b4c48a12ee9312700d770b27fb26.css" integrity="sha256-oJCDCkIQAkJrqvvTFOOPFJ13tMSKEu6TEnANdwsn&#43;yY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://nimblecode.tech/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://nimblecode.tech/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://nimblecode.tech/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://nimblecode.tech/apple-touch-icon.png">
+<link rel="mask-icon" href="https://nimblecode.tech/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://nimblecode.tech/posts/aliyun-monitor/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://nimblecode.tech/posts/aliyun-monitor/">
+  <meta property="og:site_name" content="Nimble Code Tech">
+  <meta property="og:title" content="监控阿里云 ECS 的进程">
+  <meta property="og:description" content="介绍云监控产品，并简单配置 Java 进程监控。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-11-10T14:36:45-08:00">
+    <meta property="article:modified_time" content="2025-11-10T14:36:45-08:00">
+    <meta property="article:tag" content="阿里云">
+    <meta property="article:tag" content="Aliyun">
+    <meta property="article:tag" content="ECS">
+    <meta property="article:tag" content="云监控">
+    <meta property="article:tag" content="Java">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="监控阿里云 ECS 的进程">
+<meta name="twitter:description" content="介绍云监控产品，并简单配置 Java 进程监控。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://nimblecode.tech/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "监控阿里云 ECS 的进程",
+      "item": "https://nimblecode.tech/posts/aliyun-monitor/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "监控阿里云 ECS 的进程",
+  "name": "监控阿里云 ECS 的进程",
+  "description": "介绍云监控产品，并简单配置 Java 进程监控。",
+  "keywords": [
+    "阿里云", "aliyun", "ECS", "云监控", "Java"
+  ],
+  "articleBody": "1 背景 部署在阿里云 ECS 服务器上的 Java 进程因为 OOM 挂掉了。为了监控线上进程的健康状态，选用阿里云的云监控实现最基础的进程监控功能。\n2 什么是云监控 云监控（CloudMonitor）是一项针对阿里云资源和互联网应用进行监控的服务。\n云监控为云上用户提供开箱即用的企业级开放型一站式监控解决方案。云监控涵盖IT设施基础监控和外网网络质量拨测监控，是基于事件、自定义指标和日志的业务监控，为用户全方位提供更高效、全面、省钱的监控服务。使用云监控，不但可以帮助用户提升系统服务可用时长，还可以降低企业IT运维监控成本。\n2.1 云监控成本 云监控的服务计费主要分为3类：\n基础云监控； 企业云监控； 网络分析与监控。 其中“基础云监控”包含“免费额度”：\n短信报警：1000条/月； 查询监控数据API调用次数：100万次/月。 基本满足中小型系统的使用场景了。\n3 配置 ECS 云监控 云监控的配置相对复杂，需要：\n安装 ECS 服务器的云监控插件； 配置云监控报警联系人； 打开 ECS 服务器的一键报警； 配置 ECS 的进程监控规则； 3.1 安装 ECS 云监控插件 一般新购 ECS 会自动安装云监控插件。如果没有，可以手动安装云监控插件。\n登陆云监控控制台后，在左侧导航栏选择“云资源监控” -\u003e “主机监控”。在主机监控页面单击目标主机对应的 Agent 状态列的图标，然后在“确认自动安装”对话框单击确定。等待大约5分钟，当插件状态由“安装中”变为“运行中”，即表示云监控插件安装成功。\n3.2 配置报警联系人 安装完云监控插件后，需要配置报警联系人。这样当监控规则被触发时，云监控会通过手机/邮件的方式，及时通知报警联系人处理问题。\n在左侧导航栏选择“报警服务” -\u003e “报警联系人”。在报警联系人页面的“报警联系人” Tab，可以创建新联系人。报警联系人需要输入姓名、手机号码、邮箱等信息，其中邮箱需要验证激活（云监控会向邮箱发送激活邮件）。在“报警联系组” Tab，可以创建新联系组，并把之前创建的联系人放在组内管理。后续规则触发时，是根据“报警联系组”发送信息的。\n注意：建议控制报警联系人的数量与质量，这样可以关闭右上角“数据脱敏”开关。当规则触发时，会有更详细信息发送出来，例如 ECS 实例 ID 等。更加方便定位问题。\n3.3 配置一键报警 云监控最方便使用的报警功能就是“一键报警”。在左侧导航栏选择“报警服务” -\u003e “一键报警”，在“一键报警”页面打开“云服务器 ECS”的“一键报警”开关，就实现了 ECS 最基本的4项监控报警功能：\nCPU使用率监控报警； 公网流出带宽使用率监控报警； 内存使用率监控报警； 磁盘使用率监控报警。 这4项监控报警的“通知对象”，就是之前配置的“报警联系组”。当 ECS 实例触发了报警后，配置的联系组中的每个人都会收到报警信息。\n3.4 配置进程监控 除了简单的 ECS 一键监控外，云监控还为用户提供了自定义监控规则的能力。下面以 Java 进程为例，演示如何配置进程监控规则。\n在左侧导航栏选择“云资源监控” -\u003e “主机监控”，在“主机监控”页面会显示目前所有 ECS 实例列表。\n单击需要配置监控规则的 ECS 实例，进入监控详情页面。\n选择上方的“进程监控” Tab，在“进程 TopN”中根据进程名称找到需要监控的 Java 进程，并复制进程名称。\n然后在“进程数监控”中，点击“添加进程监控” -\u003e 粘贴复制的“进程名称”并增加。\n云监控会根据增加的“进程名称”，实时过滤当前符合该“进程名称”的进程数量，并显示出来。如图所示，有2个进程符合 Java 进程名称。\n有了进程数量，就可以根据数量设定报警规则了。点击右侧的 小铃铛 图标。在右侧弹出窗口中“设置规则描述”。\n填写自定义的规则名称，例如“Java进程数量监控”； 监控指标保持默认的“进程/当前进程数”； processName保持默认内容即可，就是之前过滤进程使用的“进程名称”； 重点是阈值及报警级别的配置。可以看到这里有3个级别：紧急、警告、普通。这里举例说明，把紧急级别设定为“连续10个周期”即10分钟，Java 进程数量的平均值“\u003c(小于)”1个，就发出报警信息。一旦紧急级别的报警信息发出，就说明在过去的10分钟内这台 ECS 上的 Java 进程数量小于1个，可能已经挂掉了。同理，把警告级别设定为“连续3个周期”即3分钟，Java 进程数量的平均值“\u003c(小于)”1个，就发出报警信息；把普通级别设定为“连续1个周期”即1分钟，Java 进程数量的平均值“\u003c(小于)”1个，就发出报警信息。 设置完成后点击“确定”，进入“创建报警规则”窗口。\n在这个窗口可以复查“规则描述”。没有问题的话接着设置“报警联系人组”，可以选择3.2中设置的报警联系组。最后点击“确认”就完成了一条进程监控的配置。\n已完成的监控报警规则，可以在“主机监控详情”页面的“报警规则” Tab 下查看。\n4 验证 ECS 云监控 完成 ECS 监控报警规则后，需要进行验证。一种方式是模拟触发规则报警的条件，这种形式的验证在生产环境操作比较危险，但真实。另一种方式是修改报警规则从而在正常情况下触发报警，这种形式相对安全，但缺乏真实规则的验证，只能验证报警链路是通畅的。\n下面以 Java 进程监控为例，使用第二种方法验证报警链路是通畅的。可以把普通级别设定为“连续1个周期”即1分钟，Java 进程数量的平均值“\u003c(小于)”3个，就发出报警信息。\n修改配置并生效后，1分钟内就收到云监控的“普通级别”报警邮件了。\n至此，基本确定之前配置的 Java 进程数量监控已生效。记得把验证规则改回去。\n阿里云的云监控会再次发出报警恢复的邮件。\n",
+  "wordCount" : "139",
+  "inLanguage": "zh",
+  "datePublished": "2025-11-10T14:36:45-08:00",
+  "dateModified": "2025-11-10T14:36:45-08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://nimblecode.tech/posts/aliyun-monitor/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nimble Code Tech",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nimblecode.tech/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://nimblecode.tech/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                    <ul class="lang-switch"><li>|</li>
+                        <li>
+                            <a href="https://nimblecode.tech/en/" title="English"
+                                aria-label="English">En</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      监控阿里云 ECS 的进程
+    </h1>
+    <div class="post-meta"><span title='2025-11-10 14:36:45 -0800 PST'>2025年11月10日</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="1-背景">1 背景<a hidden class="anchor" aria-hidden="true" href="#1-背景">#</a></h2>
+<p>部署在阿里云 ECS 服务器上的 Java 进程因为 OOM 挂掉了。为了监控线上进程的健康状态，选用阿里云的云监控实现最基础的进程监控功能。</p>
+<h2 id="2-什么是云监控">2 什么是云监控<a hidden class="anchor" aria-hidden="true" href="#2-什么是云监控">#</a></h2>
+<p><a href="https://help.aliyun.com/zh/cms/cloudmonitor-1-0/product-overview/what-is-cloudmonitor">云监控（CloudMonitor）</a>是一项针对阿里云资源和互联网应用进行监控的服务。</p>
+<p>云监控为云上用户提供开箱即用的企业级开放型一站式监控解决方案。云监控涵盖IT设施基础监控和外网网络质量拨测监控，是基于事件、自定义指标和日志的业务监控，为用户全方位提供更高效、全面、省钱的监控服务。使用云监控，不但可以帮助用户提升系统服务可用时长，还可以降低企业IT运维监控成本。</p>
+<h3 id="21-云监控成本">2.1 云监控成本<a hidden class="anchor" aria-hidden="true" href="#21-云监控成本">#</a></h3>
+<p><a href="https://help.aliyun.com/zh/cms/cloudmonitor-1-0/product-overview/billing-overview">云监控的服务计费</a>主要分为3类：</p>
+<ol>
+<li>基础云监控；</li>
+<li>企业云监控；</li>
+<li>网络分析与监控。</li>
+</ol>
+<p><img alt="aliyun-monitor-price" loading="lazy" src="/aliyun-monitor/aliyun-monitor-price.png"></p>
+<p>其中“基础云监控”包含“免费额度”：</p>
+<ol>
+<li>短信报警：1000条/月；</li>
+<li>查询监控数据API调用次数：100万次/月。</li>
+</ol>
+<p>基本满足中小型系统的使用场景了。</p>
+<p><img alt="aliyun-monitor-free" loading="lazy" src="/aliyun-monitor/aliyun-monitor-free.png"></p>
+<h2 id="3-配置-ecs-云监控">3 配置 ECS 云监控<a hidden class="anchor" aria-hidden="true" href="#3-配置-ecs-云监控">#</a></h2>
+<p>云监控的配置相对复杂，需要：</p>
+<ol>
+<li>安装 ECS 服务器的云监控插件；</li>
+<li>配置云监控报警联系人；</li>
+<li>打开 ECS 服务器的一键报警；</li>
+<li>配置 ECS 的进程监控规则；</li>
+</ol>
+<h3 id="31-安装-ecs-云监控插件">3.1 安装 ECS 云监控插件<a hidden class="anchor" aria-hidden="true" href="#31-安装-ecs-云监控插件">#</a></h3>
+<p>一般新购 ECS 会自动安装云监控插件。如果没有，可以手动安装云监控插件。</p>
+<p>登陆<a href="https://cloudmonitornext.console.aliyun.com/">云监控控制台</a>后，在左侧导航栏选择“云资源监控” -&gt; “主机监控”。在主机监控页面单击目标主机对应的 Agent 状态列的图标，然后在“确认自动安装”对话框单击确定。等待大约5分钟，当插件状态由“安装中”变为“运行中”，即表示云监控插件安装成功。</p>
+<p><img alt="aliyun-monitor-plugin" loading="lazy" src="/aliyun-monitor/aliyun-monitor-plugin.png"></p>
+<h3 id="32-配置报警联系人">3.2 配置报警联系人<a hidden class="anchor" aria-hidden="true" href="#32-配置报警联系人">#</a></h3>
+<p>安装完云监控插件后，需要配置报警联系人。这样当监控规则被触发时，云监控会通过手机/邮件的方式，及时通知报警联系人处理问题。</p>
+<p><img alt="aliyun-monitor-person" loading="lazy" src="/aliyun-monitor/aliyun-monitor-person.png"></p>
+<p>在左侧导航栏选择“报警服务” -&gt; “报警联系人”。在报警联系人页面的“报警联系人” Tab，可以创建新联系人。报警联系人需要输入姓名、手机号码、邮箱等信息，其中邮箱需要验证激活（云监控会向邮箱发送激活邮件）。在“报警联系组” Tab，可以创建新联系组，并把之前创建的联系人放在组内管理。后续规则触发时，是根据“报警联系组”发送信息的。</p>
+<p><strong>注意：建议控制报警联系人的数量与质量，这样可以关闭右上角“数据脱敏”开关。当规则触发时，会有更详细信息发送出来，例如 ECS 实例 ID 等。更加方便定位问题。</strong></p>
+<h3 id="33-配置一键报警">3.3 配置一键报警<a hidden class="anchor" aria-hidden="true" href="#33-配置一键报警">#</a></h3>
+<p>云监控最方便使用的报警功能就是“一键报警”。在左侧导航栏选择“报警服务” -&gt; “一键报警”，在“一键报警”页面打开“云服务器 ECS”的“一键报警”开关，就实现了 ECS 最基本的4项监控报警功能：</p>
+<ol>
+<li>CPU使用率监控报警；</li>
+<li>公网流出带宽使用率监控报警；</li>
+<li>内存使用率监控报警；</li>
+<li>磁盘使用率监控报警。</li>
+</ol>
+<p><img alt="aliyun-monitor-oneclick" loading="lazy" src="/aliyun-monitor/aliyun-monitor-oneclick.png"></p>
+<p>这4项监控报警的“通知对象”，就是之前配置的“报警联系组”。当 ECS 实例触发了报警后，配置的联系组中的每个人都会收到报警信息。</p>
+<h3 id="34-配置进程监控">3.4 配置进程监控<a hidden class="anchor" aria-hidden="true" href="#34-配置进程监控">#</a></h3>
+<p>除了简单的 ECS 一键监控外，云监控还为用户提供了自定义监控规则的能力。下面以 Java 进程为例，演示如何配置进程监控规则。</p>
+<p>在左侧导航栏选择“云资源监控” -&gt; &ldquo;主机监控&rdquo;，在“主机监控”页面会显示目前所有 ECS 实例列表。</p>
+<p><img alt="aliyun-monitor-plugin" loading="lazy" src="/aliyun-monitor/aliyun-monitor-plugin.png"></p>
+<p>单击需要配置监控规则的 ECS 实例，进入监控详情页面。</p>
+<p><img alt="aliyun-monitor-detail" loading="lazy" src="/aliyun-monitor/aliyun-monitor-detail.png"></p>
+<p>选择上方的“进程监控” Tab，在“进程 TopN”中根据进程名称找到需要监控的 Java 进程，并复制进程名称。</p>
+<p><img alt="aliyun-monitor-rule1" loading="lazy" src="/aliyun-monitor/aliyun-monitor-rule1.png"></p>
+<p>然后在“进程数监控”中，点击“添加进程监控” -&gt; 粘贴复制的“进程名称”并增加。</p>
+<p><img alt="aliyun-monitor-rule2" loading="lazy" src="/aliyun-monitor/aliyun-monitor-rule2.png"></p>
+<p>云监控会根据增加的“进程名称”，实时过滤当前符合该“进程名称”的进程数量，并显示出来。如图所示，有2个进程符合 Java 进程名称。</p>
+<p><img alt="aliyun-monitor-rule3" loading="lazy" src="/aliyun-monitor/aliyun-monitor-rule3.png"></p>
+<p>有了进程数量，就可以根据数量设定报警规则了。点击右侧的 <strong>小铃铛</strong> 图标。在右侧弹出窗口中“设置规则描述”。</p>
+<p><img alt="aliyun-monitor-rule4" loading="lazy" src="/aliyun-monitor/aliyun-monitor-rule4.png"></p>
+<ol>
+<li>填写自定义的规则名称，例如“Java进程数量监控”；</li>
+<li>监控指标保持默认的“进程/当前进程数”；</li>
+<li>processName保持默认内容即可，就是之前过滤进程使用的“进程名称”；</li>
+<li><strong>重点是阈值及报警级别的配置</strong>。可以看到这里有3个级别：紧急、警告、普通。这里举例说明，把紧急级别设定为“连续10个周期”即10分钟，Java 进程数量的平均值“&lt;(小于)”1个，就发出报警信息。一旦紧急级别的报警信息发出，就说明在过去的10分钟内这台 ECS 上的 Java 进程数量小于1个，可能已经挂掉了。同理，把警告级别设定为“连续3个周期”即3分钟，Java 进程数量的平均值“&lt;(小于)”1个，就发出报警信息；把普通级别设定为“连续1个周期”即1分钟，Java 进程数量的平均值“&lt;(小于)”1个，就发出报警信息。</li>
+</ol>
+<p>设置完成后点击“确定”，进入“创建报警规则”窗口。</p>
+<p><img alt="aliyun-monitor-rule5" loading="lazy" src="/aliyun-monitor/aliyun-monitor-rule5.png"></p>
+<p>在这个窗口可以复查“规则描述”。没有问题的话接着设置“报警联系人组”，可以选择<code>3.2</code>中设置的报警联系组。最后点击“确认”就完成了一条进程监控的配置。</p>
+<p>已完成的监控报警规则，可以在“主机监控详情”页面的“报警规则” Tab 下查看。</p>
+<p><img alt="aliyun-monitor-rule6" loading="lazy" src="/aliyun-monitor/aliyun-monitor-rule6.png"></p>
+<h2 id="4-验证-ecs-云监控">4 验证 ECS 云监控<a hidden class="anchor" aria-hidden="true" href="#4-验证-ecs-云监控">#</a></h2>
+<p>完成 ECS 监控报警规则后，需要进行验证。一种方式是模拟触发规则报警的条件，这种形式的验证在生产环境操作比较危险，但真实。另一种方式是修改报警规则从而在正常情况下触发报警，这种形式相对安全，但缺乏真实规则的验证，只能验证报警链路是通畅的。</p>
+<p>下面以 Java 进程监控为例，使用第二种方法验证报警链路是通畅的。可以把普通级别设定为“连续1个周期”即1分钟，Java 进程数量的平均值“&lt;(小于)”3个，就发出报警信息。</p>
+<p><img alt="aliyun-monitor-verify" loading="lazy" src="/aliyun-monitor/aliyun-monitor-verify.png"></p>
+<p>修改配置并生效后，1分钟内就收到云监控的“普通级别”报警邮件了。</p>
+<p><img alt="aliyun-monitor-result1" loading="lazy" src="/aliyun-monitor/aliyun-monitor-result1.png"></p>
+<p>至此，基本确定之前配置的 Java 进程数量监控已生效。<strong>记得把验证规则改回去</strong>。</p>
+<p><img alt="aliyun-monitor-result2" loading="lazy" src="/aliyun-monitor/aliyun-monitor-result2.png"></p>
+<p>阿里云的云监控会再次发出报警恢复的邮件。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://nimblecode.tech/tags/%E9%98%BF%E9%87%8C%E4%BA%91/">阿里云</a></li>
+      <li><a href="https://nimblecode.tech/tags/aliyun/">Aliyun</a></li>
+      <li><a href="https://nimblecode.tech/tags/ecs/">ECS</a></li>
+      <li><a href="https://nimblecode.tech/tags/%E4%BA%91%E7%9B%91%E6%8E%A7/">云监控</a></li>
+      <li><a href="https://nimblecode.tech/tags/java/">Java</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://nimblecode.tech/">Nimble Code Tech</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
