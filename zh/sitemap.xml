@@ -2,17 +2,60 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nimblecode.tech/tags/aliyun/</loc>
-    <lastmod>2025-11-10T14:36:45-08:00</lastmod>
+    <loc>https://nimblecode.tech/tags/google/</loc>
+    <lastmod>2025-12-17T21:54:33-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nimblecode.tech/en/tags/google/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://nimblecode.tech/tags/google/"
+                />
   </url><url>
-    <loc>https://nimblecode.tech/tags/ecs/</loc>
-    <lastmod>2025-11-10T14:36:45-08:00</lastmod>
+    <loc>https://nimblecode.tech/tags/google-search-console/</loc>
+    <lastmod>2025-12-17T21:54:33-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nimblecode.tech/en/tags/google-search-console/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://nimblecode.tech/tags/google-search-console/"
+                />
   </url><url>
-    <loc>https://nimblecode.tech/tags/java/</loc>
-    <lastmod>2025-11-10T14:36:45-08:00</lastmod>
+    <loc>https://nimblecode.tech/tags/gsc/</loc>
+    <lastmod>2025-12-17T21:54:33-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nimblecode.tech/en/tags/gsc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://nimblecode.tech/tags/gsc/"
+                />
+  </url><url>
+    <loc>https://nimblecode.tech/tags/hugo/</loc>
+    <lastmod>2025-12-17T21:54:33-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nimblecode.tech/en/tags/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://nimblecode.tech/tags/hugo/"
+                />
   </url><url>
     <loc>https://nimblecode.tech/</loc>
-    <lastmod>2025-11-10T14:36:45-08:00</lastmod>
+    <lastmod>2025-12-17T21:54:33-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -25,7 +68,7 @@
                 />
   </url><url>
     <loc>https://nimblecode.tech/posts/</loc>
-    <lastmod>2025-11-10T14:36:45-08:00</lastmod>
+    <lastmod>2025-12-17T21:54:33-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -37,8 +80,21 @@
                 href="https://nimblecode.tech/posts/"
                 />
   </url><url>
+    <loc>https://nimblecode.tech/tags/seo/</loc>
+    <lastmod>2025-12-17T21:54:33-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nimblecode.tech/en/tags/seo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://nimblecode.tech/tags/seo/"
+                />
+  </url><url>
     <loc>https://nimblecode.tech/tags/</loc>
-    <lastmod>2025-11-10T14:36:45-08:00</lastmod>
+    <lastmod>2025-12-17T21:54:33-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -49,6 +105,37 @@
                 hreflang="zh"
                 href="https://nimblecode.tech/tags/"
                 />
+  </url><url>
+    <loc>https://nimblecode.tech/posts/google-search-console/</loc>
+    <lastmod>2025-12-17T21:54:33-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nimblecode.tech/en/posts/google-search-console/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://nimblecode.tech/posts/google-search-console/"
+                />
+  </url><url>
+    <loc>https://nimblecode.tech/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/</loc>
+    <lastmod>2025-12-17T21:54:33-07:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/%E7%B4%A2%E5%BC%95/</loc>
+    <lastmod>2025-12-17T21:54:33-07:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/posts/apply-sowp/</loc>
+    <lastmod>2025-12-09T11:00:48-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/aliyun/</loc>
+    <lastmod>2025-11-10T14:36:45-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/ecs/</loc>
+    <lastmod>2025-11-10T14:36:45-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/java/</loc>
+    <lastmod>2025-11-10T14:36:45-08:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</loc>
     <lastmod>2025-11-10T14:36:45-08:00</lastmod>
@@ -74,29 +161,10 @@
     <loc>https://nimblecode.tech/tags/microsoft/</loc>
     <lastmod>2025-11-05T10:44:20-08:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/seo/</loc>
-    <lastmod>2025-11-05T10:44:20-08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://nimblecode.tech/en/tags/seo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://nimblecode.tech/tags/seo/"
-                />
-  </url><url>
     <loc>https://nimblecode.tech/tags/webmaster-tools/</loc>
     <lastmod>2025-11-05T10:44:20-08:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/posts/ms-webmaster-tools/</loc>
-    <lastmod>2025-11-05T10:44:20-08:00</lastmod>
-  </url><url>
-    <loc>https://nimblecode.tech/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/</loc>
-    <lastmod>2025-11-05T10:44:20-08:00</lastmod>
-  </url><url>
-    <loc>https://nimblecode.tech/tags/%E7%B4%A2%E5%BC%95/</loc>
     <lastmod>2025-11-05T10:44:20-08:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/tags/api/</loc>
@@ -110,19 +178,6 @@
   </url><url>
     <loc>https://nimblecode.tech/tags/favicon.ico/</loc>
     <lastmod>2025-11-04T14:10:07-08:00</lastmod>
-  </url><url>
-    <loc>https://nimblecode.tech/tags/hugo/</loc>
-    <lastmod>2025-11-04T14:10:07-08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://nimblecode.tech/en/tags/hugo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://nimblecode.tech/tags/hugo/"
-                />
   </url><url>
     <loc>https://nimblecode.tech/posts/add-favicon/</loc>
     <lastmod>2025-11-04T14:10:07-08:00</lastmod>
@@ -148,63 +203,11 @@
     <loc>https://nimblecode.tech/tags/ga/</loc>
     <lastmod>2025-10-28T15:44:00-07:00</lastmod>
   </url><url>
-    <loc>https://nimblecode.tech/tags/google/</loc>
-    <lastmod>2025-10-28T15:44:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://nimblecode.tech/en/tags/google/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://nimblecode.tech/tags/google/"
-                />
-  </url><url>
     <loc>https://nimblecode.tech/tags/google-analytics/</loc>
     <lastmod>2025-10-28T15:44:00-07:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/posts/google-analytics/</loc>
     <lastmod>2025-10-28T15:44:00-07:00</lastmod>
-  </url><url>
-    <loc>https://nimblecode.tech/tags/google-search-console/</loc>
-    <lastmod>2025-10-25T21:54:33-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://nimblecode.tech/en/tags/google-search-console/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://nimblecode.tech/tags/google-search-console/"
-                />
-  </url><url>
-    <loc>https://nimblecode.tech/tags/gsc/</loc>
-    <lastmod>2025-10-25T21:54:33-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://nimblecode.tech/en/tags/gsc/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://nimblecode.tech/tags/gsc/"
-                />
-  </url><url>
-    <loc>https://nimblecode.tech/posts/google-search-console/</loc>
-    <lastmod>2025-10-25T21:54:33-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://nimblecode.tech/en/posts/google-search-console/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://nimblecode.tech/posts/google-search-console/"
-                />
   </url><url>
     <loc>https://nimblecode.tech/tags/llms/</loc>
     <lastmod>2025-10-03T14:35:52-07:00</lastmod>

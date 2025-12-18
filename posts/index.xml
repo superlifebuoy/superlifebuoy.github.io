@@ -6,8 +6,45 @@
     <description>Recent content in Posts on Nimble Code Tech</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 10 Nov 2025 14:36:45 -0800</lastBuildDate>
+    <lastBuildDate>Wed, 17 Dec 2025 21:54:33 -0700</lastBuildDate>
     <atom:link href="https://nimblecode.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何将网站加入Google搜索索引？</title>
+      <link>https://nimblecode.tech/posts/google-search-console/</link>
+      <pubDate>Wed, 17 Dec 2025 21:54:33 -0700</pubDate>
+      <guid>https://nimblecode.tech/posts/google-search-console/</guid>
+      <description>使用Hugo建站后，通过Google Search Console将网站内容加入Google搜索引擎索引中去。</description>
+    </item>
+    <item>
+      <title>如何申请加拿大配偶工签</title>
+      <link>https://nimblecode.tech/posts/apply-sowp/</link>
+      <pubDate>Tue, 09 Dec 2025 11:00:48 -0800</pubDate>
+      <guid>https://nimblecode.tech/posts/apply-sowp/</guid>
+      <description>&lt;h2 id=&#34;1-什么是sowp&#34;&gt;1 什么是SOWP&lt;/h2&gt;
+&lt;p&gt;SOWP (Spouse Open Work Permit) 是配偶工签的缩写，它是加拿大临时居民的配偶或同居伴侣可以申请的一种开放性工作签证。在积累一定境内工作经验后，还有机会搭配其他移民项目移民加拿大。&lt;/p&gt;
+&lt;h3 id=&#34;11-sowp的特点&#34;&gt;1.1 SOWP的特点&lt;/h3&gt;
+&lt;p&gt;SOWP是一种不受雇主限制的工作签证，持有人可以：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;为任何雇主工作（不限行业、不限地区）；&lt;/li&gt;
+&lt;li&gt;随时更换工作；&lt;/li&gt;
+&lt;li&gt;在加拿大合法居留。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;11-申请sowp的前置条件&#34;&gt;1.1 申请SOWP的前置条件&lt;/h3&gt;
+&lt;p&gt;想要申请SOWP，需要配偶或伴侣满足如下三类情况之一：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;陪读配偶工签&lt;/strong&gt;：配偶或同居伴侣是国际留学生，持有有效的加拿大学签；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;陪工配偶工签&lt;/strong&gt;：配偶或同居伴侣持有有效的加拿大工签；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;配偶团聚工签&lt;/strong&gt;：配偶或同居伴侣是永久居民或公民，且二人已经递交了夫妻团聚移民申请。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-如何申请sowp&#34;&gt;2 如何申请SOWP&lt;/h2&gt;
+&lt;p&gt;下面以陪工配偶工签申请为例（因为我是这种情况 ^o^~），具体说明申请流程。&lt;/p&gt;
+&lt;h3 id=&#34;21-注册ircc账户&#34;&gt;2.1 注册IRCC账户&lt;/h3&gt;
+&lt;p&gt;首先需要注册一个加拿大IRCC的账户，&lt;/p&gt;
+&lt;h3 id=&#34;22-选择申请类型&#34;&gt;2.2 选择申请类型&lt;/h3&gt;
+&lt;h3 id=&#34;23-提交相关材料&#34;&gt;2.3 提交相关材料&lt;/h3&gt;
+&lt;h3 id=&#34;24-付费&#34;&gt;2.4 付费&lt;/h3&gt;
+&lt;h2 id=&#34;3-总结&#34;&gt;3 总结&lt;/h2&gt;</description>
+    </item>
     <item>
       <title>监控阿里云 ECS 的进程</title>
       <link>https://nimblecode.tech/posts/aliyun-monitor/</link>
@@ -56,13 +93,6 @@
       <pubDate>Tue, 28 Oct 2025 15:44:00 -0700</pubDate>
       <guid>https://nimblecode.tech/posts/google-analytics/</guid>
       <description>使用 Hugo 建站后，通过 Google Analytics 收集、分析用户在网站上的操作。</description>
-    </item>
-    <item>
-      <title>如何将网站加入Google搜索索引？</title>
-      <link>https://nimblecode.tech/posts/google-search-console/</link>
-      <pubDate>Sat, 25 Oct 2025 21:54:33 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/google-search-console/</guid>
-      <description>使用Hugo建站后，通过Google Search Console将网站内容加入Google搜索引擎索引中去。</description>
     </item>
     <item>
       <title>本地验证：Ollama &#43; Spring</title>
@@ -181,13 +211,6 @@ Host anotherHost
       <pubDate>Wed, 07 Aug 2024 23:15:47 -0700</pubDate>
       <guid>https://nimblecode.tech/posts/maven-intro/</guid>
       <description>简单介绍Maven，收集一些常用的Maven命令和参数。不定时更新。</description>
-    </item>
-    <item>
-      <title>更新与分发Docker镜像（2）</title>
-      <link>https://nimblecode.tech/posts/update-share-app/</link>
-      <pubDate>Mon, 20 Mar 2023 19:52:44 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/update-share-app/</guid>
-      <description>如何更新Docker镜像？如果推送Docker镜像到镜像仓库？</description>
     </item>
   </channel>
 </rss>
