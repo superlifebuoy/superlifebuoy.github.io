@@ -2,6 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nimblecode.tech/posts/ircc-gckey/</loc>
+    <lastmod>2026-01-09T12:28:54-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/</loc>
+    <lastmod>2026-01-09T12:28:54-08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nimblecode.tech/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://nimblecode.tech/"
+                />
+  </url><url>
+    <loc>https://nimblecode.tech/posts/</loc>
+    <lastmod>2026-01-09T12:28:54-08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nimblecode.tech/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://nimblecode.tech/posts/"
+                />
+  </url><url>
+    <loc>https://nimblecode.tech/tags/gckey/</loc>
+    <lastmod>2026-01-09T11:32:55-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/ircc/</loc>
+    <lastmod>2026-01-09T11:32:55-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/</loc>
+    <lastmod>2026-01-09T11:32:55-08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nimblecode.tech/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://nimblecode.tech/tags/"
+                />
+  </url><url>
+    <loc>https://nimblecode.tech/tags/%E5%8A%A0%E6%8B%BF%E5%A4%A7/</loc>
+    <lastmod>2026-01-09T11:32:55-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/posts/ircc-signup/</loc>
+    <lastmod>2026-01-09T11:32:55-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/%E5%8F%8C%E5%9B%A0%E5%AD%90%E9%AA%8C%E8%AF%81/</loc>
+    <lastmod>2026-01-09T11:32:55-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/%E8%B4%A6%E6%88%B7/</loc>
+    <lastmod>2026-01-09T11:32:55-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/posts/baidu-resources-platform/</loc>
+    <lastmod>2025-12-18T15:21:00-08:00</lastmod>
+  </url><url>
     <loc>https://nimblecode.tech/tags/google/</loc>
     <lastmod>2025-12-17T21:54:33-07:00</lastmod>
     <xhtml:link
@@ -54,32 +117,6 @@
                 href="https://nimblecode.tech/tags/hugo/"
                 />
   </url><url>
-    <loc>https://nimblecode.tech/</loc>
-    <lastmod>2025-12-17T21:54:33-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://nimblecode.tech/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://nimblecode.tech/"
-                />
-  </url><url>
-    <loc>https://nimblecode.tech/posts/</loc>
-    <lastmod>2025-12-17T21:54:33-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://nimblecode.tech/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://nimblecode.tech/posts/"
-                />
-  </url><url>
     <loc>https://nimblecode.tech/tags/seo/</loc>
     <lastmod>2025-12-17T21:54:33-07:00</lastmod>
     <xhtml:link
@@ -91,19 +128,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://nimblecode.tech/tags/seo/"
-                />
-  </url><url>
-    <loc>https://nimblecode.tech/tags/</loc>
-    <lastmod>2025-12-17T21:54:33-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://nimblecode.tech/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://nimblecode.tech/tags/"
                 />
   </url><url>
     <loc>https://nimblecode.tech/posts/google-search-console/</loc>

@@ -6,8 +6,29 @@
     <description>Recent content on Nimble Code Tech</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 17 Dec 2025 21:54:33 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 09 Jan 2026 12:28:54 -0800</lastBuildDate>
     <atom:link href="https://nimblecode.tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ircc Gckey</title>
+      <link>https://nimblecode.tech/posts/ircc-gckey/</link>
+      <pubDate>Fri, 09 Jan 2026 12:28:54 -0800</pubDate>
+      <guid>https://nimblecode.tech/posts/ircc-gckey/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>如何注册IRCC账户</title>
+      <link>https://nimblecode.tech/posts/ircc-signup/</link>
+      <pubDate>Fri, 09 Jan 2026 11:32:55 -0800</pubDate>
+      <guid>https://nimblecode.tech/posts/ircc-signup/</guid>
+      <description>简要介绍如何注册加拿大IRCC账户。</description>
+    </item>
+    <item>
+      <title>Baidu Resources Platform</title>
+      <link>https://nimblecode.tech/posts/baidu-resources-platform/</link>
+      <pubDate>Thu, 18 Dec 2025 15:21:00 -0800</pubDate>
+      <guid>https://nimblecode.tech/posts/baidu-resources-platform/</guid>
+      <description></description>
+    </item>
     <item>
       <title>如何将网站加入Google搜索索引？</title>
       <link>https://nimblecode.tech/posts/google-search-console/</link>
@@ -21,7 +42,7 @@
       <pubDate>Tue, 09 Dec 2025 11:00:48 -0800</pubDate>
       <guid>https://nimblecode.tech/posts/apply-sowp/</guid>
       <description>&lt;h2 id=&#34;1-什么是sowp&#34;&gt;1 什么是SOWP&lt;/h2&gt;
-&lt;p&gt;SOWP (Spouse Open Work Permit) 是配偶工签的缩写，它是加拿大临时居民的配偶或同居伴侣可以申请的一种开放性工作签证。在积累一定境内工作经验后，还有机会搭配其他移民项目移民加拿大。&lt;/p&gt;
+&lt;p&gt;SOWP (Spouse Open Work Permit) 是配偶开放工签的缩写，它是加拿大临时居民的配偶或同居伴侣可以申请的一种开放性工作签证。在积累一定境内工作经验后，还有机会搭配其他移民项目移民加拿大。&lt;/p&gt;
 &lt;h3 id=&#34;11-sowp的特点&#34;&gt;1.1 SOWP的特点&lt;/h3&gt;
 &lt;p&gt;SOWP是一种不受雇主限制的工作签证，持有人可以：&lt;/p&gt;
 &lt;ul&gt;
@@ -39,11 +60,24 @@
 &lt;h2 id=&#34;2-如何申请sowp&#34;&gt;2 如何申请SOWP&lt;/h2&gt;
 &lt;p&gt;下面以陪工配偶工签申请为例（因为我是这种情况 ^o^~），具体说明申请流程。&lt;/p&gt;
 &lt;h3 id=&#34;21-注册ircc账户&#34;&gt;2.1 注册IRCC账户&lt;/h3&gt;
-&lt;p&gt;首先需要注册一个加拿大IRCC的账户，&lt;/p&gt;
-&lt;h3 id=&#34;22-选择申请类型&#34;&gt;2.2 选择申请类型&lt;/h3&gt;
-&lt;h3 id=&#34;23-提交相关材料&#34;&gt;2.3 提交相关材料&lt;/h3&gt;
-&lt;h3 id=&#34;24-付费&#34;&gt;2.4 付费&lt;/h3&gt;
-&lt;h2 id=&#34;3-总结&#34;&gt;3 总结&lt;/h2&gt;</description>
+&lt;p&gt;首先需要做的就是注册IRCC账户，有了账户才能完成后续的申请流程。&lt;/p&gt;
+&lt;p&gt;如果之前已有IRCC账户，可跳到2.2 登陆IRCC账户。如果没有，则需要打开&lt;a href=&#34;https://www.canada.ca/en/immigration-refugees-citizenship.html&#34;&gt;IRCC官网&lt;/a&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;ircc-homepage&#34; loading=&#34;lazy&#34; src=&#34;https://nimblecode.tech/apply-sowp/ircc-homepage.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;22-登陆ircc账户&#34;&gt;2.2 登陆IRCC账户&lt;/h3&gt;
+&lt;p&gt;输入完密码后，还需要设置安全恢复问题、答案、提示等信息。&lt;/p&gt;
+&lt;p&gt;之后是邮箱地址。&lt;/p&gt;
+&lt;p&gt;输入二阶段验证的邮箱码之后，GCKey提供了双因子认证的recovery codes，保存后点击“Continue”。&lt;/p&gt;
+&lt;p&gt;首先打开&lt;a href=&#34;https://www.canada.ca/en/immigration-refugees-citizenship.html&#34;&gt;IRCC官网&lt;/a&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;ircc-1&#34; loading=&#34;lazy&#34; src=&#34;https://nimblecode.tech/apply-sowp/ircc-1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;点击上图红框中的“Temporary work permits”，进入工签说明页面：&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;ircc-2&#34; loading=&#34;lazy&#34; src=&#34;https://nimblecode.tech/apply-sowp/ircc-2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;再点击上图红框中的“All work permits with special instructions”，进入详细的指导页面：&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;ircc-3&#34; loading=&#34;lazy&#34; src=&#34;https://nimblecode.tech/apply-sowp/ircc-3.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;因为申请的工签类型是配偶开放工签，所以选择上图红框中的“Family members of foreign workers”。新打开的页面是专门针对该类工签的指导说明页面，信息非常的详细。（这里要口头表扬一下IRCC网站 ^o^）&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;ircc-4&#34; loading=&#34;lazy&#34; src=&#34;https://nimblecode.tech/apply-sowp/ircc-4.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这个页面显示了整个操作流程（Sections）、处理时间（Processing times）、申请费用（Fees）等信息。点击“Next: Who can apply”，进入下一个页面：&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;ircc-5&#34; loading=&#34;lazy&#34; src=&#34;https://nimblecode.tech/apply-sowp/ircc-5.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在这个页面需要选择申请人是否已经提交了PR申请（经济类或试点项目）。如果不清楚这里指的经济类移民或者试点项目包含哪些，可以点击“Eligible economic class permanent resident programs or pilots”进行查看：&lt;/p&gt;</description>
     </item>
     <item>
       <title>监控阿里云 ECS 的进程</title>
@@ -149,68 +183,6 @@
       <pubDate>Mon, 31 Mar 2025 11:49:18 -0700</pubDate>
       <guid>https://nimblecode.tech/posts/develop-multi-pages-websit/</guid>
       <description>在Mac上使用VUE + Vite开发多页面网站，并部署到Nginx上。</description>
-    </item>
-    <item>
-      <title>SSH配置与使用</title>
-      <link>https://nimblecode.tech/posts/ssh-intro/</link>
-      <pubDate>Wed, 05 Mar 2025 18:56:53 -0800</pubDate>
-      <guid>https://nimblecode.tech/posts/ssh-intro/</guid>
-      <description>&lt;h2 id=&#34;1-ssh是什么&#34;&gt;1 SSH是什么&lt;/h2&gt;
-&lt;p&gt;SSH(Secure Shell Protocol)是一种加密的网络传输协议。&lt;/p&gt;
-&lt;h2 id=&#34;2-基本用法&#34;&gt;2 基本用法&lt;/h2&gt;
-&lt;h3 id=&#34;2x-config配置&#34;&gt;2.x config配置&lt;/h3&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;配置项&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;说明&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;Host&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;对其他的声明项做分组。&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;HostName&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;指明登录的服务器真实域名。&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;User&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;指明登录HostName使用的用户名。&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;IdentityFile&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;指明User登录HostName时，使用的密钥位置。&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;如下是一个示例：&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Host github.com
-	HostName github.com
-	User user1
-	IdentityFile ~/.ssh/id_rsa
-
-Host anotherHost
-	HostName github.com
-	User user2
-	IdentityFile ~/.ssh/id_rsa_user2
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;3-原理&#34;&gt;3 原理&lt;/h2&gt;
-&lt;h2 id=&#34;4-github使用场景&#34;&gt;4 Github使用场景&lt;/h2&gt;</description>
-    </item>
-    <item>
-      <title>类Unix系统常用命令简介</title>
-      <link>https://nimblecode.tech/posts/mac-command-intro/</link>
-      <pubDate>Thu, 08 Aug 2024 23:07:15 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/mac-command-intro/</guid>
-      <description>一个常用类Unix系统命令的简介集合。不定时更新。</description>
-    </item>
-    <item>
-      <title>Maven入门</title>
-      <link>https://nimblecode.tech/posts/maven-intro/</link>
-      <pubDate>Wed, 07 Aug 2024 23:15:47 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/maven-intro/</guid>
-      <description>简单介绍Maven，收集一些常用的Maven命令和参数。不定时更新。</description>
     </item>
   </channel>
 </rss>
