@@ -6,14 +6,14 @@
     <description>Recent content in Posts on Nimble Code Tech</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 09 Jan 2026 12:28:54 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 11 Jan 2026 15:35:40 -0800</lastBuildDate>
     <atom:link href="https://nimblecode.tech/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ircc Gckey</title>
-      <link>https://nimblecode.tech/posts/ircc-gckey/</link>
-      <pubDate>Fri, 09 Jan 2026 12:28:54 -0800</pubDate>
-      <guid>https://nimblecode.tech/posts/ircc-gckey/</guid>
-      <description></description>
+      <title>GCkey 是什么？</title>
+      <link>https://nimblecode.tech/posts/what-is-gckey/</link>
+      <pubDate>Sun, 11 Jan 2026 15:35:40 -0800</pubDate>
+      <guid>https://nimblecode.tech/posts/what-is-gckey/</guid>
+      <description>简要介绍什么是 GCKey，以及它与 IRCC 账户的关系。</description>
     </item>
     <item>
       <title>如何注册IRCC账户</title>
