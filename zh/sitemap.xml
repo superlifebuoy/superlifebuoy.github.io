@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://nimblecode.tech/</loc>
-    <lastmod>2026-02-09T12:14:54-08:00</lastmod>
+    <lastmod>2026-02-13T13:42:48-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,8 +15,17 @@
                 href="https://nimblecode.tech/"
                 />
   </url><url>
+    <loc>https://nimblecode.tech/tags/parent-name/</loc>
+    <lastmod>2026-02-13T13:42:48-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/posts/name-and-signature/</loc>
+    <lastmod>2026-02-13T13:42:48-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/parent-signature/</loc>
+    <lastmod>2026-02-13T13:42:48-08:00</lastmod>
+  </url><url>
     <loc>https://nimblecode.tech/posts/</loc>
-    <lastmod>2026-02-09T12:14:54-08:00</lastmod>
+    <lastmod>2026-02-13T13:42:48-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,7 +38,7 @@
                 />
   </url><url>
     <loc>https://nimblecode.tech/tags/</loc>
-    <lastmod>2026-02-09T12:14:54-08:00</lastmod>
+    <lastmod>2026-02-13T13:42:48-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -41,10 +50,13 @@
                 href="https://nimblecode.tech/tags/"
                 />
   </url><url>
-    <loc>https://nimblecode.tech/tags/%E6%B5%B7%E5%85%B3/</loc>
-    <lastmod>2026-02-09T12:14:54-08:00</lastmod>
-  </url><url>
     <loc>https://nimblecode.tech/tags/%E5%8A%A0%E6%8B%BF%E5%A4%A7/</loc>
+    <lastmod>2026-02-13T13:42:48-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/%E5%AD%A6%E6%A0%A1/</loc>
+    <lastmod>2026-02-13T13:42:48-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/%E6%B5%B7%E5%85%B3/</loc>
     <lastmod>2026-02-09T12:14:54-08:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/tags/%E8%80%81%E5%B9%B4%E4%BA%BA/</loc>

@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Nimble Code Tech</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 09 Feb 2026 12:14:54 -0800</lastBuildDate>
+    <lastBuildDate>Fri, 13 Feb 2026 13:42:48 -0800</lastBuildDate>
     <atom:link href="https://nimblecode.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Parent Name 与 Parent Signature 的区别</title>
+      <link>https://nimblecode.tech/posts/name-and-signature/</link>
+      <pubDate>Fri, 13 Feb 2026 13:42:48 -0800</pubDate>
+      <guid>https://nimblecode.tech/posts/name-and-signature/</guid>
+      <description>介绍加拿大学校 Newsletter 或 Permission Form 中 Parent Signature 与 Parent Name 的区别。</description>
+    </item>
     <item>
       <title>老年人自助登陆加拿大</title>
       <link>https://nimblecode.tech/posts/elders-first-enter-canada/</link>
@@ -140,13 +147,6 @@
       <pubDate>Sat, 19 Jul 2025 16:25:27 -0700</pubDate>
       <guid>https://nimblecode.tech/posts/how-to-use-spotbugs/</guid>
       <description>介绍如何使用SpotBugs，来发现代码的静态问题。</description>
-    </item>
-    <item>
-      <title>Apache ab —— 一个基准工具</title>
-      <link>https://nimblecode.tech/posts/apache-ab-tester/</link>
-      <pubDate>Wed, 02 Jul 2025 21:35:58 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/apache-ab-tester/</guid>
-      <description>本文简要介绍Apache ab(ApacheBench)，一个性能基准工具。</description>
     </item>
   </channel>
 </rss>
