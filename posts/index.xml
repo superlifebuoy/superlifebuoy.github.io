@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Nimble Code Tech</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 23 Feb 2026 20:40:20 -0800</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 14:52:45 -0700</lastBuildDate>
     <atom:link href="https://nimblecode.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>更新孩子的 MSP</title>
+      <link>https://nimblecode.tech/posts/update-child-msp/</link>
+      <pubDate>Tue, 17 Mar 2026 14:52:45 -0700</pubDate>
+      <guid>https://nimblecode.tech/posts/update-child-msp/</guid>
+      <description>简要介绍如何更新孩子的 MSP。</description>
+    </item>
     <item>
       <title>更新 BC Services Card</title>
       <link>https://nimblecode.tech/posts/update-bc-service-card/</link>
@@ -140,13 +147,6 @@
       <pubDate>Sat, 16 Aug 2025 14:46:00 -0700</pubDate>
       <guid>https://nimblecode.tech/posts/posthog-creating-insights/</guid>
       <description>简单介绍PostHog的业务洞察类型，进而介绍Trends的使用方法。</description>
-    </item>
-    <item>
-      <title>如何测算Java代码的单元测试覆盖率</title>
-      <link>https://nimblecode.tech/posts/eclmma-quickstart/</link>
-      <pubDate>Thu, 07 Aug 2025 19:52:39 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/eclmma-quickstart/</guid>
-      <description>介绍什么是单元测试覆盖率，以及测算Java单元测试覆盖率的两个工具：JaCoCo与EclEmma。</description>
     </item>
   </channel>
 </rss>

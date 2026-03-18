@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nimblecode.tech/tags/bc-services-card/</loc>
-    <lastmod>2026-02-23T20:40:20-08:00</lastmod>
+    <loc>https://nimblecode.tech/tags/medical-services-plan/</loc>
+    <lastmod>2026-03-17T14:52:45-07:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/tags/msp/</loc>
-    <lastmod>2026-02-23T20:40:20-08:00</lastmod>
+    <lastmod>2026-03-17T14:52:45-07:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/</loc>
-    <lastmod>2026-02-23T20:40:20-08:00</lastmod>
+    <lastmod>2026-03-17T14:52:45-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -22,7 +22,7 @@
                 />
   </url><url>
     <loc>https://nimblecode.tech/posts/</loc>
-    <lastmod>2026-02-23T20:40:20-08:00</lastmod>
+    <lastmod>2026-03-17T14:52:45-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -35,7 +35,7 @@
                 />
   </url><url>
     <loc>https://nimblecode.tech/tags/</loc>
-    <lastmod>2026-02-23T20:40:20-08:00</lastmod>
+    <lastmod>2026-03-17T14:52:45-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -47,13 +47,19 @@
                 href="https://nimblecode.tech/tags/"
                 />
   </url><url>
-    <loc>https://nimblecode.tech/posts/update-bc-service-card/</loc>
-    <lastmod>2026-02-23T20:40:20-08:00</lastmod>
+    <loc>https://nimblecode.tech/posts/update-child-msp/</loc>
+    <lastmod>2026-03-17T14:52:45-07:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/tags/%E5%8A%A0%E6%8B%BF%E5%A4%A7/</loc>
-    <lastmod>2026-02-23T20:40:20-08:00</lastmod>
+    <lastmod>2026-03-17T14:52:45-07:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/tags/%E5%8C%BB%E4%BF%9D/</loc>
+    <lastmod>2026-03-17T14:52:45-07:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/bc-services-card/</loc>
+    <lastmod>2026-02-23T20:40:20-08:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/posts/update-bc-service-card/</loc>
     <lastmod>2026-02-23T20:40:20-08:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/tags/ircc/</loc>
