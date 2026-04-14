@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nimblecode.tech/tags/drivers-licence/</loc>
-    <lastmod>2026-03-26T16:50:04-07:00</lastmod>
+    <loc>https://nimblecode.tech/tags/canadian-tire/</loc>
+    <lastmod>2026-04-14T11:38:27-07:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/</loc>
-    <lastmod>2026-03-26T16:50:04-07:00</lastmod>
+    <lastmod>2026-04-14T11:38:27-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -19,7 +19,7 @@
                 />
   </url><url>
     <loc>https://nimblecode.tech/posts/</loc>
-    <lastmod>2026-03-26T16:50:04-07:00</lastmod>
+    <lastmod>2026-04-14T11:38:27-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -32,7 +32,7 @@
                 />
   </url><url>
     <loc>https://nimblecode.tech/tags/</loc>
-    <lastmod>2026-03-26T16:50:04-07:00</lastmod>
+    <lastmod>2026-04-14T11:38:27-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -43,6 +43,18 @@
                 hreflang="zh"
                 href="https://nimblecode.tech/tags/"
                 />
+  </url><url>
+    <loc>https://nimblecode.tech/tags/tire-change-over/</loc>
+    <lastmod>2026-04-14T11:38:27-07:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/%E6%8D%A2%E8%BD%AE%E8%83%8E/</loc>
+    <lastmod>2026-04-14T11:38:27-07:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/posts/tire-change-over-at-canadian-tire/</loc>
+    <lastmod>2026-04-14T11:38:27-07:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/drivers-licence/</loc>
+    <lastmod>2026-03-26T16:50:04-07:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/tags/%E6%9B%B4%E6%96%B0/</loc>
     <lastmod>2026-03-26T16:50:04-07:00</lastmod>
