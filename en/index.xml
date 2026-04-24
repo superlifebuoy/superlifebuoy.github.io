@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Nimble Code Tech</title>
-    <link>https://nimblecode.tech/en/</link>
+    <link>http://localhost:1313/en/</link>
     <description>Recent content on Nimble Code Tech</description>
-    <generator>Hugo -- 0.151.0</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 27 Oct 2025 12:01:33 -0700</lastBuildDate>
-    <atom:link href="https://nimblecode.tech/en/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to add a website to the Google search index?</title>
-      <link>https://nimblecode.tech/en/posts/google-search-console/</link>
+      <link>http://localhost:1313/en/posts/google-search-console/</link>
       <pubDate>Mon, 27 Oct 2025 12:01:33 -0700</pubDate>
-      <guid>https://nimblecode.tech/en/posts/google-search-console/</guid>
+      <guid>http://localhost:1313/en/posts/google-search-console/</guid>
       <description>After building a website with Hugo, use Google Search Console to add the website&amp;rsquo;s content to the Google search engine index.</description>
     </item>
     <item>
       <title>Local Verification: Ollama &#43; Spring</title>
-      <link>https://nimblecode.tech/en/posts/local-llms/</link>
+      <link>http://localhost:1313/en/posts/local-llms/</link>
       <pubDate>Fri, 03 Oct 2025 14:35:52 -0700</pubDate>
-      <guid>https://nimblecode.tech/en/posts/local-llms/</guid>
+      <guid>http://localhost:1313/en/posts/local-llms/</guid>
       <description>With Ollama, everyone can easily experience large language models on their own computers. Using Spring AI, programmers focused on business development can easily integrate AI capabilities.</description>
     </item>
     <item>
       <title>Hugo Quick Start</title>
-      <link>https://nimblecode.tech/en/posts/hugo-quick-start/</link>
+      <link>http://localhost:1313/en/posts/hugo-quick-start/</link>
       <pubDate>Wed, 17 Feb 2021 20:29:21 +0800</pubDate>
-      <guid>https://nimblecode.tech/en/posts/hugo-quick-start/</guid>
+      <guid>http://localhost:1313/en/posts/hugo-quick-start/</guid>
       <description>A quick guide to using Hugo.</description>
     </item>
   </channel>

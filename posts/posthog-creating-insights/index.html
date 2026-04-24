@@ -1,41 +1,24 @@
 <!DOCTYPE html>
-<html lang="zh" dir="auto">
+<html lang="zh" dir="auto" data-theme="auto">
 
-<head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KG4P5QR587"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-KG4P5QR587');
-</script>
-<script>
-    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Re Os As Pe Ms Fs capture Ve calculateEventProperties js register register_once register_for_session unregister unregister_for_session qs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty zs Ls createPersonProfile Us Rs Bs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ds debug I Ns getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-    posthog.init('phc_mT7wOBjidgcQVEyPjDDfTMDJlObxehaWFU39siHPudu', {
-        api_host: 'https://us.i.posthog.com',
-        defaults: '2025-05-24',
-        person_profiles: 'identified_only', 
-    })
-</script>
-<meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>PostHog的趋势洞察简介 | Nimble Code Tech</title>
 <meta name="keywords" content="PostHog, Insights, Trends">
 <meta name="description" content="简单介绍PostHog的业务洞察类型，进而介绍Trends的使用方法。">
 <meta name="author" content="">
-<link rel="canonical" href="https://nimblecode.tech/posts/posthog-creating-insights/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.a090830a421002426baafbd314e38f149d77b4c48a12ee9312700d770b27fb26.css" integrity="sha256-oJCDCkIQAkJrqvvTFOOPFJ13tMSKEu6TEnANdwsn&#43;yY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://nimblecode.tech/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://nimblecode.tech/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://nimblecode.tech/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://nimblecode.tech/apple-touch-icon.png">
-<link rel="mask-icon" href="https://nimblecode.tech/safari-pinned-tab.svg">
+<link rel="canonical" href="http://localhost:1313/posts/posthog-creating-insights/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.47e51c7d8489b002361bac156ce9a0a8776d08c5462c2cee95801efafdd90d35.css" integrity="sha256-R&#43;UcfYSJsAI2G6wVbOmgqHdtCMVGLCzulYAe&#43;v3ZDTU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="zh" href="https://nimblecode.tech/posts/posthog-creating-insights/">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/posts/posthog-creating-insights/">
 <noscript>
     <style>
         #theme-toggle,
@@ -56,114 +39,62 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+            .toc {
+                background: var(--entry);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://nimblecode.tech/posts/posthog-creating-insights/">
-  <meta property="og:site_name" content="Nimble Code Tech">
-  <meta property="og:title" content="PostHog的趋势洞察简介">
-  <meta property="og:description" content="简单介绍PostHog的业务洞察类型，进而介绍Trends的使用方法。">
-  <meta property="og:locale" content="zh">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-08-16T14:46:00-07:00">
-    <meta property="article:modified_time" content="2025-08-16T14:46:00-07:00">
-    <meta property="article:tag" content="PostHog">
-    <meta property="article:tag" content="Insights">
-    <meta property="article:tag" content="Trends">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PostHog的趋势洞察简介">
-<meta name="twitter:description" content="简单介绍PostHog的业务洞察类型，进而介绍Trends的使用方法。">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://nimblecode.tech/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "PostHog的趋势洞察简介",
-      "item": "https://nimblecode.tech/posts/posthog-creating-insights/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "PostHog的趋势洞察简介",
-  "name": "PostHog的趋势洞察简介",
-  "description": "简单介绍PostHog的业务洞察类型，进而介绍Trends的使用方法。",
-  "keywords": [
-    "PostHog", "Insights", "Trends"
-  ],
-  "articleBody": "业务洞察(Insight)是产品分析的重要组成部分。它能使你可视化地观察已发生的事件和动作，进而分析用户是如何使用产品的。\n1 业务洞察类型 PostHog目前提供了7种类型的业务洞察(Insight)。\n1.1 趋势(Trends) 趋势功能(Trends)可以帮助跟踪指标随时间的变化，也可以通过公式轻松创建自定义的指标。\n1.2 漏斗(Funnels) 使用漏斗分析(Funnels)可以理解用户使用产品时，在各步骤之间的转化情况，进而识别业务流程成功完成或失败的可能原因，以及跟踪转化率随时间的变化情况。\n1.3 留存分析(Retention) 留存分析功能(Retention)可以帮助观察用户返回产品的频率，并比较不同用户群体的留存情况。\n1.4 用户路径(User Paths) 用户路径(User Paths)可以帮助了解用户在应用或网站中进行操作的流程，在哪些环节用户被卡住，以及用户为何没有发现新功能。\n1.5 粘性分析(Stickiness) 利用粘性分析(Stickiness)可以深入分析用户与产品互动的深度，进而识别出最活跃的用户群体，并确定哪些功能最能驱动用户进行互动。\n1.6 生命周期(Lifecycle) 生命周期(Lifecycle)可以将用户分为新用户、回头客、复活用户和休眠用户，从而来评估产品的健康状况。\n1.7 SQL(Structured Query Language) 使用SQL可以基于现有数据，创建自定义数据表。\n接下来选择Trends进行更加详细的介绍。\n2 趋势洞察(Trends) Trends可以用多种方式绘制来自用户、事件或属性的数据。通过Trends有助于发现数据中的模式，也可以监控产品以确保一切运行顺畅。\nTrends是PostHog中的默认洞察类型。\n2.1 从Trends中能学到什么？ 通过Trends，我们可以：\n了解产品最重要的指标，随时间的变化情况； 识别出长期模式或用户使用情况的周期性变化； 分析特定的产品变更，对产品使用情况的影响； 不同功能的使用情况对比； 事件属性在聚合（求和、求平均值等）后的变化情况。 此外，我们还可以对同一数据点进行多种方式的可视化。\n下面是PostHog官网的一个例子：虚构的刺猬流媒体服务(Hogflix)的活跃观众数量。\n这是一个数字图表，可以查看指定时间段内所有事件的总数，以及与上一时间段对比的变化情况。\n以上是同一指标，过去90天内Hogflix的活跃观众数量（按周分组）。\n此外，Trends还可以根据属性对这些用户进行分类。例如，上图中的条形图显示了按国家分类的Hogflix观众。\n除了条形图(Bar chart)外，Trends还支持线图、面积图、饼图、表格等类型的显示。\n2.2 创建一个Trends 创建一个新的Trends需要5个步骤：\n新建一个Trends； 配置这个Trends； 添加基于属性的过滤器； 调整时间范围； 保存并分享这个Trends。 2.2.1 创建一个Trends 要创建新的Trends，可以在页面左侧菜单栏点击“Product analytics(产品分析)”菜单。在这里还可以查看所有已保存的业务洞察(Insights)列表。然后点击右上角的“New insight”按钮——也可以点击左侧菜单栏中“Product analytics(产品分析)”旁边的+号。\nTrends是默认的业务洞察类型，因此点击“New insight”会默认创建趋势洞察。\n2.2.2 配置这个Trends Trends默认的事件类型是“Pageview”。点击“A”图标右侧的下拉按钮，可以更改Trends当前使用的事件类型。\n这个下拉按钮的内容允许我们查看所有可选的事件类型(event)和动作类型(action)，并选择要用于该Trends的类型数据。\n默认情况下，PostHog会对各个分类事件的数据做总数聚合。我们可以点击下拉菜单选择其他指标，例如唯一用户(Unique users)或日活跃用户(Daily active users)。通过事件和属性聚合文档可以查看更加完整的说明。\n**注意：**图表中的虚线表示该时段的数据仍在收集中。例如，如果选择过去30天的日期范围并按周分组，则当前所在的周将显示为虚线。因为该周尚未结束。\n2.2.3 添加基于属性的过滤器 配置好一个Trends后，常常需要对整体数据的其中一部分进行进一步分析。例如，对网站PV数据中特定URL页面的浏览数据做分析，或特定国家/地区用户访问的数据做分析。要实现这个功能，就可以使用属性过滤器(property filter)。\n要为Trends添加属性过滤器，需要点击事件名称旁边的“过滤器”图标，然后点击“Add filter”按钮。我们在弹出的下拉菜单中选择要基于什么属性进行筛选即可。\n在上述示例中，我们选择了“Device type”事件属性，以便过滤出桌面用户的数据。如果我们希望包含移动用户的事件，则可以点击“复制”图标来复制现有数据，然后将“Device type”字段更改为“Mobile”即可。这将生成一个新的折线图，显示过去7天内桌面用户和移动用户的页面浏览事件数据。\n点击“Add graph series”可以添加更多数据分类图表。阅读过滤器文档可以了解更多详细信息。\n2.2.4 调整时间范围 Trends的默认时间范围是过去7天。如果需要更改此设置，可以点击显示“Last 7 days”的下拉菜单，并选择新的时间范围。此外，还可以选择事件的分组方式，例如按小时、天、周或月分组。\nSmoothing(平滑处理——即应用7天或28天的滚动平均值)在数据按天分组时可用。这个功能可以消除数据中的过多波动，并在噪声较大的数据中识别长期趋势。\n**注意：**设置过长的日期范围会严重影响查询性能，尤其是在处理高吞吐量事件时。如果发现加载时间过长，建议缩短日期范围或启用采样功能。\n2.2.5 保存并分享这个Trends 完成Trends配置后，点击名称旁边的铅笔图标即可完成整个创建过程。除了名称外，我们还可以添加针对这个Trends的描述信息。描述信息支持Markdown格式，所以我们可以添加链接、要点和文本格式等，为其他用户提供更多上下文信息。\n我们可以随时点击右上角的“Save”按钮来保存最新的变更内容。保存后，该按钮将变成“Edit”按钮。\n3 分享业务洞察 分享业务洞察有以下几种方式：\n3.1 添加到Dashboard 一个业务洞察可以同时在多个Dashboard中显示，因此无需重复创建相同的业务洞察。我们只需点击“Add to dashboard”，然后就可以在该Dashboard中查看这个业务洞察了。点击“Manage dashboards”可以在多个dashboards间进行切换。\n3.2 添加到Notebook Notebook是利用现有业务洞察进行临时分析，或创建新业务洞察的绝佳工具。点击右上角的“Add to notebook”即可将业务洞察添加到Notebook。或者我们点击右侧边栏的“Notebook”，然后将产品分析页面中的业务洞察拖放至Notebook内也可以。\n3.3 分享或导出 点击任何业务洞察的“…”菜单按钮，可以导出或嵌入该业务洞察内容。如果选择“Share or embed”则可用iframe的形式分享业务洞察的实时内容。如果选择“Export”并选择“PNG”选项，则生成该业务洞察的PNG图片。该图片可以在任何地方使用。例如下面的示例：\n**注意：导出文件过大？**如果发现导出速度过慢或卡顿，可以改用批量导出功能。\n3.4 创建订阅 我们还可以为业务洞察创建一个订阅，这样可以将该洞察内容发送至邮箱、邮箱列表或Slack频道。在“Subscribe”点击“New subscription”，然后选择想要的订阅类型及频率即可。\n查看订阅文档可以获得更完整的信息。\n",
-  "wordCount" : "122",
-  "inLanguage": "zh",
-  "datePublished": "2025-08-16T14:46:00-07:00",
-  "dateModified": "2025-08-16T14:46:00-07:00",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://nimblecode.tech/posts/posthog-creating-insights/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Nimble Code Tech",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://nimblecode.tech/favicon.ico"
-    }
-  }
-}
-</script>
-</head>
-
-<body class="" id="top">
+</noscript>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
+        document.querySelector("html").dataset.theme = 'dark';
     } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
+       document.querySelector("html").dataset.theme = 'light';
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
     }
 
+</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-KG4P5QR587"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KG4P5QR587');
+</script>
+<script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Re Os As Pe Ms Fs capture Ve calculateEventProperties js register register_once register_for_session unregister unregister_for_session qs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty zs Ls createPersonProfile Us Rs Bs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ds debug I Ns getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_mT7wOBjidgcQVEyPjDDfTMDJlObxehaWFU39siHPudu', {
+        api_host: 'https://us.i.posthog.com',
+        defaults: '2025-05-24',
+        person_profiles: 'identified_only', 
+    })
 </script>
 
-<header class="header">
-    <nav class="nav">
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
         <div class="logo">
-            <a href="https://nimblecode.tech/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -176,16 +107,16 @@
                         <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
-                </button>
-                    <ul class="lang-switch"><li>|</li>
+                </button><span>|</span>
+                    <ul class="lang-menu">
                         <li>
-                            <a href="https://nimblecode.tech/en/" title="English"
+                            <a href="http://localhost:1313/en/" title="English"
                                 aria-label="English">En</a>
                         </li>
                     </ul>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
         </ul>
     </nav>
 </header>
@@ -201,7 +132,7 @@
 
 </div>
   </header> 
-  <div class="post-content"><p>业务洞察(Insight)是产品分析的重要组成部分。它能使你可视化地观察已发生的事件和动作，进而分析用户是如何使用产品的。</p>
+  <div class="post-content md-content"><p>业务洞察(Insight)是产品分析的重要组成部分。它能使你可视化地观察已发生的事件和动作，进而分析用户是如何使用产品的。</p>
 <h2 id="1-业务洞察类型">1 业务洞察类型<a hidden class="anchor" aria-hidden="true" href="#1-业务洞察类型">#</a></h2>
 <p>PostHog目前提供了7种类型的业务洞察(Insight)。</p>
 <h3 id="11-趋势trends">1.1 趋势(Trends)<a hidden class="anchor" aria-hidden="true" href="#11-趋势trends">#</a></h3>
@@ -382,16 +313,16 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://nimblecode.tech/tags/posthog/">PostHog</a></li>
-      <li><a href="https://nimblecode.tech/tags/insights/">Insights</a></li>
-      <li><a href="https://nimblecode.tech/tags/trends/">Trends</a></li>
+      <li><a href="http://localhost:1313/tags/posthog/">PostHog</a></li>
+      <li><a href="http://localhost:1313/tags/insights/">Insights</a></li>
+      <li><a href="http://localhost:1313/tags/trends/">Trends</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://nimblecode.tech/">Nimble Code Tech</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">Nimble Code Tech</a></span> · 
 
     <span>
         Powered by
@@ -399,16 +330,23 @@
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -435,25 +373,25 @@
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

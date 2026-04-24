@@ -2,151 +2,151 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Nimble Code Tech</title>
-    <link>https://nimblecode.tech/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Nimble Code Tech</description>
-    <generator>Hugo -- 0.151.0</generator>
-    <language>zh</language>
-    <lastBuildDate>Tue, 14 Apr 2026 11:38:27 -0700</lastBuildDate>
-    <atom:link href="https://nimblecode.tech/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 20 Apr 2026 12:14:13 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>交通事故1-现场处理流程</title>
+      <link>http://localhost:1313/posts/car-accident-1/</link>
+      <pubDate>Mon, 20 Apr 2026 12:14:13 -0700</pubDate>
+      <guid>http://localhost:1313/posts/car-accident-1/</guid>
+      <description>本文介绍发生交通事故时，现场的处理流程。</description>
+    </item>
+    <item>
+      <title>How to Apply Msp</title>
+      <link>http://localhost:1313/posts/how-to-apply-msp/</link>
+      <pubDate>Fri, 17 Apr 2026 12:24:34 -0700</pubDate>
+      <guid>http://localhost:1313/posts/how-to-apply-msp/</guid>
+      <description></description>
+    </item>
     <item>
       <title>在 Canadian Tire 换轮胎</title>
-      <link>https://nimblecode.tech/posts/tire-change-over-at-canadian-tire/</link>
+      <link>http://localhost:1313/posts/tire-change-over-at-canadian-tire/</link>
       <pubDate>Tue, 14 Apr 2026 11:38:27 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/tire-change-over-at-canadian-tire/</guid>
+      <guid>http://localhost:1313/posts/tire-change-over-at-canadian-tire/</guid>
       <description>介绍如何在 Canadian Tire 预约换装轮胎，以及常用英语对话。</description>
     </item>
     <item>
       <title>如何更新加拿大驾照</title>
-      <link>https://nimblecode.tech/posts/how-to-update-drivers-licence/</link>
+      <link>http://localhost:1313/posts/how-to-update-drivers-licence/</link>
       <pubDate>Thu, 26 Mar 2026 16:50:04 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/how-to-update-drivers-licence/</guid>
+      <guid>http://localhost:1313/posts/how-to-update-drivers-licence/</guid>
       <description>简要介绍如何在 BC 省更新驾照。</description>
     </item>
     <item>
       <title>更新孩子的 MSP</title>
-      <link>https://nimblecode.tech/posts/update-child-msp/</link>
+      <link>http://localhost:1313/posts/update-child-msp/</link>
       <pubDate>Tue, 17 Mar 2026 14:52:45 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/update-child-msp/</guid>
+      <guid>http://localhost:1313/posts/update-child-msp/</guid>
       <description>简要介绍如何更新孩子的 MSP。</description>
     </item>
     <item>
       <title>更新 BC Services Card</title>
-      <link>https://nimblecode.tech/posts/update-bc-service-card/</link>
+      <link>http://localhost:1313/posts/update-bc-service-card/</link>
       <pubDate>Mon, 23 Feb 2026 20:40:20 -0800</pubDate>
-      <guid>https://nimblecode.tech/posts/update-bc-service-card/</guid>
+      <guid>http://localhost:1313/posts/update-bc-service-card/</guid>
       <description>简要介绍当医保（MSP）过期后，如何更新 BC Service Card。</description>
     </item>
     <item>
       <title>如何为孩子申请加拿大学签</title>
-      <link>https://nimblecode.tech/posts/apply-study-permit/</link>
+      <link>http://localhost:1313/posts/apply-study-permit/</link>
       <pubDate>Tue, 17 Feb 2026 11:07:34 -0800</pubDate>
-      <guid>https://nimblecode.tech/posts/apply-study-permit/</guid>
+      <guid>http://localhost:1313/posts/apply-study-permit/</guid>
       <description>简要介绍如何 DIY 为孩子申请加拿大学签。</description>
     </item>
     <item>
       <title>Parent Name 与 Parent Signature 的区别</title>
-      <link>https://nimblecode.tech/posts/name-and-signature/</link>
+      <link>http://localhost:1313/posts/name-and-signature/</link>
       <pubDate>Fri, 13 Feb 2026 13:42:48 -0800</pubDate>
-      <guid>https://nimblecode.tech/posts/name-and-signature/</guid>
+      <guid>http://localhost:1313/posts/name-and-signature/</guid>
       <description>介绍加拿大学校 Newsletter 或 Permission Form 中 Parent Signature 与 Parent Name 的区别。</description>
     </item>
     <item>
       <title>老年人自助登陆加拿大</title>
-      <link>https://nimblecode.tech/posts/elders-first-enter-canada/</link>
+      <link>http://localhost:1313/posts/elders-first-enter-canada/</link>
       <pubDate>Mon, 09 Feb 2026 12:14:54 -0800</pubDate>
-      <guid>https://nimblecode.tech/posts/elders-first-enter-canada/</guid>
+      <guid>http://localhost:1313/posts/elders-first-enter-canada/</guid>
       <description>一个在温哥华机场过海关的简易操作手册。</description>
     </item>
     <item>
       <title>如何申请加拿大配偶工签 2</title>
-      <link>https://nimblecode.tech/posts/apply-sowp-2/</link>
+      <link>http://localhost:1313/posts/apply-sowp-2/</link>
       <pubDate>Mon, 26 Jan 2026 10:48:22 -0800</pubDate>
-      <guid>https://nimblecode.tech/posts/apply-sowp-2/</guid>
+      <guid>http://localhost:1313/posts/apply-sowp-2/</guid>
       <description>简要介绍如何 DIY 申请加拿大配偶工签。</description>
     </item>
     <item>
       <title>如何申请加拿大配偶工签 1</title>
-      <link>https://nimblecode.tech/posts/apply-sowp-1/</link>
+      <link>http://localhost:1313/posts/apply-sowp-1/</link>
       <pubDate>Wed, 21 Jan 2026 11:00:48 -0800</pubDate>
-      <guid>https://nimblecode.tech/posts/apply-sowp-1/</guid>
+      <guid>http://localhost:1313/posts/apply-sowp-1/</guid>
       <description>简要介绍如何 DIY 申请加拿大配偶工签。</description>
     </item>
     <item>
       <title>GCkey 是什么？</title>
-      <link>https://nimblecode.tech/posts/what-is-gckey/</link>
+      <link>http://localhost:1313/posts/what-is-gckey/</link>
       <pubDate>Sun, 11 Jan 2026 15:35:40 -0800</pubDate>
-      <guid>https://nimblecode.tech/posts/what-is-gckey/</guid>
+      <guid>http://localhost:1313/posts/what-is-gckey/</guid>
       <description>简要介绍什么是 GCKey，以及它与 IRCC 账户的关系。</description>
     </item>
     <item>
       <title>如何注册IRCC账户</title>
-      <link>https://nimblecode.tech/posts/ircc-signup/</link>
+      <link>http://localhost:1313/posts/ircc-signup/</link>
       <pubDate>Fri, 09 Jan 2026 11:32:55 -0800</pubDate>
-      <guid>https://nimblecode.tech/posts/ircc-signup/</guid>
+      <guid>http://localhost:1313/posts/ircc-signup/</guid>
       <description>简要介绍如何注册加拿大IRCC账户。</description>
     </item>
     <item>
       <title>Baidu Resources Platform</title>
-      <link>https://nimblecode.tech/posts/baidu-resources-platform/</link>
+      <link>http://localhost:1313/posts/baidu-resources-platform/</link>
       <pubDate>Thu, 18 Dec 2025 15:21:00 -0800</pubDate>
-      <guid>https://nimblecode.tech/posts/baidu-resources-platform/</guid>
+      <guid>http://localhost:1313/posts/baidu-resources-platform/</guid>
       <description></description>
     </item>
     <item>
       <title>如何将网站加入Google搜索索引？</title>
-      <link>https://nimblecode.tech/posts/google-search-console/</link>
+      <link>http://localhost:1313/posts/google-search-console/</link>
       <pubDate>Wed, 17 Dec 2025 21:54:33 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/google-search-console/</guid>
+      <guid>http://localhost:1313/posts/google-search-console/</guid>
       <description>使用Hugo建站后，通过Google Search Console将网站内容加入Google搜索引擎索引中去。</description>
     </item>
     <item>
       <title>监控阿里云 ECS 的进程</title>
-      <link>https://nimblecode.tech/posts/aliyun-monitor/</link>
+      <link>http://localhost:1313/posts/aliyun-monitor/</link>
       <pubDate>Mon, 10 Nov 2025 14:36:45 -0800</pubDate>
-      <guid>https://nimblecode.tech/posts/aliyun-monitor/</guid>
+      <guid>http://localhost:1313/posts/aliyun-monitor/</guid>
       <description>介绍云监控产品，并简单配置 Java 进程监控。</description>
     </item>
     <item>
       <title>2025双11购物清单 &#43; 淘宝客接入流程 [更新]</title>
-      <link>https://nimblecode.tech/posts/tao-partner-test/</link>
+      <link>http://localhost:1313/posts/tao-partner-test/</link>
       <pubDate>Thu, 06 Nov 2025 13:08:15 -0800</pubDate>
-      <guid>https://nimblecode.tech/posts/tao-partner-test/</guid>
+      <guid>http://localhost:1313/posts/tao-partner-test/</guid>
       <description>这是我的双11购物清单，也记录了注册成为一个淘宝客的过程。只需花费大约30分钟，就可以在各种折扣的基础上再薅一点小羊毛 ^o^~</description>
     </item>
     <item>
       <title>如何将网站加入 Bing 搜索引擎？</title>
-      <link>https://nimblecode.tech/posts/ms-webmaster-tools/</link>
+      <link>http://localhost:1313/posts/ms-webmaster-tools/</link>
       <pubDate>Wed, 05 Nov 2025 10:44:20 -0800</pubDate>
-      <guid>https://nimblecode.tech/posts/ms-webmaster-tools/</guid>
+      <guid>http://localhost:1313/posts/ms-webmaster-tools/</guid>
       <description>使用Hugo建站后，通过 Microsoft Webmaster Tools 将网站内容加入 Bing 搜索引擎索引中去。</description>
     </item>
     <item>
       <title>让 API 更好的一些小事 [翻译]</title>
-      <link>https://nimblecode.tech/posts/small-things-that-make-apis-a-little-bit-better/</link>
+      <link>http://localhost:1313/posts/small-things-that-make-apis-a-little-bit-better/</link>
       <pubDate>Wed, 05 Nov 2025 20:32:31 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/small-things-that-make-apis-a-little-bit-better/</guid>
+      <guid>http://localhost:1313/posts/small-things-that-make-apis-a-little-bit-better/</guid>
       <description>讲述如何让 API 更好的一些实践方法。</description>
     </item>
     <item>
       <title>Hugo 网站配置 favicon.ico</title>
-      <link>https://nimblecode.tech/posts/add-favicon/</link>
+      <link>http://localhost:1313/posts/add-favicon/</link>
       <pubDate>Tue, 04 Nov 2025 14:10:07 -0800</pubDate>
-      <guid>https://nimblecode.tech/posts/add-favicon/</guid>
+      <guid>http://localhost:1313/posts/add-favicon/</guid>
       <description>介绍&lt;code&gt;favicon.ico&lt;/code&gt;文件，以及 Hugo 如何配置该文件。</description>
-    </item>
-    <item>
-      <title>新 Kindle 阅读器复活亚马逊中国区 Kindle 图书</title>
-      <link>https://nimblecode.tech/posts/import-kindle-cn-books/</link>
-      <pubDate>Thu, 30 Oct 2025 11:04:27 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/import-kindle-cn-books/</guid>
-      <description>借助 Calibre 与 DeDRM，将中国区 Kindle 图书导入新 Kindle 继续阅读。</description>
-    </item>
-    <item>
-      <title>网站接入Google Analytics</title>
-      <link>https://nimblecode.tech/posts/google-analytics/</link>
-      <pubDate>Tue, 28 Oct 2025 15:44:00 -0700</pubDate>
-      <guid>https://nimblecode.tech/posts/google-analytics/</guid>
-      <description>使用 Hugo 建站后，通过 Google Analytics 收集、分析用户在网站上的操作。</description>
     </item>
   </channel>
 </rss>

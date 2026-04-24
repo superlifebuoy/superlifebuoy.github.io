@@ -1,41 +1,24 @@
 <!DOCTYPE html>
-<html lang="zh" dir="auto">
+<html lang="zh" dir="auto" data-theme="auto">
 
-<head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KG4P5QR587"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-KG4P5QR587');
-</script>
-<script>
-    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Re Os As Pe Ms Fs capture Ve calculateEventProperties js register register_once register_for_session unregister unregister_for_session qs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty zs Ls createPersonProfile Us Rs Bs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ds debug I Ns getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-    posthog.init('phc_mT7wOBjidgcQVEyPjDDfTMDJlObxehaWFU39siHPudu', {
-        api_host: 'https://us.i.posthog.com',
-        defaults: '2025-05-24',
-        person_profiles: 'identified_only', 
-    })
-</script>
-<meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>2025双11购物清单 &#43; 淘宝客接入流程 [更新] | Nimble Code Tech</title>
 <meta name="keywords" content="双11, 淘宝, 淘宝客">
 <meta name="description" content="这是我的双11购物清单，也记录了注册成为一个淘宝客的过程。只需花费大约30分钟，就可以在各种折扣的基础上再薅一点小羊毛 ^o^~">
 <meta name="author" content="">
-<link rel="canonical" href="https://nimblecode.tech/posts/tao-partner-test/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.a090830a421002426baafbd314e38f149d77b4c48a12ee9312700d770b27fb26.css" integrity="sha256-oJCDCkIQAkJrqvvTFOOPFJ13tMSKEu6TEnANdwsn&#43;yY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://nimblecode.tech/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://nimblecode.tech/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://nimblecode.tech/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://nimblecode.tech/apple-touch-icon.png">
-<link rel="mask-icon" href="https://nimblecode.tech/safari-pinned-tab.svg">
+<link rel="canonical" href="http://localhost:1313/posts/tao-partner-test/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.47e51c7d8489b002361bac156ce9a0a8776d08c5462c2cee95801efafdd90d35.css" integrity="sha256-R&#43;UcfYSJsAI2G6wVbOmgqHdtCMVGLCzulYAe&#43;v3ZDTU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="zh" href="https://nimblecode.tech/posts/tao-partner-test/">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/posts/tao-partner-test/">
 <noscript>
     <style>
         #theme-toggle,
@@ -56,114 +39,62 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+            .toc {
+                background: var(--entry);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://nimblecode.tech/posts/tao-partner-test/">
-  <meta property="og:site_name" content="Nimble Code Tech">
-  <meta property="og:title" content="2025双11购物清单 &#43; 淘宝客接入流程 [更新]">
-  <meta property="og:description" content="这是我的双11购物清单，也记录了注册成为一个淘宝客的过程。只需花费大约30分钟，就可以在各种折扣的基础上再薅一点小羊毛 ^o^~">
-  <meta property="og:locale" content="zh">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-11-06T13:08:15-08:00">
-    <meta property="article:modified_time" content="2025-11-06T13:08:15-08:00">
-    <meta property="article:tag" content="双11">
-    <meta property="article:tag" content="淘宝">
-    <meta property="article:tag" content="淘宝客">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2025双11购物清单 &#43; 淘宝客接入流程 [更新]">
-<meta name="twitter:description" content="这是我的双11购物清单，也记录了注册成为一个淘宝客的过程。只需花费大约30分钟，就可以在各种折扣的基础上再薅一点小羊毛 ^o^~">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://nimblecode.tech/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "2025双11购物清单 + 淘宝客接入流程 [更新]",
-      "item": "https://nimblecode.tech/posts/tao-partner-test/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "2025双11购物清单 + 淘宝客接入流程 [更新]",
-  "name": "2025双11购物清单 \u002b 淘宝客接入流程 [更新]",
-  "description": "这是我的双11购物清单，也记录了注册成为一个淘宝客的过程。只需花费大约30分钟，就可以在各种折扣的基础上再薅一点小羊毛 ^o^~",
-  "keywords": [
-    "双11", "淘宝", "淘宝客"
-  ],
-  "articleBody": "这是我的双11购物清单，也记录了注册成为一个淘宝客的过程。\n只需花费大约30分钟，就可以在各种折扣的基础上再薅一点小羊毛 ^o^~\n1 2025双11购物清单 1.1 UTO 美丽奴羊毛长袖T恤 这次升级一下速干保暖的内层，决定尝试美丽奴羊毛。\n到时看看越野跑的体感有没有提高。\n一点直达\n淘口令如下：\n【下单链接】29￥ CZ193 qLeKfgFmgQ8￥ https://m.tb.cn/h.SokySic UTO悠途美利奴羊毛速干衣长袖男运动T恤女春秋户外越野跑徒步上衣 1.2 3D 打印材料干燥箱 温哥华冬季阴雨连绵，湿度很大。最近用3D打印出来的东西都拉丝了……\n所以这次决定买个3D打印耗材的干燥箱，看看效果如何。\n一点直达\n淘口令如下：\n【下单链接】28￥ tG-#22\u003elD xY7IfT8RF9E￥ https://m.tb.cn/h.SoPEgdF 三绿SUNLU S2 3D打印耗材干燥箱3D打印机配件耗材储料加热器防潮防尘持续烘干储料盒PLA ABS尼龙碳纤维存储盒 1.3 3D 打印耗材熔接器 3D 打印耗材每卷都会剩下一点点，食之无味弃之可惜。这次决定买个熔接器，把剩余线材接到新的耗材上。积少成多。\n一点直达\n淘口令如下：\n【下单链接】88￥ HU926 bxLdfS3Eo2h￥ https://m.tb.cn/h.SKwipgy 三绿SUNLU耗材熔接器FC01翻盖设计快速加热创意DIY耗材尾料一键熔接安全环保隔温不烫手便携FDM耗材熔接器 1.4 德龙咖啡机冲煮头密封圈 家里的德龙 ECP33.21.BK 咖啡机已经2年了，冲煮头密封圈到了不得不换的时候了。这次趁着双11一起购买替换件。\n一点直达\n淘口令如下：\n【下单链接】18￥ CZ321 MFszfgulgUM￥ https://m.tb.cn/h.SLVx1Px 适用德龙咖啡机配件冲煮头密封圈垫硅胶圈ECO311/33.21/351/36.31 1.5 户外短檐帽 之前迪卡侬的速干帽丢了，这次补充一顶～\n一点直达\n淘口令如下：\n【下单链接】08￥ MF278 lbQ4fgFh3k5￥ https://m.tb.cn/h.SL4ISKq 纯色短檐帽子男士日系薄款夏季防晒鸭舌帽户外速干显脸小棒球帽女 1.6 3M 双面胶 用来在家里各种地方粘东西……\n一点直达\n淘口令如下：\n【下单链接】79￥ HU006 ZIBvfSednIe￥ https://m.tb.cn/h.SqLxPat 3M双面胶强力汽车专用灰胶耐高温防水无痕胶泡棉胶高粘度墙面粘胶 1.7 GoPro 头盔支架 快到滑雪季了，准备把之前的 GoPro 重新装回头盔上去。\n一点直达\n淘口令如下：\n【下单链接】27￥ CZ028 D4NJfSem37o￥ https://m.tb.cn/h.SKDX7pM GoPro13/12/11/10/9/8原装头盔支架底座快拆滑雪下巴运动相机配件 2 淘宝联盟 接入淘宝联盟成为淘宝客的过程很简单。在使用双11各种折扣的基础上，又能薅一点点羊毛～\n2.1 注册淘宝客 打开淘宝联盟首页。使用淘宝账号登陆，然后完成后续流程即可。\n注册完成后，还需要使用支付宝完成实名认证。\n整个注册流程的审核提示24小时内完成，但我的实际经验基本是立刻通过的。非常迅速！\n2.2 完成媒体备案 完成淘宝客注册后，管理页面空空，没有任何数据。\n接下来需要完成媒体备案，即推广信息的投放平台审核。选择页面上方的“推广管理”，然后选择左侧的“媒体备案管理”：\n因为我的 Blog 没有在国内做 ICP 备案，所以“自有平台”的流程无法完成。我在“小红书”、“公众号”也没有账号，所以“他方平台”也走不通。只能选择“无自有阵地”……\n这个备案过程也基本是立刻通过的～\n2.3 推广商品 完成媒体备案后，选择页面上方的“我要推广”，进入“选品广场”。\n选择任一商品推广时，首选会提示新建“推广位”。后续新建的推广链接，都会绑定在这个“推广位”下面。\n获取推广链接非常简单，搜索到想要推广的商品后点击“立即推广”\n然后将“短链接”或者“淘口令”拷贝/复制到 Blog 网页上就完成啦。就像这个 Blog 的第1部分那样 ^o^~\n3 总结 这次双11购物花了800，邮费花了200。最终淘宝客回血预计12.89元……\n",
-  "wordCount" : "122",
-  "inLanguage": "zh",
-  "datePublished": "2025-11-06T13:08:15-08:00",
-  "dateModified": "2025-11-06T13:08:15-08:00",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://nimblecode.tech/posts/tao-partner-test/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Nimble Code Tech",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://nimblecode.tech/favicon.ico"
-    }
-  }
-}
-</script>
-</head>
-
-<body class="" id="top">
+</noscript>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
+        document.querySelector("html").dataset.theme = 'dark';
     } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
+       document.querySelector("html").dataset.theme = 'light';
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
     }
 
+</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-KG4P5QR587"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KG4P5QR587');
+</script>
+<script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Re Os As Pe Ms Fs capture Ve calculateEventProperties js register register_once register_for_session unregister unregister_for_session qs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty zs Ls createPersonProfile Us Rs Bs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ds debug I Ns getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_mT7wOBjidgcQVEyPjDDfTMDJlObxehaWFU39siHPudu', {
+        api_host: 'https://us.i.posthog.com',
+        defaults: '2025-05-24',
+        person_profiles: 'identified_only', 
+    })
 </script>
 
-<header class="header">
-    <nav class="nav">
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
         <div class="logo">
-            <a href="https://nimblecode.tech/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -176,16 +107,16 @@
                         <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
-                </button>
-                    <ul class="lang-switch"><li>|</li>
+                </button><span>|</span>
+                    <ul class="lang-menu">
                         <li>
-                            <a href="https://nimblecode.tech/en/" title="English"
+                            <a href="http://localhost:1313/en/" title="English"
                                 aria-label="English">En</a>
                         </li>
                     </ul>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
         </ul>
     </nav>
 </header>
@@ -201,7 +132,7 @@
 
 </div>
   </header> 
-  <div class="post-content"><p>这是我的双11购物清单，也记录了注册成为一个淘宝客的过程。</p>
+  <div class="post-content md-content"><p>这是我的双11购物清单，也记录了注册成为一个淘宝客的过程。</p>
 <p>只需花费大约30分钟，就可以在各种折扣的基础上再薅一点小羊毛 ^o^~</p>
 <p><img alt="profit" loading="lazy" src="/tao-partner-test/profit.png"></p>
 <h2 id="1-2025双11购物清单">1 2025双11购物清单<a hidden class="anchor" aria-hidden="true" href="#1-2025双11购物清单">#</a></h2>
@@ -211,44 +142,44 @@
 <p><img alt="UTO" loading="lazy" src="/tao-partner-test/UTO.png"></p>
 <p><strong><a href="https://s.click.taobao.com/XRS6evp">一点直达</a></strong></p>
 <p>淘口令如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>【下单链接】29￥ CZ193 qLeKfgFmgQ8￥ https://m.tb.cn/h.SokySic UTO悠途美利奴羊毛速干衣长袖男运动T恤女春秋户外越野跑徒步上衣
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>【下单链接】29￥ CZ193 qLeKfgFmgQ8￥ https://m.tb.cn/h.SokySic UTO悠途美利奴羊毛速干衣长袖男运动T恤女春秋户外越野跑徒步上衣
 </span></span></code></pre></div><h3 id="12-3d-打印材料干燥箱">1.2 3D 打印材料干燥箱<a hidden class="anchor" aria-hidden="true" href="#12-3d-打印材料干燥箱">#</a></h3>
 <p>温哥华冬季阴雨连绵，湿度很大。最近用3D打印出来的东西都拉丝了……</p>
 <p>所以这次决定买个3D打印耗材的干燥箱，看看效果如何。</p>
 <p><img alt="sunlv" loading="lazy" src="/tao-partner-test/sunlv.png"></p>
 <p><strong><a href="https://s.click.taobao.com/uHB4aup">一点直达</a></strong></p>
 <p>淘口令如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>【下单链接】28￥ tG-#22&gt;lD xY7IfT8RF9E￥ https://m.tb.cn/h.SoPEgdF 三绿SUNLU S2 3D打印耗材干燥箱3D打印机配件耗材储料加热器防潮防尘持续烘干储料盒PLA ABS尼龙碳纤维存储盒
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>【下单链接】28￥ tG-#22&gt;lD xY7IfT8RF9E￥ https://m.tb.cn/h.SoPEgdF 三绿SUNLU S2 3D打印耗材干燥箱3D打印机配件耗材储料加热器防潮防尘持续烘干储料盒PLA ABS尼龙碳纤维存储盒
 </span></span></code></pre></div><h3 id="13-3d-打印耗材熔接器">1.3 3D 打印耗材熔接器<a hidden class="anchor" aria-hidden="true" href="#13-3d-打印耗材熔接器">#</a></h3>
 <p>3D 打印耗材每卷都会剩下一点点，食之无味弃之可惜。这次决定买个熔接器，把剩余线材接到新的耗材上。积少成多。</p>
 <p><img alt="sunlv-connector" loading="lazy" src="/tao-partner-test/sunlv-connector.png"></p>
 <p><strong><a href="https://s.click.taobao.com/TLVHZqp">一点直达</a></strong></p>
 <p>淘口令如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>【下单链接】88￥ HU926 bxLdfS3Eo2h￥ https://m.tb.cn/h.SKwipgy 三绿SUNLU耗材熔接器FC01翻盖设计快速加热创意DIY耗材尾料一键熔接安全环保隔温不烫手便携FDM耗材熔接器
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>【下单链接】88￥ HU926 bxLdfS3Eo2h￥ https://m.tb.cn/h.SKwipgy 三绿SUNLU耗材熔接器FC01翻盖设计快速加热创意DIY耗材尾料一键熔接安全环保隔温不烫手便携FDM耗材熔接器
 </span></span></code></pre></div><h3 id="14-德龙咖啡机冲煮头密封圈">1.4 德龙咖啡机冲煮头密封圈<a hidden class="anchor" aria-hidden="true" href="#14-德龙咖啡机冲煮头密封圈">#</a></h3>
 <p>家里的德龙 ECP33.21.BK 咖啡机已经2年了，冲煮头密封圈到了不得不换的时候了。这次趁着双11一起购买替换件。</p>
 <p><img alt="head-seal" loading="lazy" src="/tao-partner-test/head-seal.png"></p>
 <p><strong><a href="https://s.click.taobao.com/FCsIvip">一点直达</a></strong></p>
 <p>淘口令如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>【下单链接】18￥ CZ321 MFszfgulgUM￥ https://m.tb.cn/h.SLVx1Px 适用德龙咖啡机配件冲煮头密封圈垫硅胶圈ECO311/33.21/351/36.31
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>【下单链接】18￥ CZ321 MFszfgulgUM￥ https://m.tb.cn/h.SLVx1Px 适用德龙咖啡机配件冲煮头密封圈垫硅胶圈ECO311/33.21/351/36.31
 </span></span></code></pre></div><h3 id="15-户外短檐帽">1.5 户外短檐帽<a hidden class="anchor" aria-hidden="true" href="#15-户外短檐帽">#</a></h3>
 <p>之前迪卡侬的速干帽丢了，这次补充一顶～</p>
 <p><img alt="cap" loading="lazy" src="/tao-partner-test/cap.png"></p>
 <p><strong><a href="https://s.click.taobao.com/sXiJuip">一点直达</a></strong></p>
 <p>淘口令如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>【下单链接】08￥ MF278 lbQ4fgFh3k5￥ https://m.tb.cn/h.SL4ISKq 纯色短檐帽子男士日系薄款夏季防晒鸭舌帽户外速干显脸小棒球帽女
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>【下单链接】08￥ MF278 lbQ4fgFh3k5￥ https://m.tb.cn/h.SL4ISKq 纯色短檐帽子男士日系薄款夏季防晒鸭舌帽户外速干显脸小棒球帽女
 </span></span></code></pre></div><h3 id="16-3m-双面胶">1.6 3M 双面胶<a hidden class="anchor" aria-hidden="true" href="#16-3m-双面胶">#</a></h3>
 <p>用来在家里各种地方粘东西……</p>
 <p><img alt="3m" loading="lazy" src="/tao-partner-test/3m.png"></p>
 <p><strong><a href="https://s.click.taobao.com/1Qz9Bep">一点直达</a></strong></p>
 <p>淘口令如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>【下单链接】79￥ HU006 ZIBvfSednIe￥ https://m.tb.cn/h.SqLxPat 3M双面胶强力汽车专用灰胶耐高温防水无痕胶泡棉胶高粘度墙面粘胶
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>【下单链接】79￥ HU006 ZIBvfSednIe￥ https://m.tb.cn/h.SqLxPat 3M双面胶强力汽车专用灰胶耐高温防水无痕胶泡棉胶高粘度墙面粘胶
 </span></span></code></pre></div><h3 id="17-gopro-头盔支架">1.7 GoPro 头盔支架<a hidden class="anchor" aria-hidden="true" href="#17-gopro-头盔支架">#</a></h3>
 <p>快到滑雪季了，准备把之前的 GoPro 重新装回头盔上去。</p>
 <p><img alt="gopro" loading="lazy" src="/tao-partner-test/gopro.png"></p>
 <p><strong><a href="https://s.click.taobao.com/QPhoAep">一点直达</a></strong></p>
 <p>淘口令如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>【下单链接】27￥ CZ028 D4NJfSem37o￥ https://m.tb.cn/h.SKDX7pM GoPro13/12/11/10/9/8原装头盔支架底座快拆滑雪下巴运动相机配件
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>【下单链接】27￥ CZ028 D4NJfSem37o￥ https://m.tb.cn/h.SKDX7pM GoPro13/12/11/10/9/8原装头盔支架底座快拆滑雪下巴运动相机配件
 </span></span></code></pre></div><h2 id="2-淘宝联盟">2 淘宝联盟<a hidden class="anchor" aria-hidden="true" href="#2-淘宝联盟">#</a></h2>
 <p>接入淘宝联盟成为淘宝客的过程很简单。在使用双11各种折扣的基础上，又能薅一点点羊毛～</p>
 <h3 id="21-注册淘宝客">2.1 注册淘宝客<a hidden class="anchor" aria-hidden="true" href="#21-注册淘宝客">#</a></h3>
@@ -289,16 +220,16 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://nimblecode.tech/tags/%E5%8F%8C11/">双11</a></li>
-      <li><a href="https://nimblecode.tech/tags/%E6%B7%98%E5%AE%9D/">淘宝</a></li>
-      <li><a href="https://nimblecode.tech/tags/%E6%B7%98%E5%AE%9D%E5%AE%A2/">淘宝客</a></li>
+      <li><a href="http://localhost:1313/tags/%E5%8F%8C11/">双11</a></li>
+      <li><a href="http://localhost:1313/tags/%E6%B7%98%E5%AE%9D/">淘宝</a></li>
+      <li><a href="http://localhost:1313/tags/%E6%B7%98%E5%AE%9D%E5%AE%A2/">淘宝客</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://nimblecode.tech/">Nimble Code Tech</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">Nimble Code Tech</a></span> · 
 
     <span>
         Powered by
@@ -306,16 +237,23 @@
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -342,25 +280,25 @@
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

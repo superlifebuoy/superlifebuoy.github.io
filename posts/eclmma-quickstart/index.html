@@ -1,41 +1,24 @@
 <!DOCTYPE html>
-<html lang="zh" dir="auto">
+<html lang="zh" dir="auto" data-theme="auto">
 
-<head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KG4P5QR587"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-KG4P5QR587');
-</script>
-<script>
-    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Re Os As Pe Ms Fs capture Ve calculateEventProperties js register register_once register_for_session unregister unregister_for_session qs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty zs Ls createPersonProfile Us Rs Bs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ds debug I Ns getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-    posthog.init('phc_mT7wOBjidgcQVEyPjDDfTMDJlObxehaWFU39siHPudu', {
-        api_host: 'https://us.i.posthog.com',
-        defaults: '2025-05-24',
-        person_profiles: 'identified_only', 
-    })
-</script>
-<meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>如何测算Java代码的单元测试覆盖率 | Nimble Code Tech</title>
 <meta name="keywords" content="Java, Unit Testing, Unit Test Coverage, JaCoCo, EclEmma, 单元测试, 覆盖率">
 <meta name="description" content="介绍什么是单元测试覆盖率，以及测算Java单元测试覆盖率的两个工具：JaCoCo与EclEmma。">
 <meta name="author" content="">
-<link rel="canonical" href="https://nimblecode.tech/posts/eclmma-quickstart/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.a090830a421002426baafbd314e38f149d77b4c48a12ee9312700d770b27fb26.css" integrity="sha256-oJCDCkIQAkJrqvvTFOOPFJ13tMSKEu6TEnANdwsn&#43;yY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://nimblecode.tech/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://nimblecode.tech/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://nimblecode.tech/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://nimblecode.tech/apple-touch-icon.png">
-<link rel="mask-icon" href="https://nimblecode.tech/safari-pinned-tab.svg">
+<link rel="canonical" href="http://localhost:1313/posts/eclmma-quickstart/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.47e51c7d8489b002361bac156ce9a0a8776d08c5462c2cee95801efafdd90d35.css" integrity="sha256-R&#43;UcfYSJsAI2G6wVbOmgqHdtCMVGLCzulYAe&#43;v3ZDTU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="zh" href="https://nimblecode.tech/posts/eclmma-quickstart/">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/posts/eclmma-quickstart/">
 <noscript>
     <style>
         #theme-toggle,
@@ -56,117 +39,62 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+            .toc {
+                background: var(--entry);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://nimblecode.tech/posts/eclmma-quickstart/">
-  <meta property="og:site_name" content="Nimble Code Tech">
-  <meta property="og:title" content="如何测算Java代码的单元测试覆盖率">
-  <meta property="og:description" content="介绍什么是单元测试覆盖率，以及测算Java单元测试覆盖率的两个工具：JaCoCo与EclEmma。">
-  <meta property="og:locale" content="zh">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-08-07T19:52:39-07:00">
-    <meta property="article:modified_time" content="2025-08-07T19:52:39-07:00">
-    <meta property="article:tag" content="Java">
-    <meta property="article:tag" content="Unit Testing">
-    <meta property="article:tag" content="Unit Test Coverage">
-    <meta property="article:tag" content="JaCoCo">
-    <meta property="article:tag" content="EclEmma">
-    <meta property="article:tag" content="单元测试">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="如何测算Java代码的单元测试覆盖率">
-<meta name="twitter:description" content="介绍什么是单元测试覆盖率，以及测算Java单元测试覆盖率的两个工具：JaCoCo与EclEmma。">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://nimblecode.tech/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "如何测算Java代码的单元测试覆盖率",
-      "item": "https://nimblecode.tech/posts/eclmma-quickstart/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "如何测算Java代码的单元测试覆盖率",
-  "name": "如何测算Java代码的单元测试覆盖率",
-  "description": "介绍什么是单元测试覆盖率，以及测算Java单元测试覆盖率的两个工具：JaCoCo与EclEmma。",
-  "keywords": [
-    "Java", "Unit Testing", "Unit Test Coverage", "JaCoCo", "EclEmma", "单元测试", "覆盖率"
-  ],
-  "articleBody": "1 什么是单元测试 单元测试（Unit Testing）是一种软件测试方法，它针对程序中最小的可测试单元进行验证。这里的“单元”通常是指一个函数、一个方法或一个类。\n它的主要目的是确保每个独立的单元都能按照原本的设计意图正确工作。通过隔离和测试程序的各个小部分，可以尽早发现并修复代码中的错误，从而提高整体代码的质量和可靠性。\n1.1 核心特点 **隔离性：一个单元在被测试时，应该可以独立于其他单元和外部依赖（如数据库、文件系统、网络服务等）而进行测试。这通常通过模拟（Mocking）或桩（Stubbing）**等技术来实现。 **自动化：**单元测试应该是可以自动化执行的，可以轻松地集成到持续集成（CI/CD）流程中，以便在每次代码提交时自动运行。 **可重复性：**无论何时运行，单元测试的结果都应该是确定的和可复现的。 **快速：**单元测试应该运行得非常快。这样可以使开发者频繁地运行它们，即时获得代码更新后的质量反馈。 2 什么是单元测试覆盖率 单元测试覆盖率（Unit Test Coverage）是一个度量标准，用来衡量单元测试的执行过程中，测试代码覆盖源代码的比例。简单来说，单元测试覆盖率描述了测试代码“执行”到了多少业务代码。\n2.1 单元测试覆盖率类型 单元测试覆盖率有几种不同的类型，每种类型关注的角度不同：\n**行覆盖率（Line Coverage）：**这是最常见的一种。它统计了在测试执行时，被执行到的源代码行数占总行数的比例。例如，如果你的代码有100行，测试跑下来有80行被执行到了，那么行覆盖率就是80%。 **分支覆盖率（Branch Coverage）：**这种类型更深入一层。它关注的是代码中的所有逻辑分支是否都被测试到。例如，一个 if 语句有两个分支（true 和 false），如果你只测试了 true 分支，那么分支覆盖率就不是100%，因为它漏掉了 false 分支。 **函数/方法覆盖率（Function/Method Coverage）：**这个指标统计的是被测试到的函数或方法的数量，占总函数或方法数量的比例。 **语句覆盖率（Statement Coverage）：**与行覆盖率类似，但更精确。它统计的是被执行到的语句数量，占总语句数量的比例。在很多情况下，行覆盖率和语句覆盖率非常接近。 2.2 为什么单元测试覆盖率很重要？ **发现未测试的代码：**高覆盖率可以让你对代码质量更有信心。如果覆盖率低，就意味着有很多代码路径可能没有被测试到，存在潜在的 bug。 **代码质量的参考：**虽然高覆盖率不等于没有 bug，但它是一个很好的质量参考指标。它鼓励开发者编写更全面的测试用例，从而提高代码的健壮性。 **代码重构的保障：**当你需要重构（refactor）旧代码时，一套全面的单元测试可以给你提供安全保障。只要覆盖率高，并且所有测试都能通过，你就可以确信重构没有破坏原有的业务逻辑。 这一点非常非常非常重要！重构之前，先补齐单元测试！\n这一点非常非常非常重要！重构之前，先补齐单元测试！\n这一点非常非常非常重要！重构之前，先补齐单元测试！\n2.3 单元测试覆盖率的局限性 需要注意的是，高覆盖率不等于高质量。一个100%覆盖率的测试可能只是简单地执行了所有代码，但没有验证结果是否正确。例如，一个测试可能只执行了一行 sum = a + b;，但没有断言（assert）sum的值是否真的是a + b。\n因此，单元测试覆盖率是一个有用的工具，但不能作为唯一的目标。更重要的是编写有意义、能验证逻辑正确性的测试用例。\n3 JaCoCo——Java的单元测试覆盖率工具 JaCoCo是Java Code Coverage的缩写。它是一款强大的Java代码覆盖率工具，专门设计用于测量Java项目的测试有效性。通过精确计算代码覆盖率，JaCoCo可以描述出测试运行期间代码的实际执行情况 。\n3.1 JaCoCo的覆盖率类型 JaCoCo提供了多层次的覆盖率指标，帮助开发者全面理解测试的深度和广度。这些指标共同描绘了测试代码对源代码的执行程度。\n覆盖率指标 描述 重要性 指令覆盖 (Instruction Coverage) 这是最底层的覆盖粒度，衡量所有 Java 字节码指令是否被执行 。它确保了代码的每一部分，包括编译器生成的隐式代码（如默认构造函数或finally语句的控制结构）都被计算在内 。 确保代码的每一部分（包括编译器生成代码）都被触及。 分支覆盖 (Branch Coverage) 关注代码中所有逻辑判断路径（例如 if/else 语句、switch 语句等）是否都被执行 。它计算代码中的每个判断点是否都被测试过，从而显示测试用例是否充分覆盖了代码的所有决策逻辑。 验证代码中的每个决策点是否被充分探索，揭示逻辑路径覆盖情况。 行覆盖 (Line Coverage) 报告源代码中哪些行被执行 。这是最直观的指标，通常用于快速识别未被测试覆盖的代码行。帮助开发人员快速定位测试盲区 。 最直观的指标，用于快速识别未测试的代码行。 方法覆盖 (Method Coverage) 统计类中的方法是否至少被调用过一次 。它提供了方法级别的测试覆盖概览，帮助识别完全未被测试的方法。 提供方法级别的测试概览，识别完全未被测试的方法。 类覆盖 (Class Coverage) 统计类是否至少被加载并执行过一次 。这是最高级别的覆盖指标，用于快速识别完全未被测试的类。 最高级别的覆盖指标，用于快速识别完全未被测试的类。 圈复杂度 (Cyclomatic Complexity) 这是一个衡量代码复杂度的指标，表示代码中独立路径的数量 。JaCoCo 不仅报告圈复杂度，还会显示其中有多少复杂度未被测试覆盖 。高圈复杂度通常意味着代码难以理解、难以测试，且更容易出现缺陷。 识别复杂且测试不足的代码区域，这些区域通常是缺陷的温床。 3.2 在Maven中使用JaCoCo Maven作为现在Java项目的主流管理工具之一，JaCoCo提供了Maven插件形式的集成方案。\n要在Maven框架中正常使用JaCoCo插件，在配置maven-surefire-plugin或maven-failsafe-plugin时，不能将forkCount设置为0或将forkMode设置为never。因为这将阻止带有javaagent的测试执行，就不会记录覆盖率信息了。\n此外，JaCoCo插件还要求：\nMaven 3.0或更高版本； Java 1.8或更高版本。 3.2.1 修改pom.xml文件 在Java项目的pom.xml文件中，加入如下内容：\norg.jacoco jacoco-maven-plugin 0.8.13 ...... 即可集成JaCoCo插件。目前最新版本是2025-04-02发布的0.8.13版本。\n3.2.2 插件Goals介绍 Maven插件jacoco-maven-plugin的Goals(目标)有如下几个：\nGoal 描述 help 显示jacoco-maven-plugin的帮助信息。运行“mvn jacoco:help -Ddetail=true -Dgoal=”以显示参数详细信息。 prepare-agent 准备一个指向 JaCoCo 运行时代理的属性，该属性可作为虚拟机参数传递给待测应用程序。 prepare-agent-integration 与prepare-agent相同，但提供适合集成测试的默认值. merge Mojo用于将一组执行数据文件（*.exec）合并为单个文件。 report 生成单个项目测试的代码覆盖率报告，支持多种格式（HTML、XML和CSV）。 report-integration 与report相同，但提供适合集成测试的默认值。 report-aggregate 从多个项目创建一个结构化的代码覆盖率报告（格式支持HTML、XML和CSV）。 check 检查代码覆盖率指标是否达到要求。 dump 通过TCP/IP从以tcpserver模式运行的JaCoCo代理请求转储。 instrument 执行离线instrumentation。请注意，在测试执行完成后，必须使用“restore-instrumented-classes”恢复原始类。 restore-instrumented-classes 与instrument配套使用。 3.2.3 jacoco-maven-plugin实践 假设现在有一个使用Spring Boot的Maven工程，它包含4个子模块(sub-modules)：dao、service、interface、starter。其中dao、service、interface三个子模块负责实现业务逻辑；starter只包含一个Spring Boot的启动类，没有其他任何逻辑。我们使用JaCoCo插件来生成一个聚合的代码覆盖率报告，实现整体项目代码质量的监控。这是一个非常常见的场景。\n因为JaCoCo在多模块Maven工程下生成聚合报告的一些限制（详见这里）。\n我们需要指定一个子模块用来保存JaCoCo生成的聚合报告。此时正好使用starter这个子模块来充当这个角色。因为：\n它依赖所有其他子模块，因为它是启动入口； 它只包含Spring Boot的启动类，不包含其他业务逻辑，所以不用写单元测试。 第1步 在父工程pom.xml文件的--标签中，添加JaCoCo插件。\norg.jacoco jacoco-maven-plugin 0.8.13 prepare-agent prepare-agent ...... 配置说明：\nprepare-agent: 这个目标（goal）在测试运行前执行，用于在所有子模块的测试过程中收集代码覆盖率数据。 第2步 在子模块dao、service、interface的pom.xml文件中添加JaCoCo插件，不设置任何信息。\norg.jacoco jacoco-maven-plugin ...... 第3步 在子模块starter的pom.xml文件中添加JaCoCo插件，并设定report-aggregate目标。\norg.jacoco jacoco-maven-plugin report-aggregate verify report-aggregate ...... 配置说明：\nreport-aggregate: 在这里，我们将report-aggregate目标绑定到Maven的verify生命周期阶段。这样做可以确保在所有子模块的测试都运行完毕之后，再执行生成报告的操作，从而收集到完整的覆盖率数据。 额外解释一下，之所以不在父工程下生成JaCoCo聚合报告的原因是，父工程会在子模块运行之前执行JaCoCo插件，因此最终生成的聚合报告会是空的。\n第4步 配置好所有的pom.xml文件后，只需在父工程的根目录下执行以下Maven命令即可：\nmvn -U clean verify -Dmaven.test.failure.ignore=true 这个命令会执行以下操作：\nclean: 清理项目，删除target目录。 verify: 运行所有子模块的单元测试，并在测试结束后，触发JaCoCo的report-aggregate目标。 聚合报告生成: JaCoCo插件会遍历所有子模块，收集各自生成的jacoco.exec文件，并将它们的数据聚合起来，最终在starter工程的target/site/jacoco-aggregate目录下生成一个统一的HTML报告。 命令中的-Dmaven.test.failure.ignore=true参数，保证Maven在执行单元测试时即使某个单元测试失败，也不会中断整个流程。\n第5步 将starter工程的target/site/jacoco-aggregate目录下的index.html文件用浏览器打开，即可查看单元测试覆盖率报告。\n3.3 在Eclipse中使用EclEmma 因为JaCoCo缺少图形化的交互界面，所以EclEmma(2.0版本开始)这个Eclipse插件实现了对JaCoCo的图形化封装。这使得在Eclipse IDE中分析代码覆盖率变得非常方便：\n快速开发/循环测试：这个插件与JUnit测试运行类似，可在Eclipse IDE内直接启动并分析代码覆盖率。 丰富的覆盖率分析：覆盖率分析结果会立即在Java源代码编辑器中显示并通过各种颜色高亮分类。 非侵入式：使用EclEmma无需修改项目的任何代码或进行任何其他设置。 下面简要介绍EclEmma的常用功能：如何在Eclipse中启动；如何查看覆盖率信息；如何查看源代码执行情况。\n3.3.1 启动EclEmma EclEmma在Eclipse IDE中可以有多种启动方式，最常见的形式就是以JUnit单元测试的形式启动。\n在需要统计覆盖率的工程上右键，然后在弹出窗口选择“Coverage As”-“JUnit Test”，即可开始执行。当执行结束，覆盖率数据会自动收集并显示。\n3.3.2 查看覆盖率信息 执行EclEmma后，覆盖率视图会自动显示；或者也可以手动通过“Window”→“Show View”菜单中的“Java”类别打开。\n覆盖率视图显示了常见的Java层次结构中所有已分析的Java元素。各列显示当前会话中相应Java元素的子元素汇总数据，例如：\n覆盖率； 已覆盖行数； 未覆盖行数； 代码总行数。 可以通过点击相应的列标题对元素进行升序或降序排序；也可以点击一个元素进行展开，最终双击单个文件即可在编辑器中打开源代码文件。\n3.3.3 查看源码注释 EclEmma可以对Java源码文件进行高亮显示，如下图：\n不同的颜色在Java源代码编辑器中直观地显示了覆盖率分析结果——行覆盖率和分支覆盖率：\n绿色表示完全覆盖的行； 黄色表示部分覆盖的行（部分指令或分支未被执行）； 红色表示从未被执行的行。 此外，包含决策分支的行左侧会显示彩色菱形。菱形的颜色与行高亮颜色具有相似的语义：\n绿色表示完全覆盖的分支； 黄色表示部分覆盖的分支； 红色表示该行中的所有分支均未被执行。 这些高亮的颜色会在你开始编辑源代码文件时自动消失。\n以上是EclEmma的简要使用说明，完整的使用手册可以看这里。\n3.4 在IntelliJ IDEA中分析覆盖率 因为我不会使用IntelliJ IDEA，所以无法介绍 -_-|||… 不过可以参考这个文档。\n4 写在最后 JaCoCo是Java开发者工具箱中不可或缺的组成部分，它通过提供准确、多维度的代码覆盖率数据，极大地提升了测试的有效性和软件产品的整体质量。它不仅仅是一个测量工具，更是优化测试策略和提升代码健康度的强大动力。\n然而，要充分发挥JaCoCo的潜力，研发团队必须实事求是。通过设定切合实际的覆盖率目标，并专注于编写有意义的测试，才能确保测试覆盖的是最关键和最复杂的代码部分，而非盲目追求数字。理解覆盖率的局限性并将其作为改进的起点，是实现真正软件质量的关键。\n",
-  "wordCount" : "307",
-  "inLanguage": "zh",
-  "datePublished": "2025-08-07T19:52:39-07:00",
-  "dateModified": "2025-08-07T19:52:39-07:00",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://nimblecode.tech/posts/eclmma-quickstart/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Nimble Code Tech",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://nimblecode.tech/favicon.ico"
-    }
-  }
-}
-</script>
-</head>
-
-<body class="" id="top">
+</noscript>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
+        document.querySelector("html").dataset.theme = 'dark';
     } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
+       document.querySelector("html").dataset.theme = 'light';
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
     }
 
+</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-KG4P5QR587"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KG4P5QR587');
+</script>
+<script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Re Os As Pe Ms Fs capture Ve calculateEventProperties js register register_once register_for_session unregister unregister_for_session qs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty zs Ls createPersonProfile Us Rs Bs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ds debug I Ns getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_mT7wOBjidgcQVEyPjDDfTMDJlObxehaWFU39siHPudu', {
+        api_host: 'https://us.i.posthog.com',
+        defaults: '2025-05-24',
+        person_profiles: 'identified_only', 
+    })
 </script>
 
-<header class="header">
-    <nav class="nav">
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
         <div class="logo">
-            <a href="https://nimblecode.tech/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -179,16 +107,16 @@
                         <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
-                </button>
-                    <ul class="lang-switch"><li>|</li>
+                </button><span>|</span>
+                    <ul class="lang-menu">
                         <li>
-                            <a href="https://nimblecode.tech/en/" title="English"
+                            <a href="http://localhost:1313/en/" title="English"
                                 aria-label="English">En</a>
                         </li>
                     </ul>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
         </ul>
     </nav>
 </header>
@@ -210,7 +138,7 @@
 
 </div>
   </header> 
-  <div class="post-content"><h2 id="1-什么是单元测试">1 什么是单元测试<a hidden class="anchor" aria-hidden="true" href="#1-什么是单元测试">#</a></h2>
+  <div class="post-content md-content"><h2 id="1-什么是单元测试">1 什么是单元测试<a hidden class="anchor" aria-hidden="true" href="#1-什么是单元测试">#</a></h2>
 <p>单元测试（Unit Testing）是一种软件测试方法，它针对程序中最小的可测试单元进行验证。这里的“单元”通常是指一个函数、一个方法或一个类。</p>
 <p>它的主要目的是确保每个独立的单元都能按照原本的设计意图正确工作。通过隔离和测试程序的各个小部分，可以尽早发现并修复代码中的错误，从而提高整体代码的质量和可靠性。</p>
 <h3 id="11-核心特点">1.1 核心特点<a hidden class="anchor" aria-hidden="true" href="#11-核心特点">#</a></h3>
@@ -297,7 +225,7 @@
 </ol>
 <h4 id="321-修改pomxml文件">3.2.1 修改pom.xml文件<a hidden class="anchor" aria-hidden="true" href="#321-修改pomxml文件">#</a></h4>
 <p>在Java项目的pom.xml文件中，加入如下内容：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;build&gt;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;build&gt;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;pluginManagement&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;plugins&gt;</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;plugin&gt;</span>
@@ -377,7 +305,7 @@
 </ol>
 <h5 id="第1步">第1步<a hidden class="anchor" aria-hidden="true" href="#第1步">#</a></h5>
 <p>在父工程pom.xml文件的<!-- raw HTML omitted -->-<!-- raw HTML omitted -->-<!-- raw HTML omitted -->标签中，添加JaCoCo插件。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;build&gt;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;build&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;pluginManagement&gt;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;plugins&gt;</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#f92672">&lt;plugin&gt;</span>
@@ -403,7 +331,7 @@
 </ul>
 <h5 id="第2步">第2步<a hidden class="anchor" aria-hidden="true" href="#第2步">#</a></h5>
 <p>在子模块dao、service、interface的pom.xml文件中添加JaCoCo插件，不设置任何<!-- raw HTML omitted -->信息。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;build&gt;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;build&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;plugins&gt;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;plugin&gt;</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#f92672">&lt;groupId&gt;</span>org.jacoco<span style="color:#f92672">&lt;/groupId&gt;</span>
@@ -414,7 +342,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/build&gt;</span>
 </span></span></code></pre></div><h5 id="第3步">第3步<a hidden class="anchor" aria-hidden="true" href="#第3步">#</a></h5>
 <p>在子模块starter的pom.xml文件中添加JaCoCo插件，并设定report-aggregate目标。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;build&gt;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;build&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;plugins&gt;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;plugin&gt;</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#f92672">&lt;groupId&gt;</span>org.jacoco<span style="color:#f92672">&lt;/groupId&gt;</span>
@@ -439,7 +367,7 @@
 <p><strong>额外解释一下，之所以不在父工程下生成JaCoCo聚合报告的原因是，父工程会在子模块运行之前执行JaCoCo插件，因此最终生成的聚合报告会是空的。</strong></p>
 <h5 id="第4步">第4步<a hidden class="anchor" aria-hidden="true" href="#第4步">#</a></h5>
 <p>配置好所有的pom.xml文件后，只需在父工程的根目录下执行以下Maven命令即可：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mvn -U clean verify -Dmaven.test.failure.ignore<span style="color:#f92672">=</span>true
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mvn -U clean verify -Dmaven.test.failure.ignore<span style="color:#f92672">=</span>true
 </span></span></code></pre></div><p>这个命令会执行以下操作：</p>
 <ol>
 <li><strong>clean:</strong> 清理项目，删除target目录。</li>
@@ -501,20 +429,20 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://nimblecode.tech/tags/java/">Java</a></li>
-      <li><a href="https://nimblecode.tech/tags/unit-testing/">Unit Testing</a></li>
-      <li><a href="https://nimblecode.tech/tags/unit-test-coverage/">Unit Test Coverage</a></li>
-      <li><a href="https://nimblecode.tech/tags/jacoco/">JaCoCo</a></li>
-      <li><a href="https://nimblecode.tech/tags/eclemma/">EclEmma</a></li>
-      <li><a href="https://nimblecode.tech/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/">单元测试</a></li>
-      <li><a href="https://nimblecode.tech/tags/%E8%A6%86%E7%9B%96%E7%8E%87/">覆盖率</a></li>
+      <li><a href="http://localhost:1313/tags/java/">Java</a></li>
+      <li><a href="http://localhost:1313/tags/unit-testing/">Unit Testing</a></li>
+      <li><a href="http://localhost:1313/tags/unit-test-coverage/">Unit Test Coverage</a></li>
+      <li><a href="http://localhost:1313/tags/jacoco/">JaCoCo</a></li>
+      <li><a href="http://localhost:1313/tags/eclemma/">EclEmma</a></li>
+      <li><a href="http://localhost:1313/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/">单元测试</a></li>
+      <li><a href="http://localhost:1313/tags/%E8%A6%86%E7%9B%96%E7%8E%87/">覆盖率</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://nimblecode.tech/">Nimble Code Tech</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">Nimble Code Tech</a></span> · 
 
     <span>
         Powered by
@@ -522,16 +450,23 @@
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -558,25 +493,25 @@
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })
