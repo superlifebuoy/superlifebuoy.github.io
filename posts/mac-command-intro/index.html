@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="zh" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>类Unix系统常用命令简介 | Nimble Code Tech</title>
 <meta name="keywords" content="linux, ssh, scp, tar, lsof">
 <meta name="description" content="一个常用类Unix系统命令的简介集合。不定时更新。">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/mac-command-intro/">
+<link rel="canonical" href="https://nimblecode.tech/posts/mac-command-intro/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.47e51c7d8489b002361bac156ce9a0a8776d08c5462c2cee95801efafdd90d35.css" integrity="sha256-R&#43;UcfYSJsAI2G6wVbOmgqHdtCMVGLCzulYAe&#43;v3ZDTU=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://nimblecode.tech/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://nimblecode.tech/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://nimblecode.tech/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://nimblecode.tech/apple-touch-icon.png">
+<link rel="mask-icon" href="https://nimblecode.tech/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="zh" href="http://localhost:1313/posts/mac-command-intro/">
+<link rel="alternate" hreflang="zh" href="https://nimblecode.tech/posts/mac-command-intro/">
 <noscript>
     <style>
         #theme-toggle,
@@ -80,13 +80,81 @@
         person_profiles: 'identified_only', 
     })
 </script>
+<meta property="og:url" content="https://nimblecode.tech/posts/mac-command-intro/">
+  <meta property="og:site_name" content="Nimble Code Tech">
+  <meta property="og:title" content="类Unix系统常用命令简介">
+  <meta property="og:description" content="一个常用类Unix系统命令的简介集合。不定时更新。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-08-08T23:07:15-07:00">
+    <meta property="article:modified_time" content="2024-08-08T23:07:15-07:00">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="SSH">
+    <meta property="article:tag" content="Scp">
+    <meta property="article:tag" content="Tar">
+    <meta property="article:tag" content="Lsof">
 
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="类Unix系统常用命令简介">
+  <meta name="twitter:description" content="一个常用类Unix系统命令的简介集合。不定时更新。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://nimblecode.tech/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "类Unix系统常用命令简介",
+      "item": "https://nimblecode.tech/posts/mac-command-intro/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "类Unix系统常用命令简介",
+  "name": "类Unix系统常用命令简介",
+  "description": "一个常用类Unix系统命令的简介集合。不定时更新。",
+  "keywords": [
+    "linux", "ssh", "scp", "tar", "lsof"
+  ],
+  "articleBody": "1 ssh 指定用户名连接 ssh {username}@{ip address} 2 scp SCP(Secure Copy Protocol)是一种在本地主机与远程主机之间，或在两个远程主机之间安全传输计算机文件的方式。\n下载文件 scp {username}@{ip.address}:/{dir}/{file} {targetDir} 上传文件 scp {dir}/{file} {username}@{ip.address}:{targetDir} 下载目录 scp -r {username}@{ip.address}:/{dir} {targetDir} 上传目录 scp -r {dir} {username}@{ip.address}:{targetDir} 3 tar 解压缩jar包 tar -zxvf {jar包} -C {目标目录} -z：有gzip属性的，可选 -x：解压，必须 -v：显示所有过程，可选 -f：使用的文件名称；这个参数是最后一个参数，后面只能跟jar包，必须 -C：指定目标目录，必须预先存在，可选 4 lsof lsof(list open files)是一个“列出打开的文件”命令。在许多类Unix系统中用于查找/显示所有打开的文件及其打开这些文件的进程列表。\n查看占用端口进程 lsof -i :{port} ",
+  "wordCount" : "51",
+  "inLanguage": "zh",
+  "datePublished": "2024-08-08T23:07:15-07:00",
+  "dateModified": "2024-08-08T23:07:15-07:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://nimblecode.tech/posts/mac-command-intro/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nimble Code Tech",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nimblecode.tech/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
+            <a href="https://nimblecode.tech/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
             <div class="logo-switches">
                 <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
@@ -110,7 +178,7 @@
                 </button><span>|</span>
                     <ul class="lang-menu">
                         <li>
-                            <a href="http://localhost:1313/en/" title="English"
+                            <a href="https://nimblecode.tech/en/" title="English"
                                 aria-label="English">En</a>
                         </li>
                     </ul>
@@ -165,18 +233,18 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/linux/">Linux</a></li>
-      <li><a href="http://localhost:1313/tags/ssh/">Ssh</a></li>
-      <li><a href="http://localhost:1313/tags/scp/">Scp</a></li>
-      <li><a href="http://localhost:1313/tags/tar/">Tar</a></li>
-      <li><a href="http://localhost:1313/tags/lsof/">Lsof</a></li>
+      <li><a href="https://nimblecode.tech/tags/linux/">Linux</a></li>
+      <li><a href="https://nimblecode.tech/tags/ssh/">SSH</a></li>
+      <li><a href="https://nimblecode.tech/tags/scp/">Scp</a></li>
+      <li><a href="https://nimblecode.tech/tags/tar/">Tar</a></li>
+      <li><a href="https://nimblecode.tech/tags/lsof/">Lsof</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">Nimble Code Tech</a></span> · 
+        <span>&copy; 2026 <a href="https://nimblecode.tech/">Nimble Code Tech</a></span> · 
 
     <span>
         Powered by

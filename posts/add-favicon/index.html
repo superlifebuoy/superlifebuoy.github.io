@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="zh" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Hugo 网站配置 favicon.ico | Nimble Code Tech</title>
 <meta name="keywords" content="Hugo, favicon.ico, favicon, ico">
 <meta name="description" content="介绍favicon.ico文件，以及 Hugo 如何配置该文件。">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/add-favicon/">
+<link rel="canonical" href="https://nimblecode.tech/posts/add-favicon/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.47e51c7d8489b002361bac156ce9a0a8776d08c5462c2cee95801efafdd90d35.css" integrity="sha256-R&#43;UcfYSJsAI2G6wVbOmgqHdtCMVGLCzulYAe&#43;v3ZDTU=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://nimblecode.tech/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://nimblecode.tech/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://nimblecode.tech/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://nimblecode.tech/apple-touch-icon.png">
+<link rel="mask-icon" href="https://nimblecode.tech/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="zh" href="http://localhost:1313/posts/add-favicon/">
+<link rel="alternate" hreflang="zh" href="https://nimblecode.tech/posts/add-favicon/">
 <noscript>
     <style>
         #theme-toggle,
@@ -80,13 +80,80 @@
         person_profiles: 'identified_only', 
     })
 </script>
+<meta property="og:url" content="https://nimblecode.tech/posts/add-favicon/">
+  <meta property="og:site_name" content="Nimble Code Tech">
+  <meta property="og:title" content="Hugo 网站配置 favicon.ico">
+  <meta property="og:description" content="介绍favicon.ico文件，以及 Hugo 如何配置该文件。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-11-04T14:10:07-08:00">
+    <meta property="article:modified_time" content="2025-11-04T14:10:07-08:00">
+    <meta property="article:tag" content="Hugo">
+    <meta property="article:tag" content="Favicon.ico">
+    <meta property="article:tag" content="Favicon">
+    <meta property="article:tag" content="Ico">
 
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Hugo 网站配置 favicon.ico">
+  <meta name="twitter:description" content="介绍favicon.ico文件，以及 Hugo 如何配置该文件。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://nimblecode.tech/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Hugo 网站配置 favicon.ico",
+      "item": "https://nimblecode.tech/posts/add-favicon/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Hugo 网站配置 favicon.ico",
+  "name": "Hugo 网站配置 favicon.ico",
+  "description": "介绍favicon.ico文件，以及 Hugo 如何配置该文件。",
+  "keywords": [
+    "Hugo", "favicon.ico", "favicon", "ico"
+  ],
+  "articleBody": "1 起因 今天收到 Google 邮件，提醒我 nimblecode.tech 上有网页无法被编入索引。\n根据邮件连接，我登陆 Google Search Console 后发现，是链接 https://nimblecode.tech/favicon.ico 未被找到。\n通过浏览器访问，确实返回404。\n我在 Hugo 的public/目录下也未发现favicon.ico文件。作为一个前端入门选手，就很奇怪favicon.ico是一个怎样的文件？为什么 Googlebot 会去爬取它呢？\n2 favicon.ico 是什么？ 通过维基百科了解到如下内容：\nFavicon是favorites icon的缩写，亦被称为website icon（网站图标）、page icon（页面图标）或urlicon（URL图标）。 Favicon是与某个网站或网页相关联的图标。网站设计者可以多种方式建立这种图标，而目前也有很多网页浏览器支持此功能。 浏览器可以将favicon显示于浏览器的地址栏中，也可置于书签列表的网站名前，还可以放在标签式浏览界面中的页标题前。 2.1 favicon.ico 的历史 Favicon 功能是一个典型的例子，展示了最初由一家公司引入的非标准功能发展为行业事实标准的过程。\n1999年3月微软的 IE 5 浏览器最早将 favicon 用于收藏夹功能，便于用户在 “收藏夹（Favorites）” 列表中更容易区分和识别他们收藏的网站。“favorite icon” 这一名称也由此而来。但是这种实现也会产生一些隐私问题的副作用——网站拥有者可以通过日志确认多少人下载了favicon.ico文件，进而知道多少人将他们的网站加入收藏夹。\n后来，随着 Mozilla Firefox、Opera、Safari等浏览器相继支持 favicon，它的用途也从最初的“收藏夹图标”扩展到了：\n浏览器地址栏 浏览器标签页（成为快速识别网站的主要方式） 因为用途的增加，之前的隐私副作用随之消失。favicon.ico 也随之变为行业的事实标准。\n3 生成 favicon.ico 文件后缀.ico是一种在Windows系统上图标文件使用的位图格式，当初并没有注册成为一个 MIME 类型。但到了2003年，格式.ico终于在IANA获得注册，其 MIME 类型是 image/vnd.microsoft.icon。\n生成.ico文件的方式有很多种。例如https://favicon.io/，选择对应的原始文件类型进行生成即可：\n3.1 favicon.ico 其他格式 历史上最初使用的是.ico文件格式，通常是 16 * 16 像素的小图像。现在的浏览器也支持 PNG、GIF 甚至 SVG 等其他格式，并且需要不同大小的图标来适应各种设备和用途（例如 32 * 32、64 * 64，以及用于移动设备主屏幕的更大尺寸）。\n4 Hugo 配置 favicon.ico Hugo 配置 favicon.ico 文件很简单，只需两步完成。\n4.1 放置 favicon.ico 文件 将需要使用的favicon.ico文件放在 Hugo 的public/目录下。\n4.2 修改 Hugo 配置文件 Hugo的配置文件分为.toml与.yaml两种类型，例如：config.toml或hugo.yaml。\n配置文件config.toml需要添加内容如下：\n# ... 其他元数据 [params] favicon = \"/favicon.ico\" 配置文件hugo.yaml需要添加内容如下：\n# ... 其他元数据 params: favicon: /favicon.ico 完成 favicon.ico 文件的放置与配置文件的修改后，重新编译/部署 Hugo 网站即可生效。\n5 最后 最后，不要忘记 GSC 重新验证。回到问题页面：\n点击“验证修正情况”，重新触发 GSC 进行验证。\n然后静静等待验证结果。\n",
+  "wordCount" : "129",
+  "inLanguage": "zh",
+  "datePublished": "2025-11-04T14:10:07-08:00",
+  "dateModified": "2025-11-04T14:10:07-08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://nimblecode.tech/posts/add-favicon/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nimble Code Tech",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nimblecode.tech/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
+            <a href="https://nimblecode.tech/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
             <div class="logo-switches">
                 <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
@@ -110,7 +177,7 @@
                 </button><span>|</span>
                     <ul class="lang-menu">
                         <li>
-                            <a href="http://localhost:1313/en/" title="English"
+                            <a href="https://nimblecode.tech/en/" title="English"
                                 aria-label="English">En</a>
                         </li>
                     </ul>
@@ -191,17 +258,17 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/hugo/">Hugo</a></li>
-      <li><a href="http://localhost:1313/tags/favicon.ico/">Favicon.ico</a></li>
-      <li><a href="http://localhost:1313/tags/favicon/">Favicon</a></li>
-      <li><a href="http://localhost:1313/tags/ico/">Ico</a></li>
+      <li><a href="https://nimblecode.tech/tags/hugo/">Hugo</a></li>
+      <li><a href="https://nimblecode.tech/tags/favicon.ico/">Favicon.ico</a></li>
+      <li><a href="https://nimblecode.tech/tags/favicon/">Favicon</a></li>
+      <li><a href="https://nimblecode.tech/tags/ico/">Ico</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">Nimble Code Tech</a></span> · 
+        <span>&copy; 2026 <a href="https://nimblecode.tech/">Nimble Code Tech</a></span> · 
 
     <span>
         Powered by

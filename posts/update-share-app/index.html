@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="zh" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>更新与分发Docker镜像（2） | Nimble Code Tech</title>
 <meta name="keywords" content="Docker">
 <meta name="description" content="如何更新Docker镜像？如果推送Docker镜像到镜像仓库？">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/update-share-app/">
+<link rel="canonical" href="https://nimblecode.tech/posts/update-share-app/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.47e51c7d8489b002361bac156ce9a0a8776d08c5462c2cee95801efafdd90d35.css" integrity="sha256-R&#43;UcfYSJsAI2G6wVbOmgqHdtCMVGLCzulYAe&#43;v3ZDTU=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://nimblecode.tech/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://nimblecode.tech/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://nimblecode.tech/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://nimblecode.tech/apple-touch-icon.png">
+<link rel="mask-icon" href="https://nimblecode.tech/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="zh" href="http://localhost:1313/posts/update-share-app/">
+<link rel="alternate" hreflang="zh" href="https://nimblecode.tech/posts/update-share-app/">
 <noscript>
     <style>
         #theme-toggle,
@@ -80,13 +80,77 @@
         person_profiles: 'identified_only', 
     })
 </script>
+<meta property="og:url" content="https://nimblecode.tech/posts/update-share-app/">
+  <meta property="og:site_name" content="Nimble Code Tech">
+  <meta property="og:title" content="更新与分发Docker镜像（2）">
+  <meta property="og:description" content="如何更新Docker镜像？如果推送Docker镜像到镜像仓库？">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-03-20T19:52:44+08:00">
+    <meta property="article:modified_time" content="2023-03-20T19:52:44+08:00">
+    <meta property="article:tag" content="Docker">
 
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="更新与分发Docker镜像（2）">
+  <meta name="twitter:description" content="如何更新Docker镜像？如果推送Docker镜像到镜像仓库？">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://nimblecode.tech/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "更新与分发Docker镜像（2）",
+      "item": "https://nimblecode.tech/posts/update-share-app/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "更新与分发Docker镜像（2）",
+  "name": "更新与分发Docker镜像（2）",
+  "description": "如何更新Docker镜像？如果推送Docker镜像到镜像仓库？",
+  "keywords": [
+    "Docker"
+  ],
+  "articleBody": "1 更新Docker镜像 在Docker入门（1）中，我们初步尝试了Docker的特性，并将getting-started这个演示用的todo应用做了容器化尝试。接下来，我们会进一步尝试更新它的代码，并构建新的Docker镜像，最终把它推送到Docker镜像仓库中。\n1.1 更新应用代码 之前，在没有任何todo item时，getting-started会在页面显示“No items yet! Add one above!”。现在，我们尝试修改这行文案内容。\n编辑src/static/js/app.js文件 使用编辑器打开src/static/js/app.js文件，并做如下内容调整：\n... - No items yet! Add one above!\n+ You have no todo items yet! Add one above!\n... 构建新镜像 保存src/static/js/app.js文件后，就可以根据新文件内容来构建新镜像了：\ndocker build -t getting-started . 本地验证 构建新镜像后，我们可以通过docker run命令在本地验证修改效果。命令如下：\ndocker run -dp 3000:3000 getting-started 注意事项 在启动新docker镜像的容器时，有可能出现类似如下内容的错误：\ndocker: Error response from daemon: driver failed programming external connectivity on endpoint laughing_burnell (bb242b2ca4d67eba76e79474fb36bb5125708ebdabd7f45c8eaf16caaabde9dd): Bind for 0.0.0.0:3000 failed: port is already allocated. 这个错误的原因是之前启动的旧容器还未停止，它已经占用了3000端口，导致新容器无法启动。要解决这个问题，需要首先把旧容器停掉。\n1.2 删除旧的容器 如果你使用终端停止旧容器，可以依次执行如下命令：\n通过docker ps命令查找容器ID； docker ps 使用docker stop命令来停掉旧容器。根据docker ps获得的容器ID替换下面命令中的； docker stop 旧容器停止后，还可以使用docker rm命令来删除它； docker rm 你也可以一步实现停止并删除容器，只需要在docker rm命令中增加force即可。例如docker rm -f 。\n如果你使用Docker Desktop停止容器，可以根据下面指令执行：\n打开Docker Desktop的Container面板； 在需要删除的旧容器条目中，选择Action一栏的垃圾桶图标； 在弹出的对话框中，选择“Delete forever”即可。 1.3 启动新的容器 再次使用docker run命令，启动新容器：\ndocker run -dp 3000:3000 getting-started 打开浏览器，访问http://localhost:3000，就能看到更新文案后的页面啦。\n2 分发Docker镜像 更新Docker镜像后，可以对外分发新镜像。完成该过程，需要使用Docker注册中心(Docker registry)。默认的Docker注册中心就是Docker Hub。\n2.1 创建镜像仓库 要分发Docker镜像，首先需要创建一个Docker仓库并向其推送镜像文件。以下是具体操作流程：\n在Docker Hub完成注册或登录； 点击页面的“Create Repository”按钮； 仓库名称可以使用getting-started；切记仓库可见性选择Public； 点击“Create”按钮，完成创建过程。 如果你在页面看到如下图所示内容，则证明Docker仓库已经创建成功，并且可以使用图中命令完成Docker镜像的推送。\n2.2 推送镜像 2.3 使用Play with Docker验证 ",
+  "wordCount" : "136",
+  "inLanguage": "zh",
+  "datePublished": "2023-03-20T19:52:44+08:00",
+  "dateModified": "2023-03-20T19:52:44+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://nimblecode.tech/posts/update-share-app/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nimble Code Tech",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nimblecode.tech/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
+            <a href="https://nimblecode.tech/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
             <div class="logo-switches">
                 <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
@@ -110,7 +174,7 @@
                 </button><span>|</span>
                     <ul class="lang-menu">
                         <li>
-                            <a href="http://localhost:1313/en/" title="English"
+                            <a href="https://nimblecode.tech/en/" title="English"
                                 aria-label="English">En</a>
                         </li>
                     </ul>
@@ -200,14 +264,14 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/docker/">Docker</a></li>
+      <li><a href="https://nimblecode.tech/tags/docker/">Docker</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">Nimble Code Tech</a></span> · 
+        <span>&copy; 2026 <a href="https://nimblecode.tech/">Nimble Code Tech</a></span> · 
 
     <span>
         Powered by

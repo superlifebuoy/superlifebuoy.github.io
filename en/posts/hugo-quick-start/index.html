@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Hugo Quick Start | Nimble Code Tech</title>
 <meta name="keywords" content="Blog, Hugo">
 <meta name="description" content="A quick guide to using Hugo.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/en/posts/hugo-quick-start/">
+<link rel="canonical" href="https://nimblecode.tech/en/posts/hugo-quick-start/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.47e51c7d8489b002361bac156ce9a0a8776d08c5462c2cee95801efafdd90d35.css" integrity="sha256-R&#43;UcfYSJsAI2G6wVbOmgqHdtCMVGLCzulYAe&#43;v3ZDTU=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://nimblecode.tech/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://nimblecode.tech/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://nimblecode.tech/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://nimblecode.tech/apple-touch-icon.png">
+<link rel="mask-icon" href="https://nimblecode.tech/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="zh" href="http://localhost:1313/posts/hugo-quick-start/">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/en/posts/hugo-quick-start/">
+<link rel="alternate" hreflang="zh" href="https://nimblecode.tech/posts/hugo-quick-start/">
+<link rel="alternate" hreflang="en" href="https://nimblecode.tech/en/posts/hugo-quick-start/">
 <noscript>
     <style>
         #theme-toggle,
@@ -81,13 +81,78 @@
         person_profiles: 'identified_only', 
     })
 </script>
+<meta property="og:url" content="https://nimblecode.tech/en/posts/hugo-quick-start/">
+  <meta property="og:site_name" content="Nimble Code Tech">
+  <meta property="og:title" content="Hugo Quick Start">
+  <meta property="og:description" content="A quick guide to using Hugo.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2021-02-17T20:29:21+08:00">
+    <meta property="article:modified_time" content="2021-02-17T20:29:21+08:00">
+    <meta property="article:tag" content="Blog">
+    <meta property="article:tag" content="Hugo">
 
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Hugo Quick Start">
+  <meta name="twitter:description" content="A quick guide to using Hugo.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://nimblecode.tech/en/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Hugo Quick Start",
+      "item": "https://nimblecode.tech/en/posts/hugo-quick-start/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Hugo Quick Start",
+  "name": "Hugo Quick Start",
+  "description": "A quick guide to using Hugo.",
+  "keywords": [
+    "Blog", "Hugo"
+  ],
+  "articleBody": "Hugo Quick Start\nQuick Start Create a Hugo site with the beautiful Ananke theme.\nThis Quick Start guide is for macOS. For installing Hugo on other operating systems, please see this link。\nIt is recommended that you have Git installed on your computer when running the code in this Quick Start.\nFor other ways to learn Hugo, such as books or video tutorials, please see this link。\nStep 1: Install Hugo Homebrew and MacPorts are two package managers for macOS, which can be installed via brew.sh and macports.org. If you are using a different operating system like Windows, please see this link。\nbrew install hugo # or port install hugo To verify that Hugo is correctly installed, enter the following command:\nhugo version Step 2: Create a New Site hugo new site quickstart The command above creates a new folder named quickstart and generates the new site within it.\nThe default configuration file type for Hugo is TOML. If you want to use the YAML format for your configuration file, add the “–config-format” parameter when generating the new site:\nhugo new site quickstart --config-format yaml Step 3: Add a Theme The link themes.gohugo.io is the list of available Hugo themes. This Quick Start uses the Ananke theme.\nFirst, download the theme from GitHub and add it to the “themes” folder:\ncd quickstart git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke If you do not have a GitHub account:\nIf you do not have Git installed, you can directly download the latest version of the theme archive from https://github.com/budparr/gohugo-theme-ananke/archive/master.zip. Then, unzip the .zip file, which will create a folder named “gohugo-theme-ananke-master”. Rename the folder to “ananke” and copy it into the “themes” folder. Finally, write the theme name into the site configuration file:\necho 'theme = \"ananke\"' \u003e\u003e config.toml Step 4: Add Some Content You can manually create content files (e.g., content//.) and add some front matter (metadata) at the beginning of the file. However, a better method is to use the new command to automatically complete the above (e.g., adding a title and creation date):\nhugo new posts/my-first-post.md If needed, you can edit this newly generated content file. Its beginning content will look similar to this:\n--- title: \"My First Post\" date: 2019-03-26T08:47:11+01:00 draft: true --- Draft specifies whether the current file is a draft. If it is true, the file is in draft status and will not be deployed to the site for display. Once you have finished the final editing of the file, you can set draft: false. For more information, see this link。\nStep 5: Start the Hugo Server Now, start the Hugo server and specify that draft files should also be deployed and displayed:\nhugo server -D You will see output similar to the following:\n| EN +------------------+----+ Pages | 10 Paginator pages | 0 Non-page files | 0 Static files | 3 Processed images | 0 Aliases | 1 Sitemaps | 1 Cleaned | 0 Total in 11 ms Watching for changes in /Users/bep/quickstart/{content,data,layouts,static,themes} Watching for config changes in /Users/bep/quickstart/config.toml Environment: \"development\" Serving pages from memory Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender Web Server is available at http://localhost:1313/ (bind address 127.0.0.1) Press Ctrl+C to stop Access your new site via http://localhost:1313/.\nYou can try modifying the content files and refreshing your browser to see the changes (sometimes you need to force a refresh of the browser, typically with the shortcut Ctrl-R).\nStep 6: Customize the Theme Your new site already looks great, but you might want to make a few small modifications before pushing it live to the public.\nSite Configuration Open the config.toml file with a text editor:\nbaseURL = \"https://example.org/\" languageCode = \"en-us\" title = \"My New Hugo Site\" theme = \"ananke\" Try changing the “title” information above to be more personalized. Additionally, if you already have a domain name, you can set it in the “baseURL” property. Note that when starting Hugo in development mode locally with “hugo server -D”, you do not need to set this value.\nTip: Any modifications to the site configuration file or content files while Hugo is running will be immediately displayed in the browser. The only thing you need to do is refresh the browser, sometimes requiring you to clear the cache.\nFor other configuration options for the Ananke theme, please refer to the theme website.\nFor more in-depth theme customization, please see this link.\nStep 7: Build Static Pages It’s simple, just input:\nhugo -D By default, the static pages will be generated in the ./public/ folder (you can temporarily change the output path with the -d/–destination parameter when executing the command, or modify it permanently via the publishdir property in the site configuration file).\n",
+  "wordCount" : "786",
+  "inLanguage": "en",
+  "datePublished": "2021-02-17T20:29:21+08:00",
+  "dateModified": "2021-02-17T20:29:21+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://nimblecode.tech/en/posts/hugo-quick-start/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nimble Code Tech",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nimblecode.tech/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
-            <a href="http://localhost:1313/en/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
+            <a href="https://nimblecode.tech/en/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
             <div class="logo-switches">
                 <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
@@ -111,7 +176,7 @@
                 </button><span>|</span>
                     <ul class="lang-menu">
                         <li>
-                            <a href="http://localhost:1313/" title="中文"
+                            <a href="https://nimblecode.tech/" title="中文"
                                 aria-label="中文">Zh</a>
                         </li>
                     </ul>
@@ -132,7 +197,7 @@
     <div class="post-meta"><span title='2021-02-17 20:29:21 +0800 +0800'>February 17, 2021</span>&nbsp;|&nbsp;<span>Translations:</span>
 <ul class="i18n_list">
     <li>
-        <a href="http://localhost:1313/posts/hugo-quick-start/">Zh</a>
+        <a href="https://nimblecode.tech/posts/hugo-quick-start/">Zh</a>
     </li>
 </ul>
 
@@ -239,15 +304,15 @@ theme = &#34;ananke&#34;
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/en/tags/blog/">Blog</a></li>
-      <li><a href="http://localhost:1313/en/tags/hugo/">Hugo</a></li>
+      <li><a href="https://nimblecode.tech/en/tags/blog/">Blog</a></li>
+      <li><a href="https://nimblecode.tech/en/tags/hugo/">Hugo</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/en/">Nimble Code Tech</a></span> · 
+        <span>&copy; 2026 <a href="https://nimblecode.tech/en/">Nimble Code Tech</a></span> · 
 
     <span>
         Powered by
