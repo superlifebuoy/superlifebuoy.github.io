@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>交通事故2-ICBC报案 | Nimble Code Tech</title>
+<meta name="keywords" content="加拿大, 交通事故, ICBC, 报案">
+<meta name="description" content="本文介绍发生交通事故后，在 ICBC 网站报案的流程。">
+<meta name="author" content="">
+<link rel="canonical" href="https://nimblecode.tech/posts/car-accident-icbc/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.47e51c7d8489b002361bac156ce9a0a8776d08c5462c2cee95801efafdd90d35.css" integrity="sha256-R&#43;UcfYSJsAI2G6wVbOmgqHdtCMVGLCzulYAe&#43;v3ZDTU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://nimblecode.tech/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://nimblecode.tech/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://nimblecode.tech/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://nimblecode.tech/apple-touch-icon.png">
+<link rel="mask-icon" href="https://nimblecode.tech/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://nimblecode.tech/posts/car-accident-icbc/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-KG4P5QR587"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KG4P5QR587');
+</script>
+<script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Re Os As Pe Ms Fs capture Ve calculateEventProperties js register register_once register_for_session unregister unregister_for_session qs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty zs Ls createPersonProfile Us Rs Bs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ds debug I Ns getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_mT7wOBjidgcQVEyPjDDfTMDJlObxehaWFU39siHPudu', {
+        api_host: 'https://us.i.posthog.com',
+        defaults: '2025-05-24',
+        person_profiles: 'identified_only', 
+    })
+</script>
+<meta property="og:url" content="https://nimblecode.tech/posts/car-accident-icbc/">
+  <meta property="og:site_name" content="Nimble Code Tech">
+  <meta property="og:title" content="交通事故2-ICBC报案">
+  <meta property="og:description" content="本文介绍发生交通事故后，在 ICBC 网站报案的流程。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-04-24T16:16:39-07:00">
+    <meta property="article:modified_time" content="2026-04-24T16:16:39-07:00">
+    <meta property="article:tag" content="加拿大">
+    <meta property="article:tag" content="交通事故">
+    <meta property="article:tag" content="ICBC">
+    <meta property="article:tag" content="报案">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="交通事故2-ICBC报案">
+  <meta name="twitter:description" content="本文介绍发生交通事故后，在 ICBC 网站报案的流程。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://nimblecode.tech/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "交通事故2-ICBC报案",
+      "item": "https://nimblecode.tech/posts/car-accident-icbc/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "交通事故2-ICBC报案",
+  "name": "交通事故2-ICBC报案",
+  "description": "本文介绍发生交通事故后，在 ICBC 网站报案的流程。",
+  "keywords": [
+    "加拿大", "交通事故", "ICBC", "报案"
+  ],
+  "articleBody": "\n这篇内容主要讲一下交通事故离开现场后，如何在 ICBC 报案并启动定损、维修等后续流程。\n1 登陆 ICBC 在完成事故现场的处理流程后（可参考《交通事故1-现场处理流程》），应该尽快完成 ICBC 报案。\n首先打开 ICBC 报案网站：\n点击右上角的“Sign in to My ICBC”，进入登录页面：\nICBC 的登录有两个选项：一个是通过 BC Services Card 的账户登录，另一个是通过银行账户登录。\n这里根据自己的使用习惯选择即可。我更习惯使用 BC Services Card 的账户登录，因为个人感觉更方便。下面以此流程为例说明。\n选择“Sign in using your BC Services Card account”下方的“Sign in”点击，进入 BC Services Card 的验证页面：\n在这个页面会显示一个6个字符的匹配码（Pairing Code）。\n在手机上打开 BC Services Card 这个App，然后选择“Log in from a computer”，输入上面的匹配码。\n这时 BC Services Card 的验证页面会通过，然后显示服务条款页面：\n勾选“I agree to the BC Login Service Terms of Use”，再点击“Continue”返回最开始的 ICBC 报案网站。\n至此，ICBC 的登录流程就完成了。\n2 报案分类 点击 ICBC 报案网站页面中的“Report a claim”，进入报案人选择页面：\n这个页面关于报案人有5个选项：\nRegistered owner, principal driver of lessee of a vehicle：车主、主驾驶人（购买 ICBC 保险时，车辆的主驾驶人，一般与车主是同一人）、Lease车辆的人； NOT registered owner, principal driver of lessee of a vehicle, but was the driver：不是车主、主驾驶人、Lease车辆的人；但是车辆的驾驶人（购买 ICBC 保险时，一辆车可以增加多个驾驶人，一般是车主配偶）； Passenger, pedestrian or cyclist：乘客、行人、蹬自行车的人； Owner of property damaged by a vehicle：被车辆撞损物品的主人； Witness：目击证人。 我们报案的话，一般都是上面两个选项。\n注意，这里选项1与选项2后续触发的流程是不一样的。 先讲一下选项2，这个选择后续是不能在线上完成报案的，只能电话报案：\n第一个“Lower Mainland”的电话适合大温地区的人拨打；第二个“Toll-free”的电话适合BC省非大温地区的人拨打。\n再回到报案人的选项上，选择1后跳转到车损类型页面：\n这里有两个选项，下面的选项是只有玻璃破损，上面的选项是指除只有玻璃破损外的所有情况。因为我是被追尾了，所以选择上面的选项。\n然后进入车辆使用类型页面：\n这里有两个选项，上面的是个人使用，下面的是公司商业使用。我的车是私家使用，所以选择上面的选项。\n然后进入报案类型页面：\n这里的3个选项分别是：\nClaims where I am the owner or driver of a vehicle：我是车主或驾驶人； Claims where I am a passenger, pedestrian, cyclist, or property owner：我是乘客、蹬自行车的人、被撞损物品的主人； All of my open claims：查看我所有处理中的报案。 这里选择选项1，开始线上报案流程。\n3 线上报案 线上报案首先是确认交通事故时间、车辆：\n这个页面需要确认交通事故的日期、时间、时区（加拿大有多个时区），然后选择发生交通事故的车辆，随后点击右下角的“Next”，进入事故类型选择页面：\n这个页面有4种事故类型可选，图文并茂。从左到右分别是：\n碰撞； 肇事逃逸； 盗抢、起火/泡水； 路边抛锚。 这里根据实际情况选择即可。例如我选择了碰撞，页面会继续弹出碰撞类型、和额外细节。我选择了和机动车碰撞（with motor vehicle）、追尾（rear-end）。\n点击右下角的“Next”，进入事故细节页面：\n这个页面首先需要填写事故发生地点。例如“Incident location”我选择了十字路口，那么后续要填写交叉的两条路、市、省等信息。\n然后是其他细节信息：\nWas any property damaged other than the vehicle(s) involved? (eg. fence, lamp post, etc.)：除车辆外，有没有其他财产损害？ How many vehicles were involved in the incident? (including yours)：事故有几辆车？包含你的车。 Was your vehicle parked at the time of the incident?：发生事故时，你的车辆是否停车状态？注意，这里的停车是指停车场、路边那种人离开的停车。我这种在等红绿灯的不是此类型。 How was the vehicle being used at the time of the collision?：发生事故时，车辆的使用目的。 Was it being used in the course of employment? (eg. Deliveries, realtor, etc.)：事故发生时，车辆是否在工作用途中？例如送快递、地产经纪带看房等。 Were you towing a trailer at the time of the incident：事故发生时，车辆是否有拖车？ 这些根据实际情况填写即可。然后点击右下角的“Next”，进入驾驶员、车辆、乘客信息填写页面：\n这个页面会询问是否有其他保险（Other insurance）、驾驶员信息（Driver information）、车辆情况（Vehicle condition）、受损部位（Vehicle damage）以及当时的乘客情况（Passengers in this vehicle）。\n这些内容按照实际情况填写即可。\n然后可以添加事故中的其他车辆：\n点击“Add another vehicle”，进入其他车辆的填写页面：\n这里就可以把交通事故另一方的信息记录下来了。\n完成后点击右下角的“Next”，进入行人、目击证人等信息页面：\n这里也是按照实际情况填写即可。因为我的情况是简单的追尾事故，没有任何行人、警察、救护车介入，所以直接点击“Next”进入联系信息页面：\n这里有个问题“Is the vehicle owner a GST registrant?”。问的是车辆所有者是否为 GST 纳税登记人（GST Registrant）。\n如果这辆车是家庭自用、注册在个人名下： 通常回答 No。 绝大多数个人（非商业用途）都不是 GST 纳税登记人。 如果这辆车是以公司名义购买，或用于商业用途并已注册 GST 号码： 回答 Yes。 其他问题根据实际情况填写即可。然后点击右下角“Next”，进入复查页面：\n这个页面会把之前填写的信息都展示出来，供报案人复查。最重要的地方在页面最下方的“Additional details”。你可以利用这 3000 字的长度来强化你的陈述，或者记录一些无法在前面勾选项中体现的细节。进而帮助到理赔官（Adjuster）更快处理。\n建议包含如下内容：\n重申事故的清晰性； 天气和路况； 对方的态度或陈述（如果有）：如果对方在现场承认了错误（例如说自己分心了或没看到红灯），一定要记录下来； 证人或证据说明（如果有）； 关于伤情的预留说明。 一切确认无误后，点击右下角的“Submit my claim now”，完成报案的提交：\n这个页面中，最重要的信息就是报案号（Claim Number）了。\n一定一定要记住！ 后续 ICBC 的沟通、修车、代步车，都需要这个报案号。\n线上报案完成后，48小时内会开始处理。实际上，第二天 ICBC 就给我打电话了。不过这是后话，稍晚我再写出来。\n4 提交事故照片与视频 以上虽然完成了线上报案，但整个过程还差最重要的一步：\n提交现场照片、视频证据！！！\n点击上面图中的“Manage your claim”，进入报案记录页面：\n然后选择“Submit information”这个标签页：\n在这个页面中：\nAre you submitting documents for your own claim?：选择“Yes”； What type of documents are you submitting?：选择“Photos or videos”； Please specify：根据照片/视频内容，可以选择“My vehicle”或者“The scene of the incident”。 然后点击“Add a file”来选择要上传的照片/视频。\n最后点击“Submit now”，完成照片/视频的上传。\n5 最后 以上就是关于 ICBC 线上报案的所有“无用知识”了～\n希望大家用不到 -_-|||…\n",
+  "wordCount" : "351",
+  "inLanguage": "zh",
+  "datePublished": "2026-04-24T16:16:39-07:00",
+  "dateModified": "2026-04-24T16:16:39-07:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://nimblecode.tech/posts/car-accident-icbc/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nimble Code Tech",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nimblecode.tech/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://nimblecode.tech/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button><span>|</span>
+                    <ul class="lang-menu">
+                        <li>
+                            <a href="https://nimblecode.tech/en/" title="English"
+                                aria-label="English">En</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      交通事故2-ICBC报案
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h1>
+    <div class="post-meta"><span title='2026-04-24 16:16:39 -0700 PDT'>2026年4月24日</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><p><img alt="cover-image" loading="lazy" src="/car-accident-icbc/cover-image.png"></p>
+<p>这篇内容主要讲一下交通事故离开现场后，如何在 ICBC 报案并启动定损、维修等后续流程。</p>
+<h2 id="1-登陆-icbc">1 登陆 ICBC<a hidden class="anchor" aria-hidden="true" href="#1-登陆-icbc">#</a></h2>
+<p>在完成事故现场的处理流程后（可参考<a href="https://nimblecode.tech/posts/car-accident-1/">《交通事故1-现场处理流程》</a>），应该尽快完成 ICBC 报案。</p>
+<p>首先打开<a href="https://icbc.com/zh-Hans/claims/report-view/Report-a-claim-online"> ICBC 报案网站</a>：</p>
+<p><img alt="icbc-website" loading="lazy" src="/car-accident-icbc/icbc-website.png"></p>
+<p>点击右上角的“Sign in to My ICBC”，进入登录页面：</p>
+<p><img alt="icbc-signin" loading="lazy" src="/car-accident-icbc/icbc-signin.png"></p>
+<p>ICBC 的登录有两个选项：一个是通过 BC Services Card 的账户登录，另一个是通过银行账户登录。</p>
+<p>这里根据自己的使用习惯选择即可。我更习惯使用 BC Services Card 的账户登录，因为个人感觉更方便。下面以此流程为例说明。</p>
+<p>选择“Sign in using your BC Services Card account”下方的“Sign in”点击，进入 BC Services Card 的验证页面：</p>
+<p><img alt="bc-services-card-signin" loading="lazy" src="/car-accident-icbc/bc-services-card-signin.png"></p>
+<p>在这个页面会显示一个6个字符的匹配码（Pairing Code）。</p>
+<p><strong>在手机上打开 BC Services Card 这个App，然后选择“Log in from a computer”，输入上面的匹配码。</strong></p>
+<p>这时 BC Services Card 的验证页面会通过，然后显示服务条款页面：</p>
+<p><img alt="bc-services-card-signin-done" loading="lazy" src="/car-accident-icbc/bc-services-card-signin-done.png"></p>
+<p>勾选“I agree to the BC Login Service Terms of Use”，再点击“Continue”返回最开始的 ICBC 报案网站。</p>
+<p>至此，ICBC 的登录流程就完成了。</p>
+<h2 id="2-报案分类">2 报案分类<a hidden class="anchor" aria-hidden="true" href="#2-报案分类">#</a></h2>
+<p>点击<a href="https://icbc.com/zh-Hans/claims/report-view/Report-a-claim-online"> ICBC 报案网站</a>页面中的“Report a claim”，进入报案人选择页面：</p>
+<p><img alt="icbc-who" loading="lazy" src="/car-accident-icbc/icbc-who.png"></p>
+<p>这个页面关于报案人有5个选项：</p>
+<ul>
+<li><strong>Registered owner, principal driver of lessee of a vehicle</strong>：车主、主驾驶人（购买 ICBC 保险时，车辆的主驾驶人，一般与车主是同一人）、Lease车辆的人；</li>
+<li><strong>NOT registered owner, principal driver of lessee of a vehicle, but was the driver</strong>：不是车主、主驾驶人、Lease车辆的人；但是车辆的驾驶人（购买 ICBC 保险时，一辆车可以增加多个驾驶人，一般是车主配偶）；</li>
+<li><strong>Passenger, pedestrian or cyclist</strong>：乘客、行人、蹬自行车的人；</li>
+<li><strong>Owner of property damaged by a vehicle</strong>：被车辆撞损物品的主人；</li>
+<li><strong>Witness</strong>：目击证人。</li>
+</ul>
+<p>我们报案的话，一般都是上面两个选项。</p>
+<p><strong>注意，这里选项1与选项2后续触发的流程是不一样的。</strong> 先讲一下选项2，这个选择后续是不能在线上完成报案的，只能电话报案：</p>
+<p><img alt="icbc-driver" loading="lazy" src="/car-accident-icbc/icbc-driver.png"></p>
+<p>第一个“Lower Mainland”的电话适合大温地区的人拨打；第二个“Toll-free”的电话适合BC省非大温地区的人拨打。</p>
+<p>再回到报案人的选项上，选择1后跳转到车损类型页面：</p>
+<p><img alt="icbc-incident-type" loading="lazy" src="/car-accident-icbc/icbc-incident-type.png"></p>
+<p>这里有两个选项，下面的选项是只有玻璃破损，上面的选项是指除只有玻璃破损外的所有情况。因为我是被追尾了，所以选择上面的选项。</p>
+<p>然后进入车辆使用类型页面：</p>
+<p><img alt="icbc-car-use" loading="lazy" src="/car-accident-icbc/icbc-car-use.png"></p>
+<p>这里有两个选项，上面的是个人使用，下面的是公司商业使用。我的车是私家使用，所以选择上面的选项。</p>
+<p>然后进入报案类型页面：</p>
+<p><img alt="icbc-claim-type" loading="lazy" src="/car-accident-icbc/icbc-claim-type.png"></p>
+<p>这里的3个选项分别是：</p>
+<ul>
+<li><strong>Claims where I am the owner or driver of a vehicle</strong>：我是车主或驾驶人；</li>
+<li><strong>Claims where I am a passenger, pedestrian, cyclist, or property owner</strong>：我是乘客、蹬自行车的人、被撞损物品的主人；</li>
+<li><strong>All of my open claims</strong>：查看我所有处理中的报案。</li>
+</ul>
+<p>这里选择选项1，开始线上报案流程。</p>
+<h2 id="3-线上报案">3 线上报案<a hidden class="anchor" aria-hidden="true" href="#3-线上报案">#</a></h2>
+<p>线上报案首先是确认交通事故时间、车辆：</p>
+<p><img alt="icbc-time" loading="lazy" src="/car-accident-icbc/icbc-time.png"></p>
+<p>这个页面需要确认交通事故的日期、时间、时区（加拿大有多个时区），然后选择发生交通事故的车辆，随后点击右下角的“Next”，进入事故类型选择页面：</p>
+<p><img alt="icbc-accident-type" loading="lazy" src="/car-accident-icbc/icbc-accident-type.png"></p>
+<p>这个页面有4种事故类型可选，图文并茂。从左到右分别是：</p>
+<ul>
+<li><strong>碰撞</strong>；</li>
+<li><strong>肇事逃逸</strong>；</li>
+<li><strong>盗抢、起火/泡水</strong>；</li>
+<li><strong>路边抛锚</strong>。</li>
+</ul>
+<p>这里根据实际情况选择即可。例如我选择了碰撞，页面会继续弹出碰撞类型、和额外细节。我选择了和机动车碰撞（with motor vehicle）、追尾（rear-end）。</p>
+<p>点击右下角的“Next”，进入事故细节页面：</p>
+<p><img alt="icbc-details" loading="lazy" src="/car-accident-icbc/icbc-details.png"></p>
+<p>这个页面首先需要填写事故发生地点。例如“Incident location”我选择了十字路口，那么后续要填写交叉的两条路、市、省等信息。</p>
+<p>然后是其他细节信息：</p>
+<ul>
+<li><strong>Was any property damaged other than the vehicle(s) involved? (eg. fence, lamp post, etc.)</strong>：除车辆外，有没有其他财产损害？</li>
+<li><strong>How many vehicles were involved in the incident? (including yours)</strong>：事故有几辆车？包含你的车。</li>
+<li><strong>Was your vehicle parked at the time of the incident?</strong>：发生事故时，你的车辆是否停车状态？<strong>注意，这里的停车是指停车场、路边那种人离开的停车。我这种在等红绿灯的不是此类型。</strong></li>
+<li><strong>How was the vehicle being used at the time of the collision?</strong>：发生事故时，车辆的使用目的。</li>
+<li><strong>Was it being used in the course of employment? (eg. Deliveries, realtor, etc.)</strong>：事故发生时，车辆是否在工作用途中？例如送快递、地产经纪带看房等。</li>
+<li><strong>Were you towing a trailer at the time of the incident</strong>：事故发生时，车辆是否有拖车？</li>
+</ul>
+<p>这些根据实际情况填写即可。然后点击右下角的“Next”，进入驾驶员、车辆、乘客信息填写页面：</p>
+<p><img alt="icbc-driver-details" loading="lazy" src="/car-accident-icbc/icbc-driver-details.png"></p>
+<p>这个页面会询问是否有其他保险（Other insurance）、驾驶员信息（Driver information）、车辆情况（Vehicle condition）、受损部位（Vehicle damage）以及当时的乘客情况（Passengers in this vehicle）。</p>
+<p>这些内容按照实际情况填写即可。</p>
+<p>然后可以添加事故中的其他车辆：</p>
+<p><img alt="icbc-add-car" loading="lazy" src="/car-accident-icbc/icbc-add-car.png"></p>
+<p>点击“Add another vehicle”，进入其他车辆的填写页面：</p>
+<p><img alt="icbc-another-car" loading="lazy" src="/car-accident-icbc/icbc-another-car.png"></p>
+<p>这里就可以把交通事故另一方的信息记录下来了。</p>
+<p>完成后点击右下角的“Next”，进入行人、目击证人等信息页面：</p>
+<p><img alt="icbc-witness" loading="lazy" src="/car-accident-icbc/icbc-witness.png"></p>
+<p>这里也是按照实际情况填写即可。因为我的情况是简单的追尾事故，没有任何行人、警察、救护车介入，所以直接点击“Next”进入联系信息页面：</p>
+<p><img alt="icbc-contact" loading="lazy" src="/car-accident-icbc/icbc-contact.png"></p>
+<p>这里有个问题“Is the vehicle owner a GST registrant?”。问的是车辆所有者是否为 <strong>GST 纳税登记人（GST Registrant）</strong>。</p>
+<ul>
+<li>如果这辆车是家庭自用、注册在个人名下： 通常回答 No。
+绝大多数个人（非商业用途）都不是 GST 纳税登记人。</li>
+<li>如果这辆车是以公司名义购买，或用于商业用途并已注册 GST 号码： 回答 Yes。</li>
+</ul>
+<p>其他问题根据实际情况填写即可。然后点击右下角“Next”，进入复查页面：</p>
+<p><img alt="icbc-review-1" loading="lazy" src="/car-accident-icbc/icbc-review-1.png">
+<img alt="icbc-review-2" loading="lazy" src="/car-accident-icbc/icbc-review-2.png"></p>
+<p>这个页面会把之前填写的信息都展示出来，供报案人复查。最重要的地方在页面最下方的“Additional details”。<strong>你可以利用这 3000 字的长度来强化你的陈述，或者记录一些无法在前面勾选项中体现的细节。进而帮助到理赔官（Adjuster）更快处理。</strong></p>
+<p>建议包含如下内容：</p>
+<ul>
+<li><strong>重申事故的清晰性</strong>；</li>
+<li><strong>天气和路况</strong>；</li>
+<li><strong>对方的态度或陈述（如果有）</strong>：如果对方在现场承认了错误（例如说自己分心了或没看到红灯），一定要记录下来；</li>
+<li><strong>证人或证据说明（如果有）</strong>；</li>
+<li><strong>关于伤情的预留说明</strong>。</li>
+</ul>
+<p>一切确认无误后，点击右下角的“Submit my claim now”，完成报案的提交：</p>
+<p><img alt="icbc-done" loading="lazy" src="/car-accident-icbc/icbc-done.png"></p>
+<p>这个页面中，最重要的信息就是报案号（Claim Number）了。</p>
+<p><strong>一定一定要记住！</strong> 后续 ICBC 的沟通、修车、代步车，都需要这个报案号。</p>
+<p>线上报案完成后，48小时内会开始处理。实际上，第二天 ICBC 就给我打电话了。不过这是后话，稍晚我再写出来。</p>
+<h2 id="4-提交事故照片与视频">4 提交事故照片与视频<a hidden class="anchor" aria-hidden="true" href="#4-提交事故照片与视频">#</a></h2>
+<p>以上虽然完成了线上报案，但整个过程还差最重要的一步：</p>
+<p><strong>提交现场照片、视频证据！！！</strong></p>
+<p>点击上面图中的“Manage your claim”，进入报案记录页面：</p>
+<p><img alt="icbc-claim" loading="lazy" src="/car-accident-icbc/icbc-claim.png"></p>
+<p>然后选择“Submit information”这个标签页：</p>
+<p><img alt="icbc-photos" loading="lazy" src="/car-accident-icbc/icbc-photos.png"></p>
+<p>在这个页面中：</p>
+<ul>
+<li><strong>Are you submitting documents for your own claim?</strong>：选择“Yes”；</li>
+<li><strong>What type of documents are you submitting?</strong>：选择“Photos or videos”；</li>
+<li><strong>Please specify</strong>：根据照片/视频内容，可以选择“My vehicle”或者“The scene of the incident”。</li>
+</ul>
+<p>然后点击“Add a file”来选择要上传的照片/视频。</p>
+<p>最后点击“Submit now”，完成照片/视频的上传。</p>
+<h2 id="5-最后">5 最后<a hidden class="anchor" aria-hidden="true" href="#5-最后">#</a></h2>
+<p>以上就是关于 ICBC 线上报案的所有“无用知识”了～</p>
+<p>希望大家用不到 -_-|||&hellip;</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://nimblecode.tech/tags/%E5%8A%A0%E6%8B%BF%E5%A4%A7/">加拿大</a></li>
+      <li><a href="https://nimblecode.tech/tags/%E4%BA%A4%E9%80%9A%E4%BA%8B%E6%95%85/">交通事故</a></li>
+      <li><a href="https://nimblecode.tech/tags/icbc/">ICBC</a></li>
+      <li><a href="https://nimblecode.tech/tags/%E6%8A%A5%E6%A1%88/">报案</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://nimblecode.tech/">Nimble Code Tech</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
