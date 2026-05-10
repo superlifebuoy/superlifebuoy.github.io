@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nimblecode.tech/tags/icbc/</loc>
-    <lastmod>2026-04-24T16:16:39-07:00</lastmod>
+    <loc>https://nimblecode.tech/tags/census/</loc>
+    <lastmod>2026-05-08T14:29:52-07:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/</loc>
-    <lastmod>2026-04-24T16:16:39-07:00</lastmod>
+    <lastmod>2026-05-08T14:29:52-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -19,7 +19,7 @@
                 />
   </url><url>
     <loc>https://nimblecode.tech/posts/</loc>
-    <lastmod>2026-04-24T16:16:39-07:00</lastmod>
+    <lastmod>2026-05-08T14:29:52-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -32,7 +32,7 @@
                 />
   </url><url>
     <loc>https://nimblecode.tech/tags/</loc>
-    <lastmod>2026-04-24T16:16:39-07:00</lastmod>
+    <lastmod>2026-05-08T14:29:52-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -44,14 +44,26 @@
                 href="https://nimblecode.tech/tags/"
                 />
   </url><url>
-    <loc>https://nimblecode.tech/tags/%E6%8A%A5%E6%A1%88/</loc>
-    <lastmod>2026-04-24T16:16:39-07:00</lastmod>
-  </url><url>
     <loc>https://nimblecode.tech/tags/%E5%8A%A0%E6%8B%BF%E5%A4%A7/</loc>
-    <lastmod>2026-04-24T16:16:39-07:00</lastmod>
+    <lastmod>2026-05-08T14:29:52-07:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/posts/census/</loc>
+    <lastmod>2026-05-08T14:29:52-07:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/%E4%BA%BA%E5%8F%A3%E6%99%AE%E6%9F%A5/</loc>
+    <lastmod>2026-05-08T14:29:52-07:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/icbc/</loc>
+    <lastmod>2026-05-05T12:20:16-07:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/posts/reinstate-msp/</loc>
+    <lastmod>2026-05-05T12:20:16-07:00</lastmod>
+  </url><url>
+    <loc>https://nimblecode.tech/tags/%E6%8A%A5%E6%A1%88/</loc>
+    <lastmod>2026-05-05T12:20:16-07:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/tags/%E4%BA%A4%E9%80%9A%E4%BA%8B%E6%95%85/</loc>
-    <lastmod>2026-04-24T16:16:39-07:00</lastmod>
+    <lastmod>2026-05-05T12:20:16-07:00</lastmod>
   </url><url>
     <loc>https://nimblecode.tech/posts/car-accident-icbc/</loc>
     <lastmod>2026-04-24T16:16:39-07:00</lastmod>

@@ -6,8 +6,22 @@
     <description>Recent content in Posts on Nimble Code Tech</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 24 Apr 2026 16:16:39 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 14:29:52 -0700</lastBuildDate>
     <atom:link href="https://nimblecode.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>加拿大人口普查Census</title>
+      <link>https://nimblecode.tech/posts/census/</link>
+      <pubDate>Fri, 08 May 2026 14:29:52 -0700</pubDate>
+      <guid>https://nimblecode.tech/posts/census/</guid>
+      <description>本文介绍加拿大人口普查中短表相关的内容。</description>
+    </item>
+    <item>
+      <title>Reinstate Msp</title>
+      <link>https://nimblecode.tech/posts/reinstate-msp/</link>
+      <pubDate>Tue, 05 May 2026 12:20:16 -0700</pubDate>
+      <guid>https://nimblecode.tech/posts/reinstate-msp/</guid>
+      <description>本文介绍发生交通事故后，在 ICBC 网站报案的流程。</description>
+    </item>
     <item>
       <title>交通事故2-ICBC报案</title>
       <link>https://nimblecode.tech/posts/car-accident-icbc/</link>
@@ -133,20 +147,6 @@
       <pubDate>Thu, 06 Nov 2025 13:08:15 -0800</pubDate>
       <guid>https://nimblecode.tech/posts/tao-partner-test/</guid>
       <description>这是我的双11购物清单，也记录了注册成为一个淘宝客的过程。只需花费大约30分钟，就可以在各种折扣的基础上再薅一点小羊毛 ^o^~</description>
-    </item>
-    <item>
-      <title>如何将网站加入 Bing 搜索引擎？</title>
-      <link>https://nimblecode.tech/posts/ms-webmaster-tools/</link>
-      <pubDate>Wed, 05 Nov 2025 10:44:20 -0800</pubDate>
-      <guid>https://nimblecode.tech/posts/ms-webmaster-tools/</guid>
-      <description>使用Hugo建站后，通过 Microsoft Webmaster Tools 将网站内容加入 Bing 搜索引擎索引中去。</description>
-    </item>
-    <item>
-      <title>让 API 更好的一些小事 [翻译]</title>
-      <link>https://nimblecode.tech/posts/small-things-that-make-apis-a-little-bit-better/</link>
-      <pubDate>Wed, 05 Nov 2025 20:32:31 +0800</pubDate>
-      <guid>https://nimblecode.tech/posts/small-things-that-make-apis-a-little-bit-better/</guid>
-      <description>讲述如何让 API 更好的一些实践方法。</description>
     </item>
   </channel>
 </rss>

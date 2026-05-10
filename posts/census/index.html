@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>加拿大人口普查Census | Nimble Code Tech</title>
+<meta name="keywords" content="加拿大, 人口普查, Census">
+<meta name="description" content="本文介绍加拿大人口普查中短表相关的内容。">
+<meta name="author" content="">
+<link rel="canonical" href="https://nimblecode.tech/posts/census/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.47e51c7d8489b002361bac156ce9a0a8776d08c5462c2cee95801efafdd90d35.css" integrity="sha256-R&#43;UcfYSJsAI2G6wVbOmgqHdtCMVGLCzulYAe&#43;v3ZDTU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://nimblecode.tech/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://nimblecode.tech/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://nimblecode.tech/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://nimblecode.tech/apple-touch-icon.png">
+<link rel="mask-icon" href="https://nimblecode.tech/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://nimblecode.tech/posts/census/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-KG4P5QR587"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KG4P5QR587');
+</script>
+<script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Re Os As Pe Ms Fs capture Ve calculateEventProperties js register register_once register_for_session unregister unregister_for_session qs getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty zs Ls createPersonProfile Us Rs Bs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ds debug I Ns getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_mT7wOBjidgcQVEyPjDDfTMDJlObxehaWFU39siHPudu', {
+        api_host: 'https://us.i.posthog.com',
+        defaults: '2025-05-24',
+        person_profiles: 'identified_only', 
+    })
+</script>
+<meta property="og:url" content="https://nimblecode.tech/posts/census/">
+  <meta property="og:site_name" content="Nimble Code Tech">
+  <meta property="og:title" content="加拿大人口普查Census">
+  <meta property="og:description" content="本文介绍加拿大人口普查中短表相关的内容。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-05-08T14:29:52-07:00">
+    <meta property="article:modified_time" content="2026-05-08T14:29:52-07:00">
+    <meta property="article:tag" content="加拿大">
+    <meta property="article:tag" content="人口普查">
+    <meta property="article:tag" content="Census">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="加拿大人口普查Census">
+  <meta name="twitter:description" content="本文介绍加拿大人口普查中短表相关的内容。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://nimblecode.tech/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "加拿大人口普查Census",
+      "item": "https://nimblecode.tech/posts/census/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "加拿大人口普查Census",
+  "name": "加拿大人口普查Census",
+  "description": "本文介绍加拿大人口普查中短表相关的内容。",
+  "keywords": [
+    "加拿大", "人口普查", "Census"
+  ],
+  "articleBody": "\n前两天收到了一封加拿大人口普查的邮件，封面类似上图。\n我在网上查了一下：\n加拿大人口普查一般每5年一次，通常在尾数1和6的年份进行； 内容以表格形式实现，分为“短表”与“长表”两种； 基本上所有收到邮件的人都要参与； 最重要的一点是，不填写最高可罚约500～1000加币。\n1 打开人口普查网站 现在加拿大的人口普查表格，基本都是在线填写的形式了。\n打开人口普查网站www.census.gc.ca：\n直接点击绿色按钮“Start questionnaire”，进入调查问卷的安全访问码输入页面：\n这个访问码就在收到的人口普查邮件中。 将信封拆开，可以在内测最上方看到。\n它是一个16位的数字组合。\n输入完成后，就开始正式的人口普查调查问卷了。\n2 人口普查表格内容 因为我被抽中的是短表，所以下面只能介绍短表内容。\n人口普查短表的表格分为A、B、D、E四个部分（没有C）：\nStep A：主要是填写人的联系信息； Step B：主要是填写家庭人口组成信息； Step D：Languages，描述家庭人口的生日、语言等情况； Step E：Comments，增加自由填写的评论信息。 2.1 Step A 这一部分需要收集调查问卷填写人的基本信息，例如：\nWhat is your telephone number? 电话号码； What email address could we use to contact your household, if applicable? 电子邮件地址； Please verify that the following address is correct. 居住地址； Is the mailing address of this dwelling different from the one specified in question 3? 邮寄地址； 这一部分完成，整个短表完成进度是3%。\n2.2 Step B 这一部分需要收集家庭人口的组成信息，例如：\nIncluding yourself, how many persons are staying at this address? 家里几口人住在这里； Including yourself, list all persons who are staying at this address. 这些人的姓名；注意，姓（Family name）在前，名（Given name）在后； Is there anyone listed above who is staying at this address temporarily and who has their main residence located at another address in Canada?；这些人在加拿大是否有其他主要住址？ Is there anyone listed above who is a resident of another country visiting Canada? 这些人是否其他国家公民并正在加拿大访问？注意，如果持有学签、工签等大签，是不算这种情况的，应该选No。 具体说明看下图； Is there anyone listed above who is a government representative of another country? 这些人是否外国大使、大使馆工作人员？ 这一部分完成，整个短表完成进度是13%。\n2.3 Step D 这一部分描述家庭人口的生日、性别、关系、语言等情况，例如：\nWhat is this person’s date of birth? 家庭成员的生日； What is this person’s gender? 家庭成员现在的性别； What was this person’s sex at birth? 家庭成员出生时的性别； What is the relationship of this person to XXX? 家庭成员与调查问卷填写人的关系； Can this person speak English or French well enough to conduct a conversation? 家庭成员可以讲英文或法文进行交流吗？ What language(s) does this person speak on a regular basis at home? 家庭成员在家里主要讲什么语言？如果是中文的话，不要简单地写Chinese，而要细化到Madarin、Cantonese这种。 这一部分完成，整个短表完成进度是47%。\n2.4 Step E 这一部分，可以自由填写评论信息（Comments）。\n如果没有特别需要说明的内容，可以不写。\n这一部分完成，整个短表完成进度是99%。\n3 提交 在Step E的页面直接点击“Submit”，完成整个人口普查的调查问卷填写。\n系统会返回一个确认码，如下图：\n这样就完成了加拿大的人口普查啦～\n4 最后 以上是短表的填写内容。\n我另外查了一下长表相关信息。长表大约抽样25%的家庭，问题也会细很多，例如会有：\n收入； 教育； 职业； 房租； 通勤； 房屋结构； 等等。\n另外，人口普查真得很重要，因为未来很多资源的规划、分配都会以此为依据。\n所以它不仅仅是一次统计学的实践，也在悄悄决定“加拿大如何看待自己”。\n",
+  "wordCount" : "250",
+  "inLanguage": "zh",
+  "datePublished": "2026-05-08T14:29:52-07:00",
+  "dateModified": "2026-05-08T14:29:52-07:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://nimblecode.tech/posts/census/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nimble Code Tech",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nimblecode.tech/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://nimblecode.tech/" accesskey="h" title="Nimble Code Tech (Alt + H)">Nimble Code Tech</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button><span>|</span>
+                    <ul class="lang-menu">
+                        <li>
+                            <a href="https://nimblecode.tech/en/" title="English"
+                                aria-label="English">En</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      加拿大人口普查Census
+    </h1>
+    <div class="post-meta"><span title='2026-05-08 14:29:52 -0700 PDT'>2026年5月8日</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><p><img alt="cover-image" loading="lazy" src="/census/cover-image.png"></p>
+<p>前两天收到了一封加拿大人口普查的邮件，封面类似上图。</p>
+<p>我在网上查了一下：</p>
+<ul>
+<li>加拿大人口普查一般每5年一次，通常在尾数1和6的年份进行；</li>
+<li>内容以表格形式实现，分为“短表”与“长表”两种；</li>
+<li>基本上所有收到邮件的人都要参与；</li>
+</ul>
+<p><strong>最重要的一点是，不填写最高可罚约500～1000加币。</strong></p>
+<h2 id="1-打开人口普查网站">1 打开人口普查网站<a hidden class="anchor" aria-hidden="true" href="#1-打开人口普查网站">#</a></h2>
+<p>现在加拿大的人口普查表格，基本都是在线填写的形式了。</p>
+<p>打开<a href="https://www.census.gc.ca/">人口普查网站www.census.gc.ca</a>：</p>
+<p><img alt="census" loading="lazy" src="/census/census.png"></p>
+<p>直接点击绿色按钮“Start questionnaire”，进入调查问卷的安全访问码输入页面：</p>
+<p><img alt="access-code" loading="lazy" src="/census/access-code.png"></p>
+<p><strong>这个访问码就在收到的人口普查邮件中。</strong> 将信封拆开，可以在内测最上方看到。</p>
+<p><strong>它是一个16位的数字组合。</strong></p>
+<p>输入完成后，就开始正式的人口普查调查问卷了。</p>
+<h2 id="2-人口普查表格内容">2 人口普查表格内容<a hidden class="anchor" aria-hidden="true" href="#2-人口普查表格内容">#</a></h2>
+<p>因为我被抽中的是短表，所以下面只能介绍短表内容。</p>
+<p>人口普查短表的表格分为A、B、D、E四个部分（没有C）：</p>
+<ul>
+<li>Step A：主要是填写人的联系信息；</li>
+<li>Step B：主要是填写家庭人口组成信息；</li>
+<li>Step D：Languages，描述家庭人口的生日、语言等情况；</li>
+<li>Step E：Comments，增加自由填写的评论信息。</li>
+</ul>
+<h3 id="21-step-a">2.1 Step A<a hidden class="anchor" aria-hidden="true" href="#21-step-a">#</a></h3>
+<p>这一部分需要收集调查问卷填写人的基本信息，例如：</p>
+<ul>
+<li>What is your telephone number? 电话号码；</li>
+<li>What email address could we use to contact your household, if applicable? 电子邮件地址；</li>
+<li>Please verify that the following address is correct. 居住地址；</li>
+<li>Is the mailing address of this dwelling different from the one specified in question 3? 邮寄地址；</li>
+</ul>
+<p>这一部分完成，整个短表完成进度是3%。</p>
+<h3 id="22-step-b">2.2 Step B<a hidden class="anchor" aria-hidden="true" href="#22-step-b">#</a></h3>
+<p>这一部分需要收集家庭人口的组成信息，例如：</p>
+<ul>
+<li>Including yourself, how many persons are staying at this address? 家里几口人住在这里；</li>
+<li>Including yourself, list all persons who are staying at this address. 这些人的姓名；注意，姓（Family name）在前，名（Given name）在后；</li>
+<li>Is there anyone listed above who is staying at this address temporarily and who has their main residence located at another address in Canada?；这些人在加拿大是否有其他主要住址？</li>
+<li>Is there anyone listed above who is a resident of another country visiting Canada? 这些人是否其他国家公民并正在加拿大访问？<strong>注意，如果持有学签、工签等大签，是不算这种情况的，应该选No。</strong> 具体说明看下图；</li>
+<li>Is there anyone listed above who is a government representative of another country? 这些人是否外国大使、大使馆工作人员？</li>
+</ul>
+<p><img alt="3b" loading="lazy" src="/census/3b.png"></p>
+<p>这一部分完成，整个短表完成进度是13%。</p>
+<h3 id="23-step-d">2.3 Step D<a hidden class="anchor" aria-hidden="true" href="#23-step-d">#</a></h3>
+<p>这一部分描述家庭人口的生日、性别、关系、语言等情况，例如：</p>
+<ul>
+<li>What is this person&rsquo;s date of birth? 家庭成员的生日；</li>
+<li>What is this person&rsquo;s gender? 家庭成员现在的性别；</li>
+<li>What was this person&rsquo;s sex at birth? 家庭成员出生时的性别；</li>
+<li>What is the relationship of this person to XXX? 家庭成员与调查问卷填写人的关系；</li>
+<li>Can this person speak English or French well enough to conduct a conversation? 家庭成员可以讲英文或法文进行交流吗？</li>
+<li>What language(s) does this person speak on a regular basis at home? 家庭成员在家里主要讲什么语言？<strong>如果是中文的话，不要简单地写Chinese，而要细化到Madarin、Cantonese这种。</strong></li>
+</ul>
+<p>这一部分完成，整个短表完成进度是47%。</p>
+<h3 id="24-step-e">2.4 Step E<a hidden class="anchor" aria-hidden="true" href="#24-step-e">#</a></h3>
+<p>这一部分，可以自由填写评论信息（Comments）。</p>
+<p>如果没有特别需要说明的内容，可以不写。</p>
+<p>这一部分完成，整个短表完成进度是99%。</p>
+<h2 id="3-提交">3 提交<a hidden class="anchor" aria-hidden="true" href="#3-提交">#</a></h2>
+<p>在Step E的页面直接点击“Submit”，完成整个人口普查的调查问卷填写。</p>
+<p>系统会返回一个确认码，如下图：</p>
+<p><img alt="confirmation-code" loading="lazy" src="/census/confirmation-code.png"></p>
+<p>这样就完成了加拿大的人口普查啦～</p>
+<h2 id="4-最后">4 最后<a hidden class="anchor" aria-hidden="true" href="#4-最后">#</a></h2>
+<p>以上是短表的填写内容。</p>
+<p>我另外查了一下长表相关信息。长表大约抽样25%的家庭，问题也会细很多，例如会有：</p>
+<ul>
+<li>收入；</li>
+<li>教育；</li>
+<li>职业；</li>
+<li>房租；</li>
+<li>通勤；</li>
+<li>房屋结构；</li>
+</ul>
+<p>等等。</p>
+<p>另外，人口普查真得很重要，因为未来很多资源的规划、分配都会以此为依据。</p>
+<p>所以它不仅仅是一次统计学的实践，也在悄悄决定“加拿大如何看待自己”。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://nimblecode.tech/tags/%E5%8A%A0%E6%8B%BF%E5%A4%A7/">加拿大</a></li>
+      <li><a href="https://nimblecode.tech/tags/%E4%BA%BA%E5%8F%A3%E6%99%AE%E6%9F%A5/">人口普查</a></li>
+      <li><a href="https://nimblecode.tech/tags/census/">Census</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://nimblecode.tech/">Nimble Code Tech</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
