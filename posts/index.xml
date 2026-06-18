@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Nimble Code Tech</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 08 May 2026 14:29:52 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 14:39:44 -0700</lastBuildDate>
     <atom:link href="https://nimblecode.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BC省注册公司如何提交年报</title>
+      <link>https://nimblecode.tech/posts/bc-corporation-annual-report/</link>
+      <pubDate>Wed, 17 Jun 2026 14:39:44 -0700</pubDate>
+      <guid>https://nimblecode.tech/posts/bc-corporation-annual-report/</guid>
+      <description>本文介绍如何为BC省注册的公司提交年报。</description>
+    </item>
     <item>
       <title>加拿大人口普查Census</title>
       <link>https://nimblecode.tech/posts/census/</link>
@@ -140,13 +147,6 @@
       <pubDate>Mon, 10 Nov 2025 14:36:45 -0800</pubDate>
       <guid>https://nimblecode.tech/posts/aliyun-monitor/</guid>
       <description>介绍云监控产品，并简单配置 Java 进程监控。</description>
-    </item>
-    <item>
-      <title>2025双11购物清单 &#43; 淘宝客接入流程 [更新]</title>
-      <link>https://nimblecode.tech/posts/tao-partner-test/</link>
-      <pubDate>Thu, 06 Nov 2025 13:08:15 -0800</pubDate>
-      <guid>https://nimblecode.tech/posts/tao-partner-test/</guid>
-      <description>这是我的双11购物清单，也记录了注册成为一个淘宝客的过程。只需花费大约30分钟，就可以在各种折扣的基础上再薅一点小羊毛 ^o^~</description>
     </item>
   </channel>
 </rss>
